@@ -9,13 +9,13 @@
     <div v-if="sections.mobile">
         <carousel :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
             <slide v-for="option in options.mobile">
-                <div class="card" :class="{'text-white bg-primary': option.selected}">
+                <div class="card" :class="{'border border-success': option.selected}">
                     <img class="card-img-top" :src="option.image" :alt="option.name">
                     <div class="card-body">
                         <h5 class="card-title">{{option.name}}</h5>
                         <p class="card-text">{{option.description}}</p>
                         <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-danger': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                     </div>
                 </div>
             </slide>
@@ -46,13 +46,13 @@
     <div v-if="sections.computer">
         <carousel :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
             <slide v-for="option in options.computer">
-                <div class="card" :class="{'text-white bg-primary': option.selected}">
+                <div class="card" :class="{'border border-success': option.selected}">
                     <img class="card-img-top" :src="option.image" :alt="option.name">
                     <div class="card-body">
                         <h5 class="card-title">{{option.name}}</h5>
                         <p class="card-text">{{option.description}}</p>
                         <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-danger': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                     </div>
                 </div>
             </slide>
@@ -77,13 +77,13 @@
     <div v-if="sections.peripherals">
         <carousel :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
             <slide v-for="option in options.peripherals">
-                <div class="card" :class="{'text-white bg-primary': option.selected}">
+                <div class="card" :class="{'border border-success': option.selected}">
                     <img class="card-img-top" :src="option.image" :alt="option.name">
                     <div class="card-body">
                         <h5 class="card-title">{{option.name}}</h5>
                         <p class="card-text">{{option.description}}</p>
                         <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-danger': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" v-on:click="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                     </div>
                 </div>
             </slide>
