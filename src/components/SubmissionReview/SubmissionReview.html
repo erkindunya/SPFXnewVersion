@@ -1,0 +1,51 @@
+<div>
+    <h2>Summary</h2>
+    <h3>Hardware/Software</h3>
+    <div v-if="hardware.length > 0">
+        <ul>
+            <li v-for="item in hardware">{{item.name}} - {{item.price}} GBP</li>
+        </ul>
+        <p><strong>Total</strong> - {{totalCost}} GBP</p>
+    </div>
+    <p v-if="hardware.length === 0">No hardware selected.</p>
+
+    <h3>Access</h3>
+    <ul v-if="access.length > 0">
+        <li v-for="item in access">{{item}}</li>
+    </ul>
+    <p v-if="access.length === 0">No access selected.</p>
+
+    <h3>Delivery Address</h3>
+    
+    <div class="form-group">
+        <label>Would you like to use a different delivery address?</label>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="changeAddress" :value="false">
+            <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="changeAddress" :value="true">
+            <label class="form-check-label">Yes</label>
+        </div>
+    </div>
+
+    <textarea v-if="changeAddress" class="form-control" v-model="address"></textarea>
+
+    
+    
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input type="checkbox" id="accept-terms" class="form-check-input" v-model="acceptTerms" :class="{ 'is-invalid': $v.acceptTerms.$invalid }">
+            <label class="form-check-label" for="accept-terms">I confirm the above summary is correct.</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-secondary" v-on:click="back">Back</button>
+        </div>
+        <div class="col text-right">
+            <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.$invalid">Submit</button>
+        </div>
+    </div>
+</div>

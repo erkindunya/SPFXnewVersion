@@ -1,0 +1,84 @@
+<div>
+    <h2>General Information</h2>
+    <div class="form-group">
+        <label>First Name*</label>
+        <input type="text" class="form-control" v-model="formData.firstName" :class="{ 'is-invalid': $v.formData.firstName.$invalid }">
+    </div>
+    <div class="form-group">
+        <label>Surname*</label>
+        <input type="text" class="form-control" v-model="formData.surname" :class="{ 'is-invalid': $v.formData.surname.$invalid }">
+    </div>
+    <div class="form-group">
+        <label>Middle Initial*</label>
+        <input type="text" class="form-control" v-model="formData.middleInitial" :class="{ 'is-invalid': $v.formData.middleInitial.$invalid }">
+    </div>
+    <div class="form-group">
+        <label>Domain Suffix</label>
+        <select class="form-control" v-model="formData.domainSuffix">
+            <option>@kier.co.uk</option>
+            <option>@ukcorp.co.uk</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Computed Account Name</label>
+        <p>{{accountName}}</p>
+    </div>
+    <div class="form-group">
+        <label>Employee Type*</label>
+        <select class="form-control" v-model="formData.employeeType">
+            <option>Permanent</option>
+            <option>Contractor</option>
+            <option>Blue Collar</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Start Date*</label>
+        <datepicker v-model="formData.startDate" :input-class="{ 'is-invalid': $v.formData.startDate.$invalid, 'form-control': true }"></datepicker>
+    </div>
+    <div class="form-group" v-if="formData.employeeType === 'Contractor'">
+        <label>End Date*</label>
+        <datepicker v-model="formData.endDate" :input-class="{ 'is-invalid': $v.formData.endDate.$invalid, 'form-control': true }"></datepicker>
+    </div>
+    <div class="form-group">
+        <label>Job Title*</label>
+        <select class="form-control" v-model="formData.jobTitle" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }">
+            <option></option>
+            <option>IT Manager</option>
+            <option>IT Developer</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Manager Name*</label>
+        <input type="text" class="form-control" v-model="formData.managerName" :class="{ 'is-invalid': $v.formData.managerName.$invalid }">
+    </div>
+    <div class="form-group">
+        <label>Manager Email</label>
+        <p>{{managerEmail}}</p>
+    </div>
+    <div class="form-group">
+        <label>Site</label>
+        <select class="form-control" v-model="formData.site">
+            <option>Site 1</option>
+            <option>Site 2</option>
+            <option>Site 3</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Floor and Room*</label>
+        <input type="text" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
+    </div>
+    <div class="form-group">
+        <label>Do you need hardware or software?</label>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="formData.needsHardwareOrSoftware" value="No">
+            <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="formData.needsHardwareOrSoftware" value="Yes">
+            <label class="form-check-label">Yes</label>
+        </div>
+    </div>
+    <div class="text-right">
+        <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.formData.$invalid">Next</button>
+    </div>
+</div>
