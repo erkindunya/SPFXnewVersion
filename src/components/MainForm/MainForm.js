@@ -80,7 +80,6 @@ export default Vue.extend({
                 required
             },
             middleInitial: {
-                required,
                 maxLength: maxLength(1)
             },
             floorAndRoom: {
