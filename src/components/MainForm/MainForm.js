@@ -5,38 +5,38 @@ import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 
 export default Vue.extend({
     name: 'main-form',
-    // data: () => ({
-    //     formData: {
-    //         firstName: "",
-    //         surname: "",
-    //         middleInitial: "",
-    //         domainSuffix: "@kier.co.uk",
-    //         employeeType: "Permanent",
-    //         startDate: new Date(),
-    //         endDate: new Date(),
-    //         jobTitle: "",
-    //         managerName: "",
-    //         site: "Site 1",
-    //         floorAndRoom: "",
-    //         needsHardwareOrSoftware: "No"
-    //     }
-    // }),
     data: () => ({
         formData: {
-            firstName: "Christian",
-            surname: "Miles",
-            middleInitial: "D",
+            firstName: "",
+            surname: "",
+            middleInitial: "",
             domainSuffix: "@kier.co.uk",
             employeeType: "Permanent",
             startDate: new Date(),
             endDate: new Date(),
-            jobTitle: "IT Developer",
-            managerName: "Brian Jones",
+            jobTitle: "",
+            managerName: "",
             site: "Site 1",
-            floorAndRoom: "Floor 1",
-            needsHardwareOrSoftware: "Yes"
+            floorAndRoom: "",
+            needsHardwareOrSoftware: "No"
         }
     }),
+    // data: () => ({
+    //     formData: {
+    //         firstName: "Christian",
+    //         surname: "Miles",
+    //         middleInitial: "D",
+    //         domainSuffix: "@kier.co.uk",
+    //         employeeType: "Permanent",
+    //         startDate: new Date(),
+    //         endDate: new Date(),
+    //         jobTitle: "IT Developer",
+    //         managerName: "Brian Jones",
+    //         site: "Site 1",
+    //         floorAndRoom: "Floor 1",
+    //         needsHardwareOrSoftware: "Yes"
+    //     }
+    // }),
     computed: {
         accountName () {
             const {firstName, middleInitial, surname, domainSuffix} = this.formData;
