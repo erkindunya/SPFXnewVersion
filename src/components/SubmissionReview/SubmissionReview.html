@@ -1,13 +1,17 @@
 <div>
     <h2>Summary</h2>
     <h3>Hardware/Software</h3>
-    <div v-if="hardware.length > 0">
-        <ul>
-            <li v-for="item in hardware">{{item.name}} - {{item.price}} GBP</li>
-        </ul>
+    <div v-if="hasHardware">
+        <div v-for="(items, key) in hardware">
+            <h5>{{key | keyToTitle}}</h5>
+            <ul v-if="items.length > 0">
+                <li v-for="item in items">{{item.name}} - {{item.price}} GBP</li>
+            </ul>
+            <p v-if="items.length === 0">No items selected.</p>
+        </div>
         <p><strong>Total</strong> - {{totalCost}} GBP</p>
     </div>
-    <p v-if="hardware.length === 0">No hardware selected.</p>
+    <p v-if="!hasHardware">No hardware selected.</p>
 
     <h3>Access</h3>
     <ul v-if="access.length > 0">

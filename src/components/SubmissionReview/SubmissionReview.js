@@ -17,10 +17,13 @@ export default Vue.extend({
             return this.$store.state.hardware;
         },
         totalCost() {
-            return this.hardware.map(x => x.price).reduce((a,b) => a + b);
+            return Object.values(this.hardware).reduce((a,b) => a.concat(b), []).map(x => x.price).reduce((a,b) => a + b);
         },
         access() {
             return this.$store.state.access;
+        },
+        hasHardware() {
+            return Object.keys(this.hardware).length > 0;
         }
     },
     methods: {
@@ -42,5 +45,13 @@ export default Vue.extend({
             required,
             sameAs: sameAs( () => true )
         }
-    }
+    },
+    filters: {
+        keyToTitle: function (value) {
+          if (!value) return ''
+          return value.toLowerCase().split(' ').map(function(word) {
+            return (word.charAt(0).toUpperCase() + word.slice(1));
+          }).join(' ');
+        }
+      }
 });

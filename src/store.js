@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         main: {},
-        hardware: [],
+        hardware: {},
         access: [],
         page: 1
     },

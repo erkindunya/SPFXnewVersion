@@ -50,10 +50,17 @@ export default Vue.extend({
     }),
     computed: {
         formData() {
-            return Object.values(this.options).reduce(function(a, b) {
-                const items = b.filter((item) => item.selected)
-                return a.concat(items);
-            }, []);
+            return Object.keys(this.options)
+                .filter(x => this.sections[x])
+                .reduce((map, key) => {
+                    map[key] = this.options[key].filter((item) => item.selected)
+                    return map;
+                }, {});
+        },
+        sections: {
+            monitors() {
+                return this.sections.computer;
+            }
         }
     },
     methods: {
