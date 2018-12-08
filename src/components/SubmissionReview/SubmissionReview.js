@@ -17,7 +17,10 @@ export default Vue.extend({
             return this.$store.state.hardware;
         },
         totalCost() {
-            return Object.values(this.hardware).reduce((a,b) => a.concat(b), []).map(x => x.price).reduce((a,b) => a + b);
+            if(!this.hasHardware) {
+                return 0;
+            }
+            return Object.values(this.hardware).reduce((a,b) => a.concat(b), []).map(x => x.price).reduce((a,b) => a + b, 0);
         },
         access() {
             return this.$store.state.access;

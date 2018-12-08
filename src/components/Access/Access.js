@@ -41,12 +41,15 @@ export default Vue.extend({
     }),
     computed: {
         formData() {
-            const customItems = Object.values(this.custom).filter(item => item.trim() !== "");
             return Object.values(this.options).reduce(function(a, b) {
                 const items = b.filter((item) => item.selected);
                 const names = items.map(item => item.name);
                 return a.concat(names);
-            }, customItems);
+            }, this.customItems);
+        },
+        customItems() {
+            // object.values was erroring
+            return [this.custom.drive, this.custom.mailbox, this.custom.distribution].filter(item => item !== "");
         }
     },
     methods: {
