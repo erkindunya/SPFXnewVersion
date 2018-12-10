@@ -16,6 +16,9 @@ export default Vue.extend({
         hardware() {
             return this.$store.state.hardware;
         },
+        fd() {
+            return this.$store.state.projectDetails.financialDirector;
+        },        
         totalCost() {
             if(!this.hasHardware) {
                 return 0;
@@ -31,7 +34,7 @@ export default Vue.extend({
     },
     methods: {
         back () {
-            this.$store.commit('navigate', 3);
+            this.$store.commit('navigate', 4);
         },
         submit () {
             alert('Form submitted.')

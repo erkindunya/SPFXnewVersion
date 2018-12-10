@@ -9,12 +9,13 @@
         <div class="col">
             <h1>New Starter Request Form</h1>
             <div class="progress">
-                <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">Step {{page}}/4</div>
+                <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">Step {{page}}/5</div>
             </div>
             <main-form v-show="page === 1"></main-form>
             <hardware v-show="page === 2"></hardware>
             <access v-show="page === 3"></access>
-            <submission-review v-show="page === 4"></submission-review>
+            <projectDetails v-show="page === 4"></projectDetails>
+            <submission-review v-show="page === 5"></submission-review>
         </div>
     </div>
 </div>
@@ -24,6 +25,7 @@
 import Vue from 'vue';
 import MainForm from './components/MainForm/MainForm.vue';
 import Hardware from './components/Hardware/Hardware.vue';
+import ProjectDetails from './components/ProjectDetails/ProjectDetails.vue';
 import Access from './components/Access/Access.vue';
 import SubmissionReview from './components/SubmissionReview/SubmissionReview.vue';
 
@@ -34,13 +36,14 @@ export default Vue.extend({
             return this.$store.state.page;
         },
         percentCompleted() {
-            return this.page / 4 * 100;
+            return this.page / 5 * 100;
         }
     },
     components: {
         MainForm,
         Hardware,
         Access,
+        ProjectDetails,
         SubmissionReview
     }
 });
