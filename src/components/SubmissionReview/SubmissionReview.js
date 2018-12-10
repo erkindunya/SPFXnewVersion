@@ -16,6 +16,9 @@ export default Vue.extend({
         hardware() {
             return this.$store.state.hardware;
         },
+        fd() {
+            return this.$store.state.projectDetails.financialDirector;
+        },        
         totalCost() {
             return Object.values(this.hardware).reduce((a,b) => a.concat(b), []).map(x => x.price).reduce((a,b) => a + b);
         },
@@ -28,7 +31,7 @@ export default Vue.extend({
     },
     methods: {
         back () {
-            this.$store.commit('navigate', 3);
+            this.$store.commit('navigate', 4);
         },
         submit () {
             alert('Form submitted.')

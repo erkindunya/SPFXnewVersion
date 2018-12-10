@@ -7,6 +7,7 @@ export default new Vuex.Store({
     state: {
         main: {},
         hardware: {},
+        projectDetails: {},
         access: [],
         page: 1
     },
@@ -17,6 +18,9 @@ export default new Vuex.Store({
         hardwareForm(state, values) {
             state.hardware = values;
         },
+        projectDetailsForm(state, values) {
+            state.projectDetails = values;
+        },        
         accessForm(state, values) {
             state.access = values;
         },
