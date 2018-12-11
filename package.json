@@ -32,6 +32,7 @@
     "parcel-bundler": "^1.10.3",
     "parcel-plugin-clean-dist": "^0.0.6",
     "pug": "^2.0.3",
+    "sass": "^1.15.2",
     "typescript": "^3.2.1",
     "vue-component-compiler": "^2.0.0",
     "vue-template-compiler": "^2.5.17"
@@ -41,5 +42,8 @@
     "> 1%",
     "IE 10",
     "IE 11"
-  ]
+  ],
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
 }

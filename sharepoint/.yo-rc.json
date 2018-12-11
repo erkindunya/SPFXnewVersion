@@ -1,0 +1,21 @@
+{
+  "@pnp/generator-spfx": {
+    "framework": "none",
+    "pnpFramework": "vuejs",
+    "pnp-libraries": [
+      "@pnp/pnpjs",
+      "@pnp/spfx-property-controls"
+    ]
+  },
+  "@microsoft/generator-sharepoint": {
+    "framework": "none",
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.7.0",
+    "libraryName": "automation-forms",
+    "libraryId": "89cbd1b0-3d5f-44bd-a4db-b9f7c14e404e",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

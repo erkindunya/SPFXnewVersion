@@ -1,0 +1,7 @@
+{
+  "extends": "@microsoft/sp-tslint-rules/base-tslint.json",
+  "rules": {
+    "whitespace": false,
+    "semicolon": true
+  }
+}
