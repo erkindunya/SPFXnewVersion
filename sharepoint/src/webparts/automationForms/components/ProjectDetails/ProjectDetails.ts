@@ -4,7 +4,7 @@ import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 
 export default Vue.extend({
-    name: 'projectDetails',
+    name: 'project-details',
     data: () => ({
         formData: {
             companyName: "Company 1",

@@ -14,7 +14,7 @@
               <main-form v-show="page === 1"></main-form>
               <hardware v-show="page === 2"></hardware>
               <access v-show="page === 3"></access>
-              <projectDetails v-show="page === 4"></projectDetails>
+              <project-details v-show="page === 4"></project-details>
               <submission-review v-show="page === 5"></submission-review>
           </div>
       </div>
