@@ -698,7 +698,7 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.9.2.tgz#66feb4bd58c00277097e26987aed18f2e6c0fd24"
   integrity sha512-bdozNnQXIKZgT3fjCcOYSZSpH7zuh+Turv8uQxzXTj5G8AzgTJ/X3GnrYDbliXKgefL8LJeIj4vwdrOnt1J+Ng==
 
-"@pnp/common@1.2.7":
+"@pnp/common@1.2.7", "@pnp/common@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@pnp/common/-/common-1.2.7.tgz#ba5a6e55c2d75a8dcac687ed183ad2788d7e2a95"
   integrity sha512-4tja4zjAHhNZwhkcAhG8MPInFHIlspb7jz/Sk/wCbNCrobNSBGt9hoSvMBAOxYIhUinflCOWmGhk3Xw6vk8EXg==
@@ -721,14 +721,14 @@
     "@microsoft/microsoft-graph-types" "1.5.0"
     tslib "1.9.3"
 
-"@pnp/logging@1.2.7":
+"@pnp/logging@1.2.7", "@pnp/logging@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@pnp/logging/-/logging-1.2.7.tgz#3cf214b945d9214273347a717c2d344726db6e25"
   integrity sha512-3OlO5o7dfP7q0bAfeZ6sHn3BBYfPM3rpw0w+aZGju84MjM7YcdLS2U5JlXMjb0eKwyA0kZOZeJNLt0l0vuGKrA==
   dependencies:
     tslib "1.9.3"
 
-"@pnp/odata@1.2.7":
+"@pnp/odata@1.2.7", "@pnp/odata@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@pnp/odata/-/odata-1.2.7.tgz#1544a44c3b8d99a926a787ad01d6af03ff7f79fd"
   integrity sha512-7hgSZcC0mZd+6YaFWxT6l3QPu3HS2DknIECx/64YHEqF+0qXX6Tcg9Rtn7lsVt6kG3VXSnGnN0A5pCG6VaT5ag==
@@ -757,7 +757,7 @@
     "@types/sharepoint" "2016.1.2"
     tslib "1.9.3"
 
-"@pnp/sp@1.2.7":
+"@pnp/sp@1.2.7", "@pnp/sp@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@pnp/sp/-/sp-1.2.7.tgz#6a8788f6e18177c47cc98ac3c14a1497e5d66019"
   integrity sha512-shhqPNYBRV7jEO1TLtRzGk/Czd43WFJTqH19Gll2dt9MmTUzLj7Pyc9ioEsSXp6GdjtQ0Qz9e2hVX9UZboLxJQ==

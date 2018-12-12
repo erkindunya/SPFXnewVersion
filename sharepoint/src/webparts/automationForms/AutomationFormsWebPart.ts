@@ -22,7 +22,8 @@ import { Version } from '@microsoft/sp-core-library';
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField,
+  WebPartContext
 } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
@@ -34,8 +35,10 @@ require('./main.scss');
 import Vue from 'vue';
 
 import store from './store';
-// Improting Vue.js SFC
+// Importing Vue.js SFC
 import AutomationFormsComponent from './components/AutomationForms.vue';
+
+import { sp } from "@pnp/sp";
 
 export interface IAutomationFormsWebPartProps {
   description: string;
@@ -56,6 +59,9 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
         }
       })
     });
+
+    (<HTMLElement>document.querySelector("div[class*='pageTitle']")).style.display = 'none'; 
+    (<HTMLElement>document.querySelector(".ms-compositeHeader")).style.display = 'none'; 
   }
 
   protected get dataVersion(): Version {
@@ -82,5 +88,16 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
         }
       ]
     };
+  }
+
+  public onInit(): Promise<void> {
+
+    return super.onInit().then(_ => {
+  
+      sp.setup({
+        spfxContext: this.context
+      });
+      
+    });
   }
 }
