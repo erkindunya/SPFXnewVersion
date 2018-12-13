@@ -3,7 +3,18 @@
   "solution": {
     "name": "ITSD Automation Forms",
     "id": "89cbd1b0-3d5f-44bd-a4db-b9f7c14e404e",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1", 
+    "features": [{  
+      "title": "assetsprovisioning-solution",  
+      "description": "assetsprovisioning-solution",  
+      "id": "479e94c9-c6f2-4393-bdf1-54545d8b8a2d",  
+      "version": "1.0.0.1",  
+      "assets": {          
+        "elementManifests": [  
+          "elements.xml"  
+        ]
+      }  
+    }],
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },
