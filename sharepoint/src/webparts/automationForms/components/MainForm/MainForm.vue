@@ -49,8 +49,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label>Manager Name*</label>
-        <input type="text" class="form-control" v-model="formData.managerName" :class="{ 'is-invalid': $v.formData.managerName.$invalid }">
+        <label>Manager*</label>
+        <people-picker v-model="formData.manager" :class="{ 'is-invalid': $v.formData.manager.$invalid }"></people-picker>
     </div>
     <div class="form-group">
         <label>Manager Email</label>

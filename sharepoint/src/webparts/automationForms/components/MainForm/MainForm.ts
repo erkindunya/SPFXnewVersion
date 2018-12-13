@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Datepicker from 'vuejs-datepicker';
 import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
+import PeoplePicker from '../../common/PeoplePicker.vue';
 
 export default Vue.extend({
     name: 'main-form',
@@ -15,7 +16,7 @@ export default Vue.extend({
             startDate: new Date(),
             endDate: new Date(),
             jobTitle: "",
-            managerName: "",
+            manager: "",
             site: "Site 1",
             floorAndRoom: "",
             needsHardwareOrSoftware: "No"
@@ -35,9 +36,9 @@ export default Vue.extend({
             return `${username}${domainSuffix}`.toLowerCase();
         },
         managerEmail() {
-            const { managerName } = this.formData;
-            const username = managerName.split(' ').join('.').toLowerCase();
-            return `${username}@kier.co.uk`;
+            const { manager } = this.formData;
+            if(!manager || !manager.EntityData) return "Not selected";
+            return manager.EntityData.Email || "No email found";
         }
     },
     methods: {
@@ -50,7 +51,8 @@ export default Vue.extend({
         }
     },
     components: {
-        Datepicker
+        Datepicker,
+        PeoplePicker
     },
     mixins: [
         validationMixin
@@ -69,7 +71,7 @@ export default Vue.extend({
             floorAndRoom: {
                 required
             },
-            managerName: {
+            manager: {
                 required
             },
             jobTitle: {
