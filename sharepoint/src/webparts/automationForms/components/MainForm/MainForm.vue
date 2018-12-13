@@ -15,10 +15,7 @@
     </div>
     <div class="form-group">
         <label>Domain Suffix</label>
-        <select class="form-control" v-model="formData.domainSuffix">
-            <option>@kier.co.uk</option>
-            <option>@ukcorp.co.uk</option>
-        </select>
+        <vue-select v-model="formData.domainSuffix" :options="domainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Computed Account Name</label>
@@ -26,11 +23,7 @@
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
-        <select class="form-control" v-model="formData.employeeType">
-            <option>Permanent</option>
-            <option>Contractor</option>
-            <option>Blue Collar</option>
-        </select>
+        <vue-select :options="['Permanent', 'Contractor', 'Blue Collar']" v-model="formData.employeeType" :class="{ 'is-invalid': $v.formData.employeeType.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Start Date*</label>
@@ -42,11 +35,7 @@
     </div>
     <div class="form-group">
         <label>Job Title*</label>
-        <select class="form-control" v-model="formData.jobTitle" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }">
-            <option></option>
-            <option>IT Manager</option>
-            <option>IT Developer</option>
-        </select>
+        <vue-select v-model="formData.jobTitle" :options="jobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Manager*</label>
@@ -58,11 +47,7 @@
     </div>
     <div class="form-group">
         <label>Site</label>
-        <select class="form-control" v-model="formData.site">
-            <option>Site 1</option>
-            <option>Site 2</option>
-            <option>Site 3</option>
-        </select>
+        <vue-select v-model="formData.site" :options="sites" :class="{ 'is-invalid': $v.formData.site.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Floor and Room*</label>

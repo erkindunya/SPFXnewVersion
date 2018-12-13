@@ -5,6 +5,7 @@ import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 import PeoplePicker from '../../common/PeoplePicker.vue';
 import { sp } from '@pnp/sp';
 import { debounce } from 'lodash';
+import {VueSelect} from 'vue-select';
 
 export default Vue.extend({
     name: 'main-form',
@@ -13,17 +14,20 @@ export default Vue.extend({
             firstName: "",
             surname: "",
             middleInitial: "",
-            domainSuffix: "@kier.co.uk",
+            domainSuffix: "",
             employeeType: "Permanent",
             startDate: new Date(),
             endDate: new Date(),
             jobTitle: "",
             manager: "",
-            site: "Site 1",
+            site: "",
             floorAndRoom: "",
             needsHardwareOrSoftware: "No"
         },
-        isAvailable: true
+        isAvailable: true,
+        domainSuffixes: [],
+        sites: [],
+        jobTitles: []
     }),
     computed: {
         username() {
@@ -69,9 +73,21 @@ export default Vue.extend({
                 this.$store.commit('navigate', 3);
         }
     },
+    created() {
+        sp.web.lists.getByTitle('DomainSuffixes').items.get().then((items: any[]) => {
+            this.domainSuffixes = items.map(item => item.Suffix);
+        });
+        sp.web.lists.getByTitle('JobTitles').items.get().then((items: any[]) => {
+            this.jobTitles = items.map(item => item.Title);
+        });
+        sp.web.lists.getByTitle('Sites').items.get().then((items: any[]) => {
+            this.sites = items.map(item => item.Title);
+        });
+    },
     components: {
         Datepicker,
-        PeoplePicker
+        PeoplePicker,
+        VueSelect
     },
     mixins: [
         validationMixin
@@ -87,6 +103,9 @@ export default Vue.extend({
             middleInitial: {
                 maxLength: maxLength(1)
             },
+            domainSuffix: {
+                required
+            },
             floorAndRoom: {
                 required
             },
@@ -94,6 +113,12 @@ export default Vue.extend({
                 required
             },
             jobTitle: {
+                required
+            },
+            employeeType: {
+                required
+            },
+            site: {
                 required
             },
             startDate: {
