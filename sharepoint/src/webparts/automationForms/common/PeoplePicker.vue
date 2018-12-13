@@ -17,6 +17,7 @@
 import Vue from 'vue';
 import { sp, PeoplePickerEntity } from '@pnp/sp';
 import { VueSelect } from 'vue-select';
+import { debounce } from 'lodash';
 
 export default Vue.extend({
     name: 'people-picker',
@@ -33,7 +34,7 @@ export default Vue.extend({
         }
     },
     methods: {
-        searchPeople(search, loading) {
+        searchPeople: debounce(function (search, loading) {
             loading(true);
             sp.profiles.clientPeoplePickerSearchUser({
                     'AllowEmailAddresses':true,
@@ -47,7 +48,7 @@ export default Vue.extend({
                     this.people = res;
                     loading(false);
                 });
-        }
+        })
     },
     components: {
         VueSelect
