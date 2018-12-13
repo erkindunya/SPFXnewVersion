@@ -18,4 +18,8 @@ $headings-color: #007B86;
     .is-invalid .dropdown-toggle {
         border-color: #fd7e14;
     }
+
+    .dropdown-toggle .form-control {
+        height: calc(1.5rem + 2px);
+    }
 }
