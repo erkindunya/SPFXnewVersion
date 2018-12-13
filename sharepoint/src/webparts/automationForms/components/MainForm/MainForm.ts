@@ -3,6 +3,8 @@ import Datepicker from 'vuejs-datepicker';
 import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 import PeoplePicker from '../../common/PeoplePicker.vue';
+import { sp } from '@pnp/sp';
+import { debounce } from 'lodash';
 
 export default Vue.extend({
     name: 'main-form',
@@ -20,20 +22,29 @@ export default Vue.extend({
             site: "Site 1",
             floorAndRoom: "",
             needsHardwareOrSoftware: "No"
-        }
+        },
+        isAvailable: true
     }),
     computed: {
-        accountName() {
-            const { firstName, middleInitial, surname, domainSuffix } = this.formData;
+        username() {
+            const { firstName, middleInitial, surname} = this.formData;
             if (firstName.length === 0 || surname.length === 0) {
-                return "First Name and Surname are required.";
+                return null;
             }
             let initial = middleInitial;
             if (initial.length > 0) {
                 initial += '.';
             }
             const username = `${firstName}.${initial}${surname}`;
-            return `${username}${domainSuffix}`.toLowerCase();
+            this.checkAccountAvailable();
+            return username;
+        },
+        accountName() {
+            const { domainSuffix } = this.formData;
+            if (!this.username) {
+                return "First Name and Surname are required.";
+            }
+            return `${this.username}${domainSuffix}`.toLowerCase();
         },
         managerEmail() {
             const { manager } = this.formData;
@@ -42,6 +53,14 @@ export default Vue.extend({
         }
     },
     methods: {
+        checkAccountAvailable: debounce(function() {
+            if (!this.username) return null;
+            sp.web.ensureUser(`i:0#.f|membership|${this.username}`).then(result => {
+                this.isAvailable = false;
+            }).catch(reason => {
+                this.isAvailable = true;
+            });
+        }),
         submit() {
             this.$store.commit('mainForm', this.formData);
             if (this.formData.needsHardwareOrSoftware === "Yes")

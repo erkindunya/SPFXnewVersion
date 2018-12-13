@@ -22,7 +22,7 @@
     </div>
     <div class="form-group">
         <label>Computed Account Name</label>
-        <p>{{accountName}}</p>
+        <p>{{accountName}} - {{ isAvailable ? "Available" : "Unavailable" }}</p>
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
