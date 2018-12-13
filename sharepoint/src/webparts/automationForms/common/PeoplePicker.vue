@@ -1,6 +1,7 @@
 <template>
-<div :class="mainClass">
+<div>
     <vue-select label="DisplayText"
+                :class="mainClass"
                 :filterable="false"
                 :options="people"
                 v-bind:value="value"
