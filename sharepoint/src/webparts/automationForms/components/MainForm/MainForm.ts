@@ -75,7 +75,7 @@ export default Vue.extend({
     },
     created() {
         sp.web.lists.getByTitle('DomainSuffixes').items.get().then((items: any[]) => {
-            this.domainSuffixes = items.map(item => item.Suffix);
+            this.domainSuffixes = items.map(item => item.Title);
         });
         sp.web.lists.getByTitle('JobTitles').items.get().then((items: any[]) => {
             this.jobTitles = items.map(item => item.Title);
