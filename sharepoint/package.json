@@ -9,7 +9,8 @@
     "build": "gulp bundle",
     "clean": "gulp clean",
     "test": "gulp test",
-    "package": "gulp bundle --ship && gulp package-solution --ship"
+    "package": "gulp bundle && gulp package-solution",
+    "package-ship": "gulp bundle --ship && gulp package-solution --ship"
   },
   "dependencies": {
     "@microsoft/sp-core-library": "1.7.0",

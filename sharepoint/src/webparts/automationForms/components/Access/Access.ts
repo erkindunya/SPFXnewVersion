@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
+import { sp } from '@pnp/sp';
 
 export default Vue.extend({
     name: 'access',
@@ -16,27 +17,9 @@ export default Vue.extend({
             distributions: false
         },
         options: {
-            drives: [
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-            ],
-            mailboxes: [
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-            ],
-            distributions: [
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-                { name: 'Some product', selected: false },
-            ]
+            drives: [],
+            mailboxes: [],
+            distributions: []
         }
     }),
     computed: {
@@ -60,6 +43,26 @@ export default Vue.extend({
             this.$store.commit('accessForm', this.formData);
             this.$store.commit('navigate', 4);
         }
+    },
+    created() {
+        sp.web.lists.getByTitle('NetworkDrives').items.get().then((items: any[]) => {
+            this.options.drives = items.map(item => ({
+                name: item.Title,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('SharedMailboxes').items.get().then((items: any[]) => {
+            this.options.mailboxes = items.map(item => ({
+                name: item.Title,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('DistributionLists').items.get().then((items: any[]) => {
+            this.options.distributions = items.map(item => ({
+                name: item.Title,
+                selected: false
+            }));
+        });
     },
     mixins: [
         validationMixin

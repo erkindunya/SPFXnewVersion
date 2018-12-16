@@ -3,24 +3,15 @@
     <h2>Approval Information</h2>
     <div class="form-group">
         <label>Company*</label>
-        <select class="form-control" v-model="formData.companyName">
-            <option>Company 1</option>
-            <option>Company 2</option>
-        </select>
+        <vue-select v-model="formData.companyName" :options="companies" :class="{ 'is-invalid': $v.formData.companyName.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Business Unit*</label>
-        <select class="form-control" v-model="formData.businessUnit">
-            <option>Business Unit 1</option>
-            <option>Business Unit 2</option>
-        </select>
+        <vue-select v-model="formData.businessUnit" :options="businessUnits" :class="{ 'is-invalid': $v.formData.businessUnit.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Division*</label>
-        <select class="form-control" v-model="formData.divisionName">
-            <option>Division 1</option>
-            <option>Division 2</option>
-        </select>
+        <vue-select v-model="formData.divisionName" :options="divisions" :class="{ 'is-invalid': $v.formData.divisionName.$invalid }"></vue-select>
     </div>    
     <div class="form-group">
         <label>Project Number*</label>

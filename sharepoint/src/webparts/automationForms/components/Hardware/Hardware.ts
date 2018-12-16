@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import { Carousel, Slide } from 'vue-carousel';
+import { sp } from '@pnp/sp';
 
 export default Vue.extend({
     name: 'hardware',
@@ -11,41 +12,11 @@ export default Vue.extend({
             peripherals: false,
         },
         options: {
-            mobile: [
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-            ],
-            software: [
-                { name: 'Some product', price: 10, selected: false },
-                { name: 'Some product', price: 10, selected: false },
-                { name: 'Some product', price: 10, selected: false },
-                { name: 'Some product', price: 10, selected: false },
-                { name: 'Some product', price: 10, selected: false },
-            ],
-            computer: [
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Some product', description: 'Some description', price: 520, selected: false },
-            ],
-            monitors: [
-                { name: 'Large Monitor', price: 10, selected: false },
-                { name: 'Dual Monitors', price: 10, selected: false },
-            ],
-            peripherals: [
-                { image: 'https://via.placeholder.com/500', name: 'Mouse', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Keyboard', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Dock', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Bag', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Lock', description: 'Some description', price: 520, selected: false },
-                { image: 'https://via.placeholder.com/500', name: 'Headset', description: 'Some description', price: 520, selected: false },
-            ]
+            mobile: [],
+            software: [],
+            computer: [],
+            monitors: [],
+            peripherals: []
         }
     }),
     computed: {
@@ -73,6 +44,49 @@ export default Vue.extend({
             this.$store.commit('hardwareForm', this.formData);
             this.$store.commit('navigate', 3);
         }
+    },
+    created() {
+        sp.web.lists.getByTitle('MobilePackages').items.get().then((items: any[]) => {
+            this.options.mobile = items.map(item => ({
+                name: item.Title,
+                description: item.PackageDescription,
+                price: item.Price,
+                image: item.Image.Url,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('ComputerPackages').items.get().then((items: any[]) => {
+            this.options.computer = items.map(item => ({
+                name: item.Title,
+                description: item.PackageDescription,
+                price: item.Price,
+                image: item.Image.Url,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('PeripheralPackages').items.get().then((items: any[]) => {
+            this.options.peripherals = items.map(item => ({
+                name: item.Title,
+                description: item.PackageDescription,
+                price: item.Price,
+                image: item.Image.Url,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('SoftwarePackages').items.get().then((items: any[]) => {
+            this.options.software = items.map(item => ({
+                name: item.Title,
+                price: item.Price,
+                selected: false
+            }));
+        });
+        sp.web.lists.getByTitle('MonitorPackages').items.get().then((items: any[]) => {
+            this.options.monitors = items.map(item => ({
+                name: item.Title,
+                price: item.Price,
+                selected: false
+            }));
+        });
     },
     components: {
         Carousel,
