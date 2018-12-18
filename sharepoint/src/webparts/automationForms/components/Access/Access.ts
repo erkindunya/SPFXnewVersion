@@ -37,7 +37,13 @@ export default Vue.extend({
     },
     methods: {
         back() {
-            this.$store.commit('navigate', 2);
+            console.log(this.formData);
+            if (this.$store.state.main.needsHardwareOrSoftware === "Yes") {
+                this.$store.commit('navigate', 2);
+            }
+            else {
+                this.$store.commit('navigate', 1);
+            }  
         },
         submit() {
             this.$store.commit('accessForm', this.formData);

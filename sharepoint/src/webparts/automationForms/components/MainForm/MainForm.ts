@@ -14,6 +14,14 @@ export default Vue.extend({
             firstName: "",
             surname: "",
             middleInitial: "",
+            companyName: "",
+            businessUnit: "",
+            usersSiteAddress: "",
+            addressLine1: "",
+            addressLine2: "",
+            addressLine3: "",
+            county: "",
+            postCode: "",
             domainSuffix: "",
             employeeType: "Permanent",
             startDate: new Date(),
@@ -24,6 +32,8 @@ export default Vue.extend({
             floorAndRoom: "",
             needsHardwareOrSoftware: "No"
         },
+        companies: [],
+        businessUnits: [],
         isAvailable: true,
         domainSuffixes: [],
         sites: [],
@@ -83,6 +93,12 @@ export default Vue.extend({
         sp.web.lists.getByTitle('Sites').items.get().then((items: any[]) => {
             this.sites = items.map(item => item.Title);
         });
+        sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
+            this.companies = items.map(item => item.Title);
+        });
+        sp.web.lists.getByTitle('BusinessUnits').items.get().then((items: any[]) => {
+            this.businessUnits = items.map(item => item.Title);
+        });
     },
     components: {
         Datepicker,
@@ -102,6 +118,30 @@ export default Vue.extend({
             },
             middleInitial: {
                 maxLength: maxLength(1)
+            },
+            companyName: {
+                required
+            },
+            businessUnit: {
+                required
+            },
+            usersSiteAddress: {
+                required
+            },
+            addressLine1: {
+                required
+            },
+            addressLine2: {
+                // required
+            },
+            addressLine3: {
+                // required
+            },
+            county: {
+                required
+            },
+            postCode: {
+                required
             },
             domainSuffix: {
                 required
