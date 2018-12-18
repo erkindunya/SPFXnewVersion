@@ -9,7 +9,7 @@
         <div class="col">
             <h1>New Starter Request Form</h1>
             <div class="progress">
-                <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">Step {{percentCompleted}}</div>
+                <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">Step {{page}}/5</div>
             </div>
             <main-form v-show="page === 1"></main-form>
             <hardware v-show="page === 2"></hardware>

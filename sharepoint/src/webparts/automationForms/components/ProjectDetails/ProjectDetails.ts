@@ -8,16 +8,16 @@ export default Vue.extend({
     name: 'project-details',
     data: () => ({
         formData: {
-            // companyName: "",
-            // businessUnit: "",
-            // divisionName: "",
+            companyName: "",
+            businessUnit: "",
+            divisionName: "",
             projectNumber: "1234",
             taskNumber: "1234",
             financialDirector: "FD 1"
-        }
-        // companies: [],
-        // businessUnits: [],
-        // divisions: []
+        },
+        companies: [],
+        businessUnits: [],
+        divisions: []
     }),
     methods: {
         back() {
@@ -29,15 +29,15 @@ export default Vue.extend({
         }
     },
     created () {
-        // sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
-        //     this.companies = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('Divisions').items.get().then((items: any[]) => {
-        //     this.divisions = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('BusinessUnits').items.get().then((items: any[]) => {
-        //     this.businessUnits = items.map(item => item.Title);
-        // });
+        sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
+            this.companies = items.map(item => item.Title);
+        });
+        sp.web.lists.getByTitle('Divisions').items.get().then((items: any[]) => {
+            this.divisions = items.map(item => item.Title);
+        });
+        sp.web.lists.getByTitle('BusinessUnits').items.get().then((items: any[]) => {
+            this.businessUnits = items.map(item => item.Title);
+        });
     },
     components: {
         VueSelect
@@ -47,12 +47,12 @@ export default Vue.extend({
     ],
     validations: {
         formData: {
-            // companyName: {
-            //     required
-            // },
-            // businessUnit: {
-            //     required
-            // },
+            companyName: {
+                required
+            },
+            businessUnit: {
+                required
+            },
             divisionName: {
                 required
             },
