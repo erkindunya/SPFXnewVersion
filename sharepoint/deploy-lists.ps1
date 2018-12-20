@@ -53,9 +53,9 @@ Get-ChildItem $listDirectory -Filter $filter | Foreach-Object {
                 $name = $headerSections[0]
             }
 
-            if(!(Get-PnpField -Identity $name)) {
+            if(!(Get-PnpField -Identity $name -ErrorAction Continue)) {
                 # Create fields and add to content type
-                $field = Add-PnPField -DisplayName $name -InternalName $name -Type $type -LCID 2057 -Id (New-Guid) -Group 'SPFX Fields' -Required
+                $field = Add-PnPField -DisplayName $name -InternalName $name -Type $type -Id (New-Guid) -Group 'SPFX Fields' -Required
             }
             try {
                 $fieldAdd = Add-PnPFieldToContentType -Field $name -ContentType $contentType
