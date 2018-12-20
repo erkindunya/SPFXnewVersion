@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import { Carousel, Slide } from 'vue-carousel';
+import { validationMixin } from 'vuelidate';
+import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 import { sp } from '@pnp/sp';
+import {VueSelect} from 'vue-select';
 
 export default Vue.extend({
     name: 'hardware',
@@ -19,6 +22,36 @@ export default Vue.extend({
             monitors: [],
             peripherals: [],
             oracle: []
+        },
+        formData: {
+            operationalStaff: "",
+            commercialStaff: false,
+            buyersOrRequisitioner: "",
+            financeStaff: false,
+            appsCertsApprovalLevels : "",
+            adHocAccessESS: false,
+            adHocAccessKWS: false,
+            kierPropertyOnlyESS: false,
+            kierPropertyOnlyESSPropertyCom: false,
+            kierPropertyOnlyESSPropertyFin: false,
+            kierPropertyOnlyExtra: false,
+            hyperionFinancialManagement: false,
+            hyperionPBCS: false,
+            biOracleBIReporting: false,
+            vcrLumpSumproject: "Permanent",
+            vcrConversionProject: "",
+            vcrRepairs: "",
+            vcrSPM:"",
+            oEmployeeKESSBasic: false,
+            oEmployeeKESSBasicWAbsence: false,
+            oEmployeeKSST: false,
+            oEmployeeKMSS: false,
+            oEmployeeKLMS: false,
+            oTimeTimekeeper: false,
+            oTimeTimekeeperGroup: false,
+            oTimeSuperTimekeeper: false,
+            oKierOTL: false,
+            reportingUnitCodeEntry: ""
         }
     }),
     computed: {
@@ -93,5 +126,18 @@ export default Vue.extend({
     components: {
         Carousel,
         Slide
+    },
+    mixins: [
+        validationMixin
+    ],
+    validations: {
+        formData: {
+            vcrLumpSumproject: {
+                
+            },
+            reportingUnitCodeEntry: {
+                
+            },
+        }
     }
 });
