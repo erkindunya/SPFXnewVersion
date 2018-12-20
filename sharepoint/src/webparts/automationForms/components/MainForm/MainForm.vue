@@ -97,7 +97,8 @@
         </div>
     </div>
     <div class="text-right">
-        <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.formData.$invalid">Next</button>
+        <!-- <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.formData.$invalid">Next</button> -->
+        <button type="button" class="btn btn-primary" v-on:click="submit" >Next</button>
     </div>
 </div>
 </template>

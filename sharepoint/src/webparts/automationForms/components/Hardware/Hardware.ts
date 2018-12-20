@@ -10,13 +10,15 @@ export default Vue.extend({
             software: false,
             computer: false,
             peripherals: false,
+            oracle: false
         },
         options: {
             mobile: [],
             software: [],
             computer: [],
             monitors: [],
-            peripherals: []
+            peripherals: [],
+            oracle: []
         }
     }),
     computed: {
