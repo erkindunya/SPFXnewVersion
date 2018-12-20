@@ -22,30 +22,6 @@
         <vue-select v-model="formData.businessUnit" :searchable="true" :options="businessUnits" :class="{ 'is-invalid': $v.formData.businessUnit.$invalid }"></vue-select>
     </div>
     <div class="form-group">
-        <label><b>User's Site Address</b></label>
-        <!-- <input type="text" class="form-control" v-model="formData.usersSiteAddress" :class="{ 'is-invalid': $v.formData.usersSiteAddress.$invalid }"> -->
-    </div>
-    <div class="form-group">
-        <label>Address line 1</label>
-        <textarea rows="2" cols="50" class="form-control" v-model="formData.addressLine1" :class="{ 'is-invalid': $v.formData.addressLine1.$invalid }"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Address line 2</label>
-        <textarea rows="2" cols="50" class="form-control" v-model="formData.addressLine2" :class="{ 'is-invalid': $v.formData.addressLine2.$invalid }"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Address line 3</label>
-        <textarea rows="2" cols="50" class="form-control" v-model="formData.addressLine3" :class="{ 'is-invalid': $v.formData.addressLine3.$invalid }"></textarea>
-    </div>
-    <div class="form-group">
-        <label>County</label>
-        <input type="text" class="form-control" v-model="formData.county" :class="{ 'is-invalid': $v.formData.county.$invalid }">
-    </div>
-    <div class="form-group">
-        <label>Postcode</label>
-        <input type="text" class="form-control" v-model="formData.postCode" :class="{ 'is-invalid': $v.formData.postCode.$invalid }">
-    </div>
-    <div class="form-group">
         <label>Email Suffix</label>
         <vue-select v-model="formData.domainSuffix" :options="domainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></vue-select>
     </div>
@@ -77,9 +53,36 @@
         <label>Manager Email</label>
         <p>{{managerEmail}}</p>
     </div>
-    <div class="form-group">
+    <div class="form-group" v-if="!customAddress">
         <label>Site</label>
-        <vue-select v-model="formData.site" :options="sites" :class="{ 'is-invalid': $v.formData.site.$invalid }"></vue-select>
+        <small>(Can't find your site? <a href="#" @click.prevent="customAddress = true">Click here to enter a custom address</a>)</small>
+        <vue-select v-model="formData.site" label="Title" :options="sites" :class="{ 'is-invalid': $v.formData.site.$invalid }">
+            <template slot="option" slot-scope="option">
+                <strong>{{ option.Title }}</strong><br />
+                {{ option.SiteAddress }}<br />
+                {{ option.SitePostcode }}
+            </template>
+        </vue-select>
+        {{formData.site.SiteAddress}}<br />
+        {{formData.site.SitePostcode}}
+    </div>
+    <div v-if="customAddress">
+        <hr>
+        <h5>New Site Address</h5>
+        <p>Requires approval (<a href="#" @click.prevent="customAddress = false">Click here to select from existing options</a>)</p>
+        <div class="form-group">
+            <label>Address line 1</label>
+            <input type="text" class="form-control" v-model="formData.addressLine1" :class="{ 'is-invalid': $v.formData.addressLine1.$invalid }">
+        </div>
+        <div class="form-group">
+            <label>County</label>
+            <input type="text" class="form-control" v-model="formData.county" :class="{ 'is-invalid': $v.formData.county.$invalid }">
+        </div>
+        <div class="form-group">
+            <label>Postcode</label>
+            <input type="text" class="form-control" v-model="formData.postCode" :class="{ 'is-invalid': $v.formData.postCode.$invalid }">
+        </div>
+        <hr>
     </div>
     <div class="form-group">
         <label>Floor and Room*</label>

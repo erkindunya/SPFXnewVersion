@@ -18,8 +18,6 @@ export default Vue.extend({
             businessUnit: "",
             usersSiteAddress: "",
             addressLine1: "",
-            addressLine2: "",
-            addressLine3: "",
             county: "",
             postCode: "",
             domainSuffix: "",
@@ -37,7 +35,8 @@ export default Vue.extend({
         isAvailable: true,
         domainSuffixes: [],
         sites: [],
-        jobTitles: []
+        jobTitles: [],
+        customAddress: false
     }),
     computed: {
         username() {
@@ -91,7 +90,7 @@ export default Vue.extend({
             this.jobTitles = items.map(item => item.Title);
         });
         sp.web.lists.getByTitle('Sites').items.get().then((items: any[]) => {
-            this.sites = items.map(item => item.Title);
+            this.sites = items;
         });
         sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
             this.companies = items.map(item => item.Title);
