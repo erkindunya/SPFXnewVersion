@@ -29,12 +29,9 @@
     "core-js": "^2.6.0",
     "lodash": "^4.17.11",
     "vue": "^2.5.17",
-    "vue-carousel": "^0.16.2",
     "vue-class-component": "^6.3.2",
     "vue-property-decorator": "^7.2.0",
     "vue-select": "^2.5.1",
-    "vuejs-datepicker": "^1.5.4",
-    "vuelidate": "^0.7.4",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
