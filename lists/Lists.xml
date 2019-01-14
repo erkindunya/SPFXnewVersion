@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.3.1811.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-E20D5EEC79D14FA29ABE3F47E4C80F61">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-E20D5EEC79D14FA29ABE3F47E4C80F61" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Text" Name="SiteAddress" DisplayName="SiteAddress" ID="{6abae21a-d3fc-4c69-a9c2-b1ecb06d81b9}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="SiteAddress" AllowDeletion="TRUE" />
+        <Field Type="URL" Name="Image" DisplayName="Image" ID="{7b8de91d-61ad-471b-b8e0-b97b11972d78}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="Image" AllowDeletion="TRUE" />
+        <Field Type="Text" DisplayName="First Name" ID="{5049a822-424c-4479-9648-79c4b3214382}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSFirstName" Name="NSSFirstName" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Surname" ID="{da57402a-2f55-4400-8e5d-22d778943238}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSSurname" Name="NSSSurname" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Middle Initial" ID="{49306cf6-f3b9-427f-8828-342cf7da3a86}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSMiddleInitial" Name="NSSMiddleInitial" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="BusinessUnit" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="NSS Columns" ID="{03f42b8f-3915-41f4-a924-67945f4832bb}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSBusinessUnit" Name="NSSBusinessUnit" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="BusinessStream" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="NSS Columns" ID="{3aedc742-a247-4349-b3fa-a1948c6d46fd}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSBusinessStream" Name="NSSBusinessStream" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="ReportingUnit" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="NSS Columns" ID="{0c0e6a1c-ae47-4925-8f7f-33295f8a250a}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSReportingUnit" Name="NSSReportingUnit" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Address Line 1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{e75511bf-9b33-49fc-b5de-3608f0711cc8}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSAddressLine1" Name="NSSAddressLine1" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="County" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{04d29523-bebc-4bcc-b4ae-4fcdd23911ab}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSCounty" Name="NSSCounty" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Post Code" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{37a97a8c-902e-40a9-acab-3f319ce78ee0}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSPostCode" Name="NSSPostCode" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Domain Suffix" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{4dbfaef7-cef8-493a-a11d-5111c0ce8a42}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSDomainSuffix" Name="NSSDomainSuffix" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Employee Type" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{f5d5144b-87ae-4654-ad58-32e5fe625dff}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSEmployeeType" Name="NSSEmployeeType" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Start Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{4e310dbe-0170-49c8-8dcb-83f3524befa9}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSStartDate" Name="NSSStartDate" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="End Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{d33da68d-106c-41d5-862f-67d7ffdcb6b0}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSEndDate" Name="NSSEndDate" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Job Title" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{f02d150e-f41c-453a-acb8-d0a8b1fbaf6e}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSJobTitle" Name="NSSJobTitle" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Manager" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{023196e8-615b-464f-8ebd-20d34433c8af}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSManager" Name="NSSManager" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Site" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{7d0ff1ac-0546-4497-90c3-e9b3166a243c}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSSite" Name="NSSSite" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Floor and Room" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="100" Group="NSS Columns" ID="{92420574-e008-47c4-b0b8-5c6429f3a9fb}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSFloorAndRoom" Name="NSSFloorAndRoom" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" Name="PackageDescription" DisplayName="PackageDescription" ID="{ef16262a-30d3-4e96-bbc8-a3d4b41b5038}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="PackageDescription" AllowDeletion="TRUE" />
+        <Field Type="Text" Name="SitePostcode" DisplayName="SitePostcode" ID="{e1930236-30c1-47a4-b10e-f655c02fff99}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="SitePostcode" AllowDeletion="TRUE" />
+        <Field Type="Text" Name="SiteTownCity" DisplayName="SiteTownCity" ID="{f48cbc40-d243-4f28-a4ea-8aa67c8ac69b}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="SiteTownCity" AllowDeletion="TRUE" />
+        <Field Type="Text" DisplayName="NetworkPath" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="NSS Columns" ID="{c4d4dd96-4d87-4d79-8069-681473faca14}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSNetworkPath" Name="NSSNetworkPath" AllowDeletion="TRUE"></Field>
+        <Field Type="Currency" Name="Price" DisplayName="Price" ID="{a6c55648-2473-42b0-84eb-bfd3573e5faa}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="Price" AllowDeletion="TRUE" />
+        <Field Type="Currency" Name="PricePerMonth" DisplayName="PricePerMonth" ID="{60a06575-c932-4d02-93e6-cf8d73f4c406}" Group="SPFX Fields" Required="TRUE" SourceID="{84098ee0-1bcf-478c-8245-81a2822c6c59}" StaticName="PricePerMonth" AllowDeletion="TRUE" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x010026D439F0FD799040B364E473F49012BB" Name="MobilePackages SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" />
+            <pnp:FieldRef ID="60a06575-c932-4d02-93e6-cf8d73f4c406" Name="PricePerMonth" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x010026D439F0FD799040B364E473F49012E6" Name="ReportingUnits SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="03f42b8f-3915-41f4-a924-67945f4832bb" Name="BusinessUnit" />
+            <pnp:FieldRef ID="3aedc742-a247-4349-b3fa-a1948c6d46fd" Name="BusinessStream" />
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="ReportingUnit" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01003C1E6784CF4A1C408D6F9875D9A5DCE6" Name="SoftwarePackages SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x010040E2742C89570641AF1AD5D86A2682BF" Name="PeripheralPackages SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100A552594A4E16B247A3D744952040F16F" Name="MonitorPackages SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100B2FC9BB563CB034B84EB3A8EF3BA288F" Name="Sites SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="6abae21a-d3fc-4c69-a9c2-b1ecb06d81b9" Name="SiteAddress" />
+            <pnp:FieldRef ID="f48cbc40-d243-4f28-a4ea-8aa67c8ac69b" Name="SiteTownCity" />
+            <pnp:FieldRef ID="e1930236-30c1-47a4-b10e-f655c02fff99" Name="SitePostcode" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100D584226EC925554C9D26BEEFF91F8A52" Name="ComputerPackages SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01010097931465769EE34E9078576A150FF53E" Name="NewStarterSubmissions" Description="" Group="NSS Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="5049a822-424c-4479-9648-79c4b3214382" Name="NSSFirstName" />
+            <pnp:FieldRef ID="da57402a-2f55-4400-8e5d-22d778943238" Name="NSSSurname" />
+            <pnp:FieldRef ID="49306cf6-f3b9-427f-8828-342cf7da3a86" Name="NSSMiddleInitial" />
+            <pnp:FieldRef ID="03f42b8f-3915-41f4-a924-67945f4832bb" Name="NSSBusinessUnit" />
+            <pnp:FieldRef ID="e75511bf-9b33-49fc-b5de-3608f0711cc8" Name="NSSAddressLine1" />
+            <pnp:FieldRef ID="04d29523-bebc-4bcc-b4ae-4fcdd23911ab" Name="NSSCounty" />
+            <pnp:FieldRef ID="37a97a8c-902e-40a9-acab-3f319ce78ee0" Name="NSSPostCode" />
+            <pnp:FieldRef ID="4dbfaef7-cef8-493a-a11d-5111c0ce8a42" Name="NSSDomainSuffix" />
+            <pnp:FieldRef ID="f5d5144b-87ae-4654-ad58-32e5fe625dff" Name="NSSEmployeeType" />
+            <pnp:FieldRef ID="4e310dbe-0170-49c8-8dcb-83f3524befa9" Name="NSSStartDate" />
+            <pnp:FieldRef ID="d33da68d-106c-41d5-862f-67d7ffdcb6b0" Name="NSSEndDate" />
+            <pnp:FieldRef ID="f02d150e-f41c-453a-acb8-d0a8b1fbaf6e" Name="NSSJobTitle" />
+            <pnp:FieldRef ID="023196e8-615b-464f-8ebd-20d34433c8af" Name="NSSManager" />
+            <pnp:FieldRef ID="7d0ff1ac-0546-4497-90c3-e9b3166a243c" Name="NSSSite" />
+            <pnp:FieldRef ID="92420574-e008-47c4-b0b8-5c6429f3a9fb" Name="NSSFloorAndRoom" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100A552594A4E16B247A3D744952040F17D" Name="NetworkDrives SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="ReportingUnit" />
+            <pnp:FieldRef ID="c4d4dd96-4d87-4d79-8069-681473faca14" Name="NetworkPath" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100A552594A4E16B247A3D744952040F18F" Name="DistributionLists SPFX Types" Description="Create a new list item." Group="SPFX Fields" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="ReportingUnit" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="ReportingUnits" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ReportingUnits" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ReportingUnits/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ReportingUnits/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ReportingUnits/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010026D439F0FD799040B364E473F49012E6" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{ff6f0cb6-1ceb-400c-841b-661f1a0bf6a7}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/BusinessUnits/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="NSSBusinessStream" />
+                <FieldRef Name="NSSBusinessUnit" />
+                <FieldRef Name="NSSReportingUnit" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="03f42b8f-3915-41f4-a924-67945f4832bb" Name="NSSBusinessUnit" DisplayName="BusinessUnit" />
+            <pnp:FieldRef ID="3aedc742-a247-4349-b3fa-a1948c6d46fd" Name="NSSBusinessStream" DisplayName="BusinessStream" />
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="NSSReportingUnit" DisplayName="ReportingUnit" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ComputerPackages" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ComputerPackages" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ComputerPackages/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ComputerPackages/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ComputerPackages/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100D584226EC925554C9D26BEEFF91F8A52" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{283B44AB-3357-4939-994E-00A75CD02211}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/ComputerPackages/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" DisplayName="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" DisplayName="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" DisplayName="Price" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="DistributionLists" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/DistributionLists" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/DistributionLists/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/DistributionLists/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/DistributionLists/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{801E2443-37FD-4839-A45B-56C9F324C5A6}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/DistributionLists/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="NSSReportingUnit" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="NSSReportingUnit" DisplayName="ReportingUnit" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Divisions" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Divisions" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Divisions/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Divisions/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Divisions/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7F8D1162-8A30-4202-A6B3-8E90BC1DA962}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/Divisions/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4437A5CD-0404-4C52-8703-35A6EE414DAC}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/ITRequestsPortal/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceAutoTags" ColName="nvarchar14" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w2-e94eb5bd-4616-4de4-9bf9-ef4387a4e443" ExpiresInDays="-3" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="DomainSuffixes" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/DomainSuffixes" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/DomainSuffixes/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/DomainSuffixes/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/DomainSuffixes/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{F3F59CCF-F0D8-438B-A94E-E053D70C3B38}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/DomainSuffixes/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="JobTitles" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/JobTitles" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/JobTitles/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/JobTitles/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/JobTitles/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{733CC328-561F-411E-95E1-7AC30AE728BC}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/JobTitles/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://0-ukwest1.pushp.svc.ms/notifications?token=w0-7f5d8965-0e65-45fa-bed3-391172641fe1" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="MobilePackages" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/MobilePackages" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/MobilePackages/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/MobilePackages/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/MobilePackages/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010026D439F0FD799040B364E473F49012BB" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{426B0447-53F3-496A-AB55-08EE1F925241}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/MobilePackages/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" DisplayName="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" DisplayName="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" DisplayName="Price" />
+            <pnp:FieldRef ID="60a06575-c932-4d02-93e6-cf8d73f4c406" Name="PricePerMonth" DisplayName="PricePerMonth" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="MonitorPackages" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/MonitorPackages" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/MonitorPackages/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/MonitorPackages/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/MonitorPackages/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100A552594A4E16B247A3D744952040F16F" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6A6CEC43-E108-4564-A6F1-CCD2F538DEF4}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/MonitorPackages/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" DisplayName="Price" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="NetworkDrives" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/NetworkDrives" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/NetworkDrives/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/NetworkDrives/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/NetworkDrives/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0C5A6AD7-90EF-4508-9D72-84B41B1F2607}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/NetworkDrives/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="NSSReportingUnit" />
+                <FieldRef Name="NSSNetworkPath" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="0c0e6a1c-ae47-4925-8f7f-33295f8a250a" Name="NSSReportingUnit" DisplayName="ReportingUnit" />
+            <pnp:FieldRef ID="c4d4dd96-4d87-4d79-8069-681473faca14" Name="NSSNetworkPath" DisplayName="NetworkPath" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="NewStarterSubmissions" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/NewStarterSubmissions" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/NewStarterSubmissions/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/NewStarterSubmissions/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/NewStarterSubmissions/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3AE52A9A-0E1A-4E6A-A871-E89341F39FEF}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/ITRequestsPortal/NSS/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Id" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{33327307-2C10-45B4-8C88-50886D6FBA52}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="All Submissions" Url="/sites/ITRequestsPortal/NSS/Forms/All Submissions.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="NSSFirstName" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="5049a822-424c-4479-9648-79c4b3214382" Name="NSSFirstName" DisplayName="First Name" />
+            <pnp:FieldRef ID="da57402a-2f55-4400-8e5d-22d778943238" Name="NSSSurname" DisplayName="Surname" />
+            <pnp:FieldRef DisplayName="Middle Initial" ID="49306cf6-f3b9-427f-8828-342cf7da3a86" Name="NSSMiddleInitial" />
+            <pnp:FieldRef DisplayName="Business Unit" ID="03f42b8f-3915-41f4-a924-67945f4832bb" Name="NSSBusinessUnit" />
+            <pnp:FieldRef DisplayName="Address Line 1" ID="e75511bf-9b33-49fc-b5de-3608f0711cc8" Name="NSSAddressLine1" />
+            <pnp:FieldRef DisplayName="County" ID="04d29523-bebc-4bcc-b4ae-4fcdd23911ab" Name="NSSCounty" />
+            <pnp:FieldRef DisplayName="Post Code" ID="37a97a8c-902e-40a9-acab-3f319ce78ee0" Name="NSSPostCode" />
+            <pnp:FieldRef DisplayName="Domain Suffix" ID="4dbfaef7-cef8-493a-a11d-5111c0ce8a42" Name="NSSDomainSuffix" />
+            <pnp:FieldRef DisplayName="Employee Type" ID="f5d5144b-87ae-4654-ad58-32e5fe625dff" Name="NSSEmployeeType" />
+            <pnp:FieldRef DisplayName="Start Date" ID="4e310dbe-0170-49c8-8dcb-83f3524befa9" Name="NSSStartDate" />
+            <pnp:FieldRef DisplayName="End Date" ID="d33da68d-106c-41d5-862f-67d7ffdcb6b0" Name="NSSEndDate" />
+            <pnp:FieldRef DisplayName="Job Title" ID="f02d150e-f41c-453a-acb8-d0a8b1fbaf6e" Name="NSSJobTitle" />
+            <pnp:FieldRef DisplayName="Manager" ID="023196e8-615b-464f-8ebd-20d34433c8af" Name="NSSManager" />
+            <pnp:FieldRef DisplayName="Site" ID="7d0ff1ac-0546-4497-90c3-e9b3166a243c" Name="NSSSite" />
+            <pnp:FieldRef DisplayName="Floor and Room" ID="92420574-e008-47c4-b0b8-5c6429f3a9fb" Name="NSSFloorAndRoom" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w2-d3da0125-01b3-4375-a810-1e4d9b1e4e15" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="PeripheralPackages" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/PeripheralPackages" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/PeripheralPackages/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/PeripheralPackages/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/PeripheralPackages/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010040E2742C89570641AF1AD5D86A2682BF" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4B6C3CE8-5D6A-453A-83D4-9ADED47214D2}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/PeripheralPackages/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="7b8de91d-61ad-471b-b8e0-b97b11972d78" Name="Image" DisplayName="Image" />
+            <pnp:FieldRef ID="ef16262a-30d3-4e96-bbc8-a3d4b41b5038" Name="PackageDescription" DisplayName="PackageDescription" />
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" DisplayName="Price" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="SharedMailboxes" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/SharedMailboxes" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/SharedMailboxes/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SharedMailboxes/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SharedMailboxes/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{CAE7DCC6-B05B-41E8-A76D-B2C8B816A4B2}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/SharedMailboxes/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Sites" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Sites" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Sites/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Sites/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Sites/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100B2FC9BB563CB034B84EB3A8EF3BA288F" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4F0B139A-9AD3-4CD6-B5A4-01C4AD94C9BF}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/Sites/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="6abae21a-d3fc-4c69-a9c2-b1ecb06d81b9" Name="SiteAddress" DisplayName="SiteAddress" />
+            <pnp:FieldRef ID="f48cbc40-d243-4f28-a4ea-8aa67c8ac69b" Name="SiteTownCity" DisplayName="SiteTownCity" />
+            <pnp:FieldRef ID="e1930236-30c1-47a4-b10e-f655c02fff99" Name="SitePostcode" DisplayName="SitePostcode" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://0-ukwest1.pushp.svc.ms/notifications?token=w2-d8962b8f-6e08-42a3-8c1c-260194a984da" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w1-6ac7e313-e386-4313-a55e-b82211454e67" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w3-5531fb9d-37e3-4680-981b-df6ff618dfd3" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w3-6945bbbc-7828-45ca-a370-f266fbd99243" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="SoftwarePackages" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/SoftwarePackages" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="100" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/SoftwarePackages/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SoftwarePackages/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SoftwarePackages/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01003C1E6784CF4A1C408D6F9875D9A5DCE6" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{C110CBBA-FDC0-4FF7-85A9-91525E323F6F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/ITRequestsPortal/Lists/SoftwarePackages/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="a6c55648-2473-42b0-84eb-bfd3573e5faa" Name="Price" DisplayName="Price" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Starter Form Images" Description="Lib to hold images for new starter form" DocumentTemplate="{site}/Starter Form Images/Forms/template.dotx" TemplateType="101" Url="Starter Form Images" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Starter Form Images/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Starter Form Images/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Starter Form Images/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A7084A1C-7DB1-4587-A5DB-F1B6170AE8FB}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/ITRequestsPortal/Starter Form Images/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Starter Form Images}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://1-ukwest1.pushp.svc.ms/notifications?token=w3-881214af-8514-4a69-8c12-f3bb353b206a" ExpiresInDays="0" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

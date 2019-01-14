@@ -7,6 +7,11 @@
                 v-bind:value="value"
                 v-on:input="$emit('input', $event)"
                 @search="searchPeople">
+        <template slot="no-options">
+            <div @mousedown.stop="">
+                Begin typing to search..
+            </div>
+        </template>
         <template slot="option" slot-scope="option">
             {{ option.DisplayText }} ({{ option.EntityData.Email || "No Email" }})
         </template>
@@ -19,6 +24,7 @@ import Vue from 'vue';
 import { sp, PeoplePickerEntity } from '@pnp/sp';
 import { VueSelect } from 'vue-select';
 import { debounce } from 'lodash';
+import { setup } from '@pnp/sp/src/config/splibconfig';
 
 export default Vue.extend({
     name: 'people-picker',
@@ -35,21 +41,36 @@ export default Vue.extend({
         }
     },
     methods: {
-        searchPeople: debounce(function (search, loading) {
+        searchPeople: debounce(async function (search, loading) {
             loading(true);
-            sp.profiles.clientPeoplePickerSearchUser({
+            const standardSearch = sp.profiles.clientPeoplePickerSearchUser({
+                'AllowEmailAddresses':true,
+                'AllowMultipleEntities':false,
+                'AllUrlZones':false,
+                'MaximumEntitySuggestions':10,
+                'PrincipalSource':15,
+                'PrincipalType': 1,
+                'QueryString': search
+            });
+            
+            if(search.indexOf(' ') > -1) {
+                const newSearch = search.split(' ').reverse().join(', ');
+                const rearrangedSearch = sp.profiles.clientPeoplePickerSearchUser({
                     'AllowEmailAddresses':true,
                     'AllowMultipleEntities':false,
                     'AllUrlZones':false,
                     'MaximumEntitySuggestions':10,
                     'PrincipalSource':15,
                     'PrincipalType': 1,
-                    'QueryString': search
-                }).then(res => {
-                    this.people = res;
-                    loading(false);
+                    'QueryString': newSearch
                 });
-        })
+                const results = await Promise.all([standardSearch, rearrangedSearch]);
+                this.people = results[0].concat(results[1]);
+            } else {
+                this.people = await standardSearch;
+            }
+            loading(false);
+        }, 1000)
     },
     components: {
         VueSelect

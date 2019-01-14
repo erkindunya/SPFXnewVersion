@@ -24,7 +24,7 @@ export default Vue.extend({
     }),
     computed: {
         formData() {
-            return Object.values(this.options).reduce(function (a, b: any[]) {
+            return Object.keys(this.options).map(itm => this.options[itm]).reduce(function (a, b: any[]) {
                 const items = b.filter((item) => item.selected);
                 const names = items.map(item => item.name);
                 return a.concat(names);
@@ -37,21 +37,17 @@ export default Vue.extend({
     },
     methods: {
         back() {
-            console.log(this.formData);
-            if (this.$store.state.main.needsHardwareOrSoftware === "Yes") {
-                this.$store.commit('navigate', 2);
-            }
-            else {
-                this.$store.commit('navigate', 1);
-            }  
+            this.$store.commit('navigate', 3);
         },
         submit() {
             this.$store.commit('accessForm', this.formData);
-            this.$store.commit('navigate', 4);
+            this.$store.commit('navigate', 5);
         }
     },
     created() {
-        sp.web.lists.getByTitle('NetworkDrives').items.get().then((items: any[]) => {
+        var reportingUnit = this.$store.state.main.reportingUnit.NSSReportingUnit;
+
+        sp.web.lists.getByTitle('NetworkDrives').items.filter("NSSReportingUnit eq '" + reportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
             this.options.drives = items.map(item => ({
                 name: item.Title,
                 selected: false
@@ -63,7 +59,7 @@ export default Vue.extend({
                 selected: false
             }));
         });
-        sp.web.lists.getByTitle('DistributionLists').items.get().then((items: any[]) => {
+        sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + reportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
             this.options.distributions = items.map(item => ({
                 name: item.Title,
                 selected: false

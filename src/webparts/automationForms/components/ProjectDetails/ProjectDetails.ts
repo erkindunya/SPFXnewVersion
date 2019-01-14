@@ -8,36 +8,19 @@ export default Vue.extend({
     name: 'project-details',
     data: () => ({
         formData: {
-            // companyName: "",
-            // businessUnit: "",
-            // divisionName: "",
-            projectNumber: "1234",
-            taskNumber: "1234",
-            financialDirector: "FD 1"
+            projectNumber: "",
+            taskNumber: "",
+            financialDirector: ""
         }
-        // companies: [],
-        // businessUnits: [],
-        // divisions: []
     }),
     methods: {
         back() {
-            this.$store.commit('navigate', 3);
+            this.$store.commit('navigate', 4);
         },
         submit() {
             this.$store.commit('projectDetailsForm', this.formData);
-            this.$store.commit('navigate', 5);
+            this.$store.commit('navigate', 6);
         }
-    },
-    created () {
-        // sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
-        //     this.companies = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('Divisions').items.get().then((items: any[]) => {
-        //     this.divisions = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('BusinessUnits').items.get().then((items: any[]) => {
-        //     this.businessUnits = items.map(item => item.Title);
-        // });
     },
     components: {
         VueSelect
@@ -47,15 +30,6 @@ export default Vue.extend({
     ],
     validations: {
         formData: {
-            // companyName: {
-            //     required
-            // },
-            // businessUnit: {
-            //     required
-            // },
-            divisionName: {
-                required
-            },
             projectNumber: {
                 required
             },
