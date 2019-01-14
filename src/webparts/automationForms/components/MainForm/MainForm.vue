@@ -2,34 +2,32 @@
 <div>
     <h2>General Information</h2>
     <div class="form-group">
-        <label for="generalFirstName">First Name*</label>
-        <input type="text" class="form-control" id="generalFirstName" @keydown="filterNonStandardCharacters($event)" v-model="formData.firstName" :class="{ 'is-invalid': $v.formData.firstName.$invalid }">
+        <label>First Name*</label>
+        <input type="text" class="form-control" v-model="formData.firstName" :class="{ 'is-invalid': $v.formData.firstName.$invalid }">
     </div>
     <div class="form-group">
         <label>Surname*</label>
-        <input type="text" class="form-control" @keydown="filterNonStandardCharacters($event)" v-model="formData.surname" :class="{ 'is-invalid': $v.formData.surname.$invalid }">
+        <input type="text" class="form-control" v-model="formData.surname" :class="{ 'is-invalid': $v.formData.surname.$invalid }">
     </div>
     <div class="form-group">
-        <label>Middle Initial</label>
-        <input type="text" class="form-control" @keydown="limitMiddleInitialLength($event)" v-model="formData.middleInitial" :class="{ 'is-invalid': $v.formData.middleInitial.$invalid }">
+        <label>Middle Initial*</label>
+        <input type="text" class="form-control" v-model="formData.middleInitial" :class="{ 'is-invalid': $v.formData.middleInitial.$invalid }">
+    </div>
+     <div class="form-group">
+        <label>Company*</label>
+        <vue-select v-model="formData.companyName" :options="companies" :class="{ 'is-invalid': $v.formData.companyName.$invalid }"></vue-select>
+    </div>
+    <div class="form-group">
+        <label>Business Unit*</label>
+        <vue-select v-model="formData.businessUnit" :searchable="true" :options="businessUnits" :class="{ 'is-invalid': $v.formData.businessUnit.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Email Suffix</label>
-        <list-select v-model="formData.domainSuffix" listName="DomainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></list-select>
+        <vue-select v-model="formData.domainSuffix" :options="domainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Computed Account Name</label>
-        <p v-if="!firstChoiceUsername" class="alert alert-success">{{formData.username}}</p>
-        <p v-if="firstChoiceUsername" class="alert alert-warning">"{{firstChoiceUsername}}" is not available. You could add a middle initial or {{formData.username}} will be used.</p>
-    </div>
-    <div class="form-group">
-        <label>Reporting Unit*</label>
-        <list-select v-model="formData.reportingUnit" listName="ReportingUnits" :label="NSSReportingUnit" :class="{ 'is-invalid': $v.formData.reportingUnit.$invalid }">
-            <template slot="option" slot-scope="option">
-                <strong>{{ option.NSSReportingUnit }}</strong><br />
-                Business Unit: {{ option.NSSBusinessUnit }}
-            </template>
-        </list-select>
+        <p>{{accountName}} - {{ isAvailable ? "Available" : "Unavailable" }}</p>
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
@@ -44,12 +42,12 @@
         <datepicker v-model="formData.endDate" :input-class="{ 'is-invalid': $v.formData.endDate.$invalid, 'form-control': true }"></datepicker>
     </div>
     <div class="form-group">
-        <label>Manager*</label>
-        <people-picker v-model="formData.manager" :class="{ 'is-invalid': $v.formData.manager.$invalid }"></people-picker>
+        <label>Job Title*</label>
+        <vue-select v-model="formData.jobTitle" :options="jobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }"></vue-select>
     </div>
     <div class="form-group">
-        <label>Job Title*</label>
-        <list-select v-model="formData.jobTitle" listName="JobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }" :lazyLoad="true"></list-select>
+        <label>Manager*</label>
+        <people-picker v-model="formData.manager" :class="{ 'is-invalid': $v.formData.manager.$invalid }"></people-picker>
     </div>
     <div class="form-group">
         <label>Manager Email</label>
@@ -58,30 +56,27 @@
     <div class="form-group" v-if="!customAddress">
         <label>Site</label>
         <small>(Can't find your site? <a href="#" @click.prevent="customAddress = true">Click here to enter a custom address</a>)</small>
-        <list-select v-model="formData.site" listName="Sites" :class="{ 'is-invalid': $v.formData.site.$invalid }" :lazyLoad="false">
+        <vue-select v-model="formData.site" label="Title" :options="sites" :class="{ 'is-invalid': $v.formData.site.$invalid }">
             <template slot="option" slot-scope="option">
                 <strong>{{ option.Title }}</strong><br />
                 {{ option.SiteAddress }}<br />
                 {{ option.SitePostcode }}
             </template>
-        </list-select>
-        <div v-if="formData.site">
-            {{formData.site.SiteAddress}}<br />
-            {{formData.site.SiteTownCity}}<br />
-            {{formData.site.SitePostcode}}
-        </div>
+        </vue-select>
+        {{formData.site.SiteAddress}}<br />
+        {{formData.site.SitePostcode}}
     </div>
     <div v-if="customAddress">
         <hr>
         <h5>New Site Address</h5>
         <p>Requires approval (<a href="#" @click.prevent="customAddress = false">Click here to select from existing options</a>)</p>
         <div class="form-group">
-            <label>Site Address</label>
+            <label>Address line 1</label>
             <input type="text" class="form-control" v-model="formData.addressLine1" :class="{ 'is-invalid': $v.formData.addressLine1.$invalid }">
         </div>
         <div class="form-group">
-            <label>Town City</label>
-            <input type="text" class="form-control" v-model="formData.townCity" :class="{ 'is-invalid': $v.formData.townCity.$invalid }">
+            <label>County</label>
+            <input type="text" class="form-control" v-model="formData.county" :class="{ 'is-invalid': $v.formData.county.$invalid }">
         </div>
         <div class="form-group">
             <label>Postcode</label>
@@ -93,9 +88,20 @@
         <label>Floor and Room*</label>
         <input type="text" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
     </div>
+    <div class="form-group">
+        <label>Do you need hardware or software?</label>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="formData.needsHardwareOrSoftware" value="No">
+            <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" v-model="formData.needsHardwareOrSoftware" value="Yes">
+            <label class="form-check-label">Yes</label>
+        </div>
+    </div>
     <div class="text-right">
-        <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.formData.$invalid">Next</button>
-        <!-- <button type="button" class="btn btn-primary" @click.prevent="submit" >Next</button> -->
+        <!-- <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.formData.$invalid">Next</button> -->
+        <button type="button" class="btn btn-primary" v-on:click="submit" >Next</button>
     </div>
 </div>
 </template>

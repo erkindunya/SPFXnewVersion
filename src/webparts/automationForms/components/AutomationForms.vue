@@ -9,30 +9,13 @@
           <div class="col">
               <h1>New Starter Request Form</h1>
               <div class="progress">
-                  <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">{{percentCompleted > 0 ? percentCompleted + '%' : ''}}</div>
+                  <div class="progress-bar bg-info" :style="{width: percentCompleted + '%'}">{{percentCompleted}}%</div>
               </div>
-              <div v-if="!submitted && !submitting">
-                <nav class="nav nav-pills nav-fill nav-justify">
-                    <a class="nav-item nav-link" :class="{'active': page === 1}" href="#" @click.prevent="navigate(1)">General</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 2, 'disabled': maxPage < 2}" href="#" @click.prevent="navigate(2)">Hardware / Software</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 3, 'disabled': maxPage < 3}" href="#" @click.prevent="navigate(3)">Oracle</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 4, 'disabled': maxPage < 4}" href="#" @click.prevent="navigate(4)">Access</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 5, 'disabled': maxPage < 5}" href="#" @click.prevent="navigate(5)">Project Details</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 6, 'disabled': maxPage < 6}" href="#" @click.prevent="navigate(6)">Review</a>
-                </nav>
-                <transition>
-                  <keep-alive>
-                    <router-view></router-view>
-                  </keep-alive>
-                </transition>
-              </div>
-              <div v-if="submitting">
-                Submitting
-              </div> 
-              <div v-if="submitted">
-                <span><img class="smlIcon" src="../tick.jpg"><p class="successText">Your request has been successfully submitted, you will receive an email containing the ticket reference number within the next <strong>5 minutes</strong>.</p></span>
-                <br/><br/><button type="button" class="btn btn-secondary" onclick="window.location.href='https://mykier/'">Close</button>
-              </div>
+              <main-form v-show="page === 1"></main-form>
+              <hardware v-show="page === 2"></hardware>
+              <access v-show="page === 3"></access>
+              <project-details v-show="page === 4"></project-details>
+              <submission-review v-show="page === 5"></submission-review>
           </div>
       </div>
   </div>

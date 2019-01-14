@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "itsd-automation-forms",
+    "name": "ITSD Automation Forms",
     "id": "89cbd1b0-3d5f-44bd-a4db-b9f7c14e404e",
-    "version": "1.0.0.24",
+    "version": "1.0.0.17",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },

@@ -30,10 +30,10 @@
     </div>    
     <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-secondary" @click.prevent="back">Back</button>
+            <button type="button" class="btn btn-secondary" v-on:click="back">Back</button>
         </div>
         <div class="text-right">
-            <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.formData.$invalid">Next</button>
+            <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.formData.$invalid">Next</button>
         </div>
     </div>
 </div>

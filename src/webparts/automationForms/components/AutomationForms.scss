@@ -5,15 +5,6 @@
     margin-bottom: 2em;
     padding: 2em;
     max-width: 800px;
-    
-h1 {
-    text-align: center;
-    margin-bottom: 1em;
-}
-h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 }
 header {
     padding-bottom: 2em;
@@ -24,6 +15,13 @@ header {
         max-width: 200px;
     }
 }
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+h2 {
+    margin-bottom: 1em;
+}
 .progress {
     margin-bottom: 2em;
     height: 30px !important;
@@ -33,9 +31,3 @@ header {
         text-transform: uppercase;
     }
 }
-
-// hide navigation
-#s4-titlerow { display:none !important; }
-#sideNavBox { display:none !important; }
-#contentBox { margin-left: 20px; }
-// end hide navigation

@@ -1,17 +1,21 @@
 // polyfills
-import 'core-js/es6/symbol';
-import 'core-js/es6/object';
-import 'core-js/es6/function';
-import 'core-js/es6/parse-int';
-import 'core-js/es6/parse-float';
-import 'core-js/es6/number';
-import 'core-js/es6/math';
-import 'core-js/es6/string';
-import 'core-js/es6/date';
 import 'core-js/es6/array';
+import 'core-js/es6/date';
+import 'core-js/es6/function';
+import 'core-js/es6/map';
+import 'core-js/es6/math';
+import 'core-js/es6/number';
+import 'core-js/es6/object';
+import 'core-js/es6/parse-float';
+import 'core-js/es6/parse-int';
 import 'core-js/es6/regexp';
+import 'core-js/es6/set';
+import 'core-js/es6/string';
+import 'core-js/es6/symbol';
 import 'core-js/es6/weak-map';
-import "@pnp/polyfill-ie11";
+import 'core-js/es7/array';
+import 'core-js/es7/object';
+import 'core-js/es7/promise';
 // end polyfills
 
 import { Version } from '@microsoft/sp-core-library';
@@ -31,7 +35,6 @@ require('./main.scss');
 import Vue from 'vue';
 
 import store from './store';
-import router from './router';
 // Importing Vue.js SFC
 import AutomationFormsComponent from './components/AutomationForms.vue';
 
@@ -47,18 +50,9 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
     const id: string = `wp-${this.instanceId}`;
     this.domElement.innerHTML = `<div id="${id}"></div>`;
 
-    router.beforeEach((to, from, next) => {
-      if(store.state.maxPage < parseInt(to.name)) {
-        next('/1');
-      } else {
-        next();
-      }
-    });
-
     let el = new Vue({
       el: `#${id}`,
       store,
-      router,
       render: h => h(AutomationFormsComponent, {
         props: {
           description: this.properties.description
@@ -66,7 +60,8 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
       })
     });
 
-    (<HTMLElement>document.querySelector("div[class*='pageTitle']")).style.display = 'none';
+    (<HTMLElement>document.querySelector("div[class*='pageTitle']")).style.display = 'none'; 
+    (<HTMLElement>document.querySelector(".ms-compositeHeader")).style.display = 'none'; 
   }
 
   protected get dataVersion(): Version {
