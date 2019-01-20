@@ -1,3 +1,1194 @@
-Title
-Some Drive
-Some Other Drive
+Title,NSSReportingUnit,NSSNetworkPath
+\\uk.corp.local\Data\Area9,C&IS Kier Strategic Highways - Area 9 - Monthly Employees,\\uk.corp.local\Data\Area9
+\\uk.corp.local\Data\Highways,C&IS Kier Strategic Highways - Area 9 - Monthly Employees,\\uk.corp.local\Data\Highways
+\\jv1mvcfs003.v1.uk.venture.local\Penrith_Shared\IT-NW\DesignServices,C&IS Kier Strategic Highways - Area 13 - Monthly Employees,\\jv1mvcfs003.v1.uk.venture.local\Penrith_Shared\IT-NW\DesignServices
+\\v1.uk.venture.local\Penrith_Data\Penrith_Shared,C&IS Kier Strategic Highways - Area 13 - Monthly Employees,\\v1.uk.venture.local\Penrith_Data\Penrith_Shared
+\\jv1mvcfs003.v1.uk.venture.local\Penrith_Shared,C&IS Kier Strategic Highways - Area 13 - Monthly Employees,\\jv1mvcfs003.v1.uk.venture.local\Penrith_Shared
+\\p-fs-004\suffolkhighways,C&IS Highways Highways (Local) - Suffolk County Council,\\p-fs-004\suffolkhighways
+\\P-FS-004\Cad,C&IS Highways Highways (Local) - Suffolk County Council,\\P-FS-004\Cad
+\\jv1msfsmsh01.v1.uk.venture.local\shared,1029-Kier Limited - Group Functions,\\jv1msfsmsh01.v1.uk.venture.local\shared
+\\8.kier.group@SSL\FSSC,1029-Kier Limited - Group Functions,\\8.kier.group@SSL\FSSC
+\\reslvaps002.resources.local\ascii002,1029-Kier Limited - Group Functions,\\reslvaps002.resources.local\ascii002
+\\reslvaps002.resources.local\ascii004,1029-Kier Limited - Group Functions,\\reslvaps002.resources.local\ascii004
+\\reslvaps002.resources.local\ascii005,1029-Kier Limited - Group Functions,\\reslvaps002.resources.local\ascii005
+\\reslvaps002.resources.local\ascii,1029-Kier Limited - Group Functions,\\reslvaps002.resources.local\ascii
+\\8.kier.group@SSL\DavWWWRoot\FSSC,1029-Kier Limited - Group Functions,\\8.kier.group@SSL\DavWWWRoot\FSSC
+\\THFILESTORE.kier.group\3044,,\\THFILESTORE.kier.group\3044
+\\THFILESTORE.kier.group\Accounts,,\\THFILESTORE.kier.group\Accounts
+\\THFILESTORE.kier.group\Admin,,\\THFILESTORE.kier.group\Admin
+\\THFILESTORE.kier.group\Admin2,,\\THFILESTORE.kier.group\Admin2
+\\THFILESTORE.kier.group\Andrea and Nicole,,\\THFILESTORE.kier.group\Andrea and Nicole
+\\THFILESTORE.kier.group\Annual_Reports,,\\THFILESTORE.kier.group\Annual_Reports
+\\THFILESTORE.kier.group\Applications,,\\THFILESTORE.kier.group\Applications
+\\THFILESTORE.kier.group\Archive,,\\THFILESTORE.kier.group\Archive
+\\THFILESTORE.kier.group\BHR - Shared,,\\THFILESTORE.kier.group\BHR - Shared
+\\THFILESTORE.kier.group\BHR Engineering,,\\THFILESTORE.kier.group\BHR Engineering
+\\THFILESTORE.kier.group\BIM,,\\THFILESTORE.kier.group\BIM
+\\THFILESTORE.kier.group\BOOST,,\\THFILESTORE.kier.group\BOOST
+\\THFILESTORE.kier.group\BOOST Communications,,\\THFILESTORE.kier.group\BOOST Communications
+\\THFILESTORE.kier.group\Boxwood_Data,,\\THFILESTORE.kier.group\Boxwood_Data
+\\THFILESTORE.kier.group\Bristol_Harbourside,,\\THFILESTORE.kier.group\Bristol_Harbourside
+\\THFILESTORE.kier.group\Bristol_Water_Common,,\\THFILESTORE.kier.group\Bristol_Water_Common
+\\THFILESTORE.kier.group\Bruno.Plaskow$,,\\THFILESTORE.kier.group\Bruno.Plaskow$
+\\THFILESTORE.kier.group\Build (Failsworth),,\\THFILESTORE.kier.group\Build (Failsworth)
+\\THFILESTORE.kier.group\Build_HR,,\\THFILESTORE.kier.group\Build_HR
+\\THFILESTORE.kier.group\Business_Apps$,,\\THFILESTORE.kier.group\Business_Apps$
+\\THFILESTORE.kier.group\Buying,,\\THFILESTORE.kier.group\Buying
+\\THFILESTORE.kier.group\C1040 Commercial,,\\THFILESTORE.kier.group\C1040 Commercial
+\\THFILESTORE.kier.group\Candy,,\\THFILESTORE.kier.group\Candy
+\\THFILESTORE.kier.group\Causeway Estimating,,\\THFILESTORE.kier.group\Causeway Estimating
+\\THFILESTORE.kier.group\CCA_Team_Folder,,\\THFILESTORE.kier.group\CCA_Team_Folder
+\\THFILESTORE.kier.group\CD_LH,,\\THFILESTORE.kier.group\CD_LH
+\\THFILESTORE.kier.group\Circle_Gas_Action_Plan,,\\THFILESTORE.kier.group\Circle_Gas_Action_Plan
+\\THFILESTORE.kier.group\Cisilion,,\\THFILESTORE.kier.group\Cisilion
+\\THFILESTORE.kier.group\Collaboration_Team,,\\THFILESTORE.kier.group\Collaboration_Team
+\\THFILESTORE.kier.group\Commercial,,\\THFILESTORE.kier.group\Commercial
+\\THFILESTORE.kier.group\Compliance,,\\THFILESTORE.kier.group\Compliance
+\\THFILESTORE.kier.group\Confidential,,\\THFILESTORE.kier.group\Confidential
+\\THFILESTORE.kier.group\Construction_Southern_CSR,,\\THFILESTORE.kier.group\Construction_Southern_CSR
+\\THFILESTORE.kier.group\Contract_Awards,,\\THFILESTORE.kier.group\Contract_Awards
+\\THFILESTORE.kier.group\Corporate Comms-Marketing Group,,\\THFILESTORE.kier.group\Corporate Comms-Marketing Group
+\\THFILESTORE.kier.group\CTSpace,,\\THFILESTORE.kier.group\CTSpace
+\\THFILESTORE.kier.group\Customer_Experience,,\\THFILESTORE.kier.group\Customer_Experience
+\\THFILESTORE.kier.group\DataCollection$,,\\THFILESTORE.kier.group\DataCollection$
+\\THFILESTORE.kier.group\Devcrossfunctions,,\\THFILESTORE.kier.group\Devcrossfunctions
+\\THFILESTORE.kier.group\Devonport_admin,,\\THFILESTORE.kier.group\Devonport_admin
+\\THFILESTORE.kier.group\Direct_Procurement$,,\\THFILESTORE.kier.group\Direct_Procurement$
+\\THFILESTORE.kier.group\Discovery_Accelerator_Export,,\\THFILESTORE.kier.group\Discovery_Accelerator_Export
+\\THFILESTORE.kier.group\DP_BS_Heads_of_HR_Team,,\\THFILESTORE.kier.group\DP_BS_Heads_of_HR_Team
+\\THFILESTORE.kier.group\E1476AWA,,\\THFILESTORE.kier.group\E1476AWA
+\\THFILESTORE.kier.group\East_Northants_Common,,\\THFILESTORE.kier.group\East_Northants_Common
+\\THFILESTORE.kier.group\Environmental_Services_Finance_Team,,\\THFILESTORE.kier.group\Environmental_Services_Finance_Team
+\\THFILESTORE.kier.group\Environmental_Services_IT,,\\THFILESTORE.kier.group\Environmental_Services_IT
+\\THFILESTORE.kier.group\ExchangePST,,\\THFILESTORE.kier.group\ExchangePST
+\\THFILESTORE.kier.group\E_Learning,,\\THFILESTORE.kier.group\E_Learning
+\\THFILESTORE.kier.group\Fengate,,\\THFILESTORE.kier.group\Fengate
+\\THFILESTORE.kier.group\FF&E,,\\THFILESTORE.kier.group\FF&E
+\\THFILESTORE.kier.group\Fileserver_migration,,\\THFILESTORE.kier.group\Fileserver_migration
+\\THFILESTORE.kier.group\FM Team,,\\THFILESTORE.kier.group\FM Team
+\\THFILESTORE.kier.group\FM_Team,,\\THFILESTORE.kier.group\FM_Team
+\\THFILESTORE.kier.group\FSSC,,\\THFILESTORE.kier.group\FSSC
+\\THFILESTORE.kier.group\FSSC - Causeway,,\\THFILESTORE.kier.group\FSSC - Causeway
+\\THFILESTORE.kier.group\FSSC Expense,,\\THFILESTORE.kier.group\FSSC Expense
+\\THFILESTORE.kier.group\FSSCExport,,\\THFILESTORE.kier.group\FSSCExport
+\\THFILESTORE.kier.group\gillian.rogers$,,\\THFILESTORE.kier.group\gillian.rogers$
+\\THFILESTORE.kier.group\Graphics,,\\THFILESTORE.kier.group\Graphics
+\\THFILESTORE.kier.group\Group Commercial Department,,\\THFILESTORE.kier.group\Group Commercial Department
+\\THFILESTORE.kier.group\Group EA,,\\THFILESTORE.kier.group\Group EA
+\\THFILESTORE.kier.group\Group_Finance,,\\THFILESTORE.kier.group\Group_Finance
+\\THFILESTORE.kier.group\Group_Strategy,,\\THFILESTORE.kier.group\Group_Strategy
+\\THFILESTORE.kier.group\HealthandSafety,,\\THFILESTORE.kier.group\HealthandSafety
+\\THFILESTORE.kier.group\Highways Area 6&8,,\\THFILESTORE.kier.group\Highways Area 6&8
+\\THFILESTORE.kier.group\Highways_SHEQ_Team,,\\THFILESTORE.kier.group\Highways_SHEQ_Team
+\\THFILESTORE.kier.group\HM_HandS,,\\THFILESTORE.kier.group\HM_HandS
+\\THFILESTORE.kier.group\HM_MI_Team,,\\THFILESTORE.kier.group\HM_MI_Team
+\\THFILESTORE.kier.group\HM_Secretary,,\\THFILESTORE.kier.group\HM_Secretary
+\\THFILESTORE.kier.group\HR_Scanner,,\\THFILESTORE.kier.group\HR_Scanner
+\\THFILESTORE.kier.group\Hyperion,,\\THFILESTORE.kier.group\Hyperion
+\\THFILESTORE.kier.group\Indesign_Templates,,\\THFILESTORE.kier.group\Indesign_Templates
+\\THFILESTORE.kier.group\Indirect_Procurement$,,\\THFILESTORE.kier.group\Indirect_Procurement$
+\\THFILESTORE.kier.group\Infrastructure Bid Team,,\\THFILESTORE.kier.group\Infrastructure Bid Team
+\\THFILESTORE.kier.group\Infrastructure_Projects,,\\THFILESTORE.kier.group\Infrastructure_Projects
+\\THFILESTORE.kier.group\IT Common,,\\THFILESTORE.kier.group\IT Common
+\\THFILESTORE.kier.group\IT_HRPMO,,\\THFILESTORE.kier.group\IT_HRPMO
+\\THFILESTORE.kier.group\IT_Knight,,\\THFILESTORE.kier.group\IT_Knight
+\\THFILESTORE.kier.group\IT_Report_Data,,\\THFILESTORE.kier.group\IT_Report_Data
+\\THFILESTORE.kier.group\IT_Security,,\\THFILESTORE.kier.group\IT_Security
+\\THFILESTORE.kier.group\Jupiter_DEV_TEST,,\\THFILESTORE.kier.group\Jupiter_DEV_TEST
+\\THFILESTORE.kier.group\KBL Accounts,,\\THFILESTORE.kier.group\KBL Accounts
+\\THFILESTORE.kier.group\KBL Admin,,\\THFILESTORE.kier.group\KBL Admin
+\\THFILESTORE.kier.group\KBL Buying,,\\THFILESTORE.kier.group\KBL Buying
+\\THFILESTORE.kier.group\KBL Common,,\\THFILESTORE.kier.group\KBL Common
+\\THFILESTORE.kier.group\KBL T1702 PHE - Science Hub Lot 1,,\\THFILESTORE.kier.group\KBL T1702 PHE - Science Hub Lot 1
+\\THFILESTORE.kier.group\KBL Directors,,\\THFILESTORE.kier.group\KBL Directors
+\\THFILESTORE.kier.group\KBL Estimating,,\\THFILESTORE.kier.group\KBL Estimating
+\\THFILESTORE.kier.group\KBL Featherstone,,\\THFILESTORE.kier.group\KBL Featherstone
+\\THFILESTORE.kier.group\KBL Marketing,,\\THFILESTORE.kier.group\KBL Marketing
+\\THFILESTORE.kier.group\KBL Planning,,\\THFILESTORE.kier.group\KBL Planning
+\\THFILESTORE.kier.group\KBL surveying,,\\THFILESTORE.kier.group\KBL surveying
+\\THFILESTORE.kier.group\KBL_Home_2,,\\THFILESTORE.kier.group\KBL_Home_2
+\\THFILESTORE.kier.group\KBMLIVFP01_Liverpool Decent Homes,,\\THFILESTORE.kier.group\KBMLIVFP01_Liverpool Decent Homes
+\\THFILESTORE.kier.group\KBM_Accident_Database,,\\THFILESTORE.kier.group\KBM_Accident_Database
+\\THFILESTORE.kier.group\KBM_Smithywood,,\\THFILESTORE.kier.group\KBM_Smithywood
+\\THFILESTORE.kier.group\KCL Accounts,,\\THFILESTORE.kier.group\KCL Accounts
+\\THFILESTORE.kier.group\KCL BP Common,,\\THFILESTORE.kier.group\KCL BP Common
+\\THFILESTORE.kier.group\KCL BP Est,,\\THFILESTORE.kier.group\KCL BP Est
+\\THFILESTORE.kier.group\KCL west burton Health and Safety,,\\THFILESTORE.kier.group\KCL west burton Health and Safety
+\\THFILESTORE.kier.group\KCL1 BP Common,,\\THFILESTORE.kier.group\KCL1 BP Common
+\\THFILESTORE.kier.group\KCL_Accounts,,\\THFILESTORE.kier.group\KCL_Accounts
+\\THFILESTORE.kier.group\KCL_BP_COMMON,,\\THFILESTORE.kier.group\KCL_BP_COMMON
+\\THFILESTORE.kier.group\KCL_BP_EST,,\\THFILESTORE.kier.group\KCL_BP_EST
+\\THFILESTORE.kier.group\KCL_Buying,,\\THFILESTORE.kier.group\KCL_Buying
+\\THFILESTORE.kier.group\KCL_Devonport,,\\THFILESTORE.kier.group\KCL_Devonport
+\\THFILESTORE.kier.group\KCL_Finance,,\\THFILESTORE.kier.group\KCL_Finance
+\\THFILESTORE.kier.group\KCL_Home,,\\THFILESTORE.kier.group\KCL_Home
+\\THFILESTORE.kier.group\KCL_Home_2,,\\THFILESTORE.kier.group\KCL_Home_2
+\\THFILESTORE.kier.group\KCL_KBJV HR,,\\THFILESTORE.kier.group\KCL_KBJV HR
+\\THFILESTORE.kier.group\KCL_KBJV OnBoarding,,\\THFILESTORE.kier.group\KCL_KBJV OnBoarding
+\\THFILESTORE.kier.group\KCL_KBJV_SurveyData,,\\THFILESTORE.kier.group\KCL_KBJV_SurveyData
+\\THFILESTORE.kier.group\KCL_Langage,,\\THFILESTORE.kier.group\KCL_Langage
+\\THFILESTORE.kier.group\KCL_Langage_Open,,\\THFILESTORE.kier.group\KCL_Langage_Open
+\\THFILESTORE.kier.group\KCL_Langage_Shared,,\\THFILESTORE.kier.group\KCL_Langage_Shared
+\\THFILESTORE.kier.group\KCL_LAUNGAGE_OPEN,,\\THFILESTORE.kier.group\KCL_LAUNGAGE_OPEN
+\\THFILESTORE.kier.group\KCL_Management Systems,,\\THFILESTORE.kier.group\KCL_Management Systems
+\\THFILESTORE.kier.group\KCL_ManagementSystems,,\\THFILESTORE.kier.group\KCL_ManagementSystems
+\\THFILESTORE.kier.group\KCL_Marketing,,\\THFILESTORE.kier.group\KCL_Marketing
+\\THFILESTORE.kier.group\KCL_MerseyLink,,\\THFILESTORE.kier.group\KCL_MerseyLink
+\\THFILESTORE.kier.group\KCL_Merseylink_Home,,\\THFILESTORE.kier.group\KCL_Merseylink_Home
+\\THFILESTORE.kier.group\KCL_Planning,,\\THFILESTORE.kier.group\KCL_Planning
+\\THFILESTORE.kier.group\KCL_Secretaries,,\\THFILESTORE.kier.group\KCL_Secretaries
+\\THFILESTORE.kier.group\KCL_SHEQ_&_Supply_Chain,,\\THFILESTORE.kier.group\KCL_SHEQ_&_Supply_Chain
+\\THFILESTORE.kier.group\KCL_Waste Wakefield Project,,\\THFILESTORE.kier.group\KCL_Waste Wakefield Project
+\\THFILESTORE.kier.group\KCL_Waste_Wakefield,,\\THFILESTORE.kier.group\KCL_Waste_Wakefield
+\\THFILESTORE.kier.group\KCL_West Burton_Confidential,,\\THFILESTORE.kier.group\KCL_West Burton_Confidential
+\\THFILESTORE.kier.group\KCL_WestBurton_Commercial,,\\THFILESTORE.kier.group\KCL_WestBurton_Commercial
+\\THFILESTORE.kier.group\KCL_WestBurton_Common$,,\\THFILESTORE.kier.group\KCL_WestBurton_Common$
+\\THFILESTORE.kier.group\KCL_WestBurton_Immingham,,\\THFILESTORE.kier.group\KCL_WestBurton_Immingham
+\\THFILESTORE.kier.group\KCL_WestBurton_Scan,,\\THFILESTORE.kier.group\KCL_WestBurton_Scan
+\\THFILESTORE.kier.group\KCUREFP01_RESTORE,,\\THFILESTORE.kier.group\KCUREFP01_RESTORE
+\\THFILESTORE.kier.group\KC_HR,,\\THFILESTORE.kier.group\KC_HR
+\\THFILESTORE.kier.group\KEI_Accounts,,\\THFILESTORE.kier.group\KEI_Accounts
+\\THFILESTORE.kier.group\KEI_Common,,\\THFILESTORE.kier.group\KEI_Common
+\\THFILESTORE.kier.group\KEPS_Payments,,\\THFILESTORE.kier.group\KEPS_Payments
+\\THFILESTORE.kier.group\KES Home,,\\THFILESTORE.kier.group\KES Home
+\\THFILESTORE.kier.group\KES Temporary Works Advisors,,\\THFILESTORE.kier.group\KES Temporary Works Advisors
+\\THFILESTORE.kier.group\KES Travel,,\\THFILESTORE.kier.group\KES Travel
+\\THFILESTORE.kier.group\KES_Archive,,\\THFILESTORE.kier.group\KES_Archive
+\\THFILESTORE.kier.group\KES_Secretarial,,\\THFILESTORE.kier.group\KES_Secretarial
+\\THFILESTORE.kier.group\KFS,,\\THFILESTORE.kier.group\KFS
+\\THFILESTORE.kier.group\KFS Home,,\\THFILESTORE.kier.group\KFS Home
+\\THFILESTORE.kier.group\KFS Redkite,,\\THFILESTORE.kier.group\KFS Redkite
+\\THFILESTORE.kier.group\KFS_Berrywood_Data,,\\THFILESTORE.kier.group\KFS_Berrywood_Data
+\\THFILESTORE.kier.group\KFS_Westfield,,\\THFILESTORE.kier.group\KFS_Westfield
+\\THFILESTORE.kier.group\KGS_Axe Data,,\\THFILESTORE.kier.group\KGS_Axe Data
+\\THFILESTORE.kier.group\KGS_Company Secretarial,,\\THFILESTORE.kier.group\KGS_Company Secretarial
+\\THFILESTORE.kier.group\KGS_CorporateMarketing,,\\THFILESTORE.kier.group\KGS_CorporateMarketing
+\\THFILESTORE.kier.group\KGS_Home_2,,\\THFILESTORE.kier.group\KGS_Home_2
+\\THFILESTORE.kier.group\KGS_Procurement,,\\THFILESTORE.kier.group\KGS_Procurement
+\\THFILESTORE.kier.group\KGS_Recruitment,,\\THFILESTORE.kier.group\KGS_Recruitment
+\\THFILESTORE.kier.group\KGS_Talent,,\\THFILESTORE.kier.group\KGS_Talent
+\\THFILESTORE.kier.group\KH Common,,\\THFILESTORE.kier.group\KH Common
+\\THFILESTORE.kier.group\KHCommon,,\\THFILESTORE.kier.group\KHCommon
+\\THFILESTORE.kier.group\KH_Marketing,,\\THFILESTORE.kier.group\KH_Marketing
+\\THFILESTORE.kier.group\Kier Compliance Services,,\\THFILESTORE.kier.group\Kier Compliance Services
+\\THFILESTORE.kier.group\Kier Defence,,\\THFILESTORE.kier.group\Kier Defence
+\\THFILESTORE.kier.group\Kier Living,,\\THFILESTORE.kier.group\Kier Living
+\\THFILESTORE.kier.group\Kier Mobility,,\\THFILESTORE.kier.group\Kier Mobility
+\\THFILESTORE.kier.group\Kier Services - Learning and Development,,\\THFILESTORE.kier.group\Kier Services - Learning and Development
+\\THFILESTORE.kier.group\KierFleetTeam,,\\THFILESTORE.kier.group\KierFleetTeam
+\\THFILESTORE.kier.group\KierMGDR,,\\THFILESTORE.kier.group\KierMGDR
+\\THFILESTORE.kier.group\KierSuperhighway,,\\THFILESTORE.kier.group\KierSuperhighway
+\\THFILESTORE.kier.group\Kier_GroupData,,\\THFILESTORE.kier.group\Kier_GroupData
+\\THFILESTORE.kier.group\Kier_Group_Commercial_Training,,\\THFILESTORE.kier.group\Kier_Group_Commercial_Training
+\\THFILESTORE.kier.group\Kier_Living_Business_Development$,,\\THFILESTORE.kier.group\Kier_Living_Business_Development$
+\\THFILESTORE.kier.group\Kier_Services_Utilities_South,,\\THFILESTORE.kier.group\Kier_Services_Utilities_South
+\\THFILESTORE.kier.group\KIMS,,\\THFILESTORE.kier.group\KIMS
+\\THFILESTORE.kier.group\KIMS Confidential,,\\THFILESTORE.kier.group\KIMS Confidential
+\\THFILESTORE.kier.group\Kings_Park$,,\\THFILESTORE.kier.group\Kings_Park$
+\\THFILESTORE.kier.group\KISS,,\\THFILESTORE.kier.group\KISS
+\\THFILESTORE.kier.group\KI_accounts,,\\THFILESTORE.kier.group\KI_accounts
+\\THFILESTORE.kier.group\KI_Applications,,\\THFILESTORE.kier.group\KI_Applications
+\\THFILESTORE.kier.group\KI_DM,,\\THFILESTORE.kier.group\KI_DM
+\\THFILESTORE.kier.group\KI_Surveying,,\\THFILESTORE.kier.group\KI_Surveying
+\\THFILESTORE.kier.group\KLT Accounts,,\\THFILESTORE.kier.group\KLT Accounts
+\\THFILESTORE.kier.group\KLT Common,,\\THFILESTORE.kier.group\KLT Common
+\\THFILESTORE.kier.group\KLT Corporate_Responsibilty,,\\THFILESTORE.kier.group\KLT Corporate_Responsibilty
+\\THFILESTORE.kier.group\KLT Financial,,\\THFILESTORE.kier.group\KLT Financial
+\\THFILESTORE.kier.group\KLT Foundation,,\\THFILESTORE.kier.group\KLT Foundation
+\\THFILESTORE.kier.group\KLT Group_Accounts,,\\THFILESTORE.kier.group\KLT Group_Accounts
+\\THFILESTORE.kier.group\KLT Insurance,,\\THFILESTORE.kier.group\KLT Insurance
+\\THFILESTORE.kier.group\KLT Internal_Audit,,\\THFILESTORE.kier.group\KLT Internal_Audit
+\\THFILESTORE.kier.group\KLT Legal,,\\THFILESTORE.kier.group\KLT Legal
+\\THFILESTORE.kier.group\KLT Marketing,,\\THFILESTORE.kier.group\KLT Marketing
+\\THFILESTORE.kier.group\KLT Secretarial,,\\THFILESTORE.kier.group\KLT Secretarial
+\\THFILESTORE.kier.group\KL_CRM_Project,,\\THFILESTORE.kier.group\KL_CRM_Project
+\\THFILESTORE.kier.group\KMGPT,,\\THFILESTORE.kier.group\KMGPT
+\\THFILESTORE.kier.group\KMIN Accounts,,\\THFILESTORE.kier.group\KMIN Accounts
+\\THFILESTORE.kier.group\KMIN Common,,\\THFILESTORE.kier.group\KMIN Common
+\\THFILESTORE.kier.group\KMIN Planning,,\\THFILESTORE.kier.group\KMIN Planning
+\\THFILESTORE.kier.group\KMIN Secretarial,,\\THFILESTORE.kier.group\KMIN Secretarial
+\\THFILESTORE.kier.group\KMIN_Planning,,\\THFILESTORE.kier.group\KMIN_Planning
+\\THFILESTORE.kier.group\KMSHINFILE01,,\\THFILESTORE.kier.group\KMSHINFILE01
+\\THFILESTORE.kier.group\KNAT Accounts,,\\THFILESTORE.kier.group\KNAT Accounts
+\\THFILESTORE.kier.group\KNAT Common,,\\THFILESTORE.kier.group\KNAT Common
+\\THFILESTORE.kier.group\KP Common,,\\THFILESTORE.kier.group\KP Common
+\\THFILESTORE.kier.group\KPH Technical,,\\THFILESTORE.kier.group\KPH Technical
+\\THFILESTORE.kier.group\KPHNewsletter,,\\THFILESTORE.kier.group\KPHNewsletter
+\\THFILESTORE.kier.group\KPH_General,,\\THFILESTORE.kier.group\KPH_General
+\\THFILESTORE.kier.group\KPH_Home_2,,\\THFILESTORE.kier.group\KPH_Home_2
+\\THFILESTORE.kier.group\KPH_Rushden,,\\THFILESTORE.kier.group\KPH_Rushden
+\\THFILESTORE.kier.group\KPH_Scan,,\\THFILESTORE.kier.group\KPH_Scan
+\\THFILESTORE.kier.group\KPI Accounts,,\\THFILESTORE.kier.group\KPI Accounts
+\\THFILESTORE.kier.group\KPI Common,,\\THFILESTORE.kier.group\KPI Common
+\\THFILESTORE.kier.group\KPI Surveying,,\\THFILESTORE.kier.group\KPI Surveying
+\\THFILESTORE.kier.group\KPI_home_2,,\\THFILESTORE.kier.group\KPI_home_2
+\\THFILESTORE.kier.group\KP_Home_2,,\\THFILESTORE.kier.group\KP_Home_2
+\\THFILESTORE.kier.group\KR Accounts,,\\THFILESTORE.kier.group\KR Accounts
+\\THFILESTORE.kier.group\KR Common,,\\THFILESTORE.kier.group\KR Common
+\\THFILESTORE.kier.group\KR Marketing,,\\THFILESTORE.kier.group\KR Marketing
+\\THFILESTORE.kier.group\KR PFS,,\\THFILESTORE.kier.group\KR PFS
+\\THFILESTORE.kier.group\KR Planning,,\\THFILESTORE.kier.group\KR Planning
+\\THFILESTORE.kier.group\KR Secretarial,,\\THFILESTORE.kier.group\KR Secretarial
+\\THFILESTORE.kier.group\KR_Academies_Framework_1,,\\THFILESTORE.kier.group\KR_Academies_Framework_1
+\\THFILESTORE.kier.group\KR_Academies_Framework_2,,\\THFILESTORE.kier.group\KR_Academies_Framework_2
+\\THFILESTORE.kier.group\KR_Custodial_MoJ,,\\THFILESTORE.kier.group\KR_Custodial_MoJ
+\\THFILESTORE.kier.group\KR_Defence_MoD,,\\THFILESTORE.kier.group\KR_Defence_MoD
+\\THFILESTORE.kier.group\KR_Design4Life,,\\THFILESTORE.kier.group\KR_Design4Life
+\\THFILESTORE.kier.group\KR_EFA,,\\THFILESTORE.kier.group\KR_EFA
+\\THFILESTORE.kier.group\KR_HOME_2,,\\THFILESTORE.kier.group\KR_HOME_2
+\\THFILESTORE.kier.group\KR_KSFA_Admin,,\\THFILESTORE.kier.group\KR_KSFA_Admin
+\\THFILESTORE.kier.group\KR_KSFA_Framework_Bidding,,\\THFILESTORE.kier.group\KR_KSFA_Framework_Bidding
+\\THFILESTORE.kier.group\KR_P21,,\\THFILESTORE.kier.group\KR_P21
+\\THFILESTORE.kier.group\KR_Projects$,,\\THFILESTORE.kier.group\KR_Projects$
+\\THFILESTORE.kier.group\KR_Scape,,\\THFILESTORE.kier.group\KR_Scape
+\\THFILESTORE.kier.group\KSA,,\\THFILESTORE.kier.group\KSA
+\\THFILESTORE.kier.group\KSA Cost Data,,\\THFILESTORE.kier.group\KSA Cost Data
+\\THFILESTORE.kier.group\KSS Accounts,,\\THFILESTORE.kier.group\KSS Accounts
+\\THFILESTORE.kier.group\KSS Common,,\\THFILESTORE.kier.group\KSS Common
+\\THFILESTORE.kier.group\KSS HR Leadership Team,,\\THFILESTORE.kier.group\KSS HR Leadership Team
+\\THFILESTORE.kier.group\KSS Knowledge,,\\THFILESTORE.kier.group\KSS Knowledge
+\\THFILESTORE.kier.group\KSS Legal,,\\THFILESTORE.kier.group\KSS Legal
+\\THFILESTORE.kier.group\KSS Risk Management,,\\THFILESTORE.kier.group\KSS Risk Management
+\\THFILESTORE.kier.group\KSSC,,\\THFILESTORE.kier.group\KSSC
+\\THFILESTORE.kier.group\KSS_Bristol_Water_Common,,\\THFILESTORE.kier.group\KSS_Bristol_Water_Common
+\\THFILESTORE.kier.group\KSS_home_2,,\\THFILESTORE.kier.group\KSS_home_2
+\\THFILESTORE.kier.group\KSS_HR,,\\THFILESTORE.kier.group\KSS_HR
+\\THFILESTORE.kier.group\KSS_Metropolitan_Contract,,\\THFILESTORE.kier.group\KSS_Metropolitan_Contract
+\\THFILESTORE.kier.group\KSS_Policies_and_Procedures,,\\THFILESTORE.kier.group\KSS_Policies_and_Procedures
+\\THFILESTORE.kier.group\KSS_Risk_And_Governance,,\\THFILESTORE.kier.group\KSS_Risk_And_Governance
+\\THFILESTORE.kier.group\KS_CIRCLE,,\\THFILESTORE.kier.group\KS_CIRCLE
+\\THFILESTORE.kier.group\KS_FLEET,,\\THFILESTORE.kier.group\KS_FLEET
+\\THFILESTORE.kier.group\KS_HM,,\\THFILESTORE.kier.group\KS_HM
+\\THFILESTORE.kier.group\KS_Performance_Conversations,,\\THFILESTORE.kier.group\KS_Performance_Conversations
+\\THFILESTORE.kier.group\KS_Quality Assurance Database,,\\THFILESTORE.kier.group\KS_Quality Assurance Database
+\\THFILESTORE.kier.group\KS_SSC,,\\THFILESTORE.kier.group\KS_SSC
+\\THFILESTORE.kier.group\KS_Witham,,\\THFILESTORE.kier.group\KS_Witham
+\\THFILESTORE.kier.group\KTS,,\\THFILESTORE.kier.group\KTS
+\\THFILESTORE.kier.group\KWS_IT_ConceptReports,,\\THFILESTORE.kier.group\KWS_IT_ConceptReports
+\\THFILESTORE.kier.group\L&D Admin,,\\THFILESTORE.kier.group\L&D Admin
+\\THFILESTORE.kier.group\L&D_Department,,\\THFILESTORE.kier.group\L&D_Department
+\\THFILESTORE.kier.group\LandD_Department,,\\THFILESTORE.kier.group\LandD_Department
+\\THFILESTORE.kier.group\Langage,,\\THFILESTORE.kier.group\Langage
+\\THFILESTORE.kier.group\Legal Department,,\\THFILESTORE.kier.group\Legal Department
+\\THFILESTORE.kier.group\Living_HR,,\\THFILESTORE.kier.group\Living_HR
+\\THFILESTORE.kier.group\Management Systems,,\\THFILESTORE.kier.group\Management Systems
+\\THFILESTORE.kier.group\MDC,,\\THFILESTORE.kier.group\MDC
+\\THFILESTORE.kier.group\Mersey Gateway Utilities,,\\THFILESTORE.kier.group\Mersey Gateway Utilities
+\\THFILESTORE.kier.group\MerseyLink,,\\THFILESTORE.kier.group\MerseyLink
+\\THFILESTORE.kier.group\Milning Secure,,\\THFILESTORE.kier.group\Milning Secure
+\\THFILESTORE.kier.group\Mindtree,,\\THFILESTORE.kier.group\Mindtree
+\\THFILESTORE.kier.group\Nigel.Brook,,\\THFILESTORE.kier.group\Nigel.Brook
+\\THFILESTORE.kier.group\P21_Plus,,\\THFILESTORE.kier.group\P21_Plus
+\\THFILESTORE.kier.group\P22_Plus,,\\THFILESTORE.kier.group\P22_Plus
+\\THFILESTORE.kier.group\Permissions-Test,,\\THFILESTORE.kier.group\Permissions-Test
+\\THFILESTORE.kier.group\Plant_and_Equipment_Procurement$,,\\THFILESTORE.kier.group\Plant_and_Equipment_Procurement$
+\\THFILESTORE.kier.group\Print_Room,,\\THFILESTORE.kier.group\Print_Room
+\\THFILESTORE.kier.group\Procurement$,,\\THFILESTORE.kier.group\Procurement$
+\\THFILESTORE.kier.group\proforma,,\\THFILESTORE.kier.group\proforma
+\\THFILESTORE.kier.group\Project Mamba,,\\THFILESTORE.kier.group\Project Mamba
+\\THFILESTORE.kier.group\Project Nexus,,\\THFILESTORE.kier.group\Project Nexus
+\\THFILESTORE.kier.group\PST LIST,,\\THFILESTORE.kier.group\PST LIST
+\\THFILESTORE.kier.group\QFMReports,,\\THFILESTORE.kier.group\QFMReports
+\\THFILESTORE.kier.group\Robocopy_Logs,,\\THFILESTORE.kier.group\Robocopy_Logs
+\\THFILESTORE.kier.group\RPA_DEV,,\\THFILESTORE.kier.group\RPA_DEV
+\\THFILESTORE.kier.group\RPA_UAT,,\\THFILESTORE.kier.group\RPA_UAT
+\\THFILESTORE.kier.group\Safety Health and Environment,,\\THFILESTORE.kier.group\Safety Health and Environment
+\\THFILESTORE.kier.group\Scan,,\\THFILESTORE.kier.group\Scan
+\\THFILESTORE.kier.group\Scanned Documents,,\\THFILESTORE.kier.group\Scanned Documents
+\\THFILESTORE.kier.group\Scans,,\\THFILESTORE.kier.group\Scans
+\\THFILESTORE.kier.group\Secretaries,,\\THFILESTORE.kier.group\Secretaries
+\\THFILESTORE.kier.group\SEH,,\\THFILESTORE.kier.group\SEH
+\\THFILESTORE.kier.group\Sellafield$,,\\THFILESTORE.kier.group\Sellafield$
+\\THFILESTORE.kier.group\Serengeti,,\\THFILESTORE.kier.group\Serengeti
+\\THFILESTORE.kier.group\Shared,,\\THFILESTORE.kier.group\Shared
+\\THFILESTORE.kier.group\SHEQ and Supply Chain,,\\THFILESTORE.kier.group\SHEQ and Supply Chain
+\\THFILESTORE.kier.group\SHEQ_Team,,\\THFILESTORE.kier.group\SHEQ_Team
+\\THFILESTORE.kier.group\SHEQ_Team_Archive,,\\THFILESTORE.kier.group\SHEQ_Team_Archive
+\\THFILESTORE.kier.group\SHE_BUILDING_NORTH,,\\THFILESTORE.kier.group\SHE_BUILDING_NORTH
+\\THFILESTORE.kier.group\SHE_Building_North_Managers,,\\THFILESTORE.kier.group\SHE_Building_North_Managers
+\\THFILESTORE.kier.group\SHE_Managers,,\\THFILESTORE.kier.group\SHE_Managers
+\\THFILESTORE.kier.group\Solarwinds_B$,,\\THFILESTORE.kier.group\Solarwinds_B$
+\\THFILESTORE.kier.group\Solarwinds_E$,,\\THFILESTORE.kier.group\Solarwinds_E$
+\\THFILESTORE.kier.group\Solarwinds_F$,,\\THFILESTORE.kier.group\Solarwinds_F$
+\\THFILESTORE.kier.group\Solarwinds_g$,,\\THFILESTORE.kier.group\Solarwinds_g$
+\\THFILESTORE.kier.group\Solarwinds_H$,,\\THFILESTORE.kier.group\Solarwinds_H$
+\\THFILESTORE.kier.group\Solarwinds_I$,,\\THFILESTORE.kier.group\Solarwinds_I$
+\\THFILESTORE.kier.group\Solarwinds_M$,,\\THFILESTORE.kier.group\Solarwinds_M$
+\\THFILESTORE.kier.group\solarwinds_N$,,\\THFILESTORE.kier.group\solarwinds_N$
+\\THFILESTORE.kier.group\Solarwinds_O$,,\\THFILESTORE.kier.group\Solarwinds_O$
+\\THFILESTORE.kier.group\Solarwinds_P$,,\\THFILESTORE.kier.group\Solarwinds_P$
+\\THFILESTORE.kier.group\Solarwinds_Q$,,\\THFILESTORE.kier.group\Solarwinds_Q$
+\\THFILESTORE.kier.group\Solarwinds_S$,,\\THFILESTORE.kier.group\Solarwinds_S$
+\\THFILESTORE.kier.group\Solarwinds_Z$,,\\THFILESTORE.kier.group\Solarwinds_Z$
+\\THFILESTORE.kier.group\STB,,\\THFILESTORE.kier.group\STB
+\\THFILESTORE.kier.group\Streetworks,,\\THFILESTORE.kier.group\Streetworks
+\\THFILESTORE.kier.group\Sub Contracts,,\\THFILESTORE.kier.group\Sub Contracts
+\\THFILESTORE.kier.group\Sub_Contracts,,\\THFILESTORE.kier.group\Sub_Contracts
+\\THFILESTORE.kier.group\Surveying,,\\THFILESTORE.kier.group\Surveying
+\\THFILESTORE.kier.group\TAUS000,,\\THFILESTORE.kier.group\TAUS000
+\\THFILESTORE.kier.group\Tax team,,\\THFILESTORE.kier.group\Tax team
+\\THFILESTORE.kier.group\Tax Team2,,\\THFILESTORE.kier.group\Tax Team2
+\\THFILESTORE.kier.group\Test_Share,,\\THFILESTORE.kier.group\Test_Share
+\\THFILESTORE.kier.group\Trade_Category_Management,,\\THFILESTORE.kier.group\Trade_Category_Management
+\\THFILESTORE.kier.group\Training,,\\THFILESTORE.kier.group\Training
+\\THFILESTORE.kier.group\Training Common,,\\THFILESTORE.kier.group\Training Common
+\\THFILESTORE.kier.group\Travel,,\\THFILESTORE.kier.group\Travel
+\\THFILESTORE.kier.group\Travel_Procurement$,,\\THFILESTORE.kier.group\Travel_Procurement$
+\\THFILESTORE.kier.group\UpgradeAnalyticsLogs,,\\THFILESTORE.kier.group\UpgradeAnalyticsLogs
+\\THFILESTORE.kier.group\Utilities Training,,\\THFILESTORE.kier.group\Utilities Training
+\\THFILESTORE.kier.group\Waste Wakefield Project,,\\THFILESTORE.kier.group\Waste Wakefield Project
+\\THFILESTORE.kier.group\Weekly_Cash_Forecasting_Group,,\\THFILESTORE.kier.group\Weekly_Cash_Forecasting_Group
+\\THFILESTORE.kier.group\West Burton,,\\THFILESTORE.kier.group\West Burton
+\\THFILESTORE.kier.group\WesternandWalesMIBC,,\\THFILESTORE.kier.group\WesternandWalesMIBC
+\\THFILESTORE.kier.group\WS13$,,\\THFILESTORE.kier.group\WS13$
+\\kgthcxmgt.kier.group\tshome$,,\\kgthcxmgt.kier.group\tshome$
+\\thkierrad01.kier.group\Restricted,,\\thkierrad01.kier.group\Restricted
+\\thkierrad01.kier.group\Authenticated,,\\thkierrad01.kier.group\Authenticated
+\\thkierrad01.kier.group\Office,,\\thkierrad01.kier.group\Office
+\\thkierrad01.kier.group\Open,,\\thkierrad01.kier.group\Open
+\\thintra01.kier.group\kierintranet,,\\thintra01.kier.group\kierintranet
+\\thintra01.kier.group\Inetpub,,\\thintra01.kier.group\Inetpub
+\\thintra01.kier.group\WorkstationAudit,,\\thintra01.kier.group\WorkstationAudit
+\\thintra01.kier.group\AD$,,\\thintra01.kier.group\AD$
+\\thintra01.kier.group\DIRECTSUPPORT$,,\\thintra01.kier.group\DIRECTSUPPORT$
+\\kssofs01.kier.group\EstimatingScanning$,,\\kssofs01.kier.group\EstimatingScanning$
+\\kssofs01.kier.group\Users$,,\\kssofs01.kier.group\Users$
+\\kssofs01.kier.group\$ksso-db$,,\\kssofs01.kier.group\$ksso-db$
+\\kssofs01.kier.group\$ksso-contracts$,,\\kssofs01.kier.group\$ksso-contracts$
+\\kssofs01.kier.group\$BZ-Mrktng$,,\\kssofs01.kier.group\$BZ-Mrktng$
+\\kssofs01.kier.group\$ksso-private$,,\\kssofs01.kier.group\$ksso-private$
+\\kssofs01.kier.group\$ksso-specialprojects$,,\\kssofs01.kier.group\$ksso-specialprojects$
+\\kssofs01.kier.group\$BZ-Cmmrcl$,,\\kssofs01.kier.group\$BZ-Cmmrcl$
+\\kssofs01.kier.group\contractsscanning$,,\\kssofs01.kier.group\contractsscanning$
+\\kssofs01.kier.group\$BZ-ContMan$,,\\kssofs01.kier.group\$BZ-ContMan$
+\\kssofs01.kier.group\$ksso-marketing$,,\\kssofs01.kier.group\$ksso-marketing$
+\\kssofs01.kier.group\$Database$,,\\kssofs01.kier.group\$Database$
+\\kssofs01.kier.group\$ksso-buying$,,\\kssofs01.kier.group\$ksso-buying$
+\\kssofs01.kier.group\$BZ-D&B$,,\\kssofs01.kier.group\$BZ-D&B$
+\\kssofs01.kier.group\Paul.Lucas,,\\kssofs01.kier.group\Paul.Lucas
+\\kssofs01.kier.group\Brazier Construction,,\\kssofs01.kier.group\Brazier Construction
+\\kssofs01.kier.group\$BZ-Buying$,,\\kssofs01.kier.group\$BZ-Buying$
+\\kssofs01.kier.group\$Design_Manager$,,\\kssofs01.kier.group\$Design_Manager$
+\\kssofs01.kier.group\$BZ-Estmtng$,,\\kssofs01.kier.group\$BZ-Estmtng$
+\\kssofs01.kier.group\$ksso-contractsmanager$,,\\kssofs01.kier.group\$ksso-contractsmanager$
+\\kssofs01.kier.group\$ksso-managers$,,\\kssofs01.kier.group\$ksso-managers$
+\\kssofs01.kier.group\$Bz-Cntrcts$,,\\kssofs01.kier.group\$Bz-Cntrcts$
+\\kssofs01.kier.group\$BZ-Spclp$,,\\kssofs01.kier.group\$BZ-Spclp$
+\\kssofs01.kier.group\$ksso-commercial$,,\\kssofs01.kier.group\$ksso-commercial$
+\\kssofs01.kier.group\Users2$,,\\kssofs01.kier.group\Users2$
+\\kssofs01.kier.group\$BZ-Prvt$,,\\kssofs01.kier.group\$BZ-Prvt$
+\\kssofs01.kier.group\$BZ-Mngrs$,,\\kssofs01.kier.group\$BZ-Mngrs$
+\\kssofs01.kier.group\contracts$,,\\kssofs01.kier.group\contracts$
+\\kssofs01.kier.group\$ksso-admin,,\\kssofs01.kier.group\$ksso-admin
+\\kssofs01.kier.group\$ksso-estimating$,,\\kssofs01.kier.group\$ksso-estimating$
+\\kssofs01.kier.group\AdminScanning$,,\\kssofs01.kier.group\AdminScanning$
+\\kssofs01.kier.group\D&BScanning$,,\\kssofs01.kier.group\D&BScanning$
+\\kssofs01.kier.group\$BZ-Scanfile$,,\\kssofs01.kier.group\$BZ-Scanfile$
+\\kssofs01.kier.group\Archives,,\\kssofs01.kier.group\Archives
+\\THDATDFS01.kier.group\Mark,,\\THDATDFS01.kier.group\Mark
+\\THDATDFS01.kier.group\Nottingham,,\\THDATDFS01.kier.group\Nottingham
+\\THDATDFS01.kier.group\testing145,,\\THDATDFS01.kier.group\testing145
+\\THDATDFS01.kier.group\Test_KPS,,\\THDATDFS01.kier.group\Test_KPS
+\\THDATTSTFTP01.kier.group\FTP,,\\THDATTSTFTP01.kier.group\FTP
+\\KBMBARNSFP01.kier.group\Home Drives,,\\KBMBARNSFP01.kier.group\Home Drives
+\\KWTRUFS01.kier.group\SCM,,\\KWTRUFS01.kier.group\SCM
+\\KWTRUFS01.kier.group\Supply Chain Management,,\\KWTRUFS01.kier.group\Supply Chain Management
+\\KCNORFP02.kier.group\Autodesk,,\\KCNORFP02.kier.group\Autodesk
+\\KCNORFP02.kier.group\Home$,,\\KCNORFP02.kier.group\Home$
+\\marrufs01.kier.group\Applications,,\\marrufs01.kier.group\Applications
+\\marrufs01.kier.group\Secretarial,,\\marrufs01.kier.group\Secretarial
+\\marrufs01.kier.group\VarioScans,,\\marrufs01.kier.group\VarioScans
+\\marrufs01.kier.group\Finance,,\\marrufs01.kier.group\Finance
+\\wamaifp01.kier.group\DiP$,,\\wamaifp01.kier.group\DiP$
+\\wamaifp01.kier.group\Plap$,,\\wamaifp01.kier.group\Plap$
+\\wamaifp01.kier.group\AccP$,,\\wamaifp01.kier.group\AccP$
+\\wamaifp01.kier.group\EssP$,,\\wamaifp01.kier.group\EssP$
+\\wamaifp01.kier.group\GW_P$,,\\wamaifp01.kier.group\GW_P$
+\\wamaifp01.kier.group\SeP$,,\\wamaifp01.kier.group\SeP$
+\\wamaifp01.kier.group\Data,,\\wamaifp01.kier.group\Data
+\\wamaifp01.kier.group\Temp$,,\\wamaifp01.kier.group\Temp$
+\\KSSHEFS01.kier.group\Decent Homes,,\\KSSHEFS01.kier.group\Decent Homes
+\\KSSHEFS01.kier.group\IT Profiles,,\\KSSHEFS01.kier.group\IT Profiles
+\\knwmcrfs01.kier.group\365 Install Files,,\\knwmcrfs01.kier.group\365 Install Files
+\\knwmcrfs01.kier.group\Home$,,\\knwmcrfs01.kier.group\Home$
+\\knwmcrfs01.kier.group\AutoCAD2017,,\\knwmcrfs01.kier.group\AutoCAD2017
+\\knwmcrfs01.kier.group\op02-health and safety$,,\\knwmcrfs01.kier.group\op02-health and safety$
+\\RUDATSPDFS01.kier.group\SharePoint,,\\RUDATSPDFS01.kier.group\SharePoint
+\\kislfs01.kier.group\Home,,\\kislfs01.kier.group\Home
+\\kislfs01.kier.group\DVSA Feasibility Folder,,\\kislfs01.kier.group\DVSA Feasibility Folder
+\\kwbrifs02.kier.group\CIT,,\\kwbrifs02.kier.group\CIT
+\\KMNEWFP01.kier.group\$spb,,\\KMNEWFP01.kier.group\$spb
+\\KMNEWFP01.kier.group\01-Scanned,,\\KMNEWFP01.kier.group\01-Scanned
+\\KMNEWFP01.kier.group\Buying,,\\KMNEWFP01.kier.group\Buying
+\\KMNEWFP01.kier.group\Common,,\\KMNEWFP01.kier.group\Common
+\\KMNEWFP01.kier.group\Contracts$,,\\KMNEWFP01.kier.group\Contracts$
+\\KMNEWFP01.kier.group\CVR$,,\\KMNEWFP01.kier.group\CVR$
+\\KMNEWFP01.kier.group\Day$,,\\KMNEWFP01.kier.group\Day$
+\\KMNEWFP01.kier.group\DocRegDb,,\\KMNEWFP01.kier.group\DocRegDb
+\\KMNEWFP01.kier.group\Estimating$,,\\KMNEWFP01.kier.group\Estimating$
+\\KMNEWFP01.kier.group\Home$,,\\KMNEWFP01.kier.group\Home$
+\\KMNEWFP01.kier.group\Management$,,\\KMNEWFP01.kier.group\Management$
+\\KMNEWFP01.kier.group\Marketing$,,\\KMNEWFP01.kier.group\Marketing$
+\\KMNEWFP01.kier.group\Oce Queue,,\\KMNEWFP01.kier.group\Oce Queue
+\\KMNEWFP01.kier.group\Oce Zipfiles,,\\KMNEWFP01.kier.group\Oce Zipfiles
+\\KMNEWFP01.kier.group\OceCache,,\\KMNEWFP01.kier.group\OceCache
+\\KMNEWFP01.kier.group\Ocescan,,\\KMNEWFP01.kier.group\Ocescan
+\\KMNEWFP01.kier.group\Planning$,,\\KMNEWFP01.kier.group\Planning$
+\\KMNEWFP01.kier.group\Primavera,,\\KMNEWFP01.kier.group\Primavera
+\\KMNEWFP01.kier.group\Project Folder Template,,\\KMNEWFP01.kier.group\Project Folder Template
+\\KMNEWFP01.kier.group\Secretary$,,\\KMNEWFP01.kier.group\Secretary$
+\\KMNEWFP01.kier.group\Surveying$,,\\KMNEWFP01.kier.group\Surveying$
+\\KMNEWFP01.kier.group\Surveyors Procurement,,\\KMNEWFP01.kier.group\Surveyors Procurement
+\\KMNEWFP01.kier.group\Temporary,,\\KMNEWFP01.kier.group\Temporary
+\\KMNEWFP01.kier.group\Tenders$,,\\KMNEWFP01.kier.group\Tenders$
+\\KWEXEFP01.kier.group\scans,,\\KWEXEFP01.kier.group\scans
+\\THLABHYPV02.kier.group\journal,,\\THLABHYPV02.kier.group\journal
+\\THLABHYPV02.kier.group\VirtualMachines,,\\THLABHYPV02.kier.group\VirtualMachines
+\\THLABHYPV02.kier.group\VirtualMachines2,,\\THLABHYPV02.kier.group\VirtualMachines2
+\\P-FP-001.kier.group\Home$,,\\P-FP-001.kier.group\Home$
+\\kbmstfp01.kier.group\STOKEDATA,,\\kbmstfp01.kier.group\STOKEDATA
+\\kreusfp01.kier.group\Home$,,\\kreusfp01.kier.group\Home$
+\\ksscrafile01.kier.group\Home$,,\\ksscrafile01.kier.group\Home$
+\\KSSOUFP01.kier.group\$bz-mrktng$,,\\KSSOUFP01.kier.group\$bz-mrktng$
+\\KSSOUFP01.kier.group\$BZ-Private$,,\\KSSOUFP01.kier.group\$BZ-Private$
+\\KSSOUFP01.kier.group\$hj-Mrktng$,,\\KSSOUFP01.kier.group\$hj-Mrktng$
+\\KSSOUFP01.kier.group\2014-01-21 RJohn,,\\KSSOUFP01.kier.group\2014-01-21 RJohn
+\\KSSOUFP01.kier.group\Admin,,\\KSSOUFP01.kier.group\Admin
+\\KSSOUFP01.kier.group\Archives,,\\KSSOUFP01.kier.group\Archives
+\\KSSOUFP01.kier.group\Baker Barracks,,\\KSSOUFP01.kier.group\Baker Barracks
+\\KSSOUFP01.kier.group\BOOST,,\\KSSOUFP01.kier.group\BOOST
+\\KSSOUFP01.kier.group\Brazier Construction,,\\KSSOUFP01.kier.group\Brazier Construction
+\\KSSOUFP01.kier.group\Buying,,\\KSSOUFP01.kier.group\Buying
+\\KSSOUFP01.kier.group\Commercial,,\\KSSOUFP01.kier.group\Commercial
+\\KSSOUFP01.kier.group\Construction-Solent,,\\KSSOUFP01.kier.group\Construction-Solent
+\\KSSOUFP01.kier.group\Contracts_Managers,,\\KSSOUFP01.kier.group\Contracts_Managers
+\\KSSOUFP01.kier.group\CustomerCare&Defects,,\\KSSOUFP01.kier.group\CustomerCare&Defects
+\\KSSOUFP01.kier.group\D&B,,\\KSSOUFP01.kier.group\D&B
+\\KSSOUFP01.kier.group\DaveFielder,,\\KSSOUFP01.kier.group\DaveFielder
+\\KSSOUFP01.kier.group\Directors,,\\KSSOUFP01.kier.group\Directors
+\\KSSOUFP01.kier.group\Estimating,,\\KSSOUFP01.kier.group\Estimating
+\\KSSOUFP01.kier.group\KIER Regional,,\\KSSOUFP01.kier.group\KIER Regional
+\\KSSOUFP01.kier.group\Managers,,\\KSSOUFP01.kier.group\Managers
+\\KSSOUFP01.kier.group\PCross,,\\KSSOUFP01.kier.group\PCross
+\\KSSOUFP01.kier.group\PowerProject2,,\\KSSOUFP01.kier.group\PowerProject2
+\\KSSOUFP01.kier.group\Safety,,\\KSSOUFP01.kier.group\Safety
+\\KSSOUFP01.kier.group\Surrey,,\\KSSOUFP01.kier.group\Surrey
+\\KSSOUFP01.kier.group\TemporaryScript,,\\KSSOUFP01.kier.group\TemporaryScript
+\\KSSOUFP01.kier.group\Tenders 2006,,\\KSSOUFP01.kier.group\Tenders 2006
+\\KSSOUFP01.kier.group\test,,\\KSSOUFP01.kier.group\test
+\\KSSOUFP01.kier.group\Thorney Island Baker Barracks,,\\KSSOUFP01.kier.group\Thorney Island Baker Barracks
+\\KSSOUFP01.kier.group\UserBackups,,\\KSSOUFP01.kier.group\UserBackups
+\\KSSOUFP01.kier.group\Users,,\\KSSOUFP01.kier.group\Users
+\\KNWLIFP01.kier.group\Aftercare,,\\KNWLIFP01.kier.group\Aftercare
+\\KNWLIFP01.kier.group\FI02-Financial Reporting$,,\\KNWLIFP01.kier.group\FI02-Financial Reporting$
+\\KNWLIFP01.kier.group\FI03-Timesheets$,,\\KNWLIFP01.kier.group\FI03-Timesheets$
+\\KNWLIFP01.kier.group\Hannah Aston,,\\KNWLIFP01.kier.group\Hannah Aston
+\\KNWLIFP01.kier.group\Hayley.Percival,,\\KNWLIFP01.kier.group\Hayley.Percival
+\\KNWLIFP01.kier.group\Home Drives,,\\KNWLIFP01.kier.group\Home Drives
+\\KNWLIFP01.kier.group\Licence,,\\KNWLIFP01.kier.group\Licence
+\\KNWLIFP01.kier.group\SHE_Construction_North,,\\KNWLIFP01.kier.group\SHE_Construction_North
+\\wabrofp01.kier.group\TRDP$,,\\wabrofp01.kier.group\TRDP$
+\\wabrofp01.kier.group\ES601$,,\\wabrofp01.kier.group\ES601$
+\\wabrofp01.kier.group\Mast$,,\\wabrofp01.kier.group\Mast$
+\\wabrofp01.kier.group\PRC452$,,\\wabrofp01.kier.group\PRC452$
+\\P-FP-003.kier.group\Home,,\\P-FP-003.kier.group\Home
+\\THDATARC01.kier.group\ASC6&8 Detailed Inspections,,\\THDATARC01.kier.group\ASC6&8 Detailed Inspections
+\\THDATARC01.kier.group\aSCANS,,\\THDATARC01.kier.group\aSCANS
+\\THDATARC01.kier.group\Becodata,,\\THDATARC01.kier.group\Becodata
+\\THDATARC01.kier.group\Becodoc,,\\THDATARC01.kier.group\Becodoc
+\\THDATARC01.kier.group\Buffalo NAS,,\\THDATARC01.kier.group\Buffalo NAS
+\\THDATARC01.kier.group\Caribbean Backups,,\\THDATARC01.kier.group\Caribbean Backups
+\\THDATARC01.kier.group\COLLECTIONS,,\\THDATARC01.kier.group\COLLECTIONS
+\\THDATARC01.kier.group\Commercial,,\\THDATARC01.kier.group\Commercial
+\\THDATARC01.kier.group\Data,,\\THDATARC01.kier.group\Data
+\\THDATARC01.kier.group\DK$,,\\THDATARC01.kier.group\DK$
+\\THDATARC01.kier.group\ECMMS-KIERRAIL,,\\THDATARC01.kier.group\ECMMS-KIERRAIL
+\\THDATARC01.kier.group\ESCC_Demob,,\\THDATARC01.kier.group\ESCC_Demob
+\\THDATARC01.kier.group\Finance,,\\THDATARC01.kier.group\Finance
+\\THDATARC01.kier.group\genisis commercial,,\\THDATARC01.kier.group\genisis commercial
+\\THDATARC01.kier.group\genisis_commercial,,\\THDATARC01.kier.group\genisis_commercial
+\\THDATARC01.kier.group\HKDATA$,,\\THDATARC01.kier.group\HKDATA$
+\\THDATARC01.kier.group\HM_Archive,,\\THDATARC01.kier.group\HM_Archive
+\\THDATARC01.kier.group\home,,\\THDATARC01.kier.group\home
+\\THDATARC01.kier.group\IT apps,,\\THDATARC01.kier.group\IT apps
+\\THDATARC01.kier.group\IT$,,\\THDATARC01.kier.group\IT$
+\\THDATARC01.kier.group\KBM Hull,,\\THDATARC01.kier.group\KBM Hull
+\\THDATARC01.kier.group\KBM-Commercial,,\\THDATARC01.kier.group\KBM-Commercial
+\\THDATARC01.kier.group\KBMHLFP02,,\\THDATARC01.kier.group\KBMHLFP02
+\\THDATARC01.kier.group\KBMHLFP02_Groups,,\\THDATARC01.kier.group\KBMHLFP02_Groups
+\\THDATARC01.kier.group\KBMHLFP02_Shared,,\\THDATARC01.kier.group\KBMHLFP02_Shared
+\\THDATARC01.kier.group\kbmhufp01,,\\THDATARC01.kier.group\kbmhufp01
+\\THDATARC01.kier.group\kbmhufp02,,\\THDATARC01.kier.group\kbmhufp02
+\\THDATARC01.kier.group\kbmleefp01,,\\THDATARC01.kier.group\kbmleefp01
+\\THDATARC01.kier.group\KBMNFP01 Bids Data,,\\THDATARC01.kier.group\KBMNFP01 Bids Data
+\\THDATARC01.kier.group\kccarfp01,,\\THDATARC01.kier.group\kccarfp01
+\\THDATARC01.kier.group\kcexefp02,,\\THDATARC01.kier.group\kcexefp02
+\\THDATARC01.kier.group\Kier Efw,,\\THDATARC01.kier.group\Kier Efw
+\\THDATARC01.kier.group\KISLFS01_Shared,,\\THDATARC01.kier.group\KISLFS01_Shared
+\\THDATARC01.kier.group\KPHWMFP01,,\\THDATARC01.kier.group\KPHWMFP01
+\\THDATARC01.kier.group\Loughton_Data,,\\THDATARC01.kier.group\Loughton_Data
+\\THDATARC01.kier.group\Marketing,,\\THDATARC01.kier.group\Marketing
+\\THDATARC01.kier.group\OFS_Files,,\\THDATARC01.kier.group\OFS_Files
+\\THDATARC01.kier.group\Print_Room_Scanning,,\\THDATARC01.kier.group\Print_Room_Scanning
+\\THDATARC01.kier.group\shared$,,\\THDATARC01.kier.group\shared$
+\\THDATARC01.kier.group\SHE,,\\THDATARC01.kier.group\SHE
+\\THDATARC01.kier.group\Solibri Software,,\\THDATARC01.kier.group\Solibri Software
+\\THDATARC01.kier.group\SQL_DB_Archives,,\\THDATARC01.kier.group\SQL_DB_Archives
+\\THDATARC01.kier.group\Supportworks_archive,,\\THDATARC01.kier.group\Supportworks_archive
+\\THDATARC01.kier.group\User,,\\THDATARC01.kier.group\User
+\\THDATARC01.kier.group\Users_2,,\\THDATARC01.kier.group\Users_2
+\\THDATARC01.kier.group\W&W_Shared_HR,,\\THDATARC01.kier.group\W&W_Shared_HR
+\\P-SEE-001.kier.group\SEE_PACKAGES$,,\\P-SEE-001.kier.group\SEE_PACKAGES$
+\\THDATMGI01.kier.group\Corporateresources,,\\THDATMGI01.kier.group\Corporateresources
+\\THDATSPUATWEB02.kier.group\SearchIndex,,\\THDATSPUATWEB02.kier.group\SearchIndex
+\\RUDATEVJ01.kier.group\EVCache$,,\\RUDATEVJ01.kier.group\EVCache$
+\\thkierbkp02.kier.group\Backup,,\\thkierbkp02.kier.group\Backup
+\\thkieredendev01.kier.group\testshare,,\\thkieredendev01.kier.group\testshare
+\\thkieredendev01.kier.group\PropertyImg,,\\thkieredendev01.kier.group\PropertyImg
+\\THKIERALT10.kier.group\BiomniDocumentation$,,\\THKIERALT10.kier.group\BiomniDocumentation$
+\\THKIERALT10.kier.group\Workflow_Logs,,\\THKIERALT10.kier.group\Workflow_Logs
+\\THKIERALT13.kier.group\DBA$,,\\THKIERALT13.kier.group\DBA$
+\\THKIERALT13.kier.group\Shared$,,\\THKIERALT13.kier.group\Shared$
+\\THKIERALT13.kier.group\StatusReports$,,\\THKIERALT13.kier.group\StatusReports$
+\\P-FP-002.kier.group\Home,,\\P-FP-002.kier.group\Home
+\\THDATEVJ02.kier.group\EVCache$,,\\THDATEVJ02.kier.group\EVCache$
+\\THKIERBARC01.kier.group\Stock Inventory Installation,,\\THKIERBARC01.kier.group\Stock Inventory Installation
+\\THKIERLMT01.kier.group\ILMT_Win-x86_Agent,,\\THKIERLMT01.kier.group\ILMT_Win-x86_Agent
+\\marruman02.kier.group\Building Manuals Library,,\\marruman02.kier.group\Building Manuals Library
+\\marruman02.kier.group\Manuals,,\\marruman02.kier.group\Manuals
+\\RUDATEVM03.kier.group\EVCache$,,\\RUDATEVM03.kier.group\EVCache$
+\\RUDATEVM04.kier.group\EVCache$,,\\RUDATEVM04.kier.group\EVCache$
+\\KPCHAFP01.kier.group\Home,,\\KPCHAFP01.kier.group\Home
+\\KPCHAFP01.kier.group\S02011Q4$,,\\KPCHAFP01.kier.group\S02011Q4$
+\\KPCHAFP01.kier.group\S02011Q1$,,\\KPCHAFP01.kier.group\S02011Q1$
+\\KPCHAFP01.kier.group\SPEED$,,\\KPCHAFP01.kier.group\SPEED$
+\\KPCHAFP01.kier.group\S02011Q3$,,\\KPCHAFP01.kier.group\S02011Q3$
+\\KPCHAFP01.kier.group\S02011Q2$,,\\KPCHAFP01.kier.group\S02011Q2$
+\\KPCHAFP01.kier.group\Long_2b,,\\KPCHAFP01.kier.group\Long_2b
+\\P-FS-002.kier.group\HEVA24,,\\P-FS-002.kier.group\HEVA24
+\\P-FS-002.kier.group\Heva25,,\\P-FS-002.kier.group\Heva25
+\\P-FS-002.kier.group\Heva26,,\\P-FS-002.kier.group\Heva26
+\\thkieredendev03.kier.group\Asset_Share,,\\thkieredendev03.kier.group\Asset_Share
+\\thkieredendev03.kier.group\Netcall downloads,,\\thkieredendev03.kier.group\Netcall downloads
+\\THKIERBDB02.kier.group\Natwest$,,\\THKIERBDB02.kier.group\Natwest$
+\\thkiereden01.kier.group\HAF_TEST_IN,,\\thkiereden01.kier.group\HAF_TEST_IN
+\\thkiereden01.kier.group\ISL_LIVE_PROC,,\\thkiereden01.kier.group\ISL_LIVE_PROC
+\\thkiereden01.kier.group\PKW_TEST_OUT,,\\thkiereden01.kier.group\PKW_TEST_OUT
+\\thkiereden01.kier.group\STOKE_LIVE_LOGS,,\\thkiereden01.kier.group\STOKE_LIVE_LOGS
+\\thkiereden01.kier.group\ISL_LIVE_OUT,,\\thkiereden01.kier.group\ISL_LIVE_OUT
+\\thkiereden01.kier.group\OPTI_TEST_OUT,,\\thkiereden01.kier.group\OPTI_TEST_OUT
+\\thkiereden01.kier.group\ACI_LIVE_IN,,\\thkiereden01.kier.group\ACI_LIVE_IN
+\\thkiereden01.kier.group\GOS_TEST_OUT,,\\thkiereden01.kier.group\GOS_TEST_OUT
+\\thkiereden01.kier.group\EAL_LIVE_PROC,,\\thkiereden01.kier.group\EAL_LIVE_PROC
+\\thkiereden01.kier.group\Ealing,,\\thkiereden01.kier.group\Ealing
+\\thkiereden01.kier.group\TFORGE_LIVE_IN,,\\thkiereden01.kier.group\TFORGE_LIVE_IN
+\\thkiereden01.kier.group\SEH_LIVE_OUT,,\\thkiereden01.kier.group\SEH_LIVE_OUT
+\\thkiereden01.kier.group\SEH_LIVE_PROC,,\\thkiereden01.kier.group\SEH_LIVE_PROC
+\\thkiereden01.kier.group\GOS_TEST_FFILE,,\\thkiereden01.kier.group\GOS_TEST_FFILE
+\\thkiereden01.kier.group\CHG_LIVE_IN,,\\thkiereden01.kier.group\CHG_LIVE_IN
+\\thkiereden01.kier.group\CHG_LIVE_LOGS,,\\thkiereden01.kier.group\CHG_LIVE_LOGS
+\\thkiereden01.kier.group\CPB_LIVE_OUT,,\\thkiereden01.kier.group\CPB_LIVE_OUT
+\\thkiereden01.kier.group\CPB_LIVE_PROC,,\\thkiereden01.kier.group\CPB_LIVE_PROC
+\\thkiereden01.kier.group\RKH_LIVE_OUT,,\\thkiereden01.kier.group\RKH_LIVE_OUT
+\\thkiereden01.kier.group\RKH_LIVE_PROC,,\\thkiereden01.kier.group\RKH_LIVE_PROC
+\\thkiereden01.kier.group\LAH_LIVE_PROC,,\\thkiereden01.kier.group\LAH_LIVE_PROC
+\\thkiereden01.kier.group\HAF_TEST_LOG,,\\thkiereden01.kier.group\HAF_TEST_LOG
+\\thkiereden01.kier.group\HAF_TEST_LOGS,,\\thkiereden01.kier.group\HAF_TEST_LOGS
+\\thkiereden01.kier.group\PKW_TEST_PROC,,\\thkiereden01.kier.group\PKW_TEST_PROC
+\\thkiereden01.kier.group\HULL_TEST_LOGS,,\\thkiereden01.kier.group\HULL_TEST_LOGS
+\\thkiereden01.kier.group\ACI_LIVE_LOG,,\\thkiereden01.kier.group\ACI_LIVE_LOG
+\\thkiereden01.kier.group\OPTI_TEST_PROC,,\\thkiereden01.kier.group\OPTI_TEST_PROC
+\\thkiereden01.kier.group\HARL_TEST_LOGS,,\\thkiereden01.kier.group\HARL_TEST_LOGS
+\\thkiereden01.kier.group\BOS_TEST_PROC,,\\thkiereden01.kier.group\BOS_TEST_PROC
+\\thkiereden01.kier.group\BOS_TEST_IN,,\\thkiereden01.kier.group\BOS_TEST_IN
+\\thkiereden01.kier.group\TYNE_TEST_PROC,,\\thkiereden01.kier.group\TYNE_TEST_PROC
+\\thkiereden01.kier.group\BMBC_LIVE_LOG,,\\thkiereden01.kier.group\BMBC_LIVE_LOG
+\\thkiereden01.kier.group\GOS_TEST_PROC,,\\thkiereden01.kier.group\GOS_TEST_PROC
+\\thkiereden01.kier.group\EAL_LIVE_IN,,\\thkiereden01.kier.group\EAL_LIVE_IN
+\\thkiereden01.kier.group\TFORGE_LIVE_LOG,,\\thkiereden01.kier.group\TFORGE_LIVE_LOG
+\\thkiereden01.kier.group\GENESIS_TEST_IN,,\\thkiereden01.kier.group\GENESIS_TEST_IN
+\\thkiereden01.kier.group\GENESIS_TEST_PROC,,\\thkiereden01.kier.group\GENESIS_TEST_PROC
+\\thkiereden01.kier.group\LAH_LIVE_IN,,\\thkiereden01.kier.group\LAH_LIVE_IN
+\\thkiereden01.kier.group\STOKE_LIVE_OUT,,\\thkiereden01.kier.group\STOKE_LIVE_OUT
+\\thkiereden01.kier.group\Gosport,,\\thkiereden01.kier.group\Gosport
+\\thkiereden01.kier.group\ISL_LIVE_FFILE,,\\thkiereden01.kier.group\ISL_LIVE_FFILE
+\\thkiereden01.kier.group\SEH_LIVE_FFILE,,\\thkiereden01.kier.group\SEH_LIVE_FFILE
+\\thkiereden01.kier.group\ISL_LIVE_NON_HFI,,\\thkiereden01.kier.group\ISL_LIVE_NON_HFI
+\\thkiereden01.kier.group\EAL_LIVE_FFILE,,\\thkiereden01.kier.group\EAL_LIVE_FFILE
+\\thkiereden01.kier.group\HARL_LIVE_FFILE,,\\thkiereden01.kier.group\HARL_LIVE_FFILE
+\\thkiereden01.kier.group\Loading,,\\thkiereden01.kier.group\Loading
+\\thkiereden01.kier.group\RKH_TEST_IN,,\\thkiereden01.kier.group\RKH_TEST_IN
+\\thkiereden01.kier.group\Eden-Iface-Files,,\\thkiereden01.kier.group\Eden-Iface-Files
+\\thkiereden01.kier.group\RKH_LIVE_FFILE,,\\thkiereden01.kier.group\RKH_LIVE_FFILE
+\\thkiereden01.kier.group\GEN_LIVE_FFILE,,\\thkiereden01.kier.group\GEN_LIVE_FFILE
+\\thkiereden01.kier.group\HULL_LIVE_REPORTS,,\\thkiereden01.kier.group\HULL_LIVE_REPORTS
+\\thkiereden01.kier.group\STOKE_LIVE_REPORTS,,\\thkiereden01.kier.group\STOKE_LIVE_REPORTS
+\\thkiereden01.kier.group\BRI_LIVE_REPORTS,,\\thkiereden01.kier.group\BRI_LIVE_REPORTS
+\\thkiereden01.kier.group\Prophix,,\\thkiereden01.kier.group\Prophix
+\\thkiereden01.kier.group\BOS_TEST_LOG,,\\thkiereden01.kier.group\BOS_TEST_LOG
+\\thkiereden01.kier.group\GOS_TEST_FF_PROC,,\\thkiereden01.kier.group\GOS_TEST_FF_PROC
+\\thkiereden01.kier.group\EAL_LIVE_LOG,,\\thkiereden01.kier.group\EAL_LIVE_LOG
+\\thkiereden01.kier.group\LAH_LIVE_LOG,,\\thkiereden01.kier.group\LAH_LIVE_LOG
+\\thkiereden01.kier.group\Grafton_Master_File,,\\thkiereden01.kier.group\Grafton_Master_File
+\\thkiereden01.kier.group\SHEF_FFILE_IN,,\\thkiereden01.kier.group\SHEF_FFILE_IN
+\\thkiereden01.kier.group\CP12_Live_IN,,\\thkiereden01.kier.group\CP12_Live_IN
+\\thkiereden01.kier.group\TechForge,,\\thkiereden01.kier.group\TechForge
+\\thkiereden01.kier.group\ISL_LIVE_LOGS,,\\thkiereden01.kier.group\ISL_LIVE_LOGS
+\\thkiereden01.kier.group\HAF_LIVE_OUT,,\\thkiereden01.kier.group\HAF_LIVE_OUT
+\\thkiereden01.kier.group\STOKE_LIVE_IN,,\\thkiereden01.kier.group\STOKE_LIVE_IN
+\\thkiereden01.kier.group\STOKE_LIVE_PROC,,\\thkiereden01.kier.group\STOKE_LIVE_PROC
+\\thkiereden01.kier.group\ASH_LIVE_LOGS,,\\thkiereden01.kier.group\ASH_LIVE_LOGS
+\\thkiereden01.kier.group\HARR_LIVE_LOGS,,\\thkiereden01.kier.group\HARR_LIVE_LOGS
+\\thkiereden01.kier.group\ACI_LIVE_PROC,,\\thkiereden01.kier.group\ACI_LIVE_PROC
+\\thkiereden01.kier.group\ACI_TEST_OUT,,\\thkiereden01.kier.group\ACI_TEST_OUT
+\\thkiereden01.kier.group\HARL_LIVE_OUT,,\\thkiereden01.kier.group\HARL_LIVE_OUT
+\\thkiereden01.kier.group\BMBC_TEST_OUT,,\\thkiereden01.kier.group\BMBC_TEST_OUT
+\\thkiereden01.kier.group\BMBC_LIVE_PROC,,\\thkiereden01.kier.group\BMBC_LIVE_PROC
+\\thkiereden01.kier.group\TFORGE_LIVE_PROC,,\\thkiereden01.kier.group\TFORGE_LIVE_PROC
+\\thkiereden01.kier.group\TFORGE_TEST_OUT,,\\thkiereden01.kier.group\TFORGE_TEST_OUT
+\\thkiereden01.kier.group\SEH_LIVE_LOGS,,\\thkiereden01.kier.group\SEH_LIVE_LOGS
+\\thkiereden01.kier.group\CHG_TEST_OUT,,\\thkiereden01.kier.group\CHG_TEST_OUT
+\\thkiereden01.kier.group\CHG_LIVE_PROC,,\\thkiereden01.kier.group\CHG_LIVE_PROC
+\\thkiereden01.kier.group\CPB_LIVE_LOGS,,\\thkiereden01.kier.group\CPB_LIVE_LOGS
+\\thkiereden01.kier.group\RKH_LIVE_LOGS,,\\thkiereden01.kier.group\RKH_LIVE_LOGS
+\\thkiereden01.kier.group\Metro,,\\thkiereden01.kier.group\Metro
+\\thkiereden01.kier.group\HAF_TEST_PROC,,\\thkiereden01.kier.group\HAF_TEST_PROC
+\\thkiereden01.kier.group\PKW_TEST_IN,,\\thkiereden01.kier.group\PKW_TEST_IN
+\\thkiereden01.kier.group\PKW_LIVE_LOG,,\\thkiereden01.kier.group\PKW_LIVE_LOG
+\\thkiereden01.kier.group\ISL_LIVE_IN,,\\thkiereden01.kier.group\ISL_LIVE_IN
+\\thkiereden01.kier.group\BRI_TEST_LOGS,,\\thkiereden01.kier.group\BRI_TEST_LOGS
+\\thkiereden01.kier.group\FAULT_LOGS_LIVE,,\\thkiereden01.kier.group\FAULT_LOGS_LIVE
+\\thkiereden01.kier.group\HARL_TEST_PROC,,\\thkiereden01.kier.group\HARL_TEST_PROC
+\\thkiereden01.kier.group\GOS_TEST_IN,,\\thkiereden01.kier.group\GOS_TEST_IN
+\\thkiereden01.kier.group\GOS_TEST_LOGS,,\\thkiereden01.kier.group\GOS_TEST_LOGS
+\\thkiereden01.kier.group\Islington,,\\thkiereden01.kier.group\Islington
+\\thkiereden01.kier.group\SEH_LIVE_IN,,\\thkiereden01.kier.group\SEH_LIVE_IN
+\\thkiereden01.kier.group\CPB_LIVE_IN,,\\thkiereden01.kier.group\CPB_LIVE_IN
+\\thkiereden01.kier.group\GENESIS_TEST_LOGS,,\\thkiereden01.kier.group\GENESIS_TEST_LOGS
+\\thkiereden01.kier.group\L&H,,\\thkiereden01.kier.group\L&H
+\\thkiereden01.kier.group\BOS_LIVE_OUT,,\\thkiereden01.kier.group\BOS_LIVE_OUT
+\\thkiereden01.kier.group\TYNE_LIVE_IN,,\\thkiereden01.kier.group\TYNE_LIVE_IN
+\\thkiereden01.kier.group\TYNE_LIVE_OUT,,\\thkiereden01.kier.group\TYNE_LIVE_OUT
+\\thkiereden01.kier.group\EAL_TEST_OUT,,\\thkiereden01.kier.group\EAL_TEST_OUT
+\\thkiereden01.kier.group\LAH_TEST_OUT,,\\thkiereden01.kier.group\LAH_TEST_OUT
+\\thkiereden01.kier.group\GENESIS_LIVE_OUT,,\\thkiereden01.kier.group\GENESIS_LIVE_OUT
+\\thkiereden01.kier.group\HARL_LIVE_IN,,\\thkiereden01.kier.group\HARL_LIVE_IN
+\\thkiereden01.kier.group\BMBC_TEST_IN,,\\thkiereden01.kier.group\BMBC_TEST_IN
+\\thkiereden01.kier.group\Barnsley Wolseley Import,,\\thkiereden01.kier.group\Barnsley Wolseley Import
+\\thkiereden01.kier.group\Harlow,,\\thkiereden01.kier.group\Harlow
+\\thkiereden01.kier.group\Barnsley,,\\thkiereden01.kier.group\Barnsley
+\\thkiereden01.kier.group\Boston,,\\thkiereden01.kier.group\Boston
+\\thkiereden01.kier.group\HAF_LIVE_PROC,,\\thkiereden01.kier.group\HAF_LIVE_PROC
+\\thkiereden01.kier.group\HULL_TEST_REPORTS,,\\thkiereden01.kier.group\HULL_TEST_REPORTS
+\\thkiereden01.kier.group\STOKE_TEST_REPORTS,,\\thkiereden01.kier.group\STOKE_TEST_REPORTS
+\\thkiereden01.kier.group\BRI_LIVE_LOGS,,\\thkiereden01.kier.group\BRI_LIVE_LOGS
+\\thkiereden01.kier.group\BRI_TEST_REPORTS,,\\thkiereden01.kier.group\BRI_TEST_REPORTS
+\\thkiereden01.kier.group\HARL_TEST_IN,,\\thkiereden01.kier.group\HARL_TEST_IN
+\\thkiereden01.kier.group\HARL_LIVE_PROC,,\\thkiereden01.kier.group\HARL_LIVE_PROC
+\\thkiereden01.kier.group\BOS_TEST_OUT,,\\thkiereden01.kier.group\BOS_TEST_OUT
+\\thkiereden01.kier.group\BOS_LIVE_LOGS,,\\thkiereden01.kier.group\BOS_LIVE_LOGS
+\\thkiereden01.kier.group\TYNE_TEST_OUT,,\\thkiereden01.kier.group\TYNE_TEST_OUT
+\\thkiereden01.kier.group\BMBC_LIVE_IN,,\\thkiereden01.kier.group\BMBC_LIVE_IN
+\\thkiereden01.kier.group\GOS_LIVE_LOGS,,\\thkiereden01.kier.group\GOS_LIVE_LOGS
+\\thkiereden01.kier.group\EAL_LIVE_OUT,,\\thkiereden01.kier.group\EAL_LIVE_OUT
+\\thkiereden01.kier.group\Hammersmith,,\\thkiereden01.kier.group\Hammersmith
+\\thkiereden01.kier.group\Barnsley_Wolseley_Import,,\\thkiereden01.kier.group\Barnsley_Wolseley_Import
+\\thkiereden01.kier.group\SouthEssexHomes,,\\thkiereden01.kier.group\SouthEssexHomes
+\\thkiereden01.kier.group\EDEN_LOGS,,\\thkiereden01.kier.group\EDEN_LOGS
+\\thkiereden01.kier.group\SheffShared,,\\thkiereden01.kier.group\SheffShared
+\\thkiereden01.kier.group\GENESIS_TEST_OUT,,\\thkiereden01.kier.group\GENESIS_TEST_OUT
+\\thkiereden01.kier.group\GENESIS_LIVE_LOGS,,\\thkiereden01.kier.group\GENESIS_LIVE_LOGS
+\\thkiereden01.kier.group\LAH_LIVE_OUT,,\\thkiereden01.kier.group\LAH_LIVE_OUT
+\\thkiereden01.kier.group\ISL_TEST_LOGS,,\\thkiereden01.kier.group\ISL_TEST_LOGS
+\\thkiereden01.kier.group\STOKE_TEST_PROC,,\\thkiereden01.kier.group\STOKE_TEST_PROC
+\\thkiereden01.kier.group\ORANGE_TEST_PROC,,\\thkiereden01.kier.group\ORANGE_TEST_PROC
+\\thkiereden01.kier.group\ASH_TEST_LOGS,,\\thkiereden01.kier.group\ASH_TEST_LOGS
+\\thkiereden01.kier.group\ACI_TEST_PROC,,\\thkiereden01.kier.group\ACI_TEST_PROC
+\\thkiereden01.kier.group\TYNE_TEST_IN,,\\thkiereden01.kier.group\TYNE_TEST_IN
+\\thkiereden01.kier.group\BMBC_TEST_PROC,,\\thkiereden01.kier.group\BMBC_TEST_PROC
+\\thkiereden01.kier.group\HARR_TEST_LOGS,,\\thkiereden01.kier.group\HARR_TEST_LOGS
+\\thkiereden01.kier.group\GOS_TEST_FF_IN,,\\thkiereden01.kier.group\GOS_TEST_FF_IN
+\\thkiereden01.kier.group\TFORGE_TEST_PROC,,\\thkiereden01.kier.group\TFORGE_TEST_PROC
+\\thkiereden01.kier.group\SEH_TEST_LOGS,,\\thkiereden01.kier.group\SEH_TEST_LOGS
+\\thkiereden01.kier.group\ISL_LIVE_CP12_SENT,,\\thkiereden01.kier.group\ISL_LIVE_CP12_SENT
+\\thkiereden01.kier.group\CHG_TEST_PROC,,\\thkiereden01.kier.group\CHG_TEST_PROC
+\\thkiereden01.kier.group\GOS_LIVE_CP12_SENT,,\\thkiereden01.kier.group\GOS_LIVE_CP12_SENT
+\\thkiereden01.kier.group\Transfer,,\\thkiereden01.kier.group\Transfer
+\\thkiereden01.kier.group\CPB_TEST_LOGS,,\\thkiereden01.kier.group\CPB_TEST_LOGS
+\\thkiereden01.kier.group\RKH_TEST_LOGS,,\\thkiereden01.kier.group\RKH_TEST_LOGS
+\\thkiereden01.kier.group\PKW_LIVE_IN,,\\thkiereden01.kier.group\PKW_LIVE_IN
+\\thkiereden01.kier.group\ISL_TEST_IN,,\\thkiereden01.kier.group\ISL_TEST_IN
+\\thkiereden01.kier.group\HAF_TEST_OUT,,\\thkiereden01.kier.group\HAF_TEST_OUT
+\\thkiereden01.kier.group\ACI_LIVE_OUT,,\\thkiereden01.kier.group\ACI_LIVE_OUT
+\\thkiereden01.kier.group\HARL_TEST_OUT,,\\thkiereden01.kier.group\HARL_TEST_OUT
+\\thkiereden01.kier.group\BMBC_LIVE_OUT,,\\thkiereden01.kier.group\BMBC_LIVE_OUT
+\\thkiereden01.kier.group\GOS_LIVE_IN,,\\thkiereden01.kier.group\GOS_LIVE_IN
+\\thkiereden01.kier.group\GOS_LIVE_FFILE,,\\thkiereden01.kier.group\GOS_LIVE_FFILE
+\\thkiereden01.kier.group\BMBC_LIVE_FFILE,,\\thkiereden01.kier.group\BMBC_LIVE_FFILE
+\\thkiereden01.kier.group\TFORGE_LIVE_OUT,,\\thkiereden01.kier.group\TFORGE_LIVE_OUT
+\\thkiereden01.kier.group\SEH_TEST_IN,,\\thkiereden01.kier.group\SEH_TEST_IN
+\\thkiereden01.kier.group\SHEF_FFILE_PROC,,\\thkiereden01.kier.group\SHEF_FFILE_PROC
+\\thkiereden01.kier.group\TYNE_LIVE_FFILE,,\\thkiereden01.kier.group\TYNE_LIVE_FFILE
+\\thkiereden01.kier.group\CHG_LIVE_OUT,,\\thkiereden01.kier.group\CHG_LIVE_OUT
+\\thkiereden01.kier.group\CHG_LIVE_FFILE,,\\thkiereden01.kier.group\CHG_LIVE_FFILE
+\\thkiereden01.kier.group\CPB_TEST_IN,,\\thkiereden01.kier.group\CPB_TEST_IN
+\\thkiereden01.kier.group\RedKite,,\\thkiereden01.kier.group\RedKite
+\\thkiereden01.kier.group\Metro_LIVE_FFILE,,\\thkiereden01.kier.group\Metro_LIVE_FFILE
+\\thkiereden01.kier.group\PKW_TEST_LOG,,\\thkiereden01.kier.group\PKW_TEST_LOG
+\\thkiereden01.kier.group\STOKE_TEST_IN,,\\thkiereden01.kier.group\STOKE_TEST_IN
+\\thkiereden01.kier.group\http,,\\thkiereden01.kier.group\http
+\\thkiereden01.kier.group\SEH_LIVE_LOG,,\\thkiereden01.kier.group\SEH_LIVE_LOG
+\\thkiereden01.kier.group\Genesis,,\\thkiereden01.kier.group\Genesis
+\\thkiereden01.kier.group\HAF_LIVE_LOGS,,\\thkiereden01.kier.group\HAF_LIVE_LOGS
+\\thkiereden01.kier.group\PKW_LIVE_PROC,,\\thkiereden01.kier.group\PKW_LIVE_PROC
+\\thkiereden01.kier.group\HULL_LIVE_LOGS,,\\thkiereden01.kier.group\HULL_LIVE_LOGS
+\\thkiereden01.kier.group\STOKE_TEST_OUT,,\\thkiereden01.kier.group\STOKE_TEST_OUT
+\\thkiereden01.kier.group\HARL_LIVE_LOGS,,\\thkiereden01.kier.group\HARL_LIVE_LOGS
+\\thkiereden01.kier.group\BOS_LIVE_PROC,,\\thkiereden01.kier.group\BOS_LIVE_PROC
+\\thkiereden01.kier.group\TYNE_LIVE_PROC,,\\thkiereden01.kier.group\TYNE_LIVE_PROC
+\\thkiereden01.kier.group\GOS_LIVE_PROC,,\\thkiereden01.kier.group\GOS_LIVE_PROC
+\\thkiereden01.kier.group\GENESIS_LIVE_PROC,,\\thkiereden01.kier.group\GENESIS_LIVE_PROC
+\\thkiereden01.kier.group\ISL_TEST_PROC,,\\thkiereden01.kier.group\ISL_TEST_PROC
+\\thkiereden01.kier.group\STOKE_TEST_LOGS,,\\thkiereden01.kier.group\STOKE_TEST_LOGS
+\\thkiereden01.kier.group\Attachments,,\\thkiereden01.kier.group\Attachments
+\\thkiereden01.kier.group\OPTI_TEST_IN,,\\thkiereden01.kier.group\OPTI_TEST_IN
+\\thkiereden01.kier.group\EAL_TEST_PROC,,\\thkiereden01.kier.group\EAL_TEST_PROC
+\\thkiereden01.kier.group\EAL_TEST_LOG,,\\thkiereden01.kier.group\EAL_TEST_LOG
+\\thkiereden01.kier.group\LAH_TEST_LOG,,\\thkiereden01.kier.group\LAH_TEST_LOG
+\\thkiereden01.kier.group\LAH_TEST_PROC,,\\thkiereden01.kier.group\LAH_TEST_PROC
+\\thkiereden01.kier.group\SEH_TEST_PROC,,\\thkiereden01.kier.group\SEH_TEST_PROC
+\\thkiereden01.kier.group\CHG_TEST_LOGS,,\\thkiereden01.kier.group\CHG_TEST_LOGS
+\\thkiereden01.kier.group\CPB_TEST_PROC,,\\thkiereden01.kier.group\CPB_TEST_PROC
+\\thkiereden01.kier.group\RKH_LIVE_IN,,\\thkiereden01.kier.group\RKH_LIVE_IN
+\\thkiereden01.kier.group\RKH_TEST_PROC,,\\thkiereden01.kier.group\RKH_TEST_PROC
+\\thkiereden01.kier.group\PKW_LIVE_OUT,,\\thkiereden01.kier.group\PKW_LIVE_OUT
+\\thkiereden01.kier.group\ISL_TEST_OUT,,\\thkiereden01.kier.group\ISL_TEST_OUT
+\\thkiereden01.kier.group\FAULT_LOGS_TEST,,\\thkiereden01.kier.group\FAULT_LOGS_TEST
+\\thkiereden01.kier.group\BOS_LIVE_IN,,\\thkiereden01.kier.group\BOS_LIVE_IN
+\\thkiereden01.kier.group\GOS_LIVE_OUT,,\\thkiereden01.kier.group\GOS_LIVE_OUT
+\\thkiereden01.kier.group\EAL_TEST_IN,,\\thkiereden01.kier.group\EAL_TEST_IN
+\\thkiereden01.kier.group\LAH_TEST_IN,,\\thkiereden01.kier.group\LAH_TEST_IN
+\\thkiereden01.kier.group\SEH_TEST_OUT,,\\thkiereden01.kier.group\SEH_TEST_OUT
+\\thkiereden01.kier.group\Circle,,\\thkiereden01.kier.group\Circle
+\\thkiereden01.kier.group\CastlePoint,,\\thkiereden01.kier.group\CastlePoint
+\\thkiereden01.kier.group\CPB_TEST_OUT,,\\thkiereden01.kier.group\CPB_TEST_OUT
+\\thkiereden01.kier.group\RKH_TEST_OUT,,\\thkiereden01.kier.group\RKH_TEST_OUT
+\\thkiereden01.kier.group\GENESIS_LIVE_IN,,\\thkiereden01.kier.group\GENESIS_LIVE_IN
+\\thkiereden01.kier.group\HAF_LIVE_IN,,\\thkiereden01.kier.group\HAF_LIVE_IN
+\\thkiereden01.kier.group\ACI_TEST_LOG,,\\thkiereden01.kier.group\ACI_TEST_LOG
+\\thkiereden01.kier.group\ORANGE_TEST_IN,,\\thkiereden01.kier.group\ORANGE_TEST_IN
+\\thkiereden01.kier.group\ACI_TEST_IN,,\\thkiereden01.kier.group\ACI_TEST_IN
+\\thkiereden01.kier.group\BMBC_TEST_LOG,,\\thkiereden01.kier.group\BMBC_TEST_LOG
+\\thkiereden01.kier.group\Grafton_Counter_Files,,\\thkiereden01.kier.group\Grafton_Counter_Files
+\\thkiereden01.kier.group\TFORGE_TEST_IN,,\\thkiereden01.kier.group\TFORGE_TEST_IN
+\\thkiereden01.kier.group\TFORGE_TEST_LOG,,\\thkiereden01.kier.group\TFORGE_TEST_LOG
+\\thkiereden01.kier.group\CHG_TEST_IN,,\\thkiereden01.kier.group\CHG_TEST_IN
+\\thkiereden01.kier.group\top,,\\thkiereden01.kier.group\top
+\\THKIERLIC03.kier.group\AIARepository$,,\\THKIERLIC03.kier.group\AIARepository$
+\\RUDATEVM02.kier.group\EVCache$,,\\RUDATEVM02.kier.group\EVCache$
+\\THDATSPPRDWEB02.kier.group\SearchIndex,,\\THDATSPPRDWEB02.kier.group\SearchIndex
+\\kbmntyap01.kier.group\My Disc (F),,\\kbmntyap01.kier.group\My Disc (F)
+\\THDATMIS01.kier.group\SSIS,,\\THDATMIS01.kier.group\SSIS
+\\RUDATEVJ02.kier.group\EVCache$,,\\RUDATEVJ02.kier.group\EVCache$
+\\THDATWTBFP01.kier.group\Home,,\\THDATWTBFP01.kier.group\Home
+\\THDATWTBFP01.kier.group\TestFilePermission,,\\THDATWTBFP01.kier.group\TestFilePermission
+\\THDATWTBFP01.kier.group\TestFilePermission1,,\\THDATWTBFP01.kier.group\TestFilePermission1
+\\iei-filestore-1.kier.group\PWRCHUTE,,\\iei-filestore-1.kier.group\PWRCHUTE
+\\THKIEREDENDEV02.kier.group\ISL_TEST_CP12,,\\THKIEREDENDEV02.kier.group\ISL_TEST_CP12
+\\THKIEREDENDEV02.kier.group\BARK_LIVE_LOG,,\\THKIEREDENDEV02.kier.group\BARK_LIVE_LOG
+\\THKIEREDENDEV02.kier.group\testshare,,\\THKIEREDENDEV02.kier.group\testshare
+\\THKIEREDENDEV02.kier.group\SHEF_LIVE_LOG,,\\THKIEREDENDEV02.kier.group\SHEF_LIVE_LOG
+\\THKIEREDENDEV02.kier.group\HARL_LIVE_LOG,,\\THKIEREDENDEV02.kier.group\HARL_LIVE_LOG
+\\THDATEVJ01.kier.group\EVCache$,,\\THDATEVJ01.kier.group\EVCache$
+\\thkierhr01.kier.group\HR_Kier_Group_Services$,,\\thkierhr01.kier.group\HR_Kier_Group_Services$
+\\thkierhr01.kier.group\Vicky.Charman$,,\\thkierhr01.kier.group\Vicky.Charman$
+\\thkierhr01.kier.group\Common$,,\\thkierhr01.kier.group\Common$
+\\thkierhr01.kier.group\kierhrservices$,,\\thkierhr01.kier.group\kierhrservices$
+\\thkierhr01.kier.group\Security$,,\\thkierhr01.kier.group\Security$
+\\thkierhr01.kier.group\Group.Salaries$,,\\thkierhr01.kier.group\Group.Salaries$
+\\thkierhr01.kier.group\Apps$,,\\thkierhr01.kier.group\Apps$
+\\thkierhr01.kier.group\Directors$,,\\thkierhr01.kier.group\Directors$
+\\thkierhr01.kier.group\Home$,,\\thkierhr01.kier.group\Home$
+\\thkierhr01.kier.group\Occupational_Health$,,\\thkierhr01.kier.group\Occupational_Health$
+\\thkierhr01.kier.group\Tribunal$,,\\thkierhr01.kier.group\Tribunal$
+\\thkierhr01.kier.group\Confidential$,,\\thkierhr01.kier.group\Confidential$
+\\thkierhr01.kier.group\Group_Employee_Relations$,,\\thkierhr01.kier.group\Group_Employee_Relations$
+\\thkierhr01.kier.group\Finance$,,\\thkierhr01.kier.group\Finance$
+\\THKIERMIS01.kier.group\fdrive,,\\THKIERMIS01.kier.group\fdrive
+\\THKIERMIS01.kier.group\temp,,\\THKIERMIS01.kier.group\temp
+\\RUDATHR01.kier.group\DataCleanse$,,\\RUDATHR01.kier.group\DataCleanse$
+\\RUDATHR01.kier.group\FM TUPE$,,\\RUDATHR01.kier.group\FM TUPE$
+\\RUDATHR01.kier.group\HR Home$,,\\RUDATHR01.kier.group\HR Home$
+\\RUDATHR01.kier.group\HR Project Management Office$,,\\RUDATHR01.kier.group\HR Project Management Office$
+\\RUDATHR01.kier.group\HRSS_Knowledge_Centre$,,\\RUDATHR01.kier.group\HRSS_Knowledge_Centre$
+\\RUDATHR01.kier.group\iTrentInterface$,,\\RUDATHR01.kier.group\iTrentInterface$
+\\RUDATHR01.kier.group\L&D$,,\\RUDATHR01.kier.group\L&D$
+\\RUDATHR01.kier.group\MI$,,\\RUDATHR01.kier.group\MI$
+\\RUDATHR01.kier.group\Recruitment$,,\\RUDATHR01.kier.group\Recruitment$
+\\kshars02.kier.group\AutoCAD2018$,,\\kshars02.kier.group\AutoCAD2018$
+\\kshars02.kier.group\Autodesk,,\\kshars02.kier.group\Autodesk
+\\kshars02.kier.group\Autodesk Content Downloads & Updates,,\\kshars02.kier.group\Autodesk Content Downloads & Updates
+\\THKIERLIC01.kier.group\JTB,,\\THKIERLIC01.kier.group\JTB
+\\RUDATEVM01.kier.group\EVCache$,,\\RUDATEVM01.kier.group\EVCache$
+\\THKIERALT12.kier.group\DeniedFolderList$,,\\THKIERALT12.kier.group\DeniedFolderList$
+\\THKIERALT12.kier.group\NightlyShutdown$,,\\THKIERALT12.kier.group\NightlyShutdown$
+\\THDATSPPRDWEB01.kier.group\SearchIndex,,\\THDATSPPRDWEB01.kier.group\SearchIndex
+\\P-SEE11-001.kier.group\Packages$,,\\P-SEE11-001.kier.group\Packages$
+\\THDATEVM04.kier.group\EVCache$,,\\THDATEVM04.kier.group\EVCache$
+\\THDATEVM02.kier.group\EVCache$,,\\THDATEVM02.kier.group\EVCache$
+\\THOSCRM.kier.group\Fotoware,,\\THOSCRM.kier.group\Fotoware
+\\THDATSPUATWEB01.kier.group\SearchIndex,,\\THDATSPUATWEB01.kier.group\SearchIndex
+\\thkierbkp01.kier.group\INVU,,\\thkierbkp01.kier.group\INVU
+\\thkierbkp01.kier.group\TH_Bottomline Backup,,\\thkierbkp01.kier.group\TH_Bottomline Backup
+\\THDATWEBA01.kier.group\PCSDataImportArea$,,\\THDATWEBA01.kier.group\PCSDataImportArea$
+\\THDATWEBA01.kier.group\PCSProjectCompletionFormsArea$,,\\THDATWEBA01.kier.group\PCSProjectCompletionFormsArea$
+\\THDATWEBA01.kier.group\PCSSitePhotosArea$,,\\THDATWEBA01.kier.group\PCSSitePhotosArea$
+\\THDATSLWAPP01.kier.group\Users,,\\THDATSLWAPP01.kier.group\Users
+\\kbmstap01.kier.group\SHARE,,\\kbmstap01.kier.group\SHARE
+\\THDATEVM03.kier.group\EVCache$,,\\THDATEVM03.kier.group\EVCache$
+\\TEMPSFORD.kier.group\BKUP_Media,,\\TEMPSFORD.kier.group\BKUP_Media
+\\TEMPSFORD.kier.group\HR$,,\\TEMPSFORD.kier.group\HR$
+\\TEMPSFORD.kier.group\Media,,\\TEMPSFORD.kier.group\Media
+\\TEMPSFORD.kier.group\Pace$,,\\TEMPSFORD.kier.group\Pace$
+\\TEMPSFORD.kier.group\Ross_Shared,,\\TEMPSFORD.kier.group\Ross_Shared
+\\THDATALBACSFT01.kier.group\CausewayUtilitiesManual,,\\THDATALBACSFT01.kier.group\CausewayUtilitiesManual
+\\THDATALBACSFT01.kier.group\FILETRAIN_STATIONS_FROM_LIVE,,\\THDATALBACSFT01.kier.group\FILETRAIN_STATIONS_FROM_LIVE
+\\THDATALBACSFT01.kier.group\HRTaleo_Oracle_Upload,,\\THDATALBACSFT01.kier.group\HRTaleo_Oracle_Upload
+\\THDATALBACSFT01.kier.group\Non-Prod-Supplier_Finance_Reports,,\\THDATALBACSFT01.kier.group\Non-Prod-Supplier_Finance_Reports
+\\THDATALBACSFT01.kier.group\Oracle_Bank_Statements,,\\THDATALBACSFT01.kier.group\Oracle_Bank_Statements
+\\THDATALBACSFT01.kier.group\Prod_Payroll_Kier,,\\THDATALBACSFT01.kier.group\Prod_Payroll_Kier
+\\THDATALBACSFT01.kier.group\Prod_Payroll_KierMG,,\\THDATALBACSFT01.kier.group\Prod_Payroll_KierMG
+\\THDATALBACSFT01.kier.group\SAP_Dev_Advanced_Payments,,\\THDATALBACSFT01.kier.group\SAP_Dev_Advanced_Payments
+\\THDATALBACSFT01.kier.group\SAP_Dev_erphxdh1,,\\THDATALBACSFT01.kier.group\SAP_Dev_erphxdh1
+\\THDATALBACSFT01.kier.group\SAP_Prod_Advanced_Payments,,\\THDATALBACSFT01.kier.group\SAP_Prod_Advanced_Payments
+\\THDATALBACSFT01.kier.group\SAP_Prod_erphxep1,,\\THDATALBACSFT01.kier.group\SAP_Prod_erphxep1
+\\THDATALBACSFT01.kier.group\SAP_Test_Advanced_Payments,,\\THDATALBACSFT01.kier.group\SAP_Test_Advanced_Payments
+\\THDATALBACSFT01.kier.group\SAP_Test_erphxqh1,,\\THDATALBACSFT01.kier.group\SAP_Test_erphxqh1
+\\THDATALBACSFT01.kier.group\TestHighwaysBACS,,\\THDATALBACSFT01.kier.group\TestHighwaysBACS
+\\THDATALBACSFT01.kier.group\TestHighwaysOneOffs,,\\THDATALBACSFT01.kier.group\TestHighwaysOneOffs
+\\THDATALBACSFT01.kier.group\Test_Payroll_Kier,,\\THDATALBACSFT01.kier.group\Test_Payroll_Kier
+\\THDATALBACSFT01.kier.group\Test_Payroll_KierMG,,\\THDATALBACSFT01.kier.group\Test_Payroll_KierMG
+\\THDATEVM01.kier.group\EVCache$,,\\THDATEVM01.kier.group\EVCache$
+\\THDATAPS01.kier.group\Drivers$,,\\THDATAPS01.kier.group\Drivers$
+\\THDATSPTSTSCH01.kier.group\SearchIndex,,\\THDATSPTSTSCH01.kier.group\SearchIndex
+\\P-FP-005.kier.group\Data,,\\P-FP-005.kier.group\Data
+\\P-FP-005.kier.group\GRN$,,\\P-FP-005.kier.group\GRN$
+\\P-FP-005.kier.group\Home$,,\\P-FP-005.kier.group\Home$
+\\P-FP-005.kier.group\Scanned Files,,\\P-FP-005.kier.group\Scanned Files
+\\P-FP-006.kier.group\Contract_Review_Papers,,\\P-FP-006.kier.group\Contract_Review_Papers
+\\P-FP-006.kier.group\Home_Sheff$,,\\P-FP-006.kier.group\Home_Sheff$
+\\P-FP-006.kier.group\KNBS_Home$,,\\P-FP-006.kier.group\KNBS_Home$
+\\P-FP-006.kier.group\Licence,,\\P-FP-006.kier.group\Licence
+\\P-FP-006.kier.group\Secretarial$,,\\P-FP-006.kier.group\Secretarial$
+\\P-FP-008.kier.group\Database,,\\P-FP-008.kier.group\Database
+\\P-FP-008.kier.group\Hevacomp Projects,,\\P-FP-008.kier.group\Hevacomp Projects
+\\P-FP-008.kier.group\Install,,\\P-FP-008.kier.group\Install
+\\P-FP-008.kier.group\orange$,,\\P-FP-008.kier.group\orange$
+\\P-FP-008.kier.group\Ripac,,\\P-FP-008.kier.group\Ripac
+\\THKIERTPC.kier.group\Tectrade,,\\THKIERTPC.kier.group\Tectrade
+\\P-FP-009.kier.group\Home,,\\P-FP-009.kier.group\Home
+\\P-FP-009.kier.group\Home Directorys,,\\P-FP-009.kier.group\Home Directorys
+\\P-FP-010.kier.group\Home,,\\P-FP-010.kier.group\Home
+\\P-FP-012.kier.group\Dropbox,,\\P-FP-012.kier.group\Dropbox
+\\P-FP-012.kier.group\NASUtils,,\\P-FP-012.kier.group\NASUtils
+\\P-FP-007.kier.group\KFS_Home$,,\\P-FP-007.kier.group\KFS_Home$
+\\P-FP-007.kier.group\KPD_Home$,,\\P-FP-007.kier.group\KPD_Home$
+\\P-FP-007.kier.group\KPI_Home$,,\\P-FP-007.kier.group\KPI_Home$
+\\P-FP-007.kier.group\Solum_Home$,,\\P-FP-007.kier.group\Solum_Home$
+\\P-FS-004.kier.group\cattde,,\\P-FS-004.kier.group\cattde
+\\P-FP-017.kier.group\Home Drives$,,\\P-FP-017.kier.group\Home Drives$
+\\P-FP-017.kier.group\Management Accounts,,\\P-FP-017.kier.group\Management Accounts
+\\P-FP-017.kier.group\MARKETING,,\\P-FP-017.kier.group\MARKETING
+\\P-FP-017.kier.group\VCR,,\\P-FP-017.kier.group\VCR
+\\P-FP-018.kier.group\Construction$,,\\P-FP-018.kier.group\Construction$
+\\P-FP-018.kier.group\KPHHome$,,\\P-FP-018.kier.group\KPHHome$
+\\P-FP-018.kier.group\MCHome$,,\\P-FP-018.kier.group\MCHome$
+\\P-ARC-FS-001.kier.group\Archived home drives,,\\P-ARC-FS-001.kier.group\Archived home drives
+\\P-ARC-FS-001.kier.group\Home_Euston,,\\P-ARC-FS-001.kier.group\Home_Euston
+\\P-ARC-FS-001.kier.group\SOUTHAMPTON_ARCHIVE,,\\P-ARC-FS-001.kier.group\SOUTHAMPTON_ARCHIVE
+\\P-ARC-FS-001.kier.group\TRAFFORD_PARK_Archive2,,\\P-ARC-FS-001.kier.group\TRAFFORD_PARK_Archive2
+\\P-DFS-001.kier.group\loughtonhome$,,\\P-DFS-001.kier.group\loughtonhome$
+\\P-EXC-WIT-001.kier.group\EX2013DAG01.kier.group,,\\P-EXC-WIT-001.kier.group\EX2013DAG01.kier.group
+\\R-EXC-WIT-001.kier.group\EX2013DAG01.kier.group,,\\R-EXC-WIT-001.kier.group\EX2013DAG01.kier.group
+\\THDATALBACSFT02.kier.group\CausewayUtilities,,\\THDATALBACSFT02.kier.group\CausewayUtilities
+\\THDATALBACSFT02.kier.group\CausewayUtilitiesManual,,\\THDATALBACSFT02.kier.group\CausewayUtilitiesManual
+\\THDATALBACSFT02.kier.group\FILETRAIN_STATIONS_FROM_TEST,,\\THDATALBACSFT02.kier.group\FILETRAIN_STATIONS_FROM_TEST
+\\THDATALBACSFT02.kier.group\HRTaleo_Oracle_Upload,,\\THDATALBACSFT02.kier.group\HRTaleo_Oracle_Upload
+\\THDATALBACSFT02.kier.group\Non-Prod-Supplier_Finance_Reports,,\\THDATALBACSFT02.kier.group\Non-Prod-Supplier_Finance_Reports
+\\THDATALBACSFT02.kier.group\Oracle_Bank_Statements,,\\THDATALBACSFT02.kier.group\Oracle_Bank_Statements
+\\THDATALBACSFT02.kier.group\ProdHighwaysBACS,,\\THDATALBACSFT02.kier.group\ProdHighwaysBACS
+\\THDATALBACSFT02.kier.group\ProdHighwaysOneOffs,,\\THDATALBACSFT02.kier.group\ProdHighwaysOneOffs
+\\THDATALBACSFT02.kier.group\SAP_Dev_Advanced_Payments,,\\THDATALBACSFT02.kier.group\SAP_Dev_Advanced_Payments
+\\THDATALBACSFT02.kier.group\SAP_Dev_erphxdh1,,\\THDATALBACSFT02.kier.group\SAP_Dev_erphxdh1
+\\THDATALBACSFT02.kier.group\SAP_Prod_Advanced_Payments,,\\THDATALBACSFT02.kier.group\SAP_Prod_Advanced_Payments
+\\THDATALBACSFT02.kier.group\SAP_Prod_erphxep1,,\\THDATALBACSFT02.kier.group\SAP_Prod_erphxep1
+\\THDATALBACSFT02.kier.group\SAP_Test_Advanced_Payments,,\\THDATALBACSFT02.kier.group\SAP_Test_Advanced_Payments
+\\THDATALBACSFT02.kier.group\SAP_Test_erphxqh1,,\\THDATALBACSFT02.kier.group\SAP_Test_erphxqh1
+\\THDATALBACSFT02.kier.group\Supplier_Finance_Reports,,\\THDATALBACSFT02.kier.group\Supplier_Finance_Reports
+\\THDATALBACSFT02.kier.group\TestHighwaysBACS,,\\THDATALBACSFT02.kier.group\TestHighwaysBACS
+\\THDATALBACSFT02.kier.group\TestHighwaysOneOffs,,\\THDATALBACSFT02.kier.group\TestHighwaysOneOffs
+\\P-FP-021.kier.group\procurement,,\\P-FP-021.kier.group\procurement
+\\KLLOUDFS02.kier.group\klloufs02$,,\\KLLOUDFS02.kier.group\klloufs02$
+\\P-FS-005.kier.group\Data_Transfer$,,\\P-FS-005.kier.group\Data_Transfer$
+\\P-TH-FS-002.kier.group\Hackney_Home Drive,,\\P-TH-FS-002.kier.group\Hackney_Home Drive
+\\P-TH-FS-002.kier.group\Lewisham_Home Drive,,\\P-TH-FS-002.kier.group\Lewisham_Home Drive
+\\T-TRAK-001.kier.group\T-Trak-001_Docs,,\\T-TRAK-001.kier.group\T-Trak-001_Docs
+\\Dellnas.kier.group\Accounts,,\\Dellnas.kier.group\Accounts
+\\Dellnas.kier.group\Accounts_Buyers,,\\Dellnas.kier.group\Accounts_Buyers
+\\Dellnas.kier.group\audit,,\\Dellnas.kier.group\audit
+\\Dellnas.kier.group\avanderplank,,\\Dellnas.kier.group\avanderplank
+\\Dellnas.kier.group\BidManager,,\\Dellnas.kier.group\BidManager
+\\Dellnas.kier.group\BISHE,,\\Dellnas.kier.group\BISHE
+\\Dellnas.kier.group\BISHE_master,,\\Dellnas.kier.group\BISHE_master
+\\Dellnas.kier.group\Bristol,,\\Dellnas.kier.group\Bristol
+\\Dellnas.kier.group\Bristol_Water_Contract,,\\Dellnas.kier.group\Bristol_Water_Contract
+\\Dellnas.kier.group\building,,\\Dellnas.kier.group\building
+\\Dellnas.kier.group\Building_Estimating,,\\Dellnas.kier.group\Building_Estimating
+\\Dellnas.kier.group\Burgh,,\\Dellnas.kier.group\Burgh
+\\Dellnas.kier.group\Business_Planning,,\\Dellnas.kier.group\Business_Planning
+\\Dellnas.kier.group\BWB_omnibus,,\\Dellnas.kier.group\BWB_omnibus
+\\Dellnas.kier.group\cat,,\\Dellnas.kier.group\cat
+\\Dellnas.kier.group\CET,,\\Dellnas.kier.group\CET
+\\Dellnas.kier.group\Chichester_Share,,\\Dellnas.kier.group\Chichester_Share
+\\Dellnas.kier.group\Civils,,\\Dellnas.kier.group\Civils
+\\Dellnas.kier.group\Civils East Drive,,\\Dellnas.kier.group\Civils East Drive
+\\Dellnas.kier.group\Civils_And_Building,,\\Dellnas.kier.group\Civils_And_Building
+\\Dellnas.kier.group\Civil_Engineering,,\\Dellnas.kier.group\Civil_Engineering
+\\Dellnas.kier.group\Coaching_Ambassadors,,\\Dellnas.kier.group\Coaching_Ambassadors
+\\Dellnas.kier.group\Coins Help,,\\Dellnas.kier.group\Coins Help
+\\Dellnas.kier.group\Coins_brent,,\\Dellnas.kier.group\Coins_brent
+\\Dellnas.kier.group\Coins_Help,,\\Dellnas.kier.group\Coins_Help
+\\Dellnas.kier.group\Commercial,,\\Dellnas.kier.group\Commercial
+\\Dellnas.kier.group\Company_Secretarial,,\\Dellnas.kier.group\Company_Secretarial
+\\Dellnas.kier.group\Construction,,\\Dellnas.kier.group\Construction
+\\Dellnas.kier.group\Corvu,,\\Dellnas.kier.group\Corvu
+\\Dellnas.kier.group\CPII,,\\Dellnas.kier.group\CPII
+\\Dellnas.kier.group\creditcontrol,,\\Dellnas.kier.group\creditcontrol
+\\Dellnas.kier.group\CreditControl-HighwayServices,,\\Dellnas.kier.group\CreditControl-HighwayServices
+\\Dellnas.kier.group\CreditControl-PlantandTransport,,\\Dellnas.kier.group\CreditControl-PlantandTransport
+\\Dellnas.kier.group\CS_Payroll,,\\Dellnas.kier.group\CS_Payroll
+\\Dellnas.kier.group\CWPJ,,\\Dellnas.kier.group\CWPJ
+\\Dellnas.kier.group\Cygb,,\\Dellnas.kier.group\Cygb
+\\Dellnas.kier.group\Development Days,,\\Dellnas.kier.group\Development Days
+\\Dellnas.kier.group\ea_great_yarmouth,,\\Dellnas.kier.group\ea_great_yarmouth
+\\Dellnas.kier.group\Environment_Champions,,\\Dellnas.kier.group\Environment_Champions
+\\Dellnas.kier.group\epa,,\\Dellnas.kier.group\epa
+\\Dellnas.kier.group\epryke,,\\Dellnas.kier.group\epryke
+\\Dellnas.kier.group\EPS_Pre_Contract,,\\Dellnas.kier.group\EPS_Pre_Contract
+\\Dellnas.kier.group\Est,,\\Dellnas.kier.group\Est
+\\Dellnas.kier.group\ES_Bridgend,,\\Dellnas.kier.group\ES_Bridgend
+\\Dellnas.kier.group\ES_North_Somerset,,\\Dellnas.kier.group\ES_North_Somerset
+\\Dellnas.kier.group\Finance_Management,,\\Dellnas.kier.group\Finance_Management
+\\Dellnas.kier.group\Fobbing,,\\Dellnas.kier.group\Fobbing
+\\Dellnas.kier.group\Group_Accounts,,\\Dellnas.kier.group\Group_Accounts
+\\Dellnas.kier.group\Group_Business_Development,,\\Dellnas.kier.group\Group_Business_Development
+\\Dellnas.kier.group\Group_Services,,\\Dellnas.kier.group\Group_Services
+\\Dellnas.kier.group\gsandford,,\\Dellnas.kier.group\gsandford
+\\Dellnas.kier.group\H2R_Pensions_Share,,\\Dellnas.kier.group\H2R_Pensions_Share
+\\Dellnas.kier.group\Highways_Finance,,\\Dellnas.kier.group\Highways_Finance
+\\Dellnas.kier.group\Highways_Maint,,\\Dellnas.kier.group\Highways_Maint
+\\Dellnas.kier.group\Highways_Reporting,,\\Dellnas.kier.group\Highways_Reporting
+\\Dellnas.kier.group\Highways_Services_Commercial,,\\Dellnas.kier.group\Highways_Services_Commercial
+\\Dellnas.kier.group\Highways_Services_Finance,,\\Dellnas.kier.group\Highways_Services_Finance
+\\Dellnas.kier.group\Holdings,,\\Dellnas.kier.group\Holdings
+\\Dellnas.kier.group\home$,,\\Dellnas.kier.group\home$
+\\Dellnas.kier.group\HR2,,\\Dellnas.kier.group\HR2
+\\Dellnas.kier.group\hrtemp,,\\Dellnas.kier.group\hrtemp
+\\Dellnas.kier.group\HSC_SCC_Y3,,\\Dellnas.kier.group\HSC_SCC_Y3
+\\Dellnas.kier.group\Humber_Ea,,\\Dellnas.kier.group\Humber_Ea
+\\Dellnas.kier.group\HWOMS,,\\Dellnas.kier.group\HWOMS
+\\Dellnas.kier.group\I2C-Invoices-Applications-CreditNotes-InternalInvoices,,\\Dellnas.kier.group\I2C-Invoices-Applications-CreditNotes-InternalInvoices
+\\Dellnas.kier.group\ifawcus$,,\\Dellnas.kier.group\ifawcus$
+\\Dellnas.kier.group\iFoley,,\\Dellnas.kier.group\iFoley
+\\Dellnas.kier.group\IFoley folder,,\\Dellnas.kier.group\IFoley folder
+\\Dellnas.kier.group\IMT_Training,,\\Dellnas.kier.group\IMT_Training
+\\Dellnas.kier.group\JMG,,\\Dellnas.kier.group\JMG
+\\Dellnas.kier.group\KMS,,\\Dellnas.kier.group\KMS
+\\Dellnas.kier.group\Legal_issues,,\\Dellnas.kier.group\Legal_issues
+\\Dellnas.kier.group\lpi,,\\Dellnas.kier.group\lpi
+\\Dellnas.kier.group\MAD_Coaches,,\\Dellnas.kier.group\MAD_Coaches
+\\Dellnas.kier.group\Management_Development,,\\Dellnas.kier.group\Management_Development
+\\Dellnas.kier.group\MGIS_Exec,,\\Dellnas.kier.group\MGIS_Exec
+\\Dellnas.kier.group\MGWSP,,\\Dellnas.kier.group\MGWSP
+\\Dellnas.kier.group\Nordis_Documentation,,\\Dellnas.kier.group\Nordis_Documentation
+\\Dellnas.kier.group\Operational_HR,,\\Dellnas.kier.group\Operational_HR
+\\Dellnas.kier.group\P&T Support,,\\Dellnas.kier.group\P&T Support
+\\Dellnas.kier.group\P2P_GRN_Team,,\\Dellnas.kier.group\P2P_GRN_Team
+\\Dellnas.kier.group\p2p_procurement,,\\Dellnas.kier.group\p2p_procurement
+\\Dellnas.kier.group\Pension,,\\Dellnas.kier.group\Pension
+\\Dellnas.kier.group\Personnel_file,,\\Dellnas.kier.group\Personnel_file
+\\Dellnas.kier.group\plan&est,,\\Dellnas.kier.group\plan&est
+\\Dellnas.kier.group\planest,,\\Dellnas.kier.group\planest
+\\Dellnas.kier.group\Planest_Misc,,\\Dellnas.kier.group\Planest_Misc
+\\Dellnas.kier.group\pmccabe$,,\\Dellnas.kier.group\pmccabe$
+\\Dellnas.kier.group\Professional_Services_Management,,\\Dellnas.kier.group\Professional_Services_Management
+\\Dellnas.kier.group\PSS_Finance,,\\Dellnas.kier.group\PSS_Finance
+\\Dellnas.kier.group\Purchasing_support,,\\Dellnas.kier.group\Purchasing_support
+\\Dellnas.kier.group\Purch_Ledger,,\\Dellnas.kier.group\Purch_Ledger
+\\Dellnas.kier.group\QSBuyers,,\\Dellnas.kier.group\QSBuyers
+\\Dellnas.kier.group\reception,,\\Dellnas.kier.group\reception
+\\Dellnas.kier.group\Reporting_Modernisation,,\\Dellnas.kier.group\Reporting_Modernisation
+\\Dellnas.kier.group\Rewards,,\\Dellnas.kier.group\Rewards
+\\Dellnas.kier.group\SC Register,,\\Dellnas.kier.group\SC Register
+\\Dellnas.kier.group\SHEA Regulated,,\\Dellnas.kier.group\SHEA Regulated
+\\Dellnas.kier.group\Small_Works,,\\Dellnas.kier.group\Small_Works
+\\Dellnas.kier.group\Somerset_Waste_Partnership,,\\Dellnas.kier.group\Somerset_Waste_Partnership
+\\Dellnas.kier.group\Special_Projects,,\\Dellnas.kier.group\Special_Projects
+\\Dellnas.kier.group\SSW_BMS,,\\Dellnas.kier.group\SSW_BMS
+\\Dellnas.kier.group\SSW_Tender_Register,,\\Dellnas.kier.group\SSW_Tender_Register
+\\Dellnas.kier.group\Stoke_Finance_Transition$,,\\Dellnas.kier.group\Stoke_Finance_Transition$
+\\Dellnas.kier.group\Strategic_Business_Development_Department,,\\Dellnas.kier.group\Strategic_Business_Development_Department
+\\Dellnas.kier.group\Sue_Contracts,,\\Dellnas.kier.group\Sue_Contracts
+\\Dellnas.kier.group\Supply_Chain,,\\Dellnas.kier.group\Supply_Chain
+\\Dellnas.kier.group\Surface_Dressing,,\\Dellnas.kier.group\Surface_Dressing
+\\Dellnas.kier.group\Surrey_Claims,,\\Dellnas.kier.group\Surrey_Claims
+\\Dellnas.kier.group\SwmainGas,,\\Dellnas.kier.group\SwmainGas
+\\Dellnas.kier.group\Systems_Accounts,,\\Dellnas.kier.group\Systems_Accounts
+\\Dellnas.kier.group\Tender_Files,,\\Dellnas.kier.group\Tender_Files
+\\Dellnas.kier.group\Tender_Numbers,,\\Dellnas.kier.group\Tender_Numbers
+\\Dellnas.kier.group\The_ECHO_Forum,,\\Dellnas.kier.group\The_ECHO_Forum
+\\Dellnas.kier.group\torbaytransfer,,\\Dellnas.kier.group\torbaytransfer
+\\Dellnas.kier.group\Training,,\\Dellnas.kier.group\Training
+\\Dellnas.kier.group\Training_Documents,,\\Dellnas.kier.group\Training_Documents
+\\Dellnas.kier.group\Trowse_FirstAid,,\\Dellnas.kier.group\Trowse_FirstAid
+\\Dellnas.kier.group\Waterways,,\\Dellnas.kier.group\Waterways
+\\Dellnas.kier.group\Wdm_Site_Users,,\\Dellnas.kier.group\Wdm_Site_Users
+\\P-FP-025.kier.group\Solent Data KSSOUFP01,,\\P-FP-025.kier.group\Solent Data KSSOUFP01
+\\P-FP-026.kier.group\01-Scanned,,\\P-FP-026.kier.group\01-Scanned
+\\BABIMDEV01\Projects,,\\BABIMDEV01\Projects
+\\BABIMDEV01\ReportZipRoot,,\\BABIMDEV01\ReportZipRoot
+\\BABIMDEV01\Repositories,,\\BABIMDEV01\Repositories
+\\BABIMDEV01\Webs,,\\BABIMDEV01\Webs
+\\BABIMTEST01\FFEDocuments$,,\\BABIMTEST01\FFEDocuments$
+\\BABIMTEST01\PCSDataImportArea$,,\\BABIMTEST01\PCSDataImportArea$
+\\BABIMTEST01\Webs,,\\BABIMTEST01\Webs
+\\BADATINVU03\INVU6_Client_Install,,\\BADATINVU03\INVU6_Client_Install
+\\BAKIERLIC01\Log,,\\BAKIERLIC01\Log
+\\CARDTEL01\Users,,\\CARDTEL01\Users
+\\CARDTEL06\Telephony,,\\CARDTEL06\Telephony
+\\CAXISNAS01\Users,,\\CAXISNAS01\Users
+\\CHKIERSAN01\collections,,\\CHKIERSAN01\collections
+\\D-CTA-APP-002\Focus Install Set,,\\D-CTA-APP-002\Focus Install Set
+\\DELLNAS\01_Management_Reporting,,\\DELLNAS\01_Management_Reporting
+\\DELLNAS\02_Statutory_Reporting,,\\DELLNAS\02_Statutory_Reporting
+\\DELLNAS\05 - COMMERCIAL,,\\DELLNAS\05 - COMMERCIAL
+\\DELLNAS\05 - COMMERCIAL2,,\\DELLNAS\05 - COMMERCIAL2
+\\DELLNAS\06 - HR,,\\DELLNAS\06 - HR
+\\DELLNAS\06 - HR2,,\\DELLNAS\06 - HR2
+\\DELLNAS\98_CSF Team,,\\DELLNAS\98_CSF Team
+\\DELLNAS\ABSSigns,,\\DELLNAS\ABSSigns
+\\DELLNAS\Accounts_Scans,,\\DELLNAS\Accounts_Scans
+\\DELLNAS\Affinity_Water_Contract,,\\DELLNAS\Affinity_Water_Contract
+\\DELLNAS\Alchemy,,\\DELLNAS\Alchemy
+\\DELLNAS\AlchemyFinance,,\\DELLNAS\AlchemyFinance
+\\DELLNAS\Asset_Management,,\\DELLNAS\Asset_Management
+\\DELLNAS\Assurance Change Management,,\\DELLNAS\Assurance Change Management
+\\DELLNAS\aw_east,,\\DELLNAS\aw_east
+\\DELLNAS\balance sheet reconciliations,,\\DELLNAS\balance sheet reconciliations
+\\DELLNAS\Bideford,,\\DELLNAS\Bideford
+\\DELLNAS\BRM_Commercial,,\\DELLNAS\BRM_Commercial
+\\DELLNAS\Ce5160_victoria_station,,\\DELLNAS\Ce5160_victoria_station
+\\DELLNAS\Central_Services_Finance,,\\DELLNAS\Central_Services_Finance
+\\DELLNAS\CentServEngTen,,\\DELLNAS\CentServEngTen
+\\DELLNAS\Cheque_Requests,,\\DELLNAS\Cheque_Requests
+\\DELLNAS\Chester_West_&_Chester_Contract,,\\DELLNAS\Chester_West_&_Chester_Contract
+\\DELLNAS\Chichester,,\\DELLNAS\Chichester
+\\DELLNAS\Conformance_Reports,,\\DELLNAS\Conformance_Reports
+\\DELLNAS\Contracts,,\\DELLNAS\Contracts
+\\DELLNAS\Corporate_Assurance,,\\DELLNAS\Corporate_Assurance
+\\DELLNAS\Environmental_Reporting,,\\DELLNAS\Environmental_Reporting
+\\DELLNAS\Environmental_services,,\\DELLNAS\Environmental_services
+\\DELLNAS\Finance,,\\DELLNAS\Finance
+\\DELLNAS\Gloucester_shared_drive,,\\DELLNAS\Gloucester_shared_drive
+\\DELLNAS\GRNS,,\\DELLNAS\GRNS
+\\DELLNAS\Harrow Highways,,\\DELLNAS\Harrow Highways
+\\DELLNAS\HarrowHighways,,\\DELLNAS\HarrowHighways
+\\DELLNAS\Highways,,\\DELLNAS\Highways
+\\DELLNAS\Highways_Documents,,\\DELLNAS\Highways_Documents
+\\DELLNAS\Highways_Services_Operational,,\\DELLNAS\Highways_Services_Operational
+\\DELLNAS\HR_Admin_Scanning_-_Waterways_and_Utilities,,\\DELLNAS\HR_Admin_Scanning_-_Waterways_and_Utilities
+\\DELLNAS\HR_Training,,\\DELLNAS\HR_Training
+\\DELLNAS\HS_Contract_WBS,,\\DELLNAS\HS_Contract_WBS
+\\DELLNAS\Infrastructure_Services,,\\DELLNAS\Infrastructure_Services
+\\DELLNAS\insurance,,\\DELLNAS\insurance
+\\DELLNAS\Insurance_Scans,,\\DELLNAS\Insurance_Scans
+\\DELLNAS\IS_Projman,,\\DELLNAS\IS_Projman
+\\DELLNAS\KierHSshared,,\\DELLNAS\KierHSshared
+\\DELLNAS\KIFBusiness_Development,,\\DELLNAS\KIFBusiness_Development
+\\DELLNAS\lambeth_school,,\\DELLNAS\lambeth_school
+\\DELLNAS\LCC,,\\DELLNAS\LCC
+\\DELLNAS\Learning_and_Development_Highways,,\\DELLNAS\Learning_and_Development_Highways
+\\DELLNAS\Leavers,,\\DELLNAS\Leavers
+\\DELLNAS\mars,,\\DELLNAS\mars
+\\DELLNAS\master_data,,\\DELLNAS\master_data
+\\DELLNAS\Maygurney,,\\DELLNAS\Maygurney
+\\DELLNAS\Merrow Supervisors,,\\DELLNAS\Merrow Supervisors
+\\DELLNAS\MIL,,\\DELLNAS\MIL
+\\DELLNAS\National_Grid,,\\DELLNAS\National_Grid
+\\DELLNAS\Nordis,,\\DELLNAS\Nordis
+\\DELLNAS\North_Somerset_Training_Records,,\\DELLNAS\North_Somerset_Training_Records
+\\DELLNAS\NRSWA Compliance Central Storage,,\\DELLNAS\NRSWA Compliance Central Storage
+\\DELLNAS\NRSWA_Compliance_Central_Storage,,\\DELLNAS\NRSWA_Compliance_Central_Storage
+\\DELLNAS\Nsp,,\\DELLNAS\Nsp
+\\DELLNAS\Occupational Health,,\\DELLNAS\Occupational Health
+\\DELLNAS\Operations,,\\DELLNAS\Operations
+\\DELLNAS\OPFA,,\\DELLNAS\OPFA
+\\DELLNAS\Payroll,,\\DELLNAS\Payroll
+\\DELLNAS\Payroll-Highways,,\\DELLNAS\Payroll-Highways
+\\DELLNAS\pl_sc_account_details,,\\DELLNAS\pl_sc_account_details
+\\DELLNAS\Pre_Qual_Support,,\\DELLNAS\Pre_Qual_Support
+\\DELLNAS\prequal_development,,\\DELLNAS\prequal_development
+\\DELLNAS\Procurement_Support,,\\DELLNAS\Procurement_Support
+\\DELLNAS\Professional_Services,,\\DELLNAS\Professional_Services
+\\DELLNAS\projectroom,,\\DELLNAS\projectroom
+\\DELLNAS\public,,\\DELLNAS\public
+\\DELLNAS\Purchase,,\\DELLNAS\Purchase
+\\DELLNAS\Purchasing,,\\DELLNAS\Purchasing
+\\DELLNAS\R2R,,\\DELLNAS\R2R
+\\DELLNAS\Reconciliation,,\\DELLNAS\Reconciliation
+\\DELLNAS\RemitAdvice,,\\DELLNAS\RemitAdvice
+\\DELLNAS\SalesInvoices,,\\DELLNAS\SalesInvoices
+\\DELLNAS\SalesRemittances,,\\DELLNAS\SalesRemittances
+\\DELLNAS\Scanned_Documents,,\\DELLNAS\Scanned_Documents
+\\DELLNAS\Scanning,,\\DELLNAS\Scanning
+\\DELLNAS\Scans,,\\DELLNAS\Scans
+\\DELLNAS\SCC_Capital_Projects,,\\DELLNAS\SCC_Capital_Projects
+\\DELLNAS\Shared_Services,,\\DELLNAS\Shared_Services
+\\DELLNAS\SHE_Private,,\\DELLNAS\SHE_Private
+\\DELLNAS\SHEA Shared Drive,,\\DELLNAS\SHEA Shared Drive
+\\DELLNAS\Signplot,,\\DELLNAS\Signplot
+\\DELLNAS\sshead,,\\DELLNAS\sshead
+\\DELLNAS\Stage2$,,\\DELLNAS\Stage2$
+\\DELLNAS\Subbies,,\\DELLNAS\Subbies
+\\DELLNAS\Surface Treatment Business,,\\DELLNAS\Surface Treatment Business
+\\DELLNAS\surrey_share,,\\DELLNAS\surrey_share
+\\DELLNAS\Teamplan,,\\DELLNAS\Teamplan
+\\DELLNAS\Temp$,,\\DELLNAS\Temp$
+\\DELLNAS\Thames_Water_Finance,,\\DELLNAS\Thames_Water_Finance
+\\DELLNAS\TJBPayroll,,\\DELLNAS\TJBPayroll
+\\DELLNAS\Training_team,,\\DELLNAS\Training_team
+\\DELLNAS\Training-Records,,\\DELLNAS\Training-Records
+\\DELLNAS\Transport_Insurance,,\\DELLNAS\Transport_Insurance
+\\DELLNAS\Twisted_Fish_in_progress,,\\DELLNAS\Twisted_Fish_in_progress
+\\DELLNAS\UtilityServicesCreditControl,,\\DELLNAS\UtilityServicesCreditControl
+\\DELLNAS\UWOMS,,\\DELLNAS\UWOMS
+\\DELLNAS\Vehicle_Services,,\\DELLNAS\Vehicle_Services
+\\DELLNAS\Waste_services,,\\DELLNAS\Waste_services
+\\DELLNAS\Welsh_Water_Contract,,\\DELLNAS\Welsh_Water_Contract
+\\DELLNAS\West_Sussex_Successful,,\\DELLNAS\West_Sussex_Successful
+\\D-HPN-APP-001\ClientInstallers,,\\D-HPN-APP-001\ClientInstallers
+\\D-HPN-APP-001\EPMDATA,,\\D-HPN-APP-001\EPMDATA
+\\D-SEE11-001\Packages$,,\\D-SEE11-001\Packages$
+\\IEI-FILESTORE-1\$Est32C$,,\\IEI-FILESTORE-1\$Est32C$
+\\IEI-FILESTORE-1\$Software$,,\\IEI-FILESTORE-1\$Software$
+\\KBMBARNSFP01\Data,,\\KBMBARNSFP01\Data
+\\KBMBARNSFP01\sap,,\\KBMBARNSFP01\sap
+\\KBMBARNSFP01\Scans,,\\KBMBARNSFP01\Scans
+\\KBMBARNSFP01\timesheets,,\\KBMBARNSFP01\timesheets
+\\KBMCORFILE01\PST,,\\KBMCORFILE01\PST
+\\KBMCORFILE01\Public,,\\KBMCORFILE01\Public
+\\KBMCORFILE01\Users,,\\KBMCORFILE01\Users
+\\KBMEDHFP01\Shared,,\\KBMEDHFP01\Shared
+\\KBMGOSFP02\KBM-Gosport,,\\KBMGOSFP02\KBM-Gosport
+\\KBMGOSFP02\Scans,,\\KBMGOSFP02\Scans
+\\KBMGOSFP02\Users,,\\KBMGOSFP02\Users

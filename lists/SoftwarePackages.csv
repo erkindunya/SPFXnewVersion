@@ -1,4 +1,509 @@
-Title,Price|Currency
-Some Product,210
-Some Product,205
-Some Product,100.30
+Title,Approved_x0020_Installations,Download_x0020_Centre,Installed_x0020_by_x0020_SCC,_Comments,Licence_x0020_Location,Additional_x0020_Costs,Type_x0020_of_x0020_Licence
+4Projects  (unlimited licenses),,,FALSE,,Server,Cost in annual maintenance,Network/Concurrent
+Adobe Air,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Creative Cloud (full suite),,,FALSE,,User License,£53.33 per month per user ongoing,Subscription
+Adobe Illustrator,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Incopy,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Indesign,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Photoshop,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe After Effects,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Lightroom,,,FALSE,,User License,£86,Standalone/Perpetual
+Adobe Premiere Pro,,,FALSE,,User License,£26.67 per month per user ongoing,Subscription
+Adobe Acrobat Professional PDF editor,,SCCM,FALSE,,User License,£13.67 per month per user ongoing,Subscription
+Adobe Acrobat Standard PDF editor,,,FALSE,,User License,£11.67 per month per user ongoing,Subscription
+AecoSim Bentley,,,FALSE,,User License,"£1,044.00",Standalone/Perpetual
+AirSquirrels,,,FALSE,,User License,$15.00,Standalone/Perpetual
+Amtech Office Pro,,,FALSE,,User License,"£1,950.00",Standalone/Perpetual
+Amtech ProDesign 200/2016,,,FALSE,,User License,£3782.3 / £5000 (Maintenance per annum),Standalone/Perpetual
+Amtech ProDesign network x 2 concurrent,,,FALSE,,Server,"£14,107.00",Network/Concurrent
+Amtech SingleCable,,,FALSE,,User License,£295.00,Standalone/Perpetual
+ArcGIS Desktop Basic,,,FALSE,,User License,"£1,799.00",Subscription
+ArcGIS Standard,,,FALSE,,User License,"£8,107.00",Subscription
+Argus Developer,,,FALSE,,Server,"£3,850.00",Network/Concurrent
+Asta BIM Add on Module,,,FALSE,,User License,£675.00,Standalone/Perpetual
+Asta PowerProject Network Reinstated,,,FALSE,,Server,£465.00,Network/Concurrent
+Asta PowerProject Network New,,,FALSE,,Server,"£1,530.00",Network/Concurrent
+Asta PowerProject stand alone with BIM Add on Module,,,FALSE,,Server,"£1,595",Standalone/Perpetual
+Asta PowerProject Standalone New,,,FALSE,,Server,£967.50,Standalone/Perpetual
+Asta PowerProject Standalone Reinstated,,,FALSE,,Server,£365,Standalone/Perpetual
+Asta Project Comparision,,,FALSE,,User License,£219 / £40,Standalone/Perpetual
+Asta Site Progress Mobile Manager,,,FALSE,,User License,£120,Standalone/Perpetual
+AtRisk Industrial,,,FALSE,,User License,"£1,550",Standalone/Perpetual
+AtRisk Pro,,,FALSE,,User License,"£1,425",Standalone/Perpetual
+AtRisk Standard,,,FALSE,,User License,£845,Standalone/Perpetual
+Autodesk 3D Studio Max,,,FALSE,,Server,Token from 2 per day through to 40 per day,Token
+AutoDesk AutoCAD All versions,,,TRUE,,Server,Token from 2 per day through to 40 per day,Token
+AutoDesk AutoCAD LT with support All versions,,,TRUE,,Server,Token from 2 per day through to 40 per day,Token
+Autodesk Infraworks 360,,,FALSE,,Server,Token from 2 per day through to 40 per day,Token
+AutoDesk Navisworks Simulate All versions (for automated clash detection),,,TRUE,,Server,Token from 2 per day through to 40 per day,Token
+Autodesk REVIT All versions,,,TRUE,,Server,Token from 2 per day through to 40 per day,Token
+AutoDesk Robot  All versions,,,FALSE,,Server,Token from 2 per day through to 40 per day,Token
+Axiom (Rail Signalling),,,FALSE,,User License,"£15,000.00",Standalone/Perpetual
+Back up Exec,,,FALSE,,User License,£471,Standalone/Perpetual
+Bentley AECOsim,,,FALSE,,User License,£4415 / £1044 support,Subscription
+Bentley Hevacomp Electrical Designers,,,FALSE,,User License,£2159/Select £369,Subscription
+Bentley Hevacomp Mechanical Designers,,,FALSE,,User License,£3241/Select £569,Standalone/Perpetual
+Bentley Microstation (Rail Signalling),,,FALSE,,User License,£4885 / £840 support,Standalone/Perpetual
+Bentley OpenRoads Designer Perpetual price,,,FALSE,,User License,"£6,605",Standalone/Perpetual
+Bentley OpenRoads Designer QTL,,,FALSE,,User License,"£1,057",Standalone/Perpetual
+Bentley OpenRoads Designer QTL Open,,,FALSE,,User License,£924,Standalone/Perpetual
+Bentley OpenRoads Designer Select price,,,FALSE,,User License,"£1,321",Standalone/Perpetual
+Bentley ProjectWise (available to use Network Rail/Jacob Atkins),,,FALSE,,User License,£62,Standalone/Perpetual
+"Bluebeam (PDF to Draw, marking up, overlaying, comparing, measuring) Revu Standard 2017",,,FALSE,,User License,£269.05 (annual support onging £52.85),Standalone/Perpetual
+Bluebeam network,,,FALSE,,Server,$600 per user,Network/Concurrent
+Bluebeam Revu eXtreme,,,FALSE,,User License,£432,Standalone/Perpetual
+Brava Desktop,,,FALSE,,User License,$46,Paid by credit card
+Brava Enterprise,,,FALSE,,User License,£713,Standalone/Perpetual
+CableCalc level 1-4,,,FALSE,,User License,"£195.00 - 1,995.00",Standalone/Perpetual
+CADS Velventi Network license,,,FALSE,,Server,£895,Network/Concurrent
+Callsys Desktop full license (Circle/Islington/Sheffield/Stoke/Tyneside,,SCCM,FALSE,,Server,£350 / £60.85 support,Network/Concurrent
+Callsys Mobile license,,,FALSE,,Server,£40 / £20 support,Network/Concurrent
+Camtasia Studio,,,FALSE,,User License,£199 / 52,Standalone/Perpetual
+Candy,,,FALSE,,User License,£500.00 / 130.00 per month support,Standalone/Perpetual
+Causeway CADMeasure,,,FALSE,,User License,"£1,000",Standalone/Perpetual
+Causeway Estimating,,,FALSE,,User License,"£1,800",Standalone/Perpetual
+Causeway Professional Design Suite (PDS),,,FALSE,,Server,"£3,300 (network subscription)",Network/Concurrent
+Centre Tank Piusi (fuel tank gauge software),,,FALSE,,User License,£495.45,Standalone/Perpetual
+Citrix CAG license,,,FALSE,,Server,£76.07,Network/Concurrent
+ClearEdge Edgewise 3D - KPS only,,,FALSE,,Server,Paid for by KPS,Network/Concurrent
+Coins,,,FALSE,,Server,£150,Named user
+Coins Named user,,,FALSE,,User License,£27,Standalone/Perpetual
+Coins Concurrent user,,,FALSE,,Server,£990,Network/Concurrent
+Cone10 Software (AutoCAD plug in),,,FALSE,,User License,"£1,350",Standalone/Perpetual
+Corel Painter,,,FALSE,,User License,£302.81,Standalone/Perpetual
+Corel PaintShop Pro,,,FALSE,,User License,£62.45,Standalone/Perpetual
+CorelDraw Graphics Suite,,,FALSE,,User License,£507.77,Standalone/Perpetual
+CorelDraw Technical Suite,,,FALSE,,User License,£716.07,Standalone/Perpetual
+Corvu Corbusiness Professional,,,FALSE,,User License,"£1,440",Standalone/Perpetual
+Corvu CorPortfolio,,,FALSE,,User License,£960/160 support,Standalone/Perpetual
+Corvu CorStrategy Personal,,,FALSE,,User License,£960/160 support,Standalone/Perpetual
+CostX/CostX2D,,,FALSE,,User License,£3469.11/£624.34 support,Network/Concurrent
+CRM Dynamics,,,FALSE,,User License,£4 per user per month,Subscription
+Crystal Reporting,,,FALSE,,Server,£400,Network/Concurrent
+Crystal Reporting,,,FALSE,,User License,£470.37/£103.48,Standalone/Perpetual
+CS Projects (Crest),,,FALSE,,User License,£875,Standalone/Perpetual
+Cyberlink Power Director 13 Ultimate,,,FALSE,,User License,£87,Standalone/Perpetual
+Cyclone Leica Infinity,,,FALSE,,User License,£600,Standalone/Perpetual
+Cyclone Leica Infinity GeoSystems,,,FALSE,,User License,"£7,498.50",Standalone/Perpetual
+Dameware version,,,FALSE,,User License,only 200 available,Standalone/Perpetual
+Document Core Pack (Perpetual),,,FALSE,,User License,£486.49,Standalone/Perpetual
+Document Core Pack (Perpetual),,,FALSE,,User License,£594.60,Standalone/Perpetual
+Dragon Naturally Speaking Pro (Nuance),,,FALSE,,User License,£236,Standalone/Perpetual
+Easy Badge Card Reader,,,FALSE,,User License,£360,Standalone/Perpetual
+"EdgeWise (plug in, used with Autodesk)",,,FALSE,,Server,"£7,500",Network/Concurrent
+Fitzroy Scale (up to 99 users per site),,,FALSE,,User License,£1275.00 with support,Standalone/Perpetual
+Gadwin PrintScreen Professional Single user license (Kier have site license),,,FALSE,,User License,£32.50,Standalone/Perpetual
+GaneTime (Timesheets),,,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Graitec Advance Design Premium Perpetual/Subscription,,,FALSE,,Server,"£1,900/£4,550 plus £750 maint",Network - Ade Downing (Mouchel will install on their server)
+Graitec Design Connection Perpetual/Subscription,,,FALSE,,Server,"£1,900/£4,450 plus £700 maint",Network - Ade Downing (Mouchel will install on their server)
+Harmon.ie (Build UK),,Pulled down by GP - PC AD Group,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Hyperion Oracle,,On Oracle Form,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Image compression software NX Powerlite Desktop Editin vs 7 commercial,,,FALSE,,User License,£34,
+iMindMap 9 Ultimate,,,FALSE,,User License,£155,Standalone/Perpetual
+InforQuery & Analysis (Sunsystems - purchase direct from supplier),,,FALSE,,User License,£940.00/£675,Do not purchase - see whitelist
+Insight Clearbox (BIM),,,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Invu Advance Code Free license (x5),,,FALSE,,User License,£970,Standalone/Perpetual
+Invu S650 (Cube) (x5),,,FALSE,,User License,£800,Standalone/Perpetual
+iRender NXT (Software Paradise),,,FALSE,,User License,£324.35,Standalone/Perpetual
+KeySignals (x2),,,FALSE,,Server,£2100 / £570.00,Network/Concurrent
+KeyLights,,,FALSE,,User License,£2100 / £570.00,
+KeyPost (SignLoad),,,FALSE,,User License,£950.00 plus 330.00 for maintenance,Standalone/Perpetual
+KeyAccident,,,FALSE,,Server,£500,Network/Concurrent
+KeySign/KeyLines,,,FALSE,,User License,£1995 each or £1050 to reinsate retired licenses,Standalone/Perpetual
+KierDoc (Causeway) read only and full version,,,FALSE,,Server,£19,Network/Concurrent
+Kirona Job Manager,,,FALSE,,User License,"£1,008",Standalone/Perpetual
+Kutools for Excel,,,FALSE,,User License,£29,Standalone/Perpetual
+Land Survey Software Elite LLS - KPS only,,,FALSE,,Dongle,Paid for by KPS £750,Network/Concurrent
+Land Survey Software Elite with Point Cloud LSS - KPS only,,,FALSE,,User License,Paid for by KPS £1000,Standalone/Perpetual
+Lighting Reality,,,FALSE,,User License,"£3,000",
+Limitstate Geo,,,FALSE,,Server,"£2,696",Network (TRAPPS2)
+Limitstate Ring,,,FALSE,,User License,"£3,536",Standalone/Perpetual
+Log Me In Pro,,,FALSE,,User License,£300,
+Log Me In Central Basic,,,FALSE,,User License,£500,
+Lumion 5,,,FALSE,,User License,"£1,200",Standalone/Perpetual
+Lumion 5 Pro,,,FALSE,,User License,"£2,195",Standalone/Perpetual
+Masternaut FleetStar & MCU2,,,FALSE,,Server,£14,Fleet license
+Metre2 Workwinner (Windows 10 needed for Windows Store),,,FALSE,,User License,£30 per user per month,Subscription
+MicroDrainage 2 Seat LAN (XP Solutions),,,FALSE,,Server,"£24,125",Network/Concurrent
+MicroDrainage 2 Seat WAN (XP Solutions),,,FALSE,,Server,"£28,950",Network/Concurrent
+MicroDrainage Advance includes Drawnet/Casdef,,,FALSE,,User License,"£12,075",Standalone/Perpetual
+MicroDrainage Complete includes Channel/pluvius/MD suds,,,FALSE,,User License,"£17,930",Standalone/Perpetual
+MicroDrainage Essentials,,,FALSE,,User License,"£9,650",Standalone/Perpetual
+MicroDrainage Premium includes Floodflow,,,FALSE,,User License,"£13,895",Standalone/Perpetual
+MicroDrainage Source control (XP Solutions),,,FALSE,,User License,"£2,425",Standalone/Perpetual
+Microsoft MSDN Premium/Enterprise Visual Studio,,,FALSE,,User License,"£2,080.92",Subscription
+Microsoft MSDN Pro Visual Studio,,,FALSE,,User License,£581.83,Subscription
+Microsoft MSDN Test Pro Visual Studio,,,FALSE,,User License,"£1,189.27",Subscription
+Microsoft Project Professional/Standard,,,FALSE,,User License,£533,
+Microsoft Project Server,,,FALSE,,Server,"£5,907.36",Enterprise
+Microsoft Visio Professional/Standard,,,FALSE,,Server,£213,Enterprise
+Mindjet Mindmanager Pro,,,FALSE,,User License,£326.59,Standalone/Perpetual
+Mindjet 15,,,FALSE,,User License,£249 / £89 support,Standalone/Perpetual
+Multi Edit Lite for SAS 2008,,,FALSE,,User License,£63.04,Standalone/Perpetual
+NBS Create (Architecture/Services/Landscape/Structural - choose from one or more),,,FALSE,,User License,5.43E-07,Standalone/Perpetual
+NCH Pixillion Image Convertor Standard,,,FALSE,,User License,£31.50,Standalone/Perpetual
+Nuance PDF Power advanced/Misco,,,FALSE,,User License,£139,upgrade 5-24 £55
+Omega CS v5.0 (inc of full kit),,,FALSE,,User License,£505,Standalone/Perpetual
+OneSource (Corporation Tax Software) Thomson Reuters,,http://www.abacus.thomsonreuters.com/downloads.htm,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Oracle BI Publisher,,,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Oracle Primavera P6 cloud/standalone,,,FALSE,,User License,"£1,576.05",Standalone/Perpetual
+Oracle Workflow Builder,,,FALSE,,Server,Covered by subscription agreement - FD approval needed,Network/Concurrent
+Pixillion Image Format Converter NCH,,,FALSE,,User License,£31.50,Standalone/Perpetual
+Pluralsight indidvual training license,,,FALSE,,User License,$449,Subscription
+Power BI Pro (Microsoft - will be free with EA from Jan 2018 E5),,,FALSE,,Server,£57 per annum (£4.82 per month),Part of EA
+Project Commander,,,FALSE,,User License,£375,Standalone/Perpetual
+Project Comparison,,,FALSE,,User License,£219 / £28 support,Standalone/Perpetual
+QFM,,,FALSE,,Server,£630,To be confirmed
+Scrumwise,,,FALSE,,User License,£89.30,Subscription
+SignLoad Professional Version,,,FALSE,,User License,£440,
+SketchUp Network version,,,FALSE,,Server,£21K with £5K support,Network/Concurrent
+SketchUp Pro,,,FALSE,,User License,£440 & £91.95 support,Standalone/Perpetual
+Solibri Model Checker,,,FALSE,,Server,"£5,400.00",Network/Concurrent
+Spatial Analyst Extension CU,,,FALSE,,User License,"£3,880",
+Sparx Enterprise Architect,,,FALSE,,Server,£430 per license,Network/Concurrent
+SQL Server Developer Edition 2012,,,FALSE,,Server,Free - check with Tony Cormano first,Network/Concurrent
+Surfer,,,FALSE,,User License,£630,
+Tableau,,,FALSE,,User License,"£1,400 plus support £355 support",Standalone/Perpetual
+Tahola QlikTech,,,FALSE,,Server,£81,Network/Concurrent
+TeamViewer Corporate,,,FALSE,,Server,1400,Network/Concurrent
+Tedds Tekla,,,FALSE,,Server,£2500 / £560 support,Network/Concurrent
+Tetra4d,,,FALSE,,User License,£485,Standalone/Perpetual
+Toad Oracle,,,FALSE,,User License,£777 plus,Standalone/Perpetual
+CADS Piled Walled Suite,,,FALSE,,Server,"£1,590.00",Network/Concurrent
+CADS Panel Max,,,FALSE,,Server,£995,Network/Concurrent
+VideoScribe Sparkol,,,FALSE,,User License,£550.10 SCC,
+VideoStudio Pro Ultimate (To replace Movie Maker) from Corel  (Microsoft Capture),,,FALSE,,User License,£60 SCC,Standalone/Perpetual
+VideoWatermarkFactory (order from Ultima or use alternative Adobe Premiere Pro,,,FALSE,,User License,£131,Standalone/Perpetual
+Visual 2016,,,FALSE,,User License,£196.35,Subscription
+Visual Studio Ultimate,,,FALSE,,User License,"£7,271.62",Standalone/Perpetual
+WinDes microdrainage - KPs only,,,FALSE,,User License,Paid for by KPS,USB Dongle
+Yotto Mobile Streetlighting,,,FALSE,,User License,£515.55,Standalone/Perpetual
+Yotto Online,,,FALSE,,User License,£630,Subscription
+Yotto Streetlighting,,,FALSE,,User License,"£4,200",Standalone/Perpetual
+Xamarin Test Cloud XTC Start Plan,,,FALSE,,User License,£73.79,Standalone/Perpetual
+Xamarin University Online Training,,,FALSE,,User License,£40.99,Standalone/Perpetual
+3D Reshaper,Approved to install,,FALSE,,N/A,,
+4Explorer,Approved to install,,FALSE,,N/A,,
+7-Zip,Approved to install,SCCM,FALSE,,N/A,,
+Able 2 Extract,Approved to install,,FALSE,,N/A,,
+Add-ins only for Autodesk (all main products need FD approval),Approved to install,,FALSE,,N/A,,
+Adobe Air,Approved to install,,FALSE,,N/A,,
+Adobe Flash Player,Approved to install,SCCM,FALSE,,N/A,,
+Adobe Acrobat Reader ALL,Approved to install,SCCM,FALSE,,N/A,,
+Agisoft/Aibotix,Approved to install,,FALSE,,N/A,,
+Alpha-I,Approved to install,,FALSE,,N/A,,
+AlternaTIFF,Approved to install,SCCM,FALSE,,N/A,,
+AmDOCS,Approved to install,,FALSE,,N/A,,
+"App-V (part of MDOP, included in WinEntforSAwMDOP)",Approved to install,,FALSE,,N/A,,
+ArcGIS arcreader,Approved to install,,FALSE,,N/A,,
+Articulate,Approved to install Free trial only,,FALSE,,N/A,,
+Assistive Solutions,Not approved,,FALSE,,N/A,,
+Asta PowerProject Viewer,Approved to install,SCCM,TRUE,,N/A,,
+Asta Site Progress Mobile App,Approved to install,,FALSE,,N/A,,
+Autdoesk DWG TrueView,Approved to install,SCCM,TRUE,,N/A,,
+Autodesk 2013-2013 Reader packs,Approved to install,,FALSE,,N/A,,
+Autodesk Extension Manager & Productivity pack (In Revit),Included in EBA,,FALSE,,N/A,,
+Autodesk Navisworks Freedom,Approved to install,,TRUE,,N/A,,
+Autodesk Environment Variable Configuration Direct Access 1.0,Included in EBA,SCCM,FALSE,,N/A,,
+Autodesk Revit ToolKit,Approved to install,,FALSE,,N/A,,
+Avery Design Pro labeller,Approved to install,,FALSE,,N/A,,
+Bananatag (Outlook add on) Claire Elevique,Approved to install,,FALSE,,N/A,,
+Belarc,Approved to install,,FALSE,,N/A,,
+Bentley Microstation Viewer v8i,Approved to install,,FALSE,,N/A,,
+BGS Groundhog GSIS,Conditions applicable,,FALSE,,N/A,,
+Biblio (sheffield uni),Approved to install,,FALSE,,N/A,,
+BIM - Yoga P40 Lenovo ThinkPad (for BIM managers to use Navisworks Manage/Revit/AutoCad/Insight) Only install if end user has product already.,Approved to install,,FALSE,,N/A,,
+Clearbox BIMXtra Navisworks Plugins (BIMXtra) 10.1.2018 (Install),Approved to install,SCCM,FALSE,,N/A,,
+Clearbox KierBIM Insight Migration Updater 3.0.1.30 (Install),Approved to install,SCCM,FALSE,,N/A,,
+Clearbox BIMXtra Navisworks Plugins (KierBIM) 10.1.2018 (Install),Approved to install,SCCM,FALSE,,N/A,,
+Blackboard Collaborate,Approved to install,,FALSE,,N/A,,
+"BlackMagic Design, Da Vinci Resolve",Approved to install,,FALSE,,N/A,,
+Blender (3D software to assist with bid documents & create walkthroughs),Approved to install,,FALSE,,N/A,,
+BOOST Desktop Shortcuts,Approved to install,SCCM,FALSE,,N/A,,
+Brava! Reader,Approved to install,,FALSE,,N/A,,
+BReVe,Approved to install,,FALSE,,N/A,,
+Brother label maker software,Approved to install,,FALSE,,N/A,,
+BT MeetMe,Approved to install,,FALSE,,N/A,,
+Buchanan Computing SignPlot Sign Illumination tool,Approved to install,,FALSE,,N/A,,
+Business Collaborator - DO NOT INSTALL,Not approved,,FALSE,,N/A,,
+CADs Analyse 3D - KPS only,Approved to install,,FALSE,,N/A,,
+CADS Masonry Wall Panel Designer MAX - KPS only,Approved to install,,FALSE,,N/A,,
+CADS piled wall suite - KPS only,Approved to install,,FALSE,,N/A,,
+CADS Scia Engineer - KPS only,Approved to install,,FALSE,,N/A,,
+Causeway CPA (standard software for Highways),Approved to install,Chris Wood owner = 920,FALSE,,N/A,,
+CADS SMART engineer - KPS only,Approved to install,,FALSE,,N/A,,
+CADS Velventi (calculates peak wind speed) - KPS only,Approved to install,,FALSE,,N/A,,
+CAG Home Drive Utility,Approved to install,,FALSE,,N/A,,
+Windowns 10 Camera software,Approved to install,,FALSE,,N/A,,
+Candy QTO Module,Approved to install,,FALSE,,N/A,,
+Capture Perfect 3.0,Approved to install,,FALSE,,N/A,,
+CDM Wizard (CITB site),Approved to install,,FALSE,,N/A,,
+Citb CSCS card Health and Safety test,Approved to install,,FALSE,,N/A,,
+Citrix Link,Approved to install,,FALSE,,N/A,,
+Citrix Link North Tyneside,Approved to install,,FALSE,,N/A,,
+Citrix Online Plug-in,Approved to install,,FALSE,,N/A,,
+Citrix Receiver,Approved to install,,FALSE,,N/A,,
+Cobian Backup 11 Gravity,Not approved,,FALSE,,N/A,,
+Coins OA (MG),Approved to install,,FALSE,,N/A,,
+CoinsPlus 10.12f,Approved to install,SCCM,FALSE,,N/A,,
+Concept,Approved to install,,FALSE,,N/A,,
+Construction Division Business System Start Menu Shortcut,Approved to install,,FALSE,,N/A,,
+CostX Viewer,Approved to install,,FALSE,,N/A,,
+"CRM Add in for Outlook - No Dynamics license, no add in",Approved to install,,FALSE,,N/A,,
+CSCS card reader,Approved to install,,FALSE,,N/A,,
+Cubicost Takeoff for Architecture & Structure,Approved to install,,FALSE,,N/A,,
+Crystal ActiveX 11,Approved to install,SCCM,FALSE,,N/A,,
+Curve Direct,Approved to install,,FALSE,,N/A,,
+Cute PDF writer,Approved to install,SCCM,FALSE,,N/A,,
+Dalux BIM Viewer,NOT APPROVED,,FALSE,,N/A,,
+DameWare Mini Remote Control 6.9.0.4,Approved to install,,FALSE,,N/A,,
+Dataease / Saleoki Database,Approved to install,,FALSE,,N/A,,
+Dell Webcam Central 1.40.28,Approved to install,,FALSE,,N/A,,
+DIALux Evo,Approved to install,,FALSE,,N/A,,
+Digitalconnect,Approved to install,,FALSE,,N/A,,
+Discovery Accelerator (Enterprise Vault),Approved to install,,FALSE,,N/A,,
+DjVu (view maps and photo),Approved to install,,FALSE,,N/A,,
+DosBox,Approved to install,,FALSE,,N/A,,
+Drafting Assistant Thomson Reuters,Approved to install,,FALSE,,N/A,,
+DraftSight - 3D,Approved to install,,FALSE,,N/A,,
+Drag and Drop Uploader,Uploader in Business Collaborator (BC),,FALSE,,N/A,,
+Duetdisplay (Software to allow secondary screen on tablet),If tablet is for personal use,,FALSE,,N/A,,
+Dymo labelwriter software,Approved to install,,FALSE,,N/A,,
+Dynamobim.org (for use with Autodesk Revit),Approved to install,,FALSE,,N/A,,
+e Drawing,Approved to install,,FALSE,,N/A,,
+EasyCert Tysoft Electrical & Gas software supplier,Approved to install,,FALSE,,N/A,,
+EasylogUSB,Approved to install,,FALSE,,N/A,,
+Echo,Approved to install,,FALSE,,N/A,,
+EcoDial Advanced Calculations,Approved to install,,FALSE,,N/A,,
+eCopy Desktop,Approved to install,,FALSE,,N/A,,
+EMU Mapping from Bentley,Approved to install,,FALSE,,N/A,,
+Enginuitycomp 2017,Approved to install,,FALSE,,N/A,,
+Enterprise Vault - Make PSTs read-only in Outlook,Approved to install,SCCM,FALSE,,N/A,,
+Enterprise Vault - Remove PST From Outlook,Approved to install,SCCM,FALSE,,N/A,,
+EipaSoft,Approved to install,,FALSE,,N/A,,
+Eshare - BoardPack (Capita),Approved to install,,FALSE,,N/A,,
+Esigner (online banking assignments),Approved to install,,FALSE,,N/A,,
+Facetime: Time & Attendance,Approved to install,,FALSE,,N/A,,
+Fujitsu ScanSnap,Approved to install,,FALSE,,N/A,,
+File Monitor,Save from windows' automation in BC,,FALSE,,N/A,,
+FileZilla Client 3.5.3 32bit,Approved to install,,FALSE,,N/A,,
+Fitzroy Scale - KPS only,Approved to install,,FALSE,,N/A,,
+Flash,Approved to install,,FALSE,,N/A,,
+Flir Tools Software,Approved to install,,FALSE,,N/A,,
+Focus (Time & Attendance solution) for Tor2 users,Approved to install,,FALSE,,N/A,,
+FotoWare FotoStation 7.0,Approved to install,,FALSE,,N/A,,
+FoxIT reader,Approved to install,,FALSE,,N/A,,
+Franklin Gothic Demo Font 1.0,Approved to install,SCCM,FALSE,,N/A,,
+Free OCR,Approved to install,,FALSE,,N/A,,
+FreeEditor,Approved to install,,FALSE,,N/A,,
+FTA (Vision FTA/Chartscan),Approved to install/membership needed,,FALSE,,N/A,,
+Gadwin PrintScreen Professional 4.8,Approved to install,,FALSE,,N/A,,
+GawacWin - KPS only,Approved to install,,FALSE,,N/A,,
+Gemalto Smart card reader,Approved to install,,FALSE,,N/A,,
+GemSafe eSigner 3.0.4 (BARCLAYS),Approved to install,,FALSE,,N/A,,
+Geosolve Slope - KPS only,Approved to install,,FALSE,,N/A,,
+Geosolve Wallap - KPS only,Approved to install,,FALSE,,N/A,,
+GIMP,Approved to install,,FALSE,,N/A,,
+GIS Convert (for AutoCad),Approved to install,,FALSE,,N/A,,
+Global Bay,Approved to install,,FALSE,,N/A,,
+Google Chrome v33.0,Approved to install,,FALSE,,N/A,,
+Google Earth Pro,Approved to install,,FALSE,,N/A,,
+GroundForce  G Safe,Approved to install,,FALSE,,N/A,,
+GV Edge Viewer (GeoVision),Approved to install,,FALSE,,N/A,,
+HAZOP Manager,Approved to install,,FALSE,,N/A,,
+HGV Test software LGV/PCV theory and hazard test,Approved to install,,FALSE,,N/A,,
+Hilti Profis/Ferroscan/Rebar - KPS only,Approved to install,,FALSE,,N/A,,
+HM Transform Dashboard Access,Approved to install,,FALSE,,N/A,,
+HMRC Payetools,Approved to install,,FALSE,,N/A,,
+Hockey App (Microsoft tool),Approved to install,,FALSE,,N/A,,
+Huddle - Siemens JV (to be packaged up),Approved to install,,FALSE,,N/A,,
+HOTFIX Geolocation online map fix for Autodesk,Approved to install,,FALSE,,N/A,,
+iMindmap,Approved to install,,FALSE,,N/A,,
+IMS2,Approved to install,,FALSE,,N/A,,
+Infor Query & Analysis (x64/x86),Approved to install,SCCM,FALSE,,N/A,,
+InkScape (imports PDF files into SketchUp),Approved to install,,FALSE,,N/A,,
+Input Accel,Approved to install,,FALSE,,N/A,,
+Insight Model Viewer v.3,Approved to install,,FALSE,,N/A,,
+Insight by Clearbox up to vs 2,Approved to install,SCCM,FALSE,,N/A,,
+Integrated Resources ActiveX 5.3,Approved to install,SCCM,FALSE,,N/A,,
+Internet Explorer,Approved to install,SCCM,FALSE,,N/A,,
+IntraLinks Plug-ins,Approved to install,,FALSE,,N/A,,
+Invu,Approved to install,,FALSE,,N/A,,
+IWS6 (see James Peters/Prem Bangar),Approved to install,,FALSE,,N/A,,
+Java Runtime Environment 6 Update 23,Approved to install,,FALSE,,N/A,,
+"Java Runtime Environment 6, 7 and 8",Approved to install,,TRUE,,N/A,,
+Keepass,Approved to install,,FALSE,,N/A,,
+"Key (FM purchase ledger - supported by them/installed by KWS, IT Basingstoke)",Approved to install,,FALSE,,N/A,,
+Kier PCMA,Approved to install,SCCM,FALSE,,N/A,,
+Kier Services Workflow Links,Approved to install,,FALSE,,N/A,,
+Knowledgebase (Livelink) for HR,Approved to install,,FALSE,,N/A,,
+Land Survey Software LSS 3D Viewer - KPs only,Approved to install,,FALSE,,N/A,,
+Lascar Electronics EasyLog USB - data logger software,Approved to install,,FALSE,,N/A,,
+Leica Infinity,Approved to install,,FALSE,,N/A,,
+Lenovo ThinkPad USB 3.0 Dock,Approved to install,,FALSE,,N/A,,
+LICCON - Liebherr,Approved to install,,FALSE,,N/A,,
+Limitstate GEO - KPS only,Approved to install,,FALSE,,N/A,,
+Limitstate RING - KPS only,Approved to install,,FALSE,,N/A,,
+Liteshow,Approved to install,SCCM,FALSE,,N/A,,
+LockLizard PDF,Approved to install,,FALSE,,N/A,,
+Logicat VU software,Approved to install,,FALSE,,N/A,,
+Logitech setpoint,Approved to install,,FALSE,,N/A,,
+Lync (now Skype for business),Approved to install,,FALSE,,N/A,,
+Mail Manager (O365 to replace this) Oasys,Not approved - please see Mark Bentley,,FALSE,,N/A,,
+Map Point,Approved to install,,FALSE,,N/A,,
+Maximo,Approved to install - Audit every three months,,FALSE,,N/A,,
+Megger,Approved to install,,FALSE,,N/A,,
+MetaFrame Presentation Server Client (runs HE HAPMS system),Approved to install,,FALSE,,N/A,,
+Metrel,Approved to install,,FALSE,,N/A,,
+Metspec 12 - KPS only,Approved to install,,FALSE,,N/A,,
+Metspec Euro - KPs only,Approved to install,,FALSE,,N/A,,
+Microsoft .NET Framework 3.5 SP1,Approved to install,,FALSE,,N/A,,
+Microsoft .NET Framework 4.0 Extended,Approved to install,,FALSE,,N/A,,
+Microsoft .NET Framework 4.5,Approved to install,,FALSE,,N/A,,
+Microsoft Direct Access,Approved to install,,FALSE,,N/A,,
+Microsoft Expression Encoder Screen Capture Codec,Approved to install,,FALSE,,N/A,,
+Microsoft Fix it 50399,Approved to install,,FALSE,,N/A,,
+Microsoft Lync 2010 *64bit*,Approved to install,,FALSE,,N/A,,
+Microsoft Lync 2010 32bit,Approved to install,,FALSE,,N/A,,
+Microsoft Office 2016 Pro Plus (SP1) Full suite not individual components,Approved to install,SCCM,FALSE,,N/A,,
+Microsoft Office 365 Pro Plus (SP1) Full suite not individual components,Approved to install,SCCM,FALSE,,N/A,,
+Microsoft Phone Companion App,Approved to install,,FALSE,,N/A,,
+Microsoft Query (tool with Excel),Approved to install,,FALSE,,N/A,,
+Microsoft Office Picture Manager (MSPAINT),Approved to install,,FALSE,,N/A,,
+Microsoft Report Builder - SQL license needed,Approved to install,,FALSE,,N/A,,
+Microsoft Silverlight,Approved to install,,FALSE,,N/A,,
+Microsoft Visio Viewer,Approved to install,SCCM,TRUE,,N/A,,
+MigRec - Egress Reconcilliation,Approved to install,,FALSE,,N/A,,
+Mind Genius,Approved to install,,FALSE,,N/A,,
+Mind Manager Pro 7,Approved to install,,FALSE,,N/A,,
+Mitel Client Contact Centre,Approved to install,,FALSE,,N/A,,
+Mozilla Firefox 24.0,Approved to install,,FALSE,,N/A,,
+Multisuite AutoCad addin KPS only,Approved to install,,FALSE,,N/A,,
+NBS Create Plug in for Revit 2016/2017,Approved to install,,FALSE,,N/A,,
+NCH Pixillion Image Convertor PDF to PNG,Approved to install,,FALSE,,N/A,,
+Netbeams,Open Source Dev Tool for Java,,FALSE,,N/A,,
+Nikon ViewNX2 Camera software,Approved to install,,FALSE,,N/A,,
+Notepad+++ vs 6.9.1,Approved to install,,FALSE,,N/A,,
+NRGSurveys,Approved to install,,FALSE,,N/A,,
+Nuance Enterprise PDF (Reader),Approved to install,,FALSE,,N/A,,
+OBS Projects (developing videos),Approved to install,,FALSE,,N/A,,
+OfficeRemoteSetup,Approved to install,,FALSE,,N/A,,
+Omega software,configure data for loggers  that record temperature,,FALSE,,N/A,,
+Omniinstructuments - Digital manometer with data logger,Approved to install,,FALSE,,N/A,,
+OneSource Corporate Tax,Approved to install,,FALSE,,N/A,,
+Open Text Explorer Professional 10.0.0 32bit (OpenText),Approved to install,,FALSE,,N/A,,
+OpenText WebDAV ActiveX Control 10.0.1 English,Approved to install,,FALSE,Needs to be installed if Causeway ECM is selected,N/A,,
+OpenText Enterprise Connect Framework (64-bit) 10.2.0,Approved to install,SCCM,FALSE,,N/A,,
+Oracel SQL download,Approved to install,,FALSE,,N/A,,
+Oracle  - User Productivity Kit,Approved to install,,FALSE,,N/A,,
+Oracle Dataload,Approved to install,,FALSE,,N/A,,
+"Oracle Hyperion Smartview (excel add-on, must close all MS apps. Please note that old version needs to be removed)",Approved to install,SCCM,FALSE,,N/A,,
+PaperCut MF Print management software.,Approved to install,,FALSE,,N/A,,
+PDF Binder,Approved to install,,FALSE,,N/A,,
+PDF Direct/Redirect,Approved to install,,FALSE,,N/A,,
+PDF SAM,Approved to install,,FALSE,,N/A,,
+PDF Toolkit (Highways tool) vs2.4,Approved to install,,FALSE,,N/A,,
+PDFForge,Approved to install,,FALSE,,N/A,,
+Planner (Office 365),Approved to install,,FALSE,,N/A,,
+PocketGAD (Highways England),Approved to install,,FALSE,,N/A,,
+Portacount Fitpro (Quantitive Fit Testing for numerical measure called Fit Factor),Approved to install,,FALSE,,N/A,,
+Power Query/Pivot for Excel (add-ons),Approved to install,,FALSE,,N/A,,
+PowerBI Desktop,Approved to install,,FALSE,,N/A,,
+Prezi,Approved to install,,FALSE,,N/A,,
+Primetest 250,Approved to install,,FALSE,,N/A,,
+Pro Map for Kier Living only,Approved to install,,FALSE,,N/A,,
+Project Expert (Asta Elecosoft),Approved to install,,FALSE,,N/A,,
+ProjectLibre,Approved to install,SCCM,FALSE,,N/A,,
+Project Viewer,Approved to install,,FALSE,,N/A,,
+PS2PDF,Approved to install,,FALSE,,N/A,,
+PST freeviewer,Approved to install,,FALSE,,N/A,,
+Pxx Data Copy,Approved to install,,FALSE,,N/A,,
+Q Connect label design,Approved to install,,FALSE,,N/A,,
+Q&A Excel Add in,Approved to install,,FALSE,,N/A,,
+QGIS,Approved to install,,FALSE,,N/A,,
+RationalPlan,Approved to install,,FALSE,,N/A,,
+Reactec card reader (for recording Hand Arm Vibration Syndrome),Approved to install,,FALSE,,N/A,,
+Redi Rock Wall,Approved to install,,FALSE,,N/A,,
+Relux (Lighting Reality),Approved to install,,FALSE,,N/A,,
+Resource guru,Approved to install,,FALSE,,N/A,,
+Revizto (Autodesk),Approved to install,,FALSE,,N/A,,
+Ricoh Theta 360 (viewer),Approved to install,,FALSE,,N/A,,
+Riverbed Steelhead Mobile 49.2.20485.5,Approved to install,,FALSE,,N/A,,
+RMD Beam - KPS only,Approved to install,,FALSE,,N/A,,
+RMD Kwikfrom (KPS) \\thfilestore\kps_common\F Administration\F5 IT\Software\RMD Kwikform,Approved to install,,FALSE,,N/A,,
+RocPlane,Approved to install,,FALSE,,N/A,,
+Sage,Approved to install,,FALSE,,N/A,,
+Samsung SideSync,Approved to install,,FALSE,,N/A,,
+SAP Business Objects Infoview,Approved to install,,FALSE,,N/A,,
+SAP EPM 10.0 Excel Add-In,Approved to install,,FALSE,,N/A,,
+SAP GUI,Approved to install,,FALSE,,N/A,,
+Sci eBlueBook - KPS only,Approved to install,,FALSE,,N/A,,
+Sedlog,Approved to install,,FALSE,,N/A,,
+Servitor 7 Java Certificates,Approved to install,,FALSE,,N/A,,
+Servitor Jinitiator Fix,Approved to install,,FALSE,,N/A,,
+Servitor Sheffield - need Java,Approved to install,,FALSE,,N/A,,
+Servitor Shortcut (single core) - need Java,Approved to install,,FALSE,,N/A,,
+Servitor Single-Core Shortcut - need Java,Approved to install,,FALSE,,N/A,,
+Servitor Stoke & Leeds - need Java,Approved to install,,FALSE,,N/A,,
+Servitor Tyneside (single core) - need Java,Approved to install,,FALSE,,N/A,,
+Sharepoint Designer 2013,Approved to install,,FALSE,,N/A,,
+Sketchup Free (for Graduate students only),Approved to install,,FALSE,,N/A,,
+Skype for Business (Lync),Approved to install,,FALSE,,N/A,,
+SmartView Fluke,"link to be added, wtg for KK inc0261091",,FALSE,,N/A,,
+Snooperneo Sat Nav system (Kier Fleet Trucks),Approved to install,,FALSE,,N/A,,
+SoapUI,Approved to install,,FALSE,,N/A,,
+SoftwareAG software  to develop ESB,Approved to install (Iain Hendry ESB),,FALSE,,N/A,,
+SoftwareSystems (apps free for tablets/phones),Approved to install,,FALSE,,N/A,,
+Solibri (Model viewer),Approved to install,,FALSE,,N/A,,
+Sourceforge,Approved to install,,FALSE,,N/A,,
+Sparx - Architect Enterprise,Approved to install,,FALSE,,N/A,,
+SPSS (Aston University),Approved to install,,FALSE,,N/A,,
+SPX Radiodetection CAT manager,Approved to install,,FALSE,,N/A,,
+SQL Server Express 2016,Approved to install,,FALSE,,N/A,,
+Starnet KPS only,Approved to install,,FALSE,,N/A,,
+R Studio,Approved to install,,FALSE,,N/A,,
+R Archive (stats),Approved to install,,FALSE,,N/A,,
+SuperStress Graitec - KPS only,Approved to install,,FALSE,,N/A,,
+Supportworks Client 7.6.1 Build 8976,Approved to install,,FALSE,,N/A,,
+Swedge,Approved to install,,FALSE,,N/A,,
+Synchro Freeview,Approved to install,,FALSE,,N/A,,
+System Tools Kit - AGI,Approved to install,,FALSE,,N/A,,
+Tableau reader,Approved to install,,FALSE,,N/A,,
+Tachograph Downloads,Approved to install - minimal charge after  trial to be paid by DD,,FALSE,,N/A,,
+Tag and Card manager software Reactecanalytics platform,approved to install,,FALSE,,N/A,,
+Tata Interactive Blue Book - KPS only,Approved to install,,FALSE,,N/A,,
+Technolog PMAC datalogger,Approved to install,,FALSE,,N/A,,
+Tekla BIMsight - please note this is not Clearbox Insight - KPS only,Approved to install,,FALSE,,N/A,,
+Tekla Fastrak Building Designer - KPS only,Approved to install,,FALSE,,N/A,,
+Tekla Fastrak Portal Frame - KPS only,Approved to install,,FALSE,,N/A,,
+Tekla TEDDS (CSC) - KPS only,Approved to install,,FALSE,,N/A,,
+Tekla Viewer KPS only,Approved to install,,FALSE,,N/A,,
+Tempro,Approved to install,,FALSE,,N/A,,
+TensarPave - KPS only,Approved to install,,FALSE,,N/A,,
+TensarSoil - KPS only,Approved to install,,FALSE,,N/A,,
+Teraterm,Approved to install,,FALSE,,N/A,,
+Testo.org comsoft,Approved to install,,FALSE,,N/A,,
+TFS (Team Foundation Server) VSTS (Visual Studio Team Services) Microsoft Azure portal,Approved to install,,FALSE,,N/A,,
+TG20-13 eguide,Approved to install,,FALSE,,N/A,,
+"The Key (FM purchase ledger - supported by them/installed by KWS, IT Basingstoke)",Approved to install,,FALSE,,N/A,,
+Toolkit8 Design Software,Approved to install,,FALSE,,N/A,,
+Tranman,Approved to install,,FALSE,,N/A,,
+Turning Technologies - Turning Point,Approved to install,,FALSE,,N/A,,
+Viberock V9000 Seismograph Digital,Approved to install,,FALSE,,N/A,,
+VideoScribe,Approved to install,,FALSE,,N/A,,
+Visisat Configuration Tool,Approved to install,,FALSE,,N/A,,
+VisioViewer,Approved to install,,FALSE,,N/A,,
+VLC – Video Player,Approved to install,,FALSE,,N/A,,
+VNC,Approved to install,,FALSE,,N/A,,
+Windows Mobile Device Centre,Approved to install,,FALSE,,N/A,,
+WinCan Viewer Drainage Inspection,Approved to install,,FALSE,,N/A,,
+Winrar,Approved to install,,FALSE,,N/A,,
+Winscp (SFTP client),Approved to install,,FALSE,,N/A,,
+Wireshark,Approved to install,,FALSE,,N/A,,
+WPD WOMS (Logicity Desktop Inc),Approved to install,,FALSE,,N/A,,
+Write IT (Windows 10),Approved to install,,FALSE,,N/A,,
+Zoomtext,Approved to install,,FALSE,,N/A,,
+Java 8 Upate 91 (Boost),Approved to install,,FALSE,,N/A,,
+Causeway,,,FALSE,Need questions filling out,N/A,,
+Servitor,,Weblink,FALSE,,N/A,,
+Concept,,,FALSE,,N/A,,

@@ -3,59 +3,66 @@ import {VueSelect} from 'vue-select';
 import { validationMixin } from 'vuelidate';
 import { required } from 'vuelidate/lib/validators';
 import { sp } from '@pnp/sp';
+import ListSelect from '../../common/ListSelect.vue';
 
 export default Vue.extend({
     name: 'project-details',
     data: () => ({
         formData: {
-            // companyName: "",
-            // businessUnit: "",
-            // divisionName: "",
-            projectNumber: "1234",
-            taskNumber: "1234",
-            financialDirector: "FD 1"
-        }
-        // companies: [],
-        // businessUnits: [],
-        // divisions: []
+            projectNumber: "",
+            taskNumber: "",
+            financialDirector: ""
+        },
+        FDOptions: []
     }),
-    methods: {
+    computed: {
+        //replaces formdata.financialDirector to allow for computed vals
+        financialDirector: {
+            get: function () {
+                var formTotal = this.$store.state.cost;
+                var reportingUnit = this.$store.state.main.reportingUnit.NSSReportingUnit;
+                if(this.formData.financialDirector == "")
+                    sp.web.lists.getByTitle('FinancialDirectors').items.filter("Price gt " + formTotal + " and NSSReportingUnit eq '" + reportingUnit.replace("&", "%26") + "'" ).orderBy("Price").get().then((items: any[]) => {
+                        this.formData.financialDirector = items[0].Title; 
+                    });
+                     
+                return this.formData.financialDirector;
+            },
+            set: function (newValue) {
+                this.formData.financialDirector = newValue;
+            } 
+        } 
+    },
+    created() {
+        var items = [];
+        sp.web.lists.getByTitle('FinancialDirectors').items.get().then((results: any[]) => {
+            
+            results.forEach(result => {
+                if((result.Title) && !(items.includes(result.Title)))
+                    items.push(result.Title);
+            });
+            this.FDOptions = items;
+            console.log(this.FDOptions);
+        });
+    },
+    methods: { 
         back() {
-            this.$store.commit('navigate', 3);
+            this.$store.commit('navigate', 4);
         },
         submit() {
             this.$store.commit('projectDetailsForm', this.formData);
-            this.$store.commit('navigate', 5);
+            this.$store.commit('navigate', 6);
         }
     },
-    created () {
-        // sp.web.lists.getByTitle('Companies').items.get().then((items: any[]) => {
-        //     this.companies = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('Divisions').items.get().then((items: any[]) => {
-        //     this.divisions = items.map(item => item.Title);
-        // });
-        // sp.web.lists.getByTitle('BusinessUnits').items.get().then((items: any[]) => {
-        //     this.businessUnits = items.map(item => item.Title);
-        // });
-    },
     components: {
-        VueSelect
+        VueSelect,
+        ListSelect
     },
     mixins: [
         validationMixin
     ],
     validations: {
         formData: {
-            // companyName: {
-            //     required
-            // },
-            // businessUnit: {
-            //     required
-            // },
-            divisionName: {
-                required
-            },
             projectNumber: {
                 required
             },

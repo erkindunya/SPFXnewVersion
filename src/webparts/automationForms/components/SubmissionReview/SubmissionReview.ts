@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { requiredIf, required, sameAs } from 'vuelidate/lib/validators';
+import { sp } from '@pnp/sp';
 
 export default Vue.extend({
     name: 'submission-review',
@@ -30,14 +31,21 @@ export default Vue.extend({
         },
         hasHardware() {
             return Object.keys(this.hardware).length > 0;
-        }
+        },
     },
     methods: {
         back () {
-            this.$store.commit('navigate', 4);
+            this.$store.commit('navigate', 5);
+        },
+        testprint() {
+            console.log(this.hardware);
         },
         submit () {
-            alert('Form submitted.');
+            this.$store.commit('summaryForm', {
+                address: this.address,
+                changeAddress: this.changeAddress
+            });
+            this.$store.dispatch('submitForm');
         }
     },
     mixins: [

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/01/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.25.1804.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-0DAB93AEA9824789BB66E2B359B58E2D">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-0DAB93AEA9824789BB66E2B359B58E2D" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Text" DisplayName="First Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="20" Group="NSS Columns" ID="{5049a822-424c-4479-9648-79c4b3214382}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSFirstName"
+          Name="NSSFirstName">
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x01010097931465769EE34E9078576A150FF53E" Name="NewStarterSubmissions" Description="" Group="NSS Content Types">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="5049a822-424c-4479-9648-79c4b3214382" Name="NSSFirstName" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="New Starter Submissions" Description="New starter records" DocumentTemplate="{site}/NSS/Forms/template.dotx" TemplateType="101" Url="NSS" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101"
+          ContentTypesEnabled="true" EnableAttachments="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01010097931465769EE34E9078576A150FF53E" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3D715499-8FA2-4B80-8D36-885B2A4CCBDE}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/ITRequestsPortal/NSS/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=38">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <XslLink Default="TRUE">main.xsl</XslLink>
+              <Toolbar Type="Standard" />
+            </View>
+            <View Name="{D9BC935E-2154-47EE-A9E2-7C9490489001}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="All Submissions" Url="/sites/ITRequestsPortal/NSS/Forms/All Submissions.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=38">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="NSSFirstName" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <XslLink Default="TRUE">main.xsl</XslLink>
+              <Toolbar Type="Standard" />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="5049a822-424c-4479-9648-79c4b3214382" Name="NSSFirstName" DisplayName="First Name" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

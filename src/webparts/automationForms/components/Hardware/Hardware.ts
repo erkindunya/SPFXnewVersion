@@ -2,8 +2,9 @@ import Vue from 'vue';
 import { Carousel, Slide } from 'vue-carousel';
 import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
-import { sp } from '@pnp/sp';
+import { sp, Items } from '@pnp/sp';
 import {VueSelect} from 'vue-select';
+import ListSelect from '../../common/ListSelect.vue';
 
 export default Vue.extend({
     name: 'hardware',
@@ -13,7 +14,7 @@ export default Vue.extend({
             software: false,
             computer: false,
             peripherals: false,
-            oracle: false
+            skype: false
         },
         options: {
             mobile: [],
@@ -21,45 +22,25 @@ export default Vue.extend({
             computer: [],
             monitors: [],
             peripherals: [],
-            oracle: []
-        },
-        formData: {
-            operationalStaff: "",
-            commercialStaff: false,
-            buyersOrRequisitioner: "",
-            financeStaff: false,
-            appsCertsApprovalLevels : "",
-            adHocAccessESS: false,
-            adHocAccessKWS: false,
-            kierPropertyOnlyESS: false,
-            kierPropertyOnlyESSPropertyCom: false,
-            kierPropertyOnlyESSPropertyFin: false,
-            kierPropertyOnlyExtra: false,
-            hyperionFinancialManagement: false,
-            hyperionPBCS: false,
-            biOracleBIReporting: false,
-            vcrLumpSumproject: "Permanent",
-            vcrConversionProject: "",
-            vcrRepairs: "",
-            vcrSPM:"",
-            oEmployeeKESSBasic: false,
-            oEmployeeKESSBasicWAbsence: false,
-            oEmployeeKSST: false,
-            oEmployeeKMSS: false,
-            oEmployeeKLMS: false,
-            oTimeTimekeeper: false,
-            oTimeTimekeeperGroup: false,
-            oTimeSuperTimekeeper: false,
-            oKierOTL: false,
-            reportingUnitCodeEntry: ""
+            oracle: [],
+            skype:[]
         }
     }),
     computed: {
         formData() {
+            
             return Object.keys(this.options)
                 .filter(x => this.allSections[x])
                 .reduce((map, key) => {
-                    map[key] = this.options[key].filter((item) => item.selected);
+                    console.log(this.options[key]);
+                    //if software, get from dropdown instead of selected items
+                    if(key == "software"){
+                        var softwareArr = [];
+                        this.options[key].forEach((item) => { softwareArr.push({name : item.Title, price : 0 })});
+                        map[key] = softwareArr;
+                    }
+                    else
+                        map[key] = this.options[key].filter((item) => item.selected);
                     return map;
                 }, {});
         },
@@ -78,6 +59,12 @@ export default Vue.extend({
         submit () {
             this.$store.commit('hardwareForm', this.formData);
             this.$store.commit('navigate', 3);
+        },
+        selectSingleOption (optionGroup, optionItem, itemSelected){
+            optionGroup.forEach(element => {
+                element.selected = false;
+            }); 
+            optionItem.selected = !itemSelected;
         }
     },
     created() {
@@ -90,6 +77,15 @@ export default Vue.extend({
                 selected: false
             }));
         });
+        sp.web.lists.getByTitle('SkypePackages').items.get().then((items: any[]) => {
+            this.options.skype = items.map(item => ({
+                name: item.Title,
+                description: item.PackageDescription,
+                price: item.Price,
+                image: item.Image.Url,
+                selected: false
+            }));
+        });  
         sp.web.lists.getByTitle('ComputerPackages').items.get().then((items: any[]) => {
             this.options.computer = items.map(item => ({
                 name: item.Title,
@@ -108,13 +104,6 @@ export default Vue.extend({
                 selected: false
             }));
         });
-        sp.web.lists.getByTitle('SoftwarePackages').items.get().then((items: any[]) => {
-            this.options.software = items.map(item => ({
-                name: item.Title,
-                price: item.Price,
-                selected: false
-            }));
-        });
         sp.web.lists.getByTitle('MonitorPackages').items.get().then((items: any[]) => {
             this.options.monitors = items.map(item => ({
                 name: item.Title,
@@ -125,19 +114,13 @@ export default Vue.extend({
     },
     components: {
         Carousel,
-        Slide
+        Slide,
+        VueSelect,
+        ListSelect
     },
     mixins: [
         validationMixin
     ],
     validations: {
-        formData: {
-            vcrLumpSumproject: {
-                
-            },
-            reportingUnitCodeEntry: {
-                
-            },
-        }
     }
 });

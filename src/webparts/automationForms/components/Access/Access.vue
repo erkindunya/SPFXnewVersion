@@ -3,16 +3,16 @@
         <h2>Account Access</h2>
         <div class="form-group">
             <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" v-model="sections.drives">
-                <label class="form-check-label">Network Drives</label>
+                <input type="checkbox" class="form-check-input" id="drives" v-model="sections.drives">
+                <label class="form-check-label" for="drives">Network Drives</label>
             </div>
         </div>
         <div v-if="sections.drives" class="card">
             <div class="card-body">
                 <div class="form-group" v-for="(option, key) in options.drives" :key="key">
                     <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" v-model="option.selected">
-                        <label class="form-check-label">{{option.name}}</label>
+                        <input type="checkbox" class="form-check-input" v-bind:id="option.selected" v-model="option.selected">
+                        <label class="form-check-label" v-bind:for="option.selected">{{option.name}}</label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -23,16 +23,16 @@
         </div>
         <div class="form-group">
             <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" v-model="sections.mailboxes">
-                <label class="form-check-label">Shared Mailboxes</label>
+                <input type="checkbox" id="mailboxes" class="form-check-input" v-model="sections.mailboxes">
+                <label class="form-check-label" for="mailboxes">Shared Mailboxes</label>
             </div>
         </div>
         <div v-if="sections.mailboxes" class="card">
             <div class="card-body">
                 <div class="form-group" v-for="(option, key) in options.mailboxes" :key="key">
                     <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" v-model="option.selected">
-                        <label class="form-check-label">{{option.name}}</label>
+                        <input type="checkbox" class="form-check-input" v-bind:id="option.selected" v-model="option.selected">
+                        <label class="form-check-label" v-bind:for="option.selected">{{option.name}}</label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -43,8 +43,8 @@
         </div>
         <div class="form-group">
             <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" v-model="sections.distributions">
-                <label class="form-check-label">Distribution Lists</label>
+                <input type="checkbox" class="form-check-input" id="distributions" v-model="sections.distributions">
+                <label class="form-check-label" for="distributions">Distribution Lists</label>
             </div>
         </div>
         <div v-if="sections.distributions" class="card">
@@ -63,10 +63,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <button type="button" class="btn btn-secondary" v-on:click="back">Back</button>
+                <button type="button" class="btn btn-secondary" @click.prevent="back">Back</button>
             </div>
             <div class="col text-right">
-                <button type="button" class="btn btn-primary" v-on:click="submit" :disabled="$v.$invalid">Next</button>
+                <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.$invalid">Next</button>
             </div>
         </div>
     </div>
