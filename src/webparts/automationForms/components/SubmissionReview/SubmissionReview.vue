@@ -52,7 +52,6 @@
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-secondary" @click.prevent="back">Back</button>
-                 <button type="button" class="btn btn-secondary" @click.prevent="testprint">Test</button>
             </div>
             <div class="col text-right">
                 <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.$invalid">Submit</button>

@@ -36,7 +36,7 @@ export default Vue.extend({
                     //if software, get from dropdown instead of selected items
                     if(key == "software"){
                         var softwareArr = [];
-                        this.options[key].forEach((item) => { softwareArr.push({name : item.Title, price : 0 })});
+                        this.options[key].forEach((item) => { softwareArr.push({name : item.Title, price : 0 });});
                         map[key] = softwareArr;
                     }
                     else

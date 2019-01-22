@@ -38,7 +38,7 @@ export default Vue.extend({
         sp.web.lists.getByTitle('FinancialDirectors').items.get().then((results: any[]) => {
             
             results.forEach(result => {
-                if((result.Title) && !(items.includes(result.Title)))
+                if((result.Title) && !(items.indexOf(result.Title) !== -1))
                     items.push(result.Title);
             });
             this.FDOptions = items;
