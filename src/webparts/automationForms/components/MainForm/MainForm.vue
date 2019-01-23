@@ -18,7 +18,7 @@
         <list-select v-model="formData.domainSuffix" listName="DomainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></list-select>
     </div>
     <div class="form-group">
-        <label>Computed Account Name</label>
+        <label>Username Validation</label>
         <p v-if="!firstChoiceUsername" class="alert alert-success">{{formData.username}}</p>
         <p v-if="firstChoiceUsername" class="alert alert-warning">"{{firstChoiceUsername}}" is not available. You could add a middle initial or {{formData.username}} will be used.</p>
     </div>

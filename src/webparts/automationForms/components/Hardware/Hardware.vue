@@ -4,7 +4,7 @@
     <div class="form-group">
         <div class="form-check form-check-inline">
             <input type="checkbox" id="MobileRequired" class="form-check-input" v-model="sections.mobile">
-            <label class="form-check-label" for="MobileRequired">Mobile</label>
+            <label class="form-check-label" for="MobileRequired">Mobile Device</label>
         </div>
     </div>
     <div v-if="sections.mobile">
