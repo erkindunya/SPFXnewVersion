@@ -17,7 +17,7 @@
                     <a class="nav-item nav-link" :class="{'active': page === 2, 'disabled': maxPage < 2}" href="#" @click.prevent="navigate(2)">Hardware / Software</a>
                     <a class="nav-item nav-link" :class="{'active': page === 3, 'disabled': maxPage < 3}" href="#" @click.prevent="navigate(3)">Oracle</a>
                     <a class="nav-item nav-link" :class="{'active': page === 4, 'disabled': maxPage < 4}" href="#" @click.prevent="navigate(4)">Access</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 5, 'disabled': maxPage < 5}" href="#" @click.prevent="navigate(5)">Project Details</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 5, 'disabled': maxPage < 5}" href="#" @click.prevent="navigate(5)">Approval Information</a>
                     <a class="nav-item nav-link" :class="{'active': page === 6, 'disabled': maxPage < 6}" href="#" @click.prevent="navigate(6)">Review</a>
                 </nav>
                 <transition>
