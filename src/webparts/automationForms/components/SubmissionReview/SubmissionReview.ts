@@ -39,9 +39,6 @@ export default Vue.extend({
         back () {
             this.$store.commit('navigate', 5);
         },
-        testprint() {
-            console.log(this.hardware);
-        },
         submit () {
             this.$store.commit('summaryForm', {
                 address: this.address,

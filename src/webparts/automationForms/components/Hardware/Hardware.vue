@@ -8,19 +8,30 @@
         </div>
     </div>
     <div v-if="sections.mobile">
-        <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-            <slide v-for="(option, key) in options.mobile" :key="key">
-                <div class="card" :class="{'border border-success': option.selected}">
-                    <img class="card-img-top" :src="option.image" :alt="option.name">
-                    <div class="card-body">
-                        <h5 class="card-title">{{option.name}}</h5>
-                        <p class="card-text">{{option.description}}</p>
-                        <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.mobile, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+        <div v-match-heights="{el: ['.card-title', '.card-desc']}">
+            <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                <slide v-for="(option, key) in options.mobile" :key="key">
+                    <div class="card" :class="{'border border-success': option.selected}">
+                        <img class="card-img-top" :src="option.image" :alt="option.name">
+                        <div class="card-body">
+                            <h5 class="card-title">{{option.name}}</h5>
+                            <p class="card-text card-desc">{{option.description}}</p>
+                            <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                            <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.mobile, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                        </div>
                     </div>
+                </slide>
+            </carousel>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Manager Employee No.</label>
+                    <input type="text" class="form-control" :class="{ 'is-invalid': $v.options.mobileLineManager.$invalid }" v-model="options.mobileLineManager">
                 </div>
-            </slide>
-        </carousel>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <div class="form-check form-check-inline">
@@ -49,20 +60,22 @@
         </div>
     </div>
     <div v-if="sections.computer">
-        <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-            <slide v-for="(option, key) in options.computer" :key="key">
-                <div class="card" :class="{'border border-success': option.selected}">
-                    <img class="card-img-top" :src="option.image" :alt="option.name">
-                    <div class="card-body">
-                        <h5 class="card-title">{{option.name}}</h5>
-                        <p class="card-text">{{option.description}}</p>
-                        <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+        <div v-match-heights="{el: ['.card-title', '.card-desc']}">
+            <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20"  >
+                <slide v-for="(option, key) in options.computer" :key="key">
+                    <div class="card" :class="{'border border-success': option.selected}">
+                        <img class="card-img-top" :src="option.image" :alt="option.name">
+                        <div class="card-body">
+                            <h5 class="card-title">{{option.name}}</h5>
+                            <p class="card-text card-desc">{{option.description}}</p>
+                            <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                            <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                        </div>
                     </div>
-                </div>
-            </slide>
-        </carousel>
-        <div class="card">
+                </slide>
+            </carousel>
+        </div>
+        <div class="card" >
             <div class="card-body">
                 <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
                     <div class="form-check form-check-inline">
@@ -86,7 +99,7 @@
                     <input type="checkbox" class="form-check-input" v-model="option.selected">
                     <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     <div class="form-group">
@@ -116,7 +129,7 @@
             <button type="button" class="btn btn-secondary" @click.prevent="back">Back</button>
         </div>
         <div class="col text-right">
-            <button type="button" class="btn btn-primary" @click.prevent="submit">Next</button>
+            <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.options.$invalid">Next</button>
         </div>
     </div>
 </div>

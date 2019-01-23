@@ -35,6 +35,7 @@
     "vue": "^2.5.17",
     "vue-carousel": "^0.16.2",
     "vue-class-component": "^6.3.2",
+    "vue-match-heights": "^0.1.1",
     "vue-property-decorator": "^7.2.0",
     "vue-router": "^3.0.2",
     "vue-select": "^2.5.1",

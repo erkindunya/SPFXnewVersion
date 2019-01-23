@@ -1,10 +1,11 @@
 import Vue from 'vue';
 import { Carousel, Slide } from 'vue-carousel';
 import { validationMixin } from 'vuelidate';
-import { required, maxLength, minValue } from 'vuelidate/lib/validators';
+import { required, maxLength, requiredIf, minValue } from 'vuelidate/lib/validators';
 import { sp, Items } from '@pnp/sp';
 import {VueSelect} from 'vue-select';
 import ListSelect from '../../common/ListSelect.vue';
+import VueMatchHeights from 'vue-match-heights';
 
 export default Vue.extend({
     name: 'hardware',
@@ -12,10 +13,10 @@ export default Vue.extend({
         sections: {
             mobile: false,
             software: false,
-            computer: false,
+            computer: false, 
             peripherals: false,
             skype: false
-        },
+        }, 
         options: {
             mobile: [],
             software: [],
@@ -23,7 +24,8 @@ export default Vue.extend({
             monitors: [],
             peripherals: [],
             oracle: [],
-            skype:[]
+            skype:[],
+            mobileLineManager : ""
         }
     }),
     computed: {
@@ -38,6 +40,9 @@ export default Vue.extend({
                         var softwareArr = [];
                         this.options[key].forEach((item) => { softwareArr.push({name : item.Title, price : 0 });});
                         map[key] = softwareArr;
+                    }
+                    else if(key == "mobileLineManager"){
+                        map[key] = this.options[key]; 
                     }
                     else
                         map[key] = this.options[key].filter((item) => item.selected);
@@ -68,6 +73,7 @@ export default Vue.extend({
         }
     },
     created() {
+        Vue.use(VueMatchHeights);
         sp.web.lists.getByTitle('MobilePackages').items.get().then((items: any[]) => {
             this.options.mobile = items.map(item => ({
                 name: item.Title,
@@ -116,11 +122,19 @@ export default Vue.extend({
         Carousel,
         Slide,
         VueSelect,
-        ListSelect
+        ListSelect,
+        VueMatchHeights
     },
     mixins: [
         validationMixin
     ],
     validations: {
+        options : {
+            mobileLineManager: {
+                required: requiredIf(function () {
+                    return this.sections.mobile;
+                })
+            }
+        }
     }
 });
