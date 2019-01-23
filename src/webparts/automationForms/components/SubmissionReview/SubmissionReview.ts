@@ -6,9 +6,7 @@ import { sp } from '@pnp/sp';
 export default Vue.extend({
     name: 'submission-review',
     data: () => ({
-        acceptTerms: false,
-        changeAddress: false,
-        address: ""
+        acceptTerms: false
     }),
     computed: {
         main() {
@@ -24,26 +22,24 @@ export default Vue.extend({
             if(!this.hasHardware) {
                 return 0;
             }
-            
-            var hardwareObj = this.hardware;
+            var hardwareObj = this.hardware.products;
             return (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
         },
         access() {
             return this.$store.state.access;
         },
         hasHardware() {
-            return Object.keys(this.hardware).length > 0;
+            return Object.keys(this.hardware.products).length > 0;
         },
+        printAddress (){
+            return this.$store.state.hardware.deliveryAddress.replace("\n", ", ");
+        }
     },
     methods: {
         back () {
             this.$store.commit('navigate', 5);
         },
         submit () {
-            this.$store.commit('summaryForm', {
-                address: this.address,
-                changeAddress: this.changeAddress
-            });
             this.$store.dispatch('submitForm');
         }
     },
@@ -51,9 +47,6 @@ export default Vue.extend({
         validationMixin
     ],
     validations: {
-        address: {
-            requiredIf: requiredIf('changeAddress')
-        },
         acceptTerms: {
             required,
             sameAs: sameAs( () => true )

@@ -28,31 +28,12 @@
             <div class="card-body">
                 <div class="form-group">
                     <label>Manager Employee No.</label>
-                    <input type="text" class="form-control" :class="{ 'is-invalid': $v.options.mobileLineManager.$invalid }" v-model="options.mobileLineManager">
+                    <input type="text" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
                 </div>
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <div class="form-check form-check-inline">
-            <input type="checkbox" id="SoftwareRequired" class="form-check-input" v-model="sections.software">
-            <label class="form-check-label" for="SoftwareRequired">Software</label>
-        </div>
-    </div>
-    <div v-if="sections.software">
-        
-            <div class="form-group">
-                <p>Select the software you require below. You may select more than one option.</p>
-                <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
-                    <template slot="option" slot-scope="option">
-                        <strong>{{ option.Title }}</strong>
-                        Costs: {{ option.Additional_x0020_Costs }}
-                    </template>
-
-                </list-select>
-            </div>
-        
-    </div>
+    
     <div class="form-group"> 
         <div class="form-check form-check-inline">
             <input type="checkbox" id="ComputerRequired" class="form-check-input" v-model="sections.computer">
@@ -85,6 +66,26 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input type="checkbox" id="SoftwareRequired" class="form-check-input" v-model="sections.software">
+            <label class="form-check-label" for="SoftwareRequired">Software</label>
+        </div>
+    </div>
+    <div v-if="sections.software">
+        
+            <div class="form-group">
+                <p>Select the software you require below. You may select more than one option.</p>
+                <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
+                    <template slot="option" slot-scope="option">
+                        <strong>{{ option.Title }}</strong>
+                        Costs: {{ option.Additional_x0020_Costs }}
+                    </template>
+
+                </list-select>
+            </div>
+        
     </div>
     <div class="form-group">
         <div class="form-check form-check-inline">
@@ -123,13 +124,37 @@
             </slide>
         </carousel>
     </div>  
+
+    <div class="form-group">
+        <h3>Delivery Address</h3>
+        <p v-if="!(details.changeAddress)">
+            {{ $store.state.main.site.SiteAddress }}<br />
+            {{ $store.state.main.site.SiteTownCity }}<br />
+            {{ $store.state.main.site.SitePostcode }}<br />
+            {{ $store.state.main.site.SiteCounty }}
+            </p>
+        
+        <div class="form-group">
+            <label>Would you like to use a different delivery address?</label>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" selected v-model="details.changeAddress" :value="false">
+                <label class="form-check-label">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" v-model="details.changeAddress" :value="true">
+                <label class="form-check-label">Yes</label>
+            </div>
+        </div>
+
+        <textarea v-if="details.changeAddress" class="form-control" v-model="details.deliveryAddress" :class="{ 'is-invalid': $v.details.deliveryAddress.$invalid }"></textarea>
+    </div>
     
     <div class="row">
         <div class="col">
             <button type="button" class="btn btn-secondary" @click.prevent="back">Back</button>
         </div>
         <div class="col text-right">
-            <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.options.$invalid">Next</button>
+            <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.details.$invalid">Next</button>
         </div>
     </div>
 </div>

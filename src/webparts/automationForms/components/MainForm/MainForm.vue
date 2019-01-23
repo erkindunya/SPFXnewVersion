@@ -32,6 +32,10 @@
         </list-select>
     </div>
     <div class="form-group">
+        <label>Job Title*</label>
+        <list-select v-model="formData.jobTitle" listName="JobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }" :lazyLoad="true"></list-select>
+    </div>
+    <div class="form-group">
         <label>Employee Type*</label>
         <vue-select :options="['Permanent', 'Contractor', 'Blue Collar']" v-model="formData.employeeType" :class="{ 'is-invalid': $v.formData.employeeType.$invalid }"></vue-select>
     </div>
@@ -46,10 +50,6 @@
     <div class="form-group">
         <label>Manager*</label>
         <people-picker v-model="formData.manager" :class="{ 'is-invalid': $v.formData.manager.$invalid }"></people-picker>
-    </div>
-    <div class="form-group">
-        <label>Job Title*</label>
-        <list-select v-model="formData.jobTitle" listName="JobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }" :lazyLoad="true"></list-select>
     </div>
     <div class="form-group">
         <label>Manager Email</label>
