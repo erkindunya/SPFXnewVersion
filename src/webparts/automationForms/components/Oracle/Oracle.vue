@@ -9,6 +9,9 @@
     </div>
     <div v-if="sections.oracle">
         <div class="card-body">
+            <div class="border">Employee ID</div>
+            <div class="form-header">If known, please enter the employee ID below.</div>
+            <input type="text" class="form-control" v-model="formData.employeeId">
             <div class="border">Oracle for Business</div>
             <div class="form-header">General Oracle access for finance, general procurement, goods receipting, admin and projects. Each option comes with all the access required to fulfil the tasks described so only one box should be selected.</div>
             <div class="section-header">Click a maximum of one box in this section.</div>
@@ -246,7 +249,7 @@
                 <a class="form-check-label-sub" href="mailto:servicedesk@kier.co.uk?Subject=Requirement" target="_top">[Click here to inform the service desk of your requirement]</a>         
             </div>
             <div class="border">Cost Center</div> 
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" v-model="formData.costCenter">
         </div>
     </div>
     

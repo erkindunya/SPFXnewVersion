@@ -35,7 +35,9 @@ export default Vue.extend({
             oTimeTimekeeper: false,
             oTimeTimekeeperGroup: false,
             oTimeSuperTimekeeper: false,
-            oKierOTL: false
+            oKierOTL: false,
+            employeeId: "",
+            costCenter: ""
         }
     }),
     methods: {
@@ -43,6 +45,7 @@ export default Vue.extend({
             this.$store.commit('navigate', 2);
         },
         submit () {
+            console.log(this.formData);
             this.$store.commit('oracleForm', this.formData);
             this.$store.commit('navigate', 4);
         }
