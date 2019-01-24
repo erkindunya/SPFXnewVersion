@@ -4,11 +4,15 @@
 
     <div class="form-group">
         <label>Project Number*</label>
-        <input type="text" class="form-control" v-model="formData.projectNumber">
+        <input type="text" class="form-control" :class="{ 'is-invalid': $v.formData.projectNumber.$invalid }" v-model="formData.projectNumber">
     </div>
     <div class="form-group">
         <label>Task Number*</label>
-        <input type="text" class="form-control" v-model="formData.taskNumber">
+        <input type="text" class="form-control" :class="{ 'is-invalid': $v.formData.taskNumber.$invalid }" v-model="formData.taskNumber">
+    </div>
+    <div class="form-group">
+        <label>Cost Center*</label>
+        <input type="text" class="form-control" :class="{ 'is-invalid': $v.formData.costCenter.$invalid }" v-model="formData.costCenter">
     </div>
     <div class="form-group">
         <label>Financial Director*</label>

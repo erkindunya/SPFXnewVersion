@@ -36,7 +36,7 @@
                 <p>The new user account will be created and credentials mailed to their manager.</p>
                 <p>If requested, access shall be given to network resources and your orders will be processed.</p>
                 <p><strong>Thank you for using this service</strong></p>
-                <br/><br/><button type="button" class="btn btn-secondary" onclick="window.location.href='https://mykier/'">Close</button>
+                <br/><br/><button type="button" class="btn btn-secondary" onclick="window.location.href='http://myservicedesk/portal.php'">Close</button>
               </div>
           </div>
       </div>
