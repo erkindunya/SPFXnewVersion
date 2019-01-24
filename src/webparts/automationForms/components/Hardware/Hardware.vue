@@ -40,7 +40,7 @@
             <label class="form-check-label" for="ComputerRequired">Computer Package</label>
         </div>
     </div>
-    <div v-if="sections.computer">
+    <div v-if="sections.computer" class="smlPadding">
         <div v-match-heights="{el: ['.card-title', '.card-desc']}">
             <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20"  >
                 <slide v-for="(option, key) in options.computer" :key="key">
@@ -56,15 +56,47 @@
                 </slide>
             </carousel>
         </div>
+        <h2>Monitors</h2>
         <div class="card" >
-            <div class="card-body">
-                <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" v-model="option.selected">
-                        <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
+            <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="yesMonitors" class="form-check-input" v-model="sections.monitors">
+                <label class="form-check-label" for="yesMonitors">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="noMonitors" class="form-check-input">
+                <label class="form-check-label" for="noMonitors">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="existingMonitors" class="form-check-input" v-model="sections.connectors">
+                <label class="form-check-label" for="existingMonitors">Use existing</label>
+            </div>
+            
+            <div v-if="sections.monitors" class="card">
+                <div class="card-body">
+                    <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" v-model="option.selected">
+                            <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div v-if="sections.connectors">
+                <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                    <slide v-for="(option, key) in options.connectors" :key="key">
+                        <div class="card" :class="{'border border-success': option.selected}">
+                            <img class="card-img-top" :src="option.image" :alt="option.name">
+                            <div class="card-body">
+                                <h5 class="card-title">{{option.name}}</h5>
+                                <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                            </div>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+
         </div>
     </div>
     <div class="form-group">

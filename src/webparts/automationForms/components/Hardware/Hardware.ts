@@ -15,6 +15,7 @@ export default Vue.extend({
             software: false,
             computer: false,
             peripherals: false,
+            connectors: false,
             skype: false
         },
         options: {
@@ -23,6 +24,7 @@ export default Vue.extend({
             computer: [],
             monitors: [],
             peripherals: [],
+            connectors: [],
             oracle: [],
             skype: []
         },
@@ -34,11 +36,13 @@ export default Vue.extend({
     }),
     computed: {
         formData() {
+
             return {
                 products: this.getProducts(),
                 mobileLineManager : this.details.mobileLineManager,
                 deliveryAddress : this.getDeliveryAddress()
             };
+
         },
         allSections() {
             const sections = this.sections;
@@ -109,6 +113,13 @@ export default Vue.extend({
                 selected: false
             }));
         });
+        sp.web.lists.getByTitle('MonitorConnectors').items.get().then((items: any[]) => {
+            this.options.connectors = items.map(item => ({
+                name: item.Title,
+                image: item.Image.Url,
+                selected: false
+            }));
+        });          
         sp.web.lists.getByTitle('ComputerPackages').items.get().then((items: any[]) => {
             this.options.computer = items.map(item => ({
                 name: item.Title,
