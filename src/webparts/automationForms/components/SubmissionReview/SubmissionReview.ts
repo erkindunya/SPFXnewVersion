@@ -22,15 +22,9 @@ export default Vue.extend({
             if(!this.hasHardware) {
                 return 0;
             }
-<<<<<<< HEAD
-            var hardwareObj = this.hardware.products; 
-
-            return (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
-=======
             var hardwareObj = this.hardware.products;
             var totalCost =  (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
             return totalCost.toFixed(2);
->>>>>>> 727f7a22f8c18022dda181e3d7f7eb8c3c30712e
         },
         access() {
             return this.$store.state.access;
