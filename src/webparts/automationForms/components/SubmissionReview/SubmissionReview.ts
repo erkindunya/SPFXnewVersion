@@ -23,7 +23,8 @@ export default Vue.extend({
                 return 0;
             }
             var hardwareObj = this.hardware.products;
-            return (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
+            var totalCost =  (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
+            return totalCost.toFixed(2);
         },
         access() {
             return this.$store.state.access;
