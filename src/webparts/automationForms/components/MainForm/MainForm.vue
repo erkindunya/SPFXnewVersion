@@ -19,7 +19,7 @@
     </div>
     <div class="form-group">
         <label>Username Validation</label>
-        <p v-if="!firstChoiceUsername" class="alert alert-success">{{formData.username}}</p>
+        <p v-if="!firstChoiceUsername" class="alert" :class="containsBannedWords ? 'alert-warning':'alert-success'">{{formData.username}}</p>
         <p v-if="firstChoiceUsername" class="alert alert-warning">"{{firstChoiceUsername}}" is not available. You could add a middle initial or {{formData.username}} will be used.</p>
     </div>
     <div class="form-group">
