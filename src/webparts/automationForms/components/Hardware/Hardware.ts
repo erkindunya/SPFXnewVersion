@@ -100,6 +100,7 @@ export default Vue.extend({
                 name: item.Title,
                 description: item.PackageDescription,
                 price: item.Price,
+                monthly: item.PricePerMonth,
                 image: item.Image.Url,
                 selected: false
             }));

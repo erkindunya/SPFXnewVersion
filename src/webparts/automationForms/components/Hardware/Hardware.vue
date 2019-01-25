@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{option.name}}</h5>
                             <p class="card-text card-desc">{{option.description}}</p>
-                            <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                            <p class="card-text"><strong>{{option.price}} GBP + {{option.monthly}} GBP Per Month</strong></p>
                             <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.mobile, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                         </div>
                     </div>
