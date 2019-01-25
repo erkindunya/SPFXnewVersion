@@ -107,12 +107,6 @@
             <div class="border">AD Hoc Access</div>
             <div>
                 <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input-sub" id="adHocAccessESS" v-model="formData.adHocAccessESS" > 
-                    <label class="form-check-label" for="adHocAccessESS">ESS/ MSS Gross Pay Report   reporting units to be added below (Kier OTL Financial Controller)</label>
-                </div>
-            </div>
-            <div>
-                <div class="form-check form-check-inline">
                     <input type="checkbox" id="adHocAccessKWS" class="form-check-input-sub" v-model="formData.adHocAccessKWS" >
                     <label class="form-check-label" for="adHocAccessKWS">KWS Facilities management only - Requisition Load for CPA payment (Kier Requisition load User)</label>
                 </div>
