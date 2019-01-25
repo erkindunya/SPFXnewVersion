@@ -85,22 +85,22 @@
             <div class="form-title">Apps & Certs Approval levels</div>
             <div>
                 <div class="form-check form-check-inline">
+                    <input style="display:inline-block;" type="radio" id="oracleCommercialManager" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Commercial Manager">
                     <label style="margin-left: 10px;display:inline-block;" for="oracleCommercialManager" class="form-check-label">Commercial Manager access to projects and approval of Apps & Certs</label>
-                    <input style="display:inline-block;" type="radio" id="oracleCommercialManager" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Commercial Manager">  
                     <label style="display:inline-block;" class="form-check-label" for="oracleCommercialManager">(Commercial Manager)</label>
                 </div>
             </div>
             <div>
                 <div class="form-check form-check-inline">
+                    <input style="display:inline-block;" type="radio" id="oracleManagingDirector" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Managing Director">
                     <label style="margin-left: 10px;display:inline-block;" for="oracleManagingDirector" class="form-check-label">Managing Director approval of Apps & Certs in line with standing orders</label>                    
-                    <input style="display:inline-block;" type="radio" id="oracleManagingDirector" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Managing Director">  
                     <label style="display:inline-block;" class="form-check-label" for="oracleManagingDirector">(Managing Director)</label>
                 </div>
             </div>
             <div>
                 <div class="form-check form-check-inline">
-                    <label style="margin-left: 10px;display:inline-block;" for="oracleCommercialDirector" class="form-check-label">Commercial Director approval of Apps & Certs in line with standing orders </label>
                     <input style="display:inline-block;" type="radio" id="oracleCommercialDirector" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Commercial Director">  
+                    <label style="margin-left: 10px;display:inline-block;" for="oracleCommercialDirector" class="form-check-label">Commercial Director approval of Apps & Certs in line with standing orders </label>
                     <label style="display:inline-block;" class="form-check-label" for="oracleCommercialDirector">(Commercial Director)</label>
                 </div>
             </div>
