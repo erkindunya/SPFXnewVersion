@@ -136,48 +136,6 @@
                     <label class="form-check-label" for="kierPropertyOnlyExtra">Extra functional access for Property Finance staff</label>
                 </div>
             </div>
-            <div class="border">Hyperion and PBCS</div>
-            <div>
-                <label style="margin-left: 10px;" class="form-check-label">Click the box(es) for the access needed then get approval from </label>
-                <a href="mailto:John.Hudson@kier.co.uk?Subject=Approval%20Request" target="_top">John.Hudson@kier.co.uk</a>
-            </div>
-            <div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input-sub" id="hyperionFinancialManagement" v-model="formData.hyperionFinancialManagement">
-                    <label class="form-check-label" for="hyperionFinancialManagement">Hyperion Financial Management - financial consolidation & reporting for Finance staff</label>
-                </div>
-            </div>
-            <div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input-sub" id="hyperionPBCS" v-model="formData.hyperionPBCS">
-                    <label class="form-check-label" for="hyperionPBCS">Hyperion PBCS – Forecasting and project reporting</label>
-                </div>
-            </div>
-            <div class="border">Business intelligence (BI) reporting</div>
-            <div class="form-header">This concerns access to Oracle’s data analysis BI tool ‘Analytics’. If you request BI access, the service desk with seek guidance from the BI team on your behalf to confirm exactly what type of access is needed.</div>
-            <div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input-sub" id="biOracleBIReporting" v-model="formData.biOracleBIReporting">
-                    <label class="form-check-label" for="biOracleBIReporting">Oracle BI reporting</label>
-                </div>
-            </div>
-            <div class="border">VCR – Select one dropdown answer from each of the VCR modules you requirerting</div>
-            <div class="form-group">
-                <label class="form-check-label-sub">VCR Lump Sum Project</label>
-                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrLumpSumproject" :class="{ 'is-invalid': $v.formData.vcrLumpSumproject.$invalid }"></vue-select>
-            </div>
-            <div class="form-group">
-                <label class="form-check-label-sub">VCR Conversion Project</label>
-                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrConversionProject" :class="{ 'is-invalid': $v.formData.vcrConversionProject.$invalid }"></vue-select>
-            </div>
-            <div class="form-group">
-                <label class="form-check-label-sub">VCR Repairs &amp; Maintenance</label>
-                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Procurement Lead (SPM only)', 'Global Inquiry']" v-model="formData.vcrRepairs" :class="{ 'is-invalid': $v.formData.vcrRepairs.$invalid }"></vue-select>
-            </div>
-            <div class="form-group">
-                <label class="form-check-label-sub">SPM Supplier Performance Management</label>
-                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrSPM" :class="{ 'is-invalid': $v.formData.vcrSPM.$invalid }"></vue-select>
-            </div>
             <div class="border">Oracle Self Service and Time and Labour (OTL)</div>
             <div class="section-header">Click the box(es) for the access needed.</div>
             <div class="form-title">Oracle Employee and Manager Self Service</div>
@@ -236,6 +194,48 @@
                     <input type="checkbox" class="form-check-input-sub" id="oKierOTL" v-model="formData.oKierOTL">
                     <label class="form-check-label" for="oKierOTL">Kier OTL Financial Controller access – Access to payroll summary reports</label>
                 </div>
+            </div>
+            <div class="border">Hyperion and PBCS</div>
+            <div>
+                <label style="margin-left: 10px;" class="form-check-label">Click the box(es) for the access needed then get approval from </label>
+                <a href="mailto:John.Hudson@kier.co.uk?Subject=Approval%20Request" target="_top">John.Hudson@kier.co.uk</a>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input-sub" id="hyperionFinancialManagement" v-model="formData.hyperionFinancialManagement">
+                    <label class="form-check-label" for="hyperionFinancialManagement">Hyperion Financial Management - financial consolidation & reporting for Finance staff</label>
+                </div>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input-sub" id="hyperionPBCS" v-model="formData.hyperionPBCS">
+                    <label class="form-check-label" for="hyperionPBCS">Hyperion PBCS – Forecasting and project reporting</label>
+                </div>
+            </div>
+            <div class="border">Business intelligence (BI) reporting</div>
+            <div class="form-header">This concerns access to Oracle’s data analysis BI tool ‘Analytics’. If you request BI access, the service desk with seek guidance from the BI team on your behalf to confirm exactly what type of access is needed.</div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input-sub" id="biOracleBIReporting" v-model="formData.biOracleBIReporting">
+                    <label class="form-check-label" for="biOracleBIReporting">Oracle BI reporting</label>
+                </div>
+            </div>
+            <div class="border">VCR – Select one dropdown answer from each of the VCR modules you requirerting</div>
+            <div class="form-group">
+                <label class="form-check-label-sub">VCR Lump Sum Project</label>
+                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrLumpSumproject" :class="{ 'is-invalid': $v.formData.vcrLumpSumproject.$invalid }"></vue-select>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label-sub">VCR Conversion Project</label>
+                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrConversionProject" :class="{ 'is-invalid': $v.formData.vcrConversionProject.$invalid }"></vue-select>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label-sub">VCR Repairs &amp; Maintenance</label>
+                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Procurement Lead (SPM only)', 'Global Inquiry']" v-model="formData.vcrRepairs" :class="{ 'is-invalid': $v.formData.vcrRepairs.$invalid }"></vue-select>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label-sub">SPM Supplier Performance Management</label>
+                <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrSPM" :class="{ 'is-invalid': $v.formData.vcrSPM.$invalid }"></vue-select>
             </div>
             <div class="border">Other Access</div> 
             <div class="form-header">Please indicate any other specific access requirements you may have that you feel is not covered by this form, e.g. you are a current user and now no longer need access to a specific area of Oracle</div>   
