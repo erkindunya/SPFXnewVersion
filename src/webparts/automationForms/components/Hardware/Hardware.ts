@@ -77,6 +77,11 @@ export default Vue.extend({
                         this.options[key].forEach((item) => { softwareArr.push({ name: item.Title, price: 0 }); });
                         map[key] = softwareArr;
                     }
+                    else if (key == "connectors") {
+                        var connectorsArr = [];
+                        this.options[key].filter((item) => item.selected).forEach((item) => { connectorsArr.push({ name: item.name, price: 0 }); });
+                        map[key] = connectorsArr;
+                    }
                     else
                         map[key] = this.options[key].filter((item) => item.selected);
                     return map;
