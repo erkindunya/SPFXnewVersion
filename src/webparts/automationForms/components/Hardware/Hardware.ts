@@ -15,8 +15,7 @@ export default Vue.extend({
             software: false,
             computer: false,
             peripherals: false,
-            connectors: false,
-            skype: false
+            connectors: false
         },
         options: {
             mobile: [],
@@ -31,7 +30,8 @@ export default Vue.extend({
         details: {
             mobileLineManager : "",
             changeAddress: false,
-            deliveryAddress: ""
+            deliveryAddress: "",
+            sccengineer: false
         }
     }),
     computed: {
@@ -40,7 +40,8 @@ export default Vue.extend({
             return {
                 products: this.getProducts(),
                 mobileLineManager : this.details.mobileLineManager,
-                deliveryAddress : this.getDeliveryAddress()
+                deliveryAddress : this.getDeliveryAddress(),
+                sccengineer : this.details.sccengineer
             };
 
         },

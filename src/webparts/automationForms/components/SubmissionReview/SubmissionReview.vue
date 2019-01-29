@@ -8,7 +8,12 @@
                 <ul v-if="items.length > 0">
                     <li v-for="(item, itemKey) in items" :key="itemKey">{{item.name}} <span v-if="item.price > 0">- {{item.price}} GBP</span></li>
                 </ul>
+                
                 <p v-if="items.length === 0">No items selected.</p>
+            </div>
+            Delivery charge - 8.00 GBP
+            <div v-if="this.hardware.sccengineer">
+                SCC Engineer visit - 85.00 GBP
             </div>
             <p><strong>Total</strong> - {{totalCost}} GBP</p>
         </div>

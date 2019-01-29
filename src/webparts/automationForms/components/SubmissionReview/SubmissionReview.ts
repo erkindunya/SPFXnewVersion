@@ -24,6 +24,10 @@ export default Vue.extend({
             }
             var hardwareObj = this.hardware.products;
             var totalCost =  (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
+            totalCost = totalCost + 8;
+            if(this.hardware.sccengineer){
+                totalCost = totalCost + 85;
+            }
             return totalCost.toFixed(2);
         },
         access() {
