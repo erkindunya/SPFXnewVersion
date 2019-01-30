@@ -58,7 +58,6 @@ export default Vue.extend({
             this.$store.commit('navigate', 1);
         },
         submit() {
-            console.log(this.formData);
             this.$store.commit('hardwareForm', this.formData);
             this.$store.commit('navigate', 3);
         },
