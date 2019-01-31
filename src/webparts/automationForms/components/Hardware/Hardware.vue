@@ -58,27 +58,20 @@
                                 <p class="card-text"><strong>{{option.price}} GBP</strong></p>
                                 <button class="btn" onclick="window.location='#softwareListModal';" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                             </div>
-                        </div>
-                    </slide>
-                </carousel>
+                                            </div>
+                </slide>
+            </carousel>
+        </div>
+        <h2>Monitors</h2>
+        <div class="form-group" >
+            <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
+            <div class="form-group" id="monitorRadio">
+                <input type="radio" id="yesMonitors" value="yes" v-model="sections.picked">  Yes <br>
+                <input type="radio" id="noMonitors" value="no" v-model="sections.picked">  No <br>
+                <input type="radio" id="existingMonitors" value="use-existing" v-model="sections.picked">  Use existing
             </div>
-            <h2>Monitors</h2>
-            <div class="card" >
-                <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="yesMonitors" class="form-check-input" v-model="sections.monitors">
-                    <label class="form-check-label" for="yesMonitors">Yes</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="noMonitors" class="form-check-input">
-                    <label class="form-check-label" for="noMonitors">No</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="existingMonitors" class="form-check-input" v-model="sections.connectors">
-                    <label class="form-check-label" for="existingMonitors">Use existing</label>
-                </div>
                 
-                <div v-if="sections.monitors" class="card">
+            <div v-if="sections.picked == 'yes'" class="card">
                     <div class="card-body">
                         <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
                             <div class="form-check form-check-inline">
@@ -89,9 +82,9 @@
                     </div>
                 </div>
 
-                <div v-if="sections.connectors">
-                    <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-                        <slide v-for="(option, key) in options.connectors" :key="key">
+            <div v-if="sections.picked == 'use-existing'">
+                <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                    <slide v-for="(option, key) in options.connectors" :key="key">
                             <div class="card" :class="{'border border-success': option.selected}">
                                 <img class="card-img-top" :src="option.image" :alt="option.name">
                                 <div class="card-body">

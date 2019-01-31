@@ -15,7 +15,9 @@ export default Vue.extend({
             software: false,
             computer: false,
             peripherals: false,
-            connectors: false
+            monitors: false,
+            skype: false,
+            picked: ""
         },
         options: {
             mobile: [],
@@ -49,7 +51,8 @@ export default Vue.extend({
             const sections = this.sections;
             return {
                 ...sections,
-                monitors: sections.computer
+                monitors: sections.computer,
+                connectors: this.sections.picked == "use-existing"
             };
         }
     },
