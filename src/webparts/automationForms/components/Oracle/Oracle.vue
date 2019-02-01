@@ -16,93 +16,106 @@
             <div class="form-header">General Oracle access for finance, general procurement, goods receipting, admin and projects. Each option comes with all the access required to fulfil the tasks described so only one box should be selected.</div>
             <div class="section-header">Click a maximum of one box in this section.</div>
             <div class="form-title">Operational Staff</div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleProcurementAndInquiries" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Procurement and project inquires only">
                     <label class="form-check-label" for="oracleProcurementAndInquiries">Procurement and project inquires only</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Procurement and project inquires only')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleGoodsReceiptingAccess" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Goods receipting access only">
                     <label class="form-check-label" for="oracleGoodsReceiptingAccess">Goods receipting access only</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Goods receipting access only')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oraclePreconstruction" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Pre-construction">
                     <label class="form-check-label" for="oraclePreconstruction">Pre-construction</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Pre-construction')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleOperationalStaff" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Operational Staff">
-                    <label class="form-check-label" for="oracleOperationalStaff">Operational Staff – with Key Member access of Project Manager, Contracts Manager or Operations 	Director</label>
+                    <label class="form-check-label" for="oracleOperationalStaff">Operational Staff – with Key Member access of Project Manager, Contracts Manager or Operations Director</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Operational Staff – with Key Member access of Project Manager, Contracts Manager or Operations Director')"></div>
             </div>
             <div class="form-title">Commercial Staff</div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleAccessToManage" class="form-check-input-sub" v-model="formData.oracleForBusiness" >
                     <label class="form-check-label" for="oracleAccessToManage">Access to manage Apps & Certs and subcontractor payments</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Access to manage Apps & Certs and subcontractor payments')"></div>
             </div>
             <div>
                 <div style="display:inline-block;" class="form-title">Buyers or Requisitioner</div>
                 <label style="display:inline-block;">- with access to commodity and subcontractor procurement either as;</label>
             </div>      
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleBuyer" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Buyer">
                     <label class="form-check-label" for="oracleBuyer">Buyer</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Buyer')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleIProcurement" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="iProcurement Requisitioner">
                     <label class="form-check-label" for="oracleIProcurement">iProcurement Requisitioner</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('iProcurement Requisitioner')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleAdministratorSameAsOperational" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Administrator same as Operational Staff, plus can make AR and AP inquiries">
                     <label class="form-check-label" for="oracleAdministratorSameAsOperational">Administrator same as Operational Staff, plus can make AR and AP inquiries</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Administrator same as Operational Staff, plus can make AR and AP inquiries')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleAdministratorWithProjectManagement" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Administrator with project management">
                     <label class="form-check-label" for="oracleAdministratorWithProjectManagement">Administrator with project management</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Administrator with project management')"></div>
             </div>
             <div class="form-title">Finance Staff</div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input type="radio" id="oracleFinanceInquiryWithAccess" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Financial inquiry with access to general ledger reports.  (Finance staff)">
                     <label class="form-check-label" for="oracleFinanceInquiryWithAccess">Financial inquiry with access to general ledger reports. (Finance staff)</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Financial inquiry with access to general ledger reports. (Finance staff)')"></div>
             </div>
             <div class="form-title">Apps & Certs Approval levels</div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input style="display:inline-block;" type="radio" id="oracleCommercialManager" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Commercial Manager">
                     <label style="margin-left: 10px;display:inline-block;" for="oracleCommercialManager" class="form-check-label">Commercial Manager access to projects and approval of Apps & Certs</label>
                     <label style="display:inline-block;" class="form-check-label" for="oracleCommercialManager">(Commercial Manager)</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Commercial Manager access to projects and approval of Apps & Certs')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input style="display:inline-block;" type="radio" id="oracleManagingDirector" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Managing Director">
                     <label style="margin-left: 10px;display:inline-block;" for="oracleManagingDirector" class="form-check-label">Managing Director approval of Apps & Certs in line with standing orders</label>                    
                     <label style="display:inline-block;" class="form-check-label" for="oracleManagingDirector">(Managing Director)</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Managing Director approval of Apps & Certs in line with standing orders')"></div>
             </div>
-            <div>
-                <div class="form-check form-check-inline">
+            <div class="jtooltip-container">
+                <div class="form-check form-check-inline jtooltip-trigger">
                     <input style="display:inline-block;" type="radio" id="oracleCommercialDirector" class="form-check-input-sub" v-model="formData.oracleForBusiness" value="Commercial Director">  
                     <label style="margin-left: 10px;display:inline-block;" for="oracleCommercialDirector" class="form-check-label">Commercial Director approval of Apps & Certs in line with standing orders </label>
                     <label style="display:inline-block;" class="form-check-label" for="oracleCommercialDirector">(Commercial Director)</label>
                 </div>
+                <div class="jtooltip" v-html="getResponsibilities('Commercial Director approval of Apps & Certs in line with standing orders')"></div>
             </div>
             <div class="border">AD Hoc Access</div>
             <div>

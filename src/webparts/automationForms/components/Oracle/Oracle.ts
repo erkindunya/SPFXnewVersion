@@ -37,7 +37,8 @@ export default Vue.extend({
             oTimeSuperTimekeeper: false,
             oKierOTL: false,
             employeeId: "",
-            costCenter: ""
+            costCenter: "",
+            oracleResponsibilities: []
         }
     }),
     methods: {
@@ -48,7 +49,18 @@ export default Vue.extend({
             console.log(this.formData);
             this.$store.commit('oracleForm', this.formData);
             this.$store.commit('navigate', 4);
-        }
+        },
+        getResponsibilities(responsibilty){
+            return this.formData.oracleResponsibilities.filter(item => item.name === responsibilty)[0].responsibilities.replace(new RegExp("(?:\r\n|\r|\n)","g"),'<br/>');
+            }
+    },
+    created() { 
+        sp.web.lists.getByTitle('OracleResponsibilities').items.get().then((items: any[]) => {
+            this.formData.oracleResponsibilities = items.map(item => ({
+                name: item.Title,
+                responsibilities: item.Responsibilities
+            }));
+        });
     },
     components: {
         Carousel,
