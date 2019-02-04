@@ -3,12 +3,17 @@
         <h2>Summary</h2> 
         <h3>Hardware/Software</h3>
         <div v-if="hasHardware">
-            <div v-for="(items, key) in hardware" :key="key">
+            <div v-for="(items, key) in hardware.products" :key="key">
                 <h5>{{key | keyToTitle}}</h5>
                 <ul v-if="items.length > 0">
                     <li v-for="(item, itemKey) in items" :key="itemKey">{{item.name}} <span v-if="item.price > 0">- {{item.price}} GBP</span></li>
                 </ul>
+                
                 <p v-if="items.length === 0">No items selected.</p>
+            </div>
+            Delivery charge - 8.00 GBP
+            <div v-if="this.hardware.sccengineer">
+                SCC Engineer visit - 85.00 GBP
             </div>
             <p><strong>Total</strong> - {{totalCost}} GBP</p>
         </div>
@@ -24,23 +29,14 @@
         <h3>Approval Details</h3>
         <p>Financial Director - {{fd}}</p>
 
-        <h3>Delivery Address</h3>
         
-        <div class="form-group">
-            <label>Would you like to use a different delivery address?</label>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" v-model="changeAddress" :value="false">
-                <label class="form-check-label">No</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" v-model="changeAddress" :value="true">
-                <label class="form-check-label">Yes</label>
-            </div>
+        <div v-if="hardware.mobileLineManager">
+            <h3>Line Manager Employee ID</h3>
+            <p>{{hardware.mobileLineManager}}</p>
         </div>
 
-        <textarea v-if="changeAddress" class="form-control" v-model="address"></textarea>
-
-        
+        <h3>Delivery Address</h3>
+        <p>{{ printAddress }}</p>        
         
         <div class="form-group">
             <div class="form-check form-check-inline">

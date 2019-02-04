@@ -35,7 +35,10 @@ export default Vue.extend({
         },
         isAvailable: false,
         firstChoiceUsername: null,
-        customAddress: false
+        customAddress: false,
+        containsBannedWords: false,
+        bannedWords:[]
+
     }),
     computed: {
         accountName() {
@@ -69,23 +72,29 @@ export default Vue.extend({
             if(username == null) {
                 this.formData.username = "Waiting for input...";
             } else {
-                this.formData.username = "Checking account availability. Please wait...";
-                const isAvailable = await this.checkAccountAvailable(username);
-                if(isAvailable) {
-                    this.formData.username = username;
-                    this.isAvailable = true;
-                } else {
-                    for(let i = 1; i < 10; i++) {
-                        const isAlternativeAvailable = await this.checkAccountAvailable(username + i);
-                        if(isAlternativeAvailable) {
-                            this.formData.username = username + i;
-                            this.isAvailable = true;
-                            this.firstChoiceUsername = username;
-                            return;
-                        }
-                    }
-                    this.formData.username = "No suitable username found, please amend input...";
+                if(this.checkBannedWords(username)) {
+                    this.formData.username = "Not available for use.";
                     this.isAvailable = false;
+                    console.log(username);
+                } else {
+                    this.formData.username = "Checking account availability. Please wait...";
+                    const isAvailable = await this.checkAccountAvailable(username);
+                    if(isAvailable) {
+                            this.formData.username = username;
+                            this.isAvailable = true;
+                    } else {
+                        for(let i = 1; i < 10; i++) {
+                            const isAlternativeAvailable = await this.checkAccountAvailable(username + i);
+                            if(isAlternativeAvailable) {
+                                this.formData.username = username + i;
+                                this.isAvailable = true;
+                                this.firstChoiceUsername = username;
+                                return;
+                            }
+                        }
+                        this.formData.username = "No suitable username found, please amend input...";
+                        this.isAvailable = false;
+                    }
                 }
             }
         }, 1000)
@@ -126,7 +135,29 @@ export default Vue.extend({
             if (!/[A-Za-z'-]/.test( event.key )) {
                event.preventDefault();
             }
+        },
+        checkBannedWords(username) {
+            this.containsBannedWords = false;
+            for(var i = 0; i < this.bannedWords.length; i++) {
+                if(username.toLowerCase().indexOf(this.bannedWords[i].toLowerCase()) !== -1) {
+                    this.containsBannedWords = true;
+                } 
+            }
+            if(this.containsBannedWords) {
+                console.log(this.containsBannedWords);
+                return true;
+            } else {
+                console.log(this.containsBannedWords);
+                return false;
+            }
         }
+    },
+    created() { 
+        sp.web.lists.getByTitle('BannedWords').items.get().then((items: any[]) => {
+            items.forEach(element => {
+                this.bannedWords.push(element.Title);
+            });
+        });
     },
     components: {
         Datepicker,

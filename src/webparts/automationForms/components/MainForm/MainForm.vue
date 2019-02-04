@@ -18,8 +18,8 @@
         <list-select v-model="formData.domainSuffix" listName="DomainSuffixes" :class="{ 'is-invalid': $v.formData.domainSuffix.$invalid }"></list-select>
     </div>
     <div class="form-group">
-        <label>Computed Account Name</label>
-        <p v-if="!firstChoiceUsername" class="alert alert-success">{{formData.username}}</p>
+        <label>Username Validation</label>
+        <p v-if="!firstChoiceUsername" class="alert" :class="containsBannedWords ? 'alert-warning':'alert-success'">{{formData.username}}</p>
         <p v-if="firstChoiceUsername" class="alert alert-warning">"{{firstChoiceUsername}}" is not available. You could add a middle initial or {{formData.username}} will be used.</p>
     </div>
     <div class="form-group">
@@ -30,6 +30,10 @@
                 Business Unit: {{ option.NSSBusinessUnit }}
             </template>
         </list-select>
+    </div>
+    <div class="form-group">
+        <label>Job Title*</label>
+        <list-select v-model="formData.jobTitle" listName="JobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }" :lazyLoad="true"></list-select>
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
@@ -46,10 +50,6 @@
     <div class="form-group">
         <label>Manager*</label>
         <people-picker v-model="formData.manager" :class="{ 'is-invalid': $v.formData.manager.$invalid }"></people-picker>
-    </div>
-    <div class="form-group">
-        <label>Job Title*</label>
-        <list-select v-model="formData.jobTitle" listName="JobTitles" :class="{ 'is-invalid': $v.formData.jobTitle.$invalid }" :lazyLoad="true"></list-select>
     </div>
     <div class="form-group">
         <label>Manager Email</label>

@@ -33,6 +33,9 @@ export default Vue.extend({
         customItems() {
             // object.values was erroring
             return [this.custom.drive, this.custom.mailbox, this.custom.distribution].filter(item => item !== "");
+        },
+        selectedReportingUnit (){
+            return this.$store.state.main.reportingUnit.NSSReportingUnit;
         }
     },
     methods: {
@@ -42,29 +45,39 @@ export default Vue.extend({
         submit() {
             this.$store.commit('accessForm', this.formData);
             this.$store.commit('navigate', 5);
+        },
+        updateOptions(){
+
+            sp.web.lists.getByTitle('NetworkDrives').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
+                this.options.drives = items.map(item => ({
+                    name: item.Title,
+                    selected: false
+                }));
+            }); 
+            sp.web.lists.getByTitle('SharedMailboxes').items.get().then((items: any[]) => {
+                this.options.mailboxes = items.map(item => ({
+                    name: item.Title,
+                    selected: false
+                }));
+            });
+            sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
+                this.options.distributions = items.map(item => ({
+                    name: item.Title,
+                    selected: false
+                }));
+            });
+        }
+    },
+    watch: {
+        selectedReportingUnit: function(){
+            this.sections.drives = false;
+            this.sections.mailboxes = false;
+            this.sections.distributions = false;
+            this.updateOptions();
         }
     },
     created() {
-        var reportingUnit = this.$store.state.main.reportingUnit.NSSReportingUnit;
-
-        sp.web.lists.getByTitle('NetworkDrives').items.filter("NSSReportingUnit eq '" + reportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
-            this.options.drives = items.map(item => ({
-                name: item.Title,
-                selected: false
-            }));
-        }); 
-        sp.web.lists.getByTitle('SharedMailboxes').items.get().then((items: any[]) => {
-            this.options.mailboxes = items.map(item => ({
-                name: item.Title,
-                selected: false
-            }));
-        });
-        sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + reportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
-            this.options.distributions = items.map(item => ({
-                name: item.Title,
-                selected: false
-            }));
-        });
+        this.updateOptions();
     },
     mixins: [
         validationMixin

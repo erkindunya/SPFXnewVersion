@@ -34,3 +34,22 @@
 .form-check-label-sub {
     padding-left: 10px;
 }
+.jtooltip-container{
+    position: relative;
+    cursor: pointer;
+     
+    .jtooltip-trigger:hover + .jtooltip{
+    display: block;
+    }
+    .jtooltip{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:28px;
+    background-color: rgba(0,0,0,0.9);
+    color:#FFFFFF;
+    padding:10px;
+    font-size: 12px;
+    z-index: 999;
+    }
+    }

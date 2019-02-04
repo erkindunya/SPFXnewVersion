@@ -18,7 +18,8 @@ export default Vue.extend({
         percentCompleted(): number {
             if(this.$store.state.submitted || this.$store.state.submitting)
                 return 100;
-            return (this.page - 1) / 5 * 100;
+            
+            return ((this.page > this.maxPage ? this.page : this.maxPage ) - 1) / 5 * 100;
         },
         submitted() {
             return this.$store.state.submitted;

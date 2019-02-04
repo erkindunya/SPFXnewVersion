@@ -11,7 +11,8 @@ export default Vue.extend({
         formData: {
             projectNumber: "",
             taskNumber: "",
-            financialDirector: ""
+            financialDirector: "",
+            costCenter: ""
         },
         FDOptions: []
     }),
@@ -70,6 +71,9 @@ export default Vue.extend({
                 required
             },
             financialDirector: {
+                required
+            },
+            costCenter: {
                 required
             }
         }

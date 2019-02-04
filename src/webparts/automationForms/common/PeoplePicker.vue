@@ -47,7 +47,7 @@ export default Vue.extend({
                 'AllowEmailAddresses':true,
                 'AllowMultipleEntities':false,
                 'AllUrlZones':false,
-                'MaximumEntitySuggestions':10,
+                'MaximumEntitySuggestions':20,
                 'PrincipalSource':15,
                 'PrincipalType': 1,
                 'QueryString': search
@@ -59,7 +59,7 @@ export default Vue.extend({
                     'AllowEmailAddresses':true,
                     'AllowMultipleEntities':false,
                     'AllUrlZones':false,
-                    'MaximumEntitySuggestions':10,
+                    'MaximumEntitySuggestions':20,
                     'PrincipalSource':15,
                     'PrincipalType': 1,
                     'QueryString': newSearch
@@ -70,7 +70,7 @@ export default Vue.extend({
                 this.people = await standardSearch;
             }
             loading(false);
-        }, 1000)
+        }, 800)
     },
     components: {
         VueSelect
