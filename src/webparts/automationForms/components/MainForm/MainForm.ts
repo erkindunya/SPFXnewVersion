@@ -127,7 +127,7 @@ export default Vue.extend({
         limitMiddleInitialLength(event) {
             this.filterMiddleInitialCharacters(event);
             // 8: backspace, 46: delete
-            if ( this.formData.middleInitial.length >= 1 && !(event.keyCode === 8 || event.keyCode === 46) ) {
+            if ( this.formData.middleInitial.length >= 1 && !(event.keyCode === 8 || event.keyCode === 46 || event.keyCode === 9) ) {
                event.preventDefault();
             }
         },
