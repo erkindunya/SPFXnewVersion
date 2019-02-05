@@ -30,7 +30,7 @@ export default Vue.extend({
     },
     methods: {
         navigate (page: number) {
-            if(page <= this.maxPage)
+            if(page <= this.page)
                 this.$store.commit('navigate', page);
         },
     },

@@ -14,11 +14,11 @@
               <div v-if="!submitted && !submitting">
                 <nav class="nav nav-pills nav-fill nav-justify">
                     <a class="nav-item nav-link" :class="{'active': page === 1}" href="#" @click.prevent="navigate(1)">General</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 2, 'disabled': maxPage < 2}" href="#" @click.prevent="navigate(2)">Hardware / Software</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 3, 'disabled': maxPage < 3}" href="#" @click.prevent="navigate(3)">Oracle</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 4, 'disabled': maxPage < 4}" href="#" @click.prevent="navigate(4)">Access</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 5, 'disabled': maxPage < 5}" href="#" @click.prevent="navigate(5)">Approval Information</a>
-                    <a class="nav-item nav-link" :class="{'active': page === 6, 'disabled': maxPage < 6}" href="#" @click.prevent="navigate(6)">Review</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 2, 'disabled': page < 2}" href="#" @click.prevent="navigate(2)">Hardware / Software</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 3, 'disabled': page < 3}" href="#" @click.prevent="navigate(3)">Oracle</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 4, 'disabled': page < 4}" href="#" @click.prevent="navigate(4)">Access</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 5, 'disabled': page < 5}" href="#" @click.prevent="navigate(5)">Approval Information</a>
+                    <a class="nav-item nav-link" :class="{'active': page === 6, 'disabled': page < 6}" href="#" @click.prevent="navigate(6)">Review</a>
                 </nav>
                 <transition>
                   <keep-alive>
