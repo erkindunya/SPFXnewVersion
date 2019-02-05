@@ -38,7 +38,9 @@ export default Vue.extend({
             oKierOTL: false,
             employeeId: "",
             costCenter: "",
-            oracleResponsibilities: []
+            oracleResponsibilities: [],
+            jointVentureAccess: false,
+            rafLakenheathAccess: false
         }
     }),
     methods: {

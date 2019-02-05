@@ -1,14 +1,27 @@
 <template>
     <div>
-    <h2>Oracle / BOOST Access</h2>
+    <h2>Oracle Access</h2>
     <div class="form-group">
         <div class="form-check form-check-inline">
             <input type="checkbox" id="oracleAccessRequired" class="form-check-input" v-model="sections.oracle">
-            <label class="form-check-label" for="oracleAccessRequired">Do you require additional Oracle / Boost access other than self-service, such as Kier goods receipting</label>
+            <label class="form-check-label" for="oracleAccessRequired">Do you require additional Oracle access other than self-service, such as Kier goods receipting</label>
         </div>
     </div>
     <div v-if="sections.oracle">
         <div class="card-body">
+            <div class="border">Joint Ventures</div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input-sub" id="jointVentureAccess" v-model="formData.jointVentureAccess">
+                    <label class="form-check-label" for="jointVentureAccess">Joint Venture (JV) access needed</label>
+                </div>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input-sub" id="rafLakenheathAccess" v-model="formData.rafLakenheathAccess">
+                    <label class="form-check-label" for="rafLakenheathAccess">RAF Lakenheath (JV) access needed</label>
+                </div>
+            </div>
             <div class="border">Employee ID</div>
             <div class="form-header">If known, please enter the employee ID below.</div>
             <input type="text" class="form-control" v-model="formData.employeeId">
