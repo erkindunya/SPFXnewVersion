@@ -125,7 +125,7 @@ export default Vue.extend({
             this.$store.commit('navigate', 2);
         },
         limitMiddleInitialLength(event) {
-            this.filterNonStandardCharacters(event);
+            this.filterMiddleInitialCharacters(event);
             // 8: backspace, 46: delete
             if ( this.formData.middleInitial.length >= 1 && !(event.keyCode === 8 || event.keyCode === 46) ) {
                event.preventDefault();
@@ -133,6 +133,11 @@ export default Vue.extend({
         },
         filterNonStandardCharacters(event) {
             if (!/[A-Za-z'-]/.test( event.key )) {
+               event.preventDefault();
+            }
+        },
+        filterMiddleInitialCharacters(event) {
+            if (!/[A-Za-z]/.test( event.key )) {
                event.preventDefault();
             }
         },
