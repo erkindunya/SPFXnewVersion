@@ -37,7 +37,7 @@
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
-        <vue-select :options="['Permanent', 'Contractor', 'Blue Collar']" v-model="formData.employeeType" :class="{ 'is-invalid': $v.formData.employeeType.$invalid }"></vue-select>
+        <vue-select :options="['Permanent', 'Contractor']" v-model="formData.employeeType" :class="{ 'is-invalid': $v.formData.employeeType.$invalid }"></vue-select>
     </div>
     <div class="form-group">
         <label>Start Date*</label>
