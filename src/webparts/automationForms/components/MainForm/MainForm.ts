@@ -229,7 +229,7 @@ export default Vue.extend({
                 })
             },
             startDate: {
-                isInFuture
+                required
             },
             endDate: {
                 isInFuture,
