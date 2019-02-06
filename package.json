@@ -6,7 +6,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "gulp serve",
+    "start": "SET NODE_ENV=test&&gulp serve",
     "build": "gulp bundle",
     "clean": "gulp clean",
     "test": "gulp test",

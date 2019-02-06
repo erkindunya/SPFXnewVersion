@@ -65,8 +65,6 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
         }
       })
     });
-
-    (<HTMLElement>document.querySelector("div[class*='pageTitle']")).style.display = 'none';
   }
 
   protected get dataVersion(): Version {

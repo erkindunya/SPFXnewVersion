@@ -66,7 +66,7 @@ export default Vue.extend({
         nameObject: debounce(async function() {
             const { firstName, middleInitial, surname} = this.formData;
             const preUsername = this.generateUsername(firstName, middleInitial, surname);
-            const username = preUsername.replace(/[^a-z.]/g, "");
+            const username = preUsername ? preUsername.replace(/[^a-z.]/g, "") : null;
             this.isAvailable = false;
             this.firstChoiceUsername = null;
             if(username == null) {
