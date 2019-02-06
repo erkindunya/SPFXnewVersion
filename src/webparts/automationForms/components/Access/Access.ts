@@ -2,6 +2,7 @@ import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 import { sp } from '@pnp/sp';
+import ListSelect from '../../common/ListSelect.vue';
 
 export default Vue.extend({
     name: 'access',
@@ -20,15 +21,22 @@ export default Vue.extend({
             drives: [],
             mailboxes: [],
             distributions: []
-        }
+        },
+        allOptions: {
+            drives: []
+        },
     }),
     computed: {
         formData() {
-            return Object.keys(this.options).map(itm => this.options[itm]).reduce(function (a, b: any[]) {
-                const items = b.filter((item) => item.selected);
-                const names = items.map(item => item.name);
-                return a.concat(names);
+ 
+            var selectedItems = Object.keys(this.options).map(itm => this.options[itm]).reduce(function (a, b: any[]) {
+            const items = b.filter((item) => item.selected);
+            const names = items.map(item => item.name);
+            return a.concat(names);
             }, this.customItems);
+             
+            this.allOptions.drives.forEach((item) => { selectedItems.push(item.Title ); });
+            return selectedItems;
         },
         customItems() {
             // object.values was erroring
@@ -43,6 +51,7 @@ export default Vue.extend({
             this.$store.commit('navigate', 3);
         },
         submit() {
+            console.log(this.formData);
             this.$store.commit('accessForm', this.formData);
             this.$store.commit('navigate', 5);
         },
@@ -66,7 +75,7 @@ export default Vue.extend({
                     selected: false
                 }));
             });
-        }
+        },
     },
     watch: {
         selectedReportingUnit: function(){
@@ -78,6 +87,9 @@ export default Vue.extend({
     },
     created() {
         this.updateOptions();
+    },
+    components: {
+        ListSelect
     },
     mixins: [
         validationMixin

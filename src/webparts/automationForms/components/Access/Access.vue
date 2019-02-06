@@ -16,8 +16,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Other</label>
-                    <input type="text" class="form-control" v-model="custom.drive" :class="{ 'is-invalid': $v.custom.drive.$invalid }">
+                <p>Other</p>
+                <list-select v-model="allOptions.drives" placeholder="Select the network drives you require." listName="NetworkDrives" multiple="true" :lazyLoad="true">
+                    <template slot="option" slot-scope="option">
+                        <strong>{{ option.Title }}</strong>
+                    </template>
+                </list-select>
                 </div>
             </div>
         </div>
