@@ -10,15 +10,6 @@ import VueMatchHeights from 'vue-match-heights';
 export default Vue.extend({
     name: 'hardware',
     data: () => ({
-        sections: {
-            mobile: false,
-            software: false,
-            computer: false,
-            peripherals: false,
-            monitors: false,
-            skype: false,
-            picked: ""
-        },
         options: {
             mobile: [],
             software: [],
@@ -34,18 +25,25 @@ export default Vue.extend({
             changeAddress: false,
             deliveryAddress: "",
             sccengineer: false
-        }
+        },
+        showSections: {
+            mobile: false,
+            software: false,
+            computer: false,
+            peripherals: false,
+            monitors: false,
+            skype: false,
+            picked: ""
+        },
     }),
     computed: {
         formData() {
-
             return {
                 products: this.getProducts(),
                 mobileLineManager : this.details.mobileLineManager,
                 deliveryAddress : this.getDeliveryAddress(),
                 sccengineer : this.details.sccengineer
             };
-
         },
         allSections() {
             const sections = this.sections;
@@ -54,7 +52,17 @@ export default Vue.extend({
                 monitors: sections.computer,
                 connectors: this.sections.picked == "use-existing"
             };
-        }
+        },
+        sections() {
+            return { 
+                mobile: this.options.mobile.filter((item) => item.selected).length > 0,
+                software: this.options.software.length > 0,
+                computer: this.options.computer.filter((item) => item.selected).length > 0,
+                peripherals: this.options.peripherals.filter((item) => item.selected).length > 0,
+                monitors: this.options.monitors.filter((item) => item.selected).length > 0,
+                skype: this.options.skype.filter((item) => item.selected).length > 0
+            };
+        },
     },
     methods: {
         back() {
@@ -99,6 +107,13 @@ export default Vue.extend({
                 this.$store.state.main.site.SiteTownCity + "\n" + 
                 this.$store.state.main.site.SitePostcode;
             }
+        },
+        setSelectedBar(item){
+            Object.keys(this.showSections).forEach(section => {
+                if(item != section)
+                    this.showSections[section] = false;
+            });
+            this.showSections[item] = !this.showSections[item];
         }
     },
     created() {

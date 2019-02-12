@@ -1,158 +1,173 @@
 <template>
     <div>
         <h2>Hardware and Software</h2>
-        <div class="form-group">
-            <div class="form-check form-check-inline">
-                <input type="checkbox" id="MobileRequired" class="form-check-input" v-model="sections.mobile">
-                <label class="form-check-label" for="MobileRequired">Mobile Device</label>
+
+        <div class="accordian-container">
+            <div class="accordian-head" :class="showSections.mobile ? 'active' : ''" @click.prevent="setSelectedBar('mobile')">
+                <h4>Mobile Devices</h4>
+                <span>{{ options["mobile"].filter((item) => item.selected).length }} Items Selected</span>
             </div>
-        </div>
-        <div id="ContainerMobile" v-if="sections.mobile">
-            <div v-match-heights="{el: ['#ContainerMobile .card-title', '#ContainerMobile .card-desc']}">
-                <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-                    <slide v-for="(option, key) in options.mobile" :key="key">
-                        <div class="card" :class="{'border border-success': option.selected}">
-                            <img class="card-img-top" :src="option.image" :alt="option.name">
-                            <div class="card-body">
-                                <h5 class="card-title">{{option.name}}</h5>
-                                <p class="card-text card-desc">{{option.description}}</p>
-                                <p class="card-text"><strong>{{option.price}} GBP + {{option.monthly}} GBP Per Month</strong></p>
-                                <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.mobile, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+            <div class="accordian-body">
+                <div id="ContainerMobile" v-if="showSections.mobile">
+                    <div v-match-heights="{el: ['#ContainerMobile .card-title', '#ContainerMobile .card-desc']}">
+                        <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                            <slide v-for="(option, key) in options.mobile" :key="key">
+                                <div class="card" :class="{'border border-success': option.selected}">
+                                    <img class="card-img-top" :src="option.image" :alt="option.name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{option.name}}</h5>
+                                        <p class="card-text card-desc">{{option.description}}</p>
+                                        <p class="card-text"><strong>{{option.price}} GBP + {{option.monthly}} GBP Per Month</strong></p>
+                                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.mobile, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                    </div>
+                                </div>
+                            </slide>
+                        </carousel>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Manager Employee No.</label>
+                                <input type="text" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
                             </div>
                         </div>
-                    </slide>
-                </carousel>
+                    </div>
+                </div>
             </div>
-            
-            <div class="card">
-                <div class="card-body">
+        </div>
+
+        <div class="accordian-container">
+            <div class="accordian-head" :class="showSections.computer ? 'active' : ''" @click.prevent="setSelectedBar('computer')">
+                <h4>Computer Packages</h4>
+                <span>{{ options["computer"].filter((item) => item.selected).length }} Items Selected</span>
+            </div>
+            <div class="accordian-body">
+                <div id="ContainerComputer" v-if="showSections.computer" class="smlPadding">
+                    <ul>
+                        <li>Computer packages <strong>do not </strong>include a keyboard, mouse, docking station or monitor; these must be purchased separately.</li>
+                        <li>There is a <strong>£8</strong> delivery charge for all Computers, Laptops and Monitors from SCC.</li> 
+                    </ul>
+                    <div class="form-group check-padding">
+                        <input type="checkbox" class="form-check-input" v-model="details.sccengineer" /><Strong>An SCC engineer is required, there will be an additional £85 fee. </strong>The SCC engineer will set up your device, connect to local printer and take you through first logon to make sure you are working. If you are having an existing device replace the SCC engineer will conduct local data transfer and copy you desktop profile to your new device.
+                    </div>
+                    <div v-match-heights="{el: ['#ContainerComputer .card-title', '#ContainerComputer .card-desc']}">
+                        <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20"  >
+                            <slide v-for="(option, key) in options.computer" :key="key">
+                                <div class="card" :class="{'border border-success': option.selected}">
+                                    <img class="card-img-top" :src="option.image" :alt="option.name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{option.name}}</h5>
+                                        <p class="card-text card-desc">{{option.description}}</p>
+                                        <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                                        <button class="btn" onclick="window.location='#softwareListModal';" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                    </div>
+                                </div>
+                            </slide>
+                        </carousel>
+                    </div>
+                    <h2>Monitors</h2>
+                    <div class="form-group" >
+                        <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
+                        <div class="form-group" id="monitorRadio">
+                            <input type="radio" id="yesMonitors" value="yes" v-model="showSections.picked">  Yes <br>
+                            <input type="radio" id="noMonitors" value="no" v-model="showSections.picked">  No <br>
+                            <input type="radio" id="existingMonitors" value="use-existing" v-model="showSections.picked">  Use existing
+                        </div>
+                            
+                        <div v-if="showSections.picked == 'yes'" class="card">
+                                <div class="card-body">
+                                    <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" v-model="option.selected">
+                                            <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div v-if="showSections.picked == 'use-existing'">
+                            <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                                <slide v-for="(option, key) in options.connectors" :key="key">
+                                    <div class="card" :class="{'border border-success': option.selected}">
+                                        <img class="card-img-top" :src="option.image" :alt="option.name">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{option.name}}</h5>
+                                            <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                        </div>
+                                    </div>
+                                </slide>
+                            </carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordian-container">
+            <div class="accordian-head" :class="showSections.software ? 'active' : ''" @click.prevent="setSelectedBar('software')">
+                <h4>Software</h4>
+                <span>{{ options.software.length }} Items Selected</span>
+            </div>
+            <div class="accordian-body">
+                <div v-if="showSections.software">
                     <div class="form-group">
-                        <label>Manager Employee No.</label>
-                        <input type="text" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
+                        <p>Select the software you require below. You may select more than one option.</p>
+                        <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
+                            <template slot="option" slot-scope="option">
+                                <strong>{{ option.Title }}</strong>
+                                Costs: {{ option.Additional_x0020_Costs }}
+                            </template>
+                        </list-select>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="form-group"> 
-            <div class="form-check form-check-inline">
-                <input type="checkbox" id="ComputerRequired" class="form-check-input" v-model="sections.computer">
-                <label class="form-check-label" for="ComputerRequired">Computer Package</label>
+        <div class="accordian-container">
+            <div class="accordian-head" :class="showSections.peripherals ? 'active' : ''" @click.prevent="setSelectedBar('peripherals')">
+                <h4>Peripherals</h4>
+                <span>{{ options["peripherals"].filter((item) => item.selected).length }} Items Selected</span>
             </div>
-        </div>
-        <div id="ContainerComputer" v-if="sections.computer" class="smlPadding">
-            <ul>
-                <li>Computer packages <strong>do not </strong>include a keyboard, mouse, docking station or monitor; these must be purchased separately.</li>
-                <li>There is a <strong>£8</strong> delivery charge for all Computers, Laptops and Monitors from SCC.</li> 
-            </ul>
-            <input type="checkbox" class="form-check-input" v-model="details.sccengineer"><Strong>An SCC engineer is required, there will be an additional £85 fee. </strong>The SCC engineer will set up your device, connect to local printer and take you through first logon to make sure you are working. If you are having an existing device replace the SCC engineer will conduct local data transfer and copy you desktop profile to your new device.
-            
-            <div v-match-heights="{el: ['#ContainerComputer .card-title', '#ContainerComputer .card-desc']}">
-                <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20"  >
-                    <slide v-for="(option, key) in options.computer" :key="key">
-                        <div class="card" :class="{'border border-success': option.selected}">
-                            <img class="card-img-top" :src="option.image" :alt="option.name">
-                            <div class="card-body">
-                                <h5 class="card-title">{{option.name}}</h5>
-                                <p class="card-text card-desc">{{option.description}}</p>
-                                <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                                <button class="btn" onclick="window.location='#softwareListModal';" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+            <div class="accordian-body">
+                <div v-if="showSections.peripherals" class="card">
+                    <div class="card-body">
+                        <div class="form-group" v-for="(option, key) in options.peripherals" :key="key">
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" v-model="option.selected">
+                                <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
                             </div>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
-            <h2>Monitors</h2>
-            <div class="form-group" >
-                <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
-                <div class="form-group" id="monitorRadio">
-                    <input type="radio" id="yesMonitors" value="yes" v-model="sections.picked">  Yes <br>
-                    <input type="radio" id="noMonitors" value="no" v-model="sections.picked">  No <br>
-                    <input type="radio" id="existingMonitors" value="use-existing" v-model="sections.picked">  Use existing
-                </div>
-                    
-                <div v-if="sections.picked == 'yes'" class="card">
-                        <div class="card-body">
-                            <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
-                                <div class="form-check form-check-inline">
-                                    <input type="checkbox" class="form-check-input" v-model="option.selected">
-                                    <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
-                                </div>
-                            </div>
-                        </div>
+                        </div> 
                     </div>
-
-                <div v-if="sections.picked == 'use-existing'">
-                    <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-                        <slide v-for="(option, key) in options.connectors" :key="key">
-                            <div class="card" :class="{'border border-success': option.selected}">
-                                <img class="card-img-top" :src="option.image" :alt="option.name">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{option.name}}</h5>
-                                    <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
-                                </div>
-                            </div>
-                        </slide>
-                    </carousel>
                 </div>
             </div>
         </div>
-        <div class="form-group">
-            <div class="form-check form-check-inline">
-                <input type="checkbox" id="SoftwareRequired" class="form-check-input" v-model="sections.software">
-                <label class="form-check-label" for="SoftwareRequired">Software</label>
+        
+        <div class="accordian-container">
+            <div class="accordian-head" :class="showSections.skype ? 'active' : ''" @click.prevent="setSelectedBar('skype')">
+                <h4>Skype</h4>
+                <span>{{ options["skype"].filter((item) => item.selected).length }} Items Selected</span>
             </div>
-        </div>
-        <div v-if="sections.software">
-            <div class="form-group">
-                <p>Select the software you require below. You may select more than one option.</p>
-                <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
-                    <template slot="option" slot-scope="option">
-                        <strong>{{ option.Title }}</strong>
-                        Costs: {{ option.Additional_x0020_Costs }}
-                    </template>
-                </list-select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check form-check-inline">
-                <input type="checkbox" id="RequirePeripherals" class="form-check-input" v-model="sections.peripherals">
-                <label class="form-check-label" for="RequirePeripherals">Peripherals</label>
-            </div>
-        </div>
-            <div v-if="sections.peripherals" class="card">
-            <div class="card-body">
-                <div class="form-group" v-for="(option, key) in options.peripherals" :key="key">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" v-model="option.selected">
-                        <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
+            <div class="accordian-body">
+                <div id="ContainerSkype" v-if="showSections.skype">
+                    <div v-match-heights="{el: ['#ContainerSkype .card-title', '#ContainerSkype .card-desc']}">
+                        <carousel  :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
+                            <slide v-for="(option, key) in options.skype" :key="key">
+                                <div class="card" :class="{'border border-success': option.selected}">
+                                    <img class="card-img-top" :src="option.image" :alt="option.name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{option.name}}</h5>
+                                        <p class="card-text card-desc">{{option.description}}</p>
+                                        <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                                        <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                    </div>
+                                </div>
+                            </slide>
+                        </carousel>
                     </div>
-                </div> 
+                </div>  
             </div>
         </div>
-        <div class="form-group">
-            <div class="form-check form-check-inline">
-                <input type="checkbox" id="RequireSkype" class="form-check-input" v-model="sections.skype">
-                <label class="form-check-label" for="RequireSkype">Skype</label>
-            </div>
-        </div>
-        <div id="ContainerSkype" v-if="sections.skype">
-            <div v-match-heights="{el: ['#ContainerSkype .card-title', '#ContainerSkype .card-desc']}">
-                <carousel  :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
-                    <slide v-for="(option, key) in options.skype" :key="key">
-                        <div class="card" :class="{'border border-success': option.selected}">
-                            <img class="card-img-top" :src="option.image" :alt="option.name">
-                            <div class="card-body">
-                                <h5 class="card-title">{{option.name}}</h5>
-                                <p class="card-text card-desc">{{option.description}}</p>
-                                <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                                <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
-                            </div>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
-        </div>  
 
         <div class="form-group">
             <h3>Delivery Address</h3>

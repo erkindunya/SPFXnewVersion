@@ -114,3 +114,61 @@
 p#modalHeader {
     font-weight: bold;
 }
+
+.accordian-container{
+    -webkit-box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
+    margin: 20px 0;
+
+    .accordian-head{
+        padding:15px;
+        background-color: #e9ecef;
+        color:#666;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h4{
+            padding:0;
+            margin:0;
+            font-size: 20px;
+        }
+        span{
+            float:right;
+            font-size: 17px;
+        }
+    
+        &.active + .accordian-body{
+            height:auto;
+            padding:30px 40px;
+            opacity: 1;
+            overflow: visible;
+        }
+    }
+    
+    .accordian-body{
+        background-color: #f9f9f9;
+        padding:30px;
+        overflow: hidden;
+        height:0;
+        padding:0 40px;
+        opacity: 0;
+        transition-duration: 0.25s;
+
+        ul{
+            padding-left: 10px;
+        }
+
+        .check-padding{
+            padding:0 15px;
+        }
+    }
+}
+
+
+.VueCarousel-navigation button.VueCarousel-navigation-button{
+    font-size: 22px !important;
+    color:red !important;
+}
