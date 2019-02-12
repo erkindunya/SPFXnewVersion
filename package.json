@@ -6,7 +6,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "SET NODE_ENV=test&&gulp serve",
+    "start": "SET NODE_ENV=test&&gulp serve --nobrowser",
     "build": "gulp bundle",
     "clean": "gulp clean",
     "test": "gulp test",
@@ -14,6 +14,7 @@
     "package-ship": "gulp bundle --ship && gulp package-solution --ship"
   },
   "dependencies": {
+    "@microsoft/microsoft-graph-client": "^1.4.0",
     "@microsoft/sp-core-library": "1.7.0",
     "@microsoft/sp-lodash-subset": "1.7.0",
     "@microsoft/sp-office-ui-fabric-core": "1.7.0",
@@ -60,6 +61,7 @@
     "sass-loader": "^7.1.0",
     "ts-loader": "^3.5.0",
     "vue-loader": "^15.4.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "msal": "^0.2.4"
   }
 }

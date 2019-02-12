@@ -43,6 +43,7 @@
       "name": "vuejs: chrome",
       "url": "https://devkier.sharepoint.com/sites/ITRequestsPorta/_layouts/workbench.aspx",
       "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true,
       "breakOnLoad": true,
       "sourceMapPathOverrides": {
         "webpack:///src/": "${webRoot}/"

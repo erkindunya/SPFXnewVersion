@@ -8,6 +8,7 @@ import { sp } from '@pnp/sp';
 import { debounce } from 'lodash';
 import {VueSelect} from 'vue-select';
 import axios from 'axios';
+import { MSGraph } from '../../MSGraph';
 
 const now = new Date();
 const isInFuture = (value) => value >= now;
@@ -37,6 +38,7 @@ export default Vue.extend({
         firstChoiceUsername: null,
         customAddress: false,
         containsBannedWords: false,
+        containsMiddleInital: true,
         bannedWords:[]
 
     }),
@@ -65,8 +67,7 @@ export default Vue.extend({
     watch: {
         nameObject: debounce(async function() {
             const { firstName, middleInitial, surname} = this.formData;
-            const preUsername = this.generateUsername(firstName, middleInitial, surname);
-            const username = preUsername ? preUsername.replace(/[^a-z.]/g, "") : null;
+            const username = this.generateUsername(firstName, middleInitial, surname);
             this.isAvailable = false;
             this.firstChoiceUsername = null;
             if(username == null) {
@@ -83,15 +84,22 @@ export default Vue.extend({
                             this.formData.username = username;
                             this.isAvailable = true;
                     } else {
-                        for(let i = 1; i < 10; i++) {
-                            const isAlternativeAvailable = await this.checkAccountAvailable(username + i);
-                            if(isAlternativeAvailable) {
-                                this.formData.username = username + i;
-                                this.isAvailable = true;
-                                this.firstChoiceUsername = username;
-                                return;
+                        if (middleInitial) {
+                            this.firstChoiceUsername = username;
+                            this.containsMiddleInital = middleInitial ? true : false;
+                            return;
+                        } else {
+                            for(let i = 1; i < 10; i++) {
+                                const isAlternativeAvailable = await this.checkAccountAvailable(username + i);
+                                if(isAlternativeAvailable) {
+                                    this.formData.username = username + i;     
+                                    this.firstChoiceUsername =  username;
+                                    this.containsMiddleInital = middleInitial ?  true : false;
+                                    return;
+                                }
                             }
                         }
+                        
                         this.formData.username = "No suitable username found, please amend input...";
                         this.isAvailable = false;
                     }
@@ -108,13 +116,23 @@ export default Vue.extend({
             if (initial.length > 0) {
                 initial += '.';
             }
-            const username = `${firstName}.${initial}${surname}`.toLowerCase();
+            const username = `${this.capitlizeFirstLetter(firstName)}.${this.capitlizeFirstLetter(initial)}${this.capitlizeFirstLetter(surname)}`;
             return username;
         },
-        async checkAccountAvailable(username) {
+        capitlizeFirstLetter(word:string) {
+            return word.toLowerCase().replace(/[^a-z.]/g, "").replace(/^\w/,c => c.toUpperCase());
+        },
+        async checkAccountAvailable(username:string) {
             try {
-                await sp.web.ensureUser(`i:0#.f|membership|${username}`);
-                return false;
+                // resolve domain '365dev.co.uk'. This can be later hard coded to improve page load time.
+                const domain = await sp.web.currentUser.get().then(function(res){ 
+                    return res.UserPrincipalName.split("@").pop();
+                });
+                // let group = await MSGraph.Get()
+                let graphUrl = `/users/${username.toLowerCase() + '@' + domain}`;
+                let group = await MSGraph.Get(graphUrl);
+                // const {data} =  await this.getName(username.toLowerCase() + '@' + domain);
+                return group ? false : true;
             } catch (error) {
                 const {data} = await axios.get(`https://kierautomationfunctions.azurewebsites.net/api/IsMcNicholasUser/${username.toLowerCase()}?code=a2lZtRvhxidIZ67jxUVGwGTzRRpAWY2Nuc3RLgx8BFzvEWJFwaKeUA==`);
                 return !data;
@@ -149,14 +167,15 @@ export default Vue.extend({
                 } 
             }
             if(this.containsBannedWords) {
-                console.log(this.containsBannedWords);
+                // console.log(this.containsBannedWords);
                 return true;
             } else {
-                console.log(this.containsBannedWords);
+                // console.log(this.containsBannedWords);
                 return false;
             }
-        }
+        },
     },
+    
     created() { 
         sp.web.lists.getByTitle('BannedWords').items.get().then((items: any[]) => {
             items.forEach(element => {

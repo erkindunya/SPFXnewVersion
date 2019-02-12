@@ -24,6 +24,7 @@ import {
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import * as strings from 'AutomationFormsWebPartStrings';
+import { MSGraph } from './MSGraph';
 
 require('./main.scss');
 
@@ -43,7 +44,8 @@ export interface IAutomationFormsWebPartProps {
 
 export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutomationFormsWebPartProps> {
 
-  public render(): void {
+  public async render(): Promise<void> {
+    await MSGraph.Init(this.context);
     const id: string = `wp-${this.instanceId}`;
     this.domElement.innerHTML = `<div id="${id}"></div>`;
 
@@ -100,7 +102,6 @@ export default class AutomationFormsWebPart extends BaseClientSideWebPart<IAutom
       sp.setup({
         spfxContext: this.context
       });
-      
     });
   }
 }

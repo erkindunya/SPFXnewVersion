@@ -17,7 +17,8 @@ export default new Vuex.Store({
         maxPage: 1,
         submitting: false,
         submitted: false,
-        cost: 1001
+        cost: 1001,
+        userInformation: {}
     },
     mutations: {
         mainForm(state, values) {
