@@ -32,7 +32,8 @@ export default Vue.extend({
             manager: "",
             site: "",
             floorAndRoom: "",
-            username: "Waiting for input..."
+            username: "Waiting for input...",
+            o365License: ""
         },
         isAvailable: false,
         firstChoiceUsername: null,
@@ -255,6 +256,9 @@ export default Vue.extend({
                 required: requiredIf(function () {
                     return this.formData.employeeType === 'Contractor';
                 })
+            },
+            o365License: {
+                required
             }
         }
     }
