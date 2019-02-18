@@ -79,6 +79,7 @@ export default new Vuex.Store({
                 NSSEndDate: main.endDate,
                 NSSManager: main.manager.Description,
                 NSSSite: main.site.Title,
+                Site_x0020_Approved: !main.customAddress,
                 NSSFloorAndRoom: main.floorAndRoom,
                 Mobile: JSON.stringify(hardware.products.mobile),
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,

@@ -60,9 +60,9 @@
         <label>Manager Email</label>
         <p>{{managerEmail}}</p>
     </div>
-    <div class="form-group" v-if="!customAddress">
+    <div class="form-group" v-if="!formData.customAddress">
         <label>Site</label>
-        <small>(Can't find your site? <a href="#" @click.prevent="customAddress = true">Click here to enter a custom address</a>)</small>
+        <small>(Can't find your site? <a href="#" @click.prevent="formData.customAddress = true">Click here to enter a custom address</a>)</small>
         <list-select v-model="formData.site" listName="Sites" :class="{ 'is-invalid': $v.formData.site.$invalid }" :lazyLoad="false">
             <template slot="option" slot-scope="option">
                 <strong>{{ option.Title }}</strong><br />
@@ -76,10 +76,10 @@
             {{formData.site.SitePostcode}}
         </div>
     </div>
-    <div v-if="customAddress">
+    <div v-if="formData.customAddress">
         <hr>
         <h5>New Site Address</h5>
-        <p>Requires approval (<a href="#" @click.prevent="customAddress = false">Click here to select from existing options</a>)</p>
+        <p>Requires approval (<a href="#" @click.prevent="formData.customAddress = false">Click here to select from existing options</a>)</p>
         <div class="form-group">
             <label>Site Address</label>
             <input type="text" class="form-control" v-model="formData.addressLine1" :class="{ 'is-invalid': $v.formData.addressLine1.$invalid }">

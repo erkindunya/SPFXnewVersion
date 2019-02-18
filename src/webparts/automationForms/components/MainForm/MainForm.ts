@@ -33,11 +33,11 @@ export default Vue.extend({
             site: "",
             floorAndRoom: "",
             username: "Waiting for input...",
-            o365License: ""
+            o365License: "",
+            customAddress: false
         },
         isAvailable: false,
         firstChoiceUsername: null,
-        customAddress: false,
         containsBannedWords: false,
         containsMiddleInital: true,
         bannedWords:[]
@@ -215,17 +215,17 @@ export default Vue.extend({
             },
             addressLine1: {
                 required: requiredIf(function () {
-                    return this.customAddress;
+                    return this.formData.customAddress;
                 })
             },
             townCity: {
                 required: requiredIf(function () {
-                    return this.customAddress;
+                    return this.formData.customAddress;
                 })
             },
             postCode: {
                 required: requiredIf(function () {
-                    return this.customAddress;
+                    return this.formData.customAddress;
                 })
             },
             domainSuffix: {
@@ -245,7 +245,7 @@ export default Vue.extend({
             },
             site: {
                 required: requiredIf(function () {
-                    return !this.customAddress;
+                    return !this.formData.customAddress;
                 })
             },
             startDate: {
