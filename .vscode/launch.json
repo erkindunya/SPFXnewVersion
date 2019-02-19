@@ -48,6 +48,18 @@
       "sourceMapPathOverrides": {
         "webpack:///src/": "${webRoot}/"
       }
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "vuejs: chrome live",
+      "url": "https://kier.sharepoint.com/sites/ITRequestsPortal/_layouts/workbench.aspx",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true,
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/": "${webRoot}/"
+      }
     }
   ]
 }
