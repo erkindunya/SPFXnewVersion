@@ -3,6 +3,8 @@ import { validationMixin } from 'vuelidate';
 import { required, maxLength, minValue } from 'vuelidate/lib/validators';
 import { sp } from '@pnp/sp';
 import ListSelect from '../../common/ListSelect.vue';
+import GraphSelect from '../../common/GraphSelect.vue';
+import { MSGraph } from '../../MSGraph';
 
 export default Vue.extend({
     name: 'access',
@@ -23,7 +25,8 @@ export default Vue.extend({
             distributions: []
         },
         allOptions: {
-            drives: []
+            drives: [],
+            mailboxes: []
         },
     }),
     computed: {
@@ -36,6 +39,7 @@ export default Vue.extend({
             }, this.customItems);
              
             this.allOptions.drives.forEach((item) => { selectedItems.push(item.Title ); });
+            this.allOptions.mailboxes.forEach((item) => { selectedItems.push(item.mail); });
             return selectedItems;
         },
         customItems() {
@@ -55,7 +59,7 @@ export default Vue.extend({
             this.$store.commit('accessForm', this.formData);
             this.$store.commit('navigate', 5);
         },
-        updateOptions(){
+        async updateOptions(){
 
             sp.web.lists.getByTitle('NetworkDrives').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
                 this.options.drives = items.map(item => ({
@@ -63,12 +67,14 @@ export default Vue.extend({
                     selected: false
                 }));
             }); 
-            sp.web.lists.getByTitle('SharedMailboxes').items.get().then((items: any[]) => {
-                this.options.mailboxes = items.map(item => ({
-                    name: item.Title,
+
+            await MSGraph.Get('/groups',"v1.0",["mail"],"mailEnabled eq true",999).then((items) => {
+                this.options.mailboxes = items.value.map(item => ({
+                    name: item.mail,
                     selected: false
                 }));
             });
+            
             sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
                 this.options.distributions = items.map(item => ({
                     name: item.Title,
@@ -89,7 +95,8 @@ export default Vue.extend({
         this.updateOptions();
     },
     components: {
-        ListSelect
+        ListSelect,
+        GraphSelect
     },
     mixins: [
         validationMixin

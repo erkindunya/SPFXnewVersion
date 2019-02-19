@@ -5,7 +5,17 @@
     "id": "89cbd1b0-3d5f-44bd-a4db-b9f7c14e404e",
     "version": "1.0.0.29",
     "includeClientSideAssets": true,
-    "isDomainIsolated": false
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/automation-forms.sppkg"

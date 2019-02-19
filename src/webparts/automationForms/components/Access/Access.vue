@@ -33,11 +33,12 @@
         </div>
         <div v-if="sections.mailboxes" class="card">
             <div class="card-body">
-                <div class="form-group" v-for="(option, key) in options.mailboxes" :key="key">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" v-bind:id="option.selected" v-model="option.selected">
-                        <label class="form-check-label" v-bind:for="option.selected">{{option.name}}</label>
-                    </div>
+                 <div class="form-group">
+                    <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :lazyLoad="true" >
+                        <template slot="option" slot-scope="option">
+                            <strong>{{ option.mail }}</strong>
+                        </template>
+                    </graph-select>
                 </div>
                 <div class="form-group">
                     <label>Other</label>
