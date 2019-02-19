@@ -129,11 +129,14 @@ export default Vue.extend({
                 const domain = await sp.web.currentUser.get().then(function(res){ 
                     return res.UserPrincipalName.split("@").pop();
                 });
-                // let group = await MSGraph.Get()
-                let graphUrl = `/users/${username.toLowerCase() + '@' + domain}`;
-                let group = await MSGraph.Get(graphUrl);
-                // const {data} =  await this.getName(username.toLowerCase() + '@' + domain);
-                return group ? false : true;
+                const filter = `mail eq '${username.toLowerCase() + '@' + domain}'`;
+                let user = await MSGraph.Get('/users','v1.0',['mail'],filter,1);
+                if (Object.getOwnPropertyNames(user.value).length === 1) {
+                    const {data} = await axios.get(`https://kierautomationfunctions.azurewebsites.net/api/IsMcNicholasUser/${username.toLowerCase()}?code=a2lZtRvhxidIZ67jxUVGwGTzRRpAWY2Nuc3RLgx8BFzvEWJFwaKeUA==`);
+                    return !data;
+                } else {
+                    return false;
+                }         
             } catch (error) {
                 const {data} = await axios.get(`https://kierautomationfunctions.azurewebsites.net/api/IsMcNicholasUser/${username.toLowerCase()}?code=a2lZtRvhxidIZ67jxUVGwGTzRRpAWY2Nuc3RLgx8BFzvEWJFwaKeUA==`);
                 return !data;
