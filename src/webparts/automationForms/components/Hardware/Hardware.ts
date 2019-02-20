@@ -6,6 +6,7 @@ import { sp, Items } from '@pnp/sp';
 import { VueSelect } from 'vue-select';
 import ListSelect from '../../common/ListSelect.vue';
 import VueMatchHeights from 'vue-match-heights';
+import ProjectDetails from '../ProjectDetails/ProjectDetails';
 
 export default Vue.extend({
     name: 'hardware',
@@ -24,7 +25,8 @@ export default Vue.extend({
             mobileLineManager : "",
             changeAddress: false,
             deliveryAddress: "",
-            sccengineer: false
+            sccengineer: false,
+            selectedMonitor: ""
         },
         showSections: {
             mobile: false,
@@ -96,6 +98,11 @@ export default Vue.extend({
                         this.options[key].filter((item) => item.selected).forEach((item) => { connectorsArr.push({ name: item.name, price: 0 }); });
                         map[key] = connectorsArr;
                     }
+                    else if (key == "monitors") {
+                        var monitorsArr = [];
+                        monitorsArr.push({ name: this.details.selectedMonitor.Title, price: this.details.selectedMonitor.Price }); 
+                        map[key] = monitorsArr;
+                    }
                     else
                         map[key] = this.options[key].filter((item) => item.selected);
                     return map;
@@ -124,6 +131,9 @@ export default Vue.extend({
                 window.location.href = '#softwareListModal';
             }
         },
+        uncheckAll: function() {
+            this.details.selectedMonitor = false;
+        }
     },
     created() {
         Vue.use(VueMatchHeights);

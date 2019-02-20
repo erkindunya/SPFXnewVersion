@@ -71,21 +71,19 @@
                         <p>Monitors are not included as part of a computer build package, are new monitors required?</p>
                         <div class="form-group" id="monitorRadio">
                             <input type="radio" id="yesMonitors" value="yes" v-model="showSections.picked">  Yes <br>
-                            <input type="radio" id="noMonitors" value="no" v-model="showSections.picked">  No <br>
-                            <input type="radio" id="existingMonitors" value="use-existing" v-model="showSections.picked">  Use existing
+                            <input type="radio" id="noMonitors" value="no" v-model="showSections.picked" @click="uncheckAll">  No <br>
+                            <input type="radio" id="existingMonitors" value="use-existing" v-model="showSections.picked" @click="uncheckAll">  Use existing
                         </div>
-                            
                         <div v-if="showSections.picked == 'yes'" class="card">
-                                <div class="card-body">
-                                    <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
-                                        <div class="form-check form-check-inline">
-                                            <input type="checkbox" class="form-check-input" v-model="option.selected">
-                                            <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
-                                        </div>
+                            <div class="card-body">
+                                <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" v-model="details.selectedMonitor" :value="option.name">
+                                        <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
                         <div v-if="showSections.picked == 'use-existing'">
                             <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20">
                                 <slide v-for="(option, key) in options.connectors" :key="key">
