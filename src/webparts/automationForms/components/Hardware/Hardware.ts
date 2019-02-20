@@ -35,6 +35,9 @@ export default Vue.extend({
             skype: false,
             picked: ""
         },
+        modalElements: {
+            windowCount: 0
+        }
     }),
     computed: {
         formData() {
@@ -114,7 +117,13 @@ export default Vue.extend({
                     this.showSections[section] = false;
             });
             this.showSections[item] = !this.showSections[item];
-        }
+        },
+        callModalWindow() {
+            this.modalElements.windowCount += 1;
+            if (this.modalElements.windowCount === 1) {
+                window.location.href = '#softwareListModal';
+            }
+        },
     },
     created() {
         Vue.use(VueMatchHeights);

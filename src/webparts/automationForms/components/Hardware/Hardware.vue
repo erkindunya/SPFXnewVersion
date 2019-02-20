@@ -60,7 +60,7 @@
                                         <h5 class="card-title">{{option.name}}</h5>
                                         <p class="card-text card-desc">{{option.description}}</p>
                                         <p class="card-text"><strong>{{option.price}} GBP</strong></p>
-                                        <button class="btn" onclick="window.location='#softwareListModal';" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                        <button class="btn" v-on:click.once="callModalWindow()" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                                     </div>
                                 </div>
                             </slide>
