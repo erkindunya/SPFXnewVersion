@@ -26,7 +26,8 @@ export default Vue.extend({
             changeAddress: false,
             deliveryAddress: "",
             sccengineer: false,
-            selectedMonitor: ""
+            selectedMonitor: "",
+            bimbuild: false
         },
         showSections: {
             mobile: false,
@@ -47,7 +48,8 @@ export default Vue.extend({
                 products: this.getProducts(),
                 mobileLineManager : this.details.mobileLineManager,
                 deliveryAddress : this.getDeliveryAddress(),
-                sccengineer : this.details.sccengineer
+                sccengineer : this.details.sccengineer,
+                bimbuild: this.details.bimbuild
             };
         },
         allSections() {
@@ -77,7 +79,7 @@ export default Vue.extend({
             this.$store.commit('hardwareForm', this.formData);
             this.$store.commit('navigate', 3);
         },
-        selectSingleOption(optionGroup, optionItem, itemSelected) {
+        selectSingleOption(optionGroup, optionItem, itemSelected, isRecycled) {
             optionGroup.forEach(element => {
                 element.selected = false;
             });
@@ -102,6 +104,12 @@ export default Vue.extend({
                         var monitorsArr = [];
                         monitorsArr.push({ name: this.details.selectedMonitor.Title, price: this.details.selectedMonitor.Price }); 
                         map[key] = monitorsArr;
+                    }
+                    else if (key == "computer") {
+                        var computerArr = [];
+
+                        this.options[key].filter((item) => item.selected).forEach((item) => { computerArr.push({ name: item.name, price: item.isRecycled ? 300 : item.Price}); });
+                        map[key] = computerArr;
                     }
                     else
                         map[key] = this.options[key].filter((item) => item.selected);

@@ -2,6 +2,9 @@
     <div>
         <h2>Summary</h2> 
         <h3>Hardware/Software</h3>
+        <div v-if="this.hardware.bimbuild">
+            <p>A BIM build is required</p>
+        </div>
         <div v-if="hasHardware">
             <div v-for="(items, key) in hardware.products" :key="key">
                 <h5>{{key | keyToTitle}}</h5>

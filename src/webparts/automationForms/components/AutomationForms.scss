@@ -33,7 +33,9 @@ header {
         text-transform: uppercase;
     }
 }
-
+.showAsEnabled{
+    background-color: white !important;
+}
 // hide navigation
 #s4-titlerow { display:none !important; }
 #sideNavBox { display:none !important; }

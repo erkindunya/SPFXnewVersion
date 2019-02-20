@@ -45,12 +45,12 @@
         <vue-select :options="['Permanent', 'Contractor']" v-model="formData.employeeType" :class="{ 'is-invalid': $v.formData.employeeType.$invalid }"></vue-select>
     </div>
     <div class="form-group">
-        <label>Start Date*</label>
-        <datepicker v-model="formData.startDate" :input-class="{ 'is-invalid': $v.formData.startDate.$invalid, 'form-control': true }"></datepicker>
+        <label>Start Date*</label> 
+        <datepicker v-model="formData.startDate" :input-class="{ 'is-invalid': $v.formData.startDate.$invalid, 'form-control': true, 'showAsEnabled':true }"></datepicker>
     </div>
     <div class="form-group" v-if="formData.employeeType === 'Contractor'">
         <label>End Date*</label>
-        <datepicker v-model="formData.endDate" :input-class="{ 'is-invalid': $v.formData.endDate.$invalid, 'form-control': true }"></datepicker>
+        <datepicker v-model="formData.endDate" :input-class="{ 'is-invalid': $v.formData.endDate.$invalid, 'form-control': true, 'showAsEnabled':true }"></datepicker>
     </div>
     <div class="form-group">
         <label>Manager*</label>

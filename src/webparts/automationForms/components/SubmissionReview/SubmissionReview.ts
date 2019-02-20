@@ -5,7 +5,7 @@ import { sp } from '@pnp/sp';
 
 export default Vue.extend({
     name: 'submission-review',
-    data: () => ({
+    data: () => ({ 
         acceptTerms: false
     }),
     computed: {

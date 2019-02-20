@@ -51,6 +51,9 @@
                     <div class="form-group check-padding">
                         <input type="checkbox" class="form-check-input" v-model="details.sccengineer" /><Strong>An SCC engineer is required, there will be an additional £85 fee. </strong>The SCC engineer will set up your device, connect to local printer and take you through first logon to make sure you are working. If you are having an existing device replace the SCC engineer will conduct local data transfer and copy you desktop profile to your new device.
                     </div>
+                    <div class="form-group check-padding">
+                        <input type="checkbox" class="form-check-input" v-model="details.bimbuild" /><Strong>A BIM build is required.</strong>
+                    </div>                    
                     <div v-match-heights="{el: ['#ContainerComputer .card-title', '#ContainerComputer .card-desc']}">
                         <carousel :navigationEnabled="true" :per-page-custom="[[320, 2], [800, 3]]" :space-padding="20"  >
                             <slide v-for="(option, key) in options.computer" :key="key">
@@ -59,11 +62,16 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{option.name}}</h5>
                                         <p class="card-text card-desc">{{option.description}}</p>
-                                        <p class="card-text"><strong>{{option.price}} GBP</strong></p>
+                                        <p v-if="!option.isRecycled" class="card-text"><strong>{{option.price}} GBP</strong></p>
+                                        <p v-if="option.isRecycled" class="card-text"><strong>300.00 GBP</strong></p>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" for="isRecycled" v-model="option.isRecycled">
+                                            <label class="form-check-label"  id="isRecycled">Recycled</label>
+                                        </div>
                                         <button class="btn" v-on:click.once="callModalWindow()" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                                     </div>
                                 </div>
-                            </slide>
+                            </slide> 
                         </carousel>
                     </div>
                     <h2>Monitors</h2>
@@ -159,7 +167,7 @@
                                         <p class="card-text"><strong>{{option.price}} GBP</strong></p>
                                         <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                                     </div>
-                                </div>
+                                </div> 
                             </slide>
                         </carousel>
                     </div>
