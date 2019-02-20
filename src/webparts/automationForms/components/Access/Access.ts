@@ -31,16 +31,14 @@ export default Vue.extend({
     }),
     computed: {
         formData() {
- 
-            var selectedItems = Object.keys(this.options).map(itm => this.options[itm]).reduce(function (a, b: any[]) {
-            const items = b.filter((item) => item.selected);
-            const names = items.map(item => item.name);
-            return a.concat(names);
-            }, this.customItems);
-             
-            this.allOptions.drives.forEach((item) => { selectedItems.push(item.Title ); });
-            this.allOptions.mailboxes.forEach((item) => { selectedItems.push(item.mail); });
-            return selectedItems;
+            return {
+                drives: this.getNetworkDrivesList(),
+                mailboxes: this.getMailboxList(),
+                distributions: this.getDistributionList(),
+                customDrives: this.custom.drive,
+                customMailboxes: this.custom.mailbox,
+                customDistributions: this.custom.distribution,
+            };
         },
         customItems() {
             // object.values was erroring
@@ -81,6 +79,22 @@ export default Vue.extend({
                     selected: false
                 }));
             });
+        },
+        getNetworkDrivesList () {
+            var driveList = [];
+            this.options.drives.forEach((item) => { if(item.selected) driveList.push(item.name ); });
+            this.allOptions.drives.forEach((item) => { driveList.push(item.Title ); });
+            return driveList;
+        },
+        getMailboxList () {
+            var mailboxList = [];
+            this.options.mailboxes.forEach((item) => { if(item.selected) mailboxList.push(item.name ); });
+            return mailboxList;
+        },
+        getDistributionList () {
+            var distributionsList = [];
+            this.options.distributions.forEach((item) => { if(item.selected) distributionsList.push(item.name ); });
+            return distributionsList;
         },
     },
     watch: {

@@ -65,6 +65,7 @@ export default new Vuex.Store({
             const oracle: any = state.oracle;
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
+            console.log(access.formData);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 NSSFirstName: main.firstName,
                 NSSSurname: main.surname,
@@ -83,8 +84,8 @@ export default new Vuex.Store({
                 NSSFloorAndRoom: main.floorAndRoom,
                 Mobile: JSON.stringify(hardware.products.mobile),
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,
-                SCC_x0020_Engineer: JSON.stringify(hardware.sccengineer),
-                Computer_x0020_Package: JSON.stringify(hardware.computer),
+                SCC_x0020_Engineer: hardware.sccengineer,
+                Computer_x0020_Package: JSON.stringify(hardware.products.computer),
                 Monitors: JSON.stringify(hardware.products.monitors),
                 Connectors: JSON.stringify(hardware.products.connectors),
                 Software: JSON.stringify(hardware.products.software),
@@ -122,9 +123,9 @@ export default new Vuex.Store({
                 VCR_x0020_Repairs: oracle.vcrRepairs,
                 SPM: oracle.vcrSPM,
                 Cost_x0020_Center: oracle.costCenter,
-                Network_x0020_Drives: access.drive,
-                Shared_x0020_Mailboxes: access.mailbox,
-                Distribution_x0020_Lists: access.distribution,
+                Network_x0020_Drives: JSON.stringify(access.drive),
+                Shared_x0020_Mailboxes: JSON.stringify(access.mailbox),
+                Distribution_x0020_Lists: JSON.stringify(access.distribution),
                 Project_x0020_Number: projectDetails.projectNumber,
                 Task_x0020_Number: projectDetails.taskNumber,
                 Approval_x0020_Cost_x0020_Center: projectDetails.costCenter,

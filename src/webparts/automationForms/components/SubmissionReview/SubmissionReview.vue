@@ -22,8 +22,25 @@
 
 
         <h3>Access</h3>
-        <ul v-if="access.length > 0">
-            <li v-for="(item, key) in access" :key="key">{{item}}</li>
+        <h5>Network Drives</h5>
+        <ul v-if="access.drives.length > 0">
+            <li v-for="(item, key) in access.drives" :key="key">{{item}}</li>
+        </ul>
+        <h5>Mailboxes</h5>
+        <ul v-if="access.mailboxes.length > 0">
+            <li v-for="(item, key) in access.mailboxes" :key="key">{{item}}</li>
+        </ul>
+        <h6 v-if="access.customMailboxes">Other Mailboxes</h6>
+        <ul v-if="access.customMailboxes">
+            <li>{{access.customMailboxes}}</li>
+        </ul>
+        <h5>Distribution Lists</h5>
+        <ul v-if="access.distributions.length > 0">
+            <li v-for="(item, key) in access.distributions" :key="key">{{item}}</li>
+        </ul>
+        <h6 v-if="access.customDistributions">Other Distribution Lists</h6>
+        <ul v-if="access.customDistributions">
+            <li>{{access.customDistributions}}</li>
         </ul>
         <p v-if="access.length === 0">No access selected.</p>
         <h3>Approval Details</h3>
