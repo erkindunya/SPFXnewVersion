@@ -246,7 +246,7 @@
                     <label class="form-check-label" for="biOracleBIReporting">Oracle BI reporting</label>
                 </div>
             </div>
-            <div class="border">VCR – Select one dropdown answer from each of the VCR modules you requirerting</div>
+            <div class="border">VCR – Select one dropdown answer from each of the VCR modules you require</div>
             <div class="form-group">
                 <label class="form-check-label-sub">VCR Lump Sum Project</label>
                 <vue-select :options="['Business unit Inquiry', 'Business unit Director', 'Business Unit Administration', 'Commercial / Operational', 'Commercial Manager', 'Global Inquiry']" v-model="formData.vcrLumpSumproject" :class="{ 'is-invalid': $v.formData.vcrLumpSumproject.$invalid }"></vue-select>
