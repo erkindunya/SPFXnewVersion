@@ -34,7 +34,8 @@ export default Vue.extend({
             floorAndRoom: "",
             username: "Waiting for input...",
             o365License: "",
-            customAddress: false
+            customAddress: false,
+            duplicate: ""
         },
         isAvailable: false,
         firstChoiceUsername: null,
@@ -115,7 +116,11 @@ export default Vue.extend({
             }
             let initial = middleInitial;
             if (initial.length > 0) {
+                this.formData.duplicate = true;
                 initial += '.';
+            }
+            else {
+                this.formData.duplicate = false;
             }
             const username = `${this.capitlizeFirstLetter(firstName)}.${this.capitlizeFirstLetter(initial)}${this.capitlizeFirstLetter(surname)}`;
             return username;

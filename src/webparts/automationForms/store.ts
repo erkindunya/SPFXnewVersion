@@ -72,6 +72,7 @@ export default new Vuex.Store({
                 NSSMiddleInitial: main.middleInitial,
                 NSSDomainSuffix: main.domainSuffix,
                 Username: main.username,
+                Duplicate: main.duplicate,
                 Reporting_x0020_Unit: main.reportingUnit.Title,
                 NSSJobTitle: main.jobTitle.Title,
                 O365_x0020_License: main.o365License,
