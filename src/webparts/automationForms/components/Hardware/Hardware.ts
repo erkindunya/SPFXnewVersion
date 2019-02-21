@@ -27,7 +27,11 @@ export default Vue.extend({
             deliveryAddress: "",
             sccengineer: false,
             selectedMonitor: "",
-            bimbuild: false
+            bimbuild: false,
+            deliveryContact: "",
+            deliveryContactNumber: "",
+            county: "",
+            postCode: ""
         },
         showSections: {
             mobile: false,
@@ -119,9 +123,15 @@ export default Vue.extend({
         getDeliveryAddress(){
 
             if(this.details.changeAddress)
-                return this.details.deliveryAddress;
+                return this.details.deliveryContact + "\n" + 
+                this.details.deliveryContactNumber + "\n" + 
+                this.details.deliveryAddress + "\n" + 
+                this.details.county + "\n" +
+                this.details.postCode;
             else{
-                return this.$store.state.main.site.SiteAddress + "\n" + 
+                return this.details.deliveryContact + "\n" + 
+                this.details.deliveryContactNumber + "\n" + 
+                this.$store.state.main.site.SiteAddress + "\n" + 
                 this.$store.state.main.site.SiteTownCity + "\n" + 
                 this.$store.state.main.site.SitePostcode;
             }
@@ -218,7 +228,15 @@ export default Vue.extend({
                 required: requiredIf(function () {
                     return this.details.changeAddress;
                 })
-            }
+            },
+            deliveryContact: {
+                required
+            },
+            deliveryContactNumber: {
+                required
+            },
+            county: {}, 
+            postCode: {}
         }
     }
 });

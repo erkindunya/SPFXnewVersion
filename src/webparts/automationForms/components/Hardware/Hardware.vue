@@ -173,17 +173,23 @@
                     </div>
                 </div>  
             </div>
-        </div>
-
+        </div>     
         <div class="form-group">
             <h3>Delivery Address</h3>
+            <div class="form-group">
+                <label>Delivery Contact</label>
+                <input type="text" class="form-control" v-model="details.deliveryContact" :class="{ 'is-invalid': $v.details.deliveryContact.$invalid }">
+            </div>
+            <div  class="form-group">
+                <label>Delivery Contact Number</label>
+                <input type="text" class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }">
+            </div>
             <p v-if="!(details.changeAddress)">
                 {{ $store.state.main.site.SiteAddress }}<br />
                 {{ $store.state.main.site.SiteTownCity }}<br />
                 {{ $store.state.main.site.SitePostcode }}<br />
                 {{ $store.state.main.site.SiteCounty }}
-                </p>
-            
+            </p>
             <div class="form-group">
                 <label>Would you like to use a different delivery address?</label>
                 <div class="form-check form-check-inline">
@@ -195,8 +201,18 @@
                     <label class="form-check-label">Yes</label>
                 </div>
             </div>
-
-            <textarea v-if="details.changeAddress" class="form-control" v-model="details.deliveryAddress" :class="{ 'is-invalid': $v.details.deliveryAddress.$invalid }"></textarea>
+            <div v-if="details.changeAddress" class="form-group">
+                <label>Address line 1</label>
+                <textarea class="form-control" v-model="details.deliveryAddress" :class="{ 'is-invalid': $v.details.deliveryAddress.$invalid }"></textarea>
+            </div>
+            <div v-if="details.changeAddress" class="form-group">
+                <label>County</label>
+                <input type="text" class="form-control" v-model="details.county" :class="{ 'is-invalid': $v.details.county.$invalid }">
+            </div>
+            <div v-if="details.changeAddress" class="form-group">
+                <label>Post code</label>
+                <input type="text" class="form-control" v-model="details.postCode" :class="{ 'is-invalid': $v.details.postCode.$invalid }">
+            </div>
         </div>
         
         <div class="row">
