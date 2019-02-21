@@ -43,4 +43,17 @@ button {
     img.smlIcon {
         width: 20px;
     }
+
+    .VueCarousel-navigation-button {
+        font-size: 40px !important;
+        color:#da242a !important;
+    }
+    
+    .VueCarousel-navigation-prev {
+        margin-left: 4px;
+    }
+    
+    .VueCarousel-navigation-next {
+        margin-right: 4px;
+    }
 }
