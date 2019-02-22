@@ -67,7 +67,7 @@ export default Vue.extend({
         searchList: debounce(function (search, loading) {
             if(this.lazyLoad) {
                 loading(true);
-                sp.web.lists.getByTitle(this.listName).items.filter(`substringof('${search}',${this.label})`).get().then((items: any[]) => {
+                sp.web.lists.getByTitle(this.listName).items.filter(`substringof('${encodeURI(search)}',${this.label})`).get().then((items: any[]) => {
                     this.items = items;
                     loading(false);
                 });
