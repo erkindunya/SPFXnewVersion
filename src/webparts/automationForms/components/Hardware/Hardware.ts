@@ -111,8 +111,11 @@ export default Vue.extend({
                     }
                     else if (key == "computer") {
                         var computerArr = [];
-
-                        this.options[key].filter((item) => item.selected).forEach((item) => { computerArr.push({ name: item.name, price: item.isRecycled ? 300 : item.Price}); });
+                        this.options[key].filter((item) => item.selected).forEach((item) => { 
+                            computerArr.push({ 
+                                name: item.name, price: item.isRecycled ? 300 : item.price, description: item.description
+                            }); 
+                        });
                         map[key] = computerArr;
                     }
                     else
@@ -121,7 +124,6 @@ export default Vue.extend({
                 }, {});
         }, 
         getDeliveryAddress(){
-
             if(this.details.changeAddress)
                 return this.details.deliveryContact + "\n" + 
                 this.details.deliveryContactNumber + "\n" + 

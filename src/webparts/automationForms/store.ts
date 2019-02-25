@@ -65,7 +65,6 @@ export default new Vuex.Store({
             const oracle: any = state.oracle;
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
-            console.log(access.formData);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 NSSFirstName: main.firstName,
                 NSSSurname: main.surname,
@@ -83,15 +82,15 @@ export default new Vuex.Store({
                 NSSSite: main.site.Title,
                 Site_x0020_Approved: !main.customAddress,
                 NSSFloorAndRoom: main.floorAndRoom,
-                Mobile: JSON.stringify(hardware.products.mobile),
+                Mobile: hardware.products.mobile ? hardware.products.mobile.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,
                 SCC_x0020_Engineer: hardware.sccengineer,
-                Computer_x0020_Package: JSON.stringify(hardware.products.computer),
-                Monitors: JSON.stringify(hardware.products.monitors),
-                Connectors: JSON.stringify(hardware.products.connectors),
-                Software: JSON.stringify(hardware.products.software),
-                Peripherals: JSON.stringify(hardware.products.peripherals),
-                Skype: JSON.stringify(hardware.products.skype),
+                Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join():"",
+                Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Software: hardware.products.software ? hardware.products.software.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Peripherals: hardware.products.peripherals ? hardware.products.peripherals.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Skype: hardware.products.skype ? hardware.products.skype.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Alternate_x0020_Delivery: hardware.deliveryAddress,
                 // Joint_x0020_Ventures: oracle.,
                 Employee_x0020_ID: oracle.employeeId,
