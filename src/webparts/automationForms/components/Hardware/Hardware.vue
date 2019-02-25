@@ -62,10 +62,10 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{option.name}}</h5>
                                         <p class="card-text card-desc">{{option.description}}</p>
-                                        <p v-if="!option.isRecycled" class="card-text"><strong>{{option.price}} GBP</strong></p>
-                                        <p v-if="option.isRecycled" class="card-text"><strong>300.00 GBP</strong></p>
+                                        <p v-if="!details.isRecycled" class="card-text"><strong>{{option.price}} GBP</strong></p>
+                                        <p v-if="details.isRecycled" class="card-text"><strong>300.00 GBP</strong></p>
                                         <div class="form-check form-check-inline">
-                                            <input type="checkbox" for="isRecycled" v-model="option.isRecycled">
+                                            <input type="checkbox" for="isRecycled" v-model="details.isRecycled">
                                             <label class="form-check-label"  id="isRecycled">Recycled</label>
                                         </div>
                                         <button class="btn" v-on:click.once="callModalWindow()" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.computer, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
@@ -86,7 +86,7 @@
                             <div class="card-body">
                                 <div class="form-group" v-for="(option, key) in options.monitors" :key="key">
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" v-model="details.selectedMonitor" :value="option.name">
+                                        <input type="radio" class="form-check-input" v-model="details.selectedMonitor" :value="option">
                                         <label class="form-check-label">{{option.name}} ({{option.price}} GBP)</label>
                                     </div>
                                 </div>

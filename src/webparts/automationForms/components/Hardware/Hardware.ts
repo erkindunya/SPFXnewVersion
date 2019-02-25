@@ -26,12 +26,16 @@ export default Vue.extend({
             changeAddress: false,
             deliveryAddress: "",
             sccengineer: false,
-            selectedMonitor: "",
+            selectedMonitor: {
+                "name": "",
+                "price" : 0
+            },
             bimbuild: false,
             deliveryContact: "",
             deliveryContactNumber: "",
             county: "",
-            postCode: ""
+            postCode: "",
+            isRecycled : false
         },
         showSections: {
             mobile: false,
@@ -53,7 +57,8 @@ export default Vue.extend({
                 mobileLineManager : this.details.mobileLineManager,
                 deliveryAddress : this.getDeliveryAddress(),
                 sccengineer : this.details.sccengineer,
-                bimbuild: this.details.bimbuild
+                bimbuild: this.details.bimbuild,
+                isRecycled: this.details.isRecycled
             };
         },
         allSections() {
@@ -106,14 +111,16 @@ export default Vue.extend({
                     }
                     else if (key == "monitors") {
                         var monitorsArr = [];
-                        monitorsArr.push({ name: this.details.selectedMonitor.Title, price: this.details.selectedMonitor.Price }); 
+                        if(this.showSections.picked == "yes" && this.details.selectedMonitor.name != ""){
+                            monitorsArr.push({ name: this.details.selectedMonitor.name, price: this.details.selectedMonitor.price }); 
+                        }
                         map[key] = monitorsArr;
                     }
                     else if (key == "computer") {
                         var computerArr = [];
                         this.options[key].filter((item) => item.selected).forEach((item) => { 
                             computerArr.push({ 
-                                name: item.name, price: item.isRecycled ? 300 : item.price, description: item.description
+                                name: item.name, price: this.details.isRecycled ? 300 : item.price, description: item.description
                             }); 
                         });
                         map[key] = computerArr;

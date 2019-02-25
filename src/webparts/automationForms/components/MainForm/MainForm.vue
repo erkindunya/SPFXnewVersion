@@ -38,7 +38,7 @@
     </div>
     <div class="form-group">
         <label class="form-check-label-sub">Which statement best describes this New Starter?*</label>
-        <vue-select :options="['Requires Email, works with a laptop or desktop PC', 'Requires Email, works with a handheld mobile device or tablet only', 'Does not require email, uses Oracle or timesheets only']" v-model="formData.o365License" :class="{ 'is-invalid': $v.formData.o365License.$invalid }"></vue-select>
+        <list-select listName="LicenceTypes" v-model="formData.o365License" :class="{ 'is-invalid': $v.formData.o365License.$invalid }"></list-select>
     </div>
     <div class="form-group">
         <label>Employee Type*</label>
