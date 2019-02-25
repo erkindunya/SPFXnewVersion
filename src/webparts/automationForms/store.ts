@@ -88,7 +88,7 @@ export default new Vuex.Store({
                 Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join():"",
                 Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
-                Software: hardware.products.software ? hardware.products.software.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Software: JSON.stringify(hardware.products.software),
                 Peripherals: hardware.products.peripherals ? hardware.products.peripherals.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Skype: hardware.products.skype ? hardware.products.skype.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Alternate_x0020_Delivery: hardware.deliveryAddress,
