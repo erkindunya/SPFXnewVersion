@@ -37,11 +37,12 @@ export default Vue.extend({
             return Object.keys(this.hardware.products).length > 0;
         },
         printAddress (){
-            return this.$store.state.hardware.deliveryAddress.replace("\n", ", ");
+            return this.$store.state.hardware.deliveryAddress.replace(/\n/g, "<br/>");
         }
     },
     methods: {
         back () {
+            console.log(this.$store.state.hardware.deliveryAddress);
             this.$store.commit('navigate', 5);
         },
         submit () {

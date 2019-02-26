@@ -56,7 +56,7 @@
         </div>
 
         <h3>Delivery Address</h3>
-        <p>{{ printAddress }}</p>        
+        <p v-html="printAddress"></p>        
         
         <div class="form-group">
             <div class="form-check form-check-inline">
