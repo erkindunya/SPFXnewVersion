@@ -122,6 +122,10 @@ export default Vue.extend({
                 this.formData.duplicate = false;
             }
             const username = `${this.capitlizeFirstLetter(firstName)}.${this.capitlizeFirstLetter(initial)}${this.capitlizeFirstLetter(surname)}`;
+            if(username.length > 20) {
+                const username = `${this.capitlizeFirstLetter(firstName.split('')[0])}.${this.capitlizeFirstLetter(initial)}${this.capitlizeFirstLetter(surname)}`;
+                return username;
+            }
             return username;
         },
         capitlizeFirstLetter(word: string) {
