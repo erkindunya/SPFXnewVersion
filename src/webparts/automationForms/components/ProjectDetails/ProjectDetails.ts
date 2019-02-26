@@ -12,7 +12,8 @@ export default Vue.extend({
             projectNumber: "",
             taskNumber: "",
             financialDirector: "",
-            costCenter: ""
+            costCenter: "",
+            wbs: ""
         },
         FDOptions: []
     }),

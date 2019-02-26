@@ -88,6 +88,7 @@ export default new Vuex.Store({
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,
                 SCC_x0020_Engineer: hardware.sccengineer,
                 Bim_x0020_Build: hardware.bimbuild,
+                ComputerRecycled: hardware.isRecycled,
                 Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join():"",
                 Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
@@ -132,7 +133,8 @@ export default new Vuex.Store({
                 Project_x0020_Number: projectDetails.projectNumber,
                 Task_x0020_Number: projectDetails.taskNumber,
                 Approval_x0020_Cost_x0020_Center: projectDetails.costCenter,
-                Financial_x0020_Director: projectDetails.financialDirector
+                Financial_x0020_Director: projectDetails.financialDirector,
+                WBS: projectDetails.wbs
             }).then(i => {
                 commit('formSubmitted');
             }).catch(e => {

@@ -15,6 +15,10 @@
         <input type="text" class="form-control" :class="{ 'is-invalid': $v.formData.costCenter.$invalid }" v-model="formData.costCenter">
     </div>
     <div class="form-group">
+        <label>WBS</label>
+        <input type="text" class="form-control" v-model="formData.wbs">
+    </div>
+    <div class="form-group">
         <label>Financial Director*</label>
         <vue-select :options="FDOptions" v-model="financialDirector"></vue-select>
             
