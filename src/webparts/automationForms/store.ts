@@ -75,7 +75,7 @@ export default new Vuex.Store({
                 Reporting_x0020_Unit: main.reportingUnit.Title,
                 NSSJobTitle: main.jobTitle.Title,
                 O365_x0020_License: main.o365License.LicenceType,
-                O365_x0020_LicenseText: main.o365License.Title,
+                O365_x0020_Licence_x0020_Text: main.o365License.Title,
                 NSSEmployeeType: main.employeeType,
                 NSSStartDate: main.startDate,
                 NSSEndDate: main.endDate,
