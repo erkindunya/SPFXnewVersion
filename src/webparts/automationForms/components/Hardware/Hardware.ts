@@ -160,6 +160,9 @@ export default Vue.extend({
         },
         uncheckAll: function() {
             this.details.selectedMonitor = false;
+        },
+        requiredDelivery() {
+            return (this.formData.products.mobile || this.formData.products.computer || this.formData.products.skype);
         }
     },
     created() {
@@ -215,6 +218,7 @@ export default Vue.extend({
                 selected: false
             }));
         });
+        console.log(this.formData);
     },
     components: {
         Carousel,
@@ -239,10 +243,14 @@ export default Vue.extend({
                 })
             },
             deliveryContact: {
-                required
+                required: requiredIf(function () {
+                    return this.requiredDelivery();
+                })
             },
             deliveryContactNumber: {
-                required
+                required: requiredIf(function () {
+                    return this.requiredDelivery();
+                })
             },
             county: {}, 
             postCode: {}
