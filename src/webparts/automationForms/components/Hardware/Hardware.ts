@@ -101,7 +101,7 @@ export default Vue.extend({
                     //if software, get from dropdown instead of selected items
                     if (key == "software") {
                         var softwareArr = [];
-                        this.options[key].forEach((item) => { softwareArr.push({ name: item.Title, price: item.Additional_x0020_Costs, sccInstall: item.SCC_x0020_Install }); });
+                        this.options[key].forEach((item) => { softwareArr.push({ name: item.Title, price: item.Additional_x0020_Costs, sccInstall: item.Installed_x0020_by_x0020_SCC, requiresApproval: item.RequiresApproval }); });
                         map[key] = softwareArr;
                     }
                     else if (key == "connectors") {

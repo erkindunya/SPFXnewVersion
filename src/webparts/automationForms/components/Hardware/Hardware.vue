@@ -122,7 +122,7 @@
                         <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
                             <template slot="option" slot-scope="option">
                                 <strong>{{ option.Title }}</strong>
-                                Costs: {{ option.Additional_x0020_Costs }}
+                                <div v-if="option.Additional_x0020_Costs">Costs: £{{ option.Additional_x0020_Costs }}</div>
                             </template>
                         </list-select>
                     </div>
