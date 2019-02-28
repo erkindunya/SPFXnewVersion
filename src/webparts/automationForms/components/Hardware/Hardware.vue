@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Manager Employee No.</label>
-                                <input type="text" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
+                                <input type="text" maxlength="255" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
                             </div>
                         </div>
                     </div>
@@ -178,11 +178,11 @@
             <h3>Delivery Address</h3>
             <div class="form-group">
                 <label>Delivery Contact</label>
-                <input type="text" class="form-control" v-model="details.deliveryContact" :class="{ 'is-invalid': $v.details.deliveryContact.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.deliveryContact" :class="{ 'is-invalid': $v.details.deliveryContact.$invalid }">
             </div>
             <div  class="form-group">
                 <label>Delivery Contact Number</label>
-                <input type="text" class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }">
+                <input type="text" maxlength="255"  class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }">
             </div>
             <p v-if="!(details.changeAddress)">
                 {{ $store.state.main.site.SiteAddress }}<br />
@@ -207,11 +207,11 @@
             </div>
             <div v-if="details.changeAddress" class="form-group">
                 <label>County</label>
-                <input type="text" class="form-control" v-model="details.county" :class="{ 'is-invalid': $v.details.county.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.county" :class="{ 'is-invalid': $v.details.county.$invalid }">
             </div>
             <div v-if="details.changeAddress" class="form-group">
                 <label>Post code</label>
-                <input type="text" class="form-control" v-model="details.postCode" :class="{ 'is-invalid': $v.details.postCode.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.postCode" :class="{ 'is-invalid': $v.details.postCode.$invalid }">
             </div>
         </div>
         

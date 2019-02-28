@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <label>Other</label>
-                    <input type="text" class="form-control" v-model="custom.mailbox" :class="{ 'is-invalid': $v.custom.mailbox.$invalid }">
+                    <input type="text" maxlength="255" class="form-control" v-model="custom.mailbox" :class="{ 'is-invalid': $v.custom.mailbox.$invalid }">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="form-group">
                     <label>Other</label>
-                    <input type="text" class="form-control" v-model="custom.distribution" :class="{ 'is-invalid': $v.custom.distribution.$invalid }">
+                    <input type="text" maxlength="255" class="form-control" v-model="custom.distribution" :class="{ 'is-invalid': $v.custom.distribution.$invalid }">
                 </div>
             </div>
         </div>

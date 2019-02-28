@@ -3,15 +3,15 @@
     <h2>General Information</h2>
     <div class="form-group">
         <label for="generalFirstName">First Name*</label>
-        <input type="text" class="form-control" id="generalFirstName" @keydown="filterNonStandardCharacters($event)" v-model="formData.firstName" :class="{ 'is-invalid': $v.formData.firstName.$invalid }">
+        <input type="text" maxlength="255" class="form-control" id="generalFirstName" @keydown="filterNonStandardCharacters($event)" v-model="formData.firstName" :class="{ 'is-invalid': $v.formData.firstName.$invalid }">
     </div>
     <div class="form-group">
         <label>Surname*</label>
-        <input type="text" class="form-control" @keydown="filterNonStandardCharacters($event)" v-model="formData.surname" :class="{ 'is-invalid': $v.formData.surname.$invalid }">
+        <input type="text" maxlength="255" class="form-control" @keydown="filterNonStandardCharacters($event)" v-model="formData.surname" :class="{ 'is-invalid': $v.formData.surname.$invalid }">
     </div>
     <div class="form-group">
         <label>Middle Initial</label>
-        <input type="text" class="form-control" @keydown="limitMiddleInitialLength($event)" v-model="formData.middleInitial" :class="{ 'is-invalid': $v.formData.middleInitial.$invalid }">
+        <input type="text" maxlength="1" class="form-control" @keydown="limitMiddleInitialLength($event)" v-model="formData.middleInitial" :class="{ 'is-invalid': $v.formData.middleInitial.$invalid }">
     </div>
     <div class="form-group">
         <label>Email Suffix</label>
@@ -96,7 +96,7 @@
     </div>
     <div class="form-group">
         <label>Floor and Room*</label>
-        <input type="text" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
+        <input type="text" maxlength="1" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
     </div>
     <div class="text-right">
         <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.formData.$invalid">Next</button>
