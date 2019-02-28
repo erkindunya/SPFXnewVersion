@@ -21,6 +21,7 @@ export default Vue.extend({
             surname: "",
             middleInitial: "",
             reportingUnit: "",
+            siteName: "",
             addressLine1: "",
             postCode: "",
             townCity: "",
@@ -152,6 +153,12 @@ export default Vue.extend({
         },
         submit() {
             console.log(this.formData);
+            if(!this.formData.customAddress) {
+                this.formData.siteName = this.formData.site.Title;
+                this.formData.addressLine1 = this.formData.site.SiteAddress;
+                this.formData.townCity = this.formData.site.SiteTownCity;
+                this.formData.postCode = this.formData.site.SitePostcode;
+            }
             this.$store.commit('mainForm', this.formData);
             this.$store.commit('navigate', 2);
         },
@@ -224,6 +231,11 @@ export default Vue.extend({
             },
             reportingUnit: {
                 required
+            },
+            siteName: {
+                required: requiredIf(function () {
+                    return this.formData.customAddress;
+                })
             },
             addressLine1: {
                 required: requiredIf(function () {

@@ -109,6 +109,8 @@ export default new Vuex.Store({
                 Peripherals: hardware.products.peripherals ? hardware.products.peripherals.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Skype: hardware.products.skype ? hardware.products.skype.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Alternate_x0020_Delivery: hardware.deliveryAddress,
+                Delivery_x0020_Contact_x0020_Nam: hardware.deliveryContactName,
+                Delivery_x0020_Contact_x0020_Num: hardware.deliveryContactNumber,
                 // Joint_x0020_Ventures: oracle.,
                 Employee_x0020_ID: oracle.employeeId,
                 Oracle_x0020_for_x0020_Business: oracle.oracleForBusiness,

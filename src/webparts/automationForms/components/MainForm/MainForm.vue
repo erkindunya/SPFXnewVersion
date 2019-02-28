@@ -81,6 +81,10 @@
         <h5>New Site Address</h5>
         <p>Requires approval (<a href="#" @click.prevent="formData.customAddress = false">Click here to select from existing options</a>)</p>
         <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" v-model="formData.siteName" :class="{ 'is-invalid': $v.formData.siteName.$invalid }">
+        </div>
+        <div class="form-group">
             <label>Site Address</label>
             <input type="text" class="form-control" v-model="formData.addressLine1" :class="{ 'is-invalid': $v.formData.addressLine1.$invalid }">
         </div>

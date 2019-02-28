@@ -55,6 +55,8 @@ export default Vue.extend({
             return {
                 products: this.getProducts(),
                 mobileLineManager : this.details.mobileLineManager,
+                deliveryContactName: this.details.deliveryContact,
+                deliveryContactNumber: this.details.deliveryContactNumber,
                 deliveryAddress : this.getDeliveryAddress(),
                 sccengineer : this.details.sccengineer,
                 bimbuild: this.details.bimbuild,
