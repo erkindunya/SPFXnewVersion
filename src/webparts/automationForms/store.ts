@@ -41,7 +41,7 @@ export default new Vuex.Store({
         },
         navigate(state, page) {
             state.page = page;
-            if(page > state.maxPage) state.maxPage = page;
+            if(page > state.maxPage) state.maxPage = page; 
             router.push(`/${page}`);
         },
         formSubmitting(state) {
@@ -49,8 +49,19 @@ export default new Vuex.Store({
             state.submitting = true;
         },
         formSubmitFailed(state) {
-            state.submitting = false;
-            state.submitted = false;
+            console.log(state);
+            var requestJSON = JSON.stringify(state);
+            sp.web.lists.getByTitle("FailedSubmissions").items.add({
+                Title: "Failed submission",
+                FormJSON: requestJSON
+            }).then(i => {
+                state.submitting = false;
+                state.submitted = false;
+                alert("Your submission failed, the data you entered has been saved and a ticket has been raised for this error. You will receive an email with a ticket number soon.");
+                window.location.href='http://myservicedesk/portal.php';
+            }).catch(e => {
+                console.log(e);
+            });
         },
         formSubmitted(state) {
             state.submitted = true;
@@ -138,7 +149,7 @@ export default new Vuex.Store({
             }).then(i => {
                 commit('formSubmitted');
             }).catch(e => {
-                commit('formSubmitFailed');
+                commit('formSubmitFailed'); 
             });
         }
     }
