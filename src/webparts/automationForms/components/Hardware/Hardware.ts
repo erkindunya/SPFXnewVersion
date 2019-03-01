@@ -75,7 +75,7 @@ export default Vue.extend({
                 software: this.options.software.length > 0,
                 computer: this.options.computer.filter((item) => item.selected).length > 0,
                 peripherals: this.options.peripherals.filter((item) => item.selected).length > 0,
-                monitors: this.showSections.picked == "yes",
+                monitors: this.details.selectedMonitor ,
                 connectors: this.options.connectors.filter((item) => item.selected).length > 0,
                 skype: this.options.skype.filter((item) => item.selected).length > 0
             };
@@ -113,7 +113,7 @@ export default Vue.extend({
                     }
                     else if (key == "monitors") {
                         var monitorsArr = [];
-                        if(this.showSections.picked == "yes" && this.details.selectedMonitor.name != ""){
+                        if(this.details.selectedMonitor){
                             monitorsArr.push({ name: this.details.selectedMonitor.name, price: this.details.selectedMonitor.price }); 
                         }
                         map[key] = monitorsArr;
