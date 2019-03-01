@@ -23,6 +23,7 @@ export default Vue.extend({
         },
         details: {
             mobileLineManager : "",
+            O2Division: "",
             changeAddress: false,
             deliveryAddress: "",
             sccengineer: false,
@@ -60,7 +61,8 @@ export default Vue.extend({
                 deliveryAddress : this.getDeliveryAddress(),
                 sccengineer : this.details.sccengineer,
                 bimbuild: this.details.bimbuild,
-                isRecycled: this.details.isRecycled
+                isRecycled: this.details.isRecycled,
+                O2Division: this.details.O2Division.snpa
             };
         },
         allSections() {
@@ -231,6 +233,11 @@ export default Vue.extend({
     validations: {
         details: {
             mobileLineManager: {
+                required: requiredIf(function () {
+                    return this.sections.mobile;
+                })
+            },
+            O2Division: {
                 required: requiredIf(function () {
                     return this.sections.mobile;
                 })

@@ -31,6 +31,10 @@
                                 <label>Manager Employee No.</label>
                                 <input type="text" maxlength="255" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
                             </div>
+                            <div class="form-group">
+                                <label>Division</label>
+                                <list-select v-model="details.O2Division" listName="O2OrderDivisions" label="snpa" :class="{ 'is-invalid': $v.details.O2Division.$invalid }"></list-select>
+                            </div>
                         </div>
                     </div>
                 </div>
