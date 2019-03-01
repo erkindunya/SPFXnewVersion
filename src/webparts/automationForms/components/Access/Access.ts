@@ -26,7 +26,8 @@ export default Vue.extend({
         },
         allOptions: {
             drives: [],
-            mailboxes: []
+            mailboxes: [],
+            distributions: []
         },
     }),
     computed: {
@@ -72,30 +73,40 @@ export default Vue.extend({
                     selected: false
                 }));
             });
-            
-            sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
-                this.options.distributions = items.map(item => ({
-                    name: item.Title,
+
+            await MSGraph.Get('/groups',"v1.0",["displayName"],"mailEnabled eq true",999).then((items) => {
+                this.options.distributions = items.value.map(item => ({
+                    name: item.displayName,
                     selected: false
                 }));
             });
+            
+            // sp.web.lists.getByTitle('DistributionLists').items.filter("NSSReportingUnit eq '" + this.selectedReportingUnit.replace("&", "%26") + "'").get().then((items: any[]) => {
+            //     this.options.distributions = items.map(item => ({
+            //         name: item.Title,
+            //         selected: false
+            //     }));
+            // });
         },
         getNetworkDrivesList () {
             var driveList = [];
             this.options.drives.forEach((item) => { if(item.selected) driveList.push(item.name ); });
             this.allOptions.drives.forEach((item) => { driveList.push(item.Title ); });
-            driveList.push(this.custom.drive);
             return driveList;
         },
         getMailboxList () {
             var mailboxList = [];
-            this.options.mailboxes.forEach((item) => { if(item.selected) mailboxList.push(item.name ); });
+            this.options.mailboxes.forEach((item) => {if(item.selected) mailboxList.push(item.name );});
+            this.allOptions.mailboxes.forEach((item) => { 
+                mailboxList.push(item.mail); 
+            });
             return mailboxList;
         },
         getDistributionList () {
-            var distributionsList = [];
-            this.options.distributions.forEach((item) => { if(item.selected) distributionsList.push(item.name ); });
-            return distributionsList;
+            var mailboxList = [];
+            this.options.distributions.forEach((item) => { if(item.selected) mailboxList.push(item.name ); });
+            this.allOptions.distributions.forEach((item) => { mailboxList.push(item.displayName); });
+            return mailboxList;
         },
     },
     watch: {

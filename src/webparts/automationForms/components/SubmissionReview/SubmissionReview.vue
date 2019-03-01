@@ -29,6 +29,10 @@
         <ul v-if="access.drives.length > 0">
             <li v-for="(item, key) in access.drives" :key="key">{{item}}</li>
         </ul>
+        <h6 v-if="access.customDrives">Other Network Drives</h6>
+        <ul v-if="access.customDrives">
+            <li>{{access.customDrives}}</li>
+        </ul>
         <h5>Mailboxes</h5>
         <ul v-if="access.mailboxes.length > 0">
             <li v-for="(item, key) in access.mailboxes" :key="key">{{item}}</li>

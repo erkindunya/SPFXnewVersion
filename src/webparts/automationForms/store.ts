@@ -79,6 +79,7 @@ export default new Vuex.Store({
             const oracle: any = state.oracle;
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
+            console.log(access.mailboxes);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 // main page
                 NSSFirstName: main.firstName,
@@ -108,14 +109,14 @@ export default new Vuex.Store({
                 SCC_x0020_Engineer: hardware.sccengineer,
                 Bim_x0020_Build: hardware.bimbuild,
                 ComputerRecycled: hardware.isRecycled,
-                Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join():"",
-                Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
-                Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join():"\n",
+                Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join():"\n",
+                Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name} £${item.price}`; }).join():"\n",
                 SoftwareSCC: hardware.products.software ? hardware.products.software.filter(item => item.sccInstall === true).map((item) => { return `${item.name} £${item.price}`;}).join('\n'):"",
                 SoftwareCL: hardware.products.software ? hardware.products.software.filter(item => item.requiresApproval === true).map((item) => { return `${item.name} £${item.price}`;}).join('\n'):"",
                 Software: hardware.products.software ? hardware.products.software.filter(item => item.sccInstall === false && item.requiresApproval === false).map((item) => { return `${item.name} £${item.price}`;}).join('\n'):"",
-                Peripherals: hardware.products.peripherals ? hardware.products.peripherals.map((item) => { return `${item.name} £${item.price}`; }).join():"",
-                Skype: hardware.products.skype ? hardware.products.skype.map((item) => { return `${item.name} £${item.price}`; }).join():"",
+                Peripherals: hardware.products.peripherals ? hardware.products.peripherals.map((item) => { return `${item.name} £${item.price}`; }).join():"\n",
+                Skype: hardware.products.skype ? hardware.products.skype.map((item) => { return `${item.name} £${item.price}`; }).join():"\n",
                 Alternate_x0020_Delivery: hardware.deliveryAddress,
                 Delivery_x0020_Contact_x0020_Nam: hardware.deliveryContactName,
                 Delivery_x0020_Contact_x0020_Num: hardware.deliveryContactNumber,
@@ -138,10 +139,18 @@ export default new Vuex.Store({
 
 
                 // Access Page
-                Network_x0020_Drives: JSON.stringify(access.drive),
-                Shared_x0020_Mailboxes: JSON.stringify(access.mailbox),
-                Distribution_x0020_Lists: JSON.stringify(access.distribution),
-
+                Network_x0020_Drives: access.drives ? access.drives.map((item) => { 
+                    return `${item}`; 
+                }).join():"\n",
+                NetworkDrivesOther: access.customDrives,
+                Shared_x0020_Mailboxes: access.mailboxes ? access.mailboxes.map((item) => { 
+                    return `${item}`; 
+                }).join():"\n",
+                SharedMailboxesOther: access.customMailboxes,
+                Distribution_x0020_Lists: access.distributions ? access.distributions.map((item) => { 
+                    return `${item}`; 
+                }).join():"\n",
+                DistributionListsOther: access.customDistributions,
                 //Approval Page
                 Project_x0020_Number: projectDetails.projectNumber,
                 Task_x0020_Number: projectDetails.taskNumber,

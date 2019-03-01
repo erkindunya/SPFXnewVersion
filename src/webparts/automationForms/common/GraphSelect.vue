@@ -42,7 +42,7 @@ export default Vue.extend({
             default: ''
         },
         label: {
-            default: 'mail',
+            default: '',
             type: String
         },
         listName: {

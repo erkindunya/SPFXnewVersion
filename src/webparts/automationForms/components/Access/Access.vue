@@ -39,7 +39,7 @@
             <div class="card-body">
                  <div class="form-group">
                     <p>Search</p>
-                    <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :lazyLoad="true" >
+                    <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :label='"mail"' :lazyLoad="true" >
                         <template slot="option" slot-scope="option">
                             <strong>{{ option.mail }}</strong>
                         </template>
@@ -59,11 +59,19 @@
         </div>
         <div v-if="sections.distributions" class="card">
             <div class="card-body">
-                <div class="form-group" v-for="(option, key) in options.distributions" :key="key">
+                <!-- <div class="form-group" v-for="(option, key) in options.distributions" :key="key">
                     <div class="form-check form-check-inline">
                         <input type="checkbox" class="form-check-input" v-model="option.selected">
                         <label class="form-check-label">{{option.name}}</label>
                     </div>
+                </div> -->
+                <div class="form-group">
+                    <p>Search</p>
+                    <graph-select v-model="allOptions.distributions" placeholder="Select the distribution lists you require." listName="Distributions" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"displayName"' :label='"displayName"' :lazyLoad="true" >
+                        <template slot="option" slot-scope="option">
+                            <strong>{{ option.displayName }}</strong>
+                        </template>
+                    </graph-select>
                 </div>
                 <div class="form-group">
                     <label>Other</label>
