@@ -84,6 +84,7 @@ export default Vue.extend({
             var driveList = [];
             this.options.drives.forEach((item) => { if(item.selected) driveList.push(item.name ); });
             this.allOptions.drives.forEach((item) => { driveList.push(item.Title ); });
+            driveList.push(this.custom.drive);
             return driveList;
         },
         getMailboxList () {

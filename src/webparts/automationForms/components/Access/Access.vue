@@ -16,12 +16,16 @@
                     </div>
                 </div>
                 <div class="form-group">
-                <p>Other</p>
+                <p>Search</p>
                 <list-select v-model="allOptions.drives" placeholder="Select the network drives you require." listName="NetworkDrives" multiple="true" :lazyLoad="true">
                     <template slot="option" slot-scope="option">
                         <strong>{{ option.Title }}</strong>
                     </template>
                 </list-select>
+                </div>
+                <div class="form-group">
+                    <label>Other</label>
+                    <input type="text" class="form-control" v-model="custom.drive" :class="{ 'is-invalid': $v.custom.drive.$invalid }">
                 </div>
             </div>
         </div>
@@ -34,6 +38,7 @@
         <div v-if="sections.mailboxes" class="card">
             <div class="card-body">
                  <div class="form-group">
+                    <p>Search</p>
                     <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :lazyLoad="true" >
                         <template slot="option" slot-scope="option">
                             <strong>{{ option.mail }}</strong>
