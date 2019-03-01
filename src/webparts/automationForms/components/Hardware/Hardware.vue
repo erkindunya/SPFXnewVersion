@@ -103,7 +103,7 @@
                                         <img class="card-img-top" :src="option.image" :alt="option.name">
                                         <div class="card-body">
                                             <h5 class="card-title">{{option.name}}</h5>
-                                            <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="option.selected = !option.selected">{{ !option.selected ? 'Select' : 'Remove' }}</button>
+                                            <button class="btn" :class="{'btn-primary': !option.selected, 'btn-secondary': option.selected}" @click.prevent="selectSingleOption(options.connectors, option, option.selected)">{{ !option.selected ? 'Select' : 'Remove' }}</button>
                                         </div>
                                     </div>
                                 </slide>
