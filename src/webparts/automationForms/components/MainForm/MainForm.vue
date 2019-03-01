@@ -80,6 +80,11 @@
         <hr>
         <h5>New Site Address</h5>
         <p>Requires approval (<a href="#" @click.prevent="formData.customAddress = false">Click here to select from existing options</a>)</p>
+        
+        <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" v-model="formData.siteName" :class="{ 'is-invalid': $v.formData.siteName.$invalid }">
+        </div>
         <div class="form-group">
             <label>Site Name</label>
             <input type="text" class="form-control" v-model="formData.siteName" :class="{ 'is-invalid': $v.formData.siteName.$invalid }">
@@ -100,7 +105,7 @@
     </div>
     <div class="form-group">
         <label>Floor and Room*</label>
-        <input type="text" maxlength="1" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
+        <input type="text" maxlength="255" class="form-control" v-model="formData.floorAndRoom" :class="{ 'is-invalid': $v.formData.floorAndRoom.$invalid }">
     </div>
     <div class="text-right">
         <button type="button" class="btn btn-primary" @click.prevent="submit" :disabled="$v.formData.$invalid">Next</button>

@@ -17,7 +17,7 @@ export default new Vuex.Store({
         maxPage: 1,
         submitting: false,
         submitted: false,
-        cost: 1001,
+        cost: "0",
         userInformation: {}
     },
     mutations: {
@@ -66,6 +66,9 @@ export default new Vuex.Store({
         formSubmitted(state) {
             state.submitted = true;
             state.submitting = false;
+        },
+        setCost(state, cost) {
+            state.cost = cost;
         }
     },
     actions: {
@@ -77,6 +80,7 @@ export default new Vuex.Store({
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
+                // main page
                 NSSFirstName: main.firstName,
                 NSSSurname: main.surname,
                 NSSMiddleInitial: main.middleInitial,
@@ -92,9 +96,13 @@ export default new Vuex.Store({
                 NSSEndDate: main.endDate,
                 ManagerName: main.manager.DisplayText,
                 NSSManager: main.manager.Description,
-                NSSSite: main.site.Title,
+                NSSSite: main.SiteName,
+                SiteAddress: main.addressLine1,
+                SitePostcode: main.postCode,
+                SiteTownCity: main.townCity,
                 Site_x0020_Approved: !main.customAddress,
                 NSSFloorAndRoom: main.floorAndRoom,
+                // hardware page
                 Mobile: hardware.products.mobile ? hardware.products.mobile.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,
                 SCC_x0020_Engineer: hardware.sccengineer,
@@ -111,45 +119,38 @@ export default new Vuex.Store({
                 Alternate_x0020_Delivery: hardware.deliveryAddress,
                 Delivery_x0020_Contact_x0020_Nam: hardware.deliveryContactName,
                 Delivery_x0020_Contact_x0020_Num: hardware.deliveryContactNumber,
-                // Joint_x0020_Ventures: oracle.,
+                
+                // Oracle Page
+                Joint_x0020_Ventures: oracle.jointVentures,
                 Employee_x0020_ID: oracle.employeeId,
                 Oracle_x0020_for_x0020_Business: oracle.oracleForBusiness,
-                // AD_x0020_Hoc_x0020_Access: oracle.,
-                ESS_x002f_MSS: oracle.kierPropertyOnlyESS,
-                Property_x0020__x002d__x0020_Com: oracle.kierPropertyOnlyESSPropertyCom,
-                Property_x0020__x002d__x0020_Fin: oracle.kierPropertyOnlyESSPropertyFin,
-                Extra_x0020_Functional_x0020_Acc: oracle.kierPropertyOnlyExtra,
-                // OTL: oracle.,
-                Basic_x0020_access: oracle.oEmployeeKESSBasic,
-                Basic_x0020_w_x002f__x0020_holid: oracle.oEmployeeKESSBasicWAbsence,
-                Timecard_x0020_entry: oracle.oEmployeeKSST,
-                Timecard_x0020_approve: oracle.oEmployeeKMSS,
-                Timecard_x0020_approve_x0020_w_x: oracle.oEmployeeKLMS,
-                // Timekeeping: oracle.,
-                Timekeeper: oracle.oTimeTimekeeper,
-                Timekeeper_x0020_group_x0020_mai: oracle.oTimeTimekeeperGroup,
-                Super_x0020_timekeeper: oracle.oTimeSuperTimekeeper,
-                Financial_x0020_Controller_x0020: oracle.oKierOTL,
-                // Hyperion_x0020_and_x0020_PBCS: oracle.,
-                Hyperion_x0020_Financial_x0020_M: oracle.hyperionFinancialManagement,
-                Hyperion_x0020_PBCS: oracle.hyperionPBCS,
-                // BI: oracle.,
-                Joint_x0020_Venture_x0020__x0028: oracle.jointVentureAccess,
-                RAF_x0020_Lakenheath_x0020__x002: oracle.rafLakenheathAccess,
-                Oracle_x0020_BI_x0020_Reporitng: oracle.biOracleBIReporting,
+                AD_x0020_Hoc_x0020_Access : oracle.adHocAccess,
+                KierPropertyOnly : oracle.kierPropertyOnly,
+                OTL_x0020_Self_x0020_Service : oracle.otlSelfService,
+                OTL_x0020_Timekeeping : oracle.otlTimeKeeping,
+                Hyperion : oracle.hyperion,
+                BiReporting : oracle.biReporting,
                 VCR_x0020_Lump_x0020_Sum: oracle.vcrLumpSumproject,
                 VCR_x0020_Conversion: oracle.vcrConversionProject,
                 VCR_x0020_Repairs: oracle.vcrRepairs,
                 SPM: oracle.vcrSPM,
                 Cost_x0020_Center: oracle.costCenter,
+
+
+                // Access Page
                 Network_x0020_Drives: JSON.stringify(access.drive),
                 Shared_x0020_Mailboxes: JSON.stringify(access.mailbox),
                 Distribution_x0020_Lists: JSON.stringify(access.distribution),
+
+                //Approval Page
                 Project_x0020_Number: projectDetails.projectNumber,
                 Task_x0020_Number: projectDetails.taskNumber,
                 Approval_x0020_Cost_x0020_Center: projectDetails.costCenter,
                 Financial_x0020_Director: projectDetails.financialDirector,
-                WBS: projectDetails.wbs
+                WBS: projectDetails.wbs,
+
+                // Review Page
+                Cost: state.cost
             }).then(i => {
                 commit('formSubmitted');
             }).catch(e => {

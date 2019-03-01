@@ -66,9 +66,7 @@ export default Vue.extend({
         allSections() {
             const sections = this.sections;
             return {
-                ...sections,
-                monitors: sections.computer,
-                connectors: this.sections.picked == "use-existing"
+                ...sections
             };
         },
         sections() {
@@ -77,7 +75,8 @@ export default Vue.extend({
                 software: this.options.software.length > 0,
                 computer: this.options.computer.filter((item) => item.selected).length > 0,
                 peripherals: this.options.peripherals.filter((item) => item.selected).length > 0,
-                monitors: this.options.monitors.filter((item) => item.selected).length > 0,
+                monitors: this.showSections.picked == "yes",
+                connectors: this.options.connectors.filter((item) => item.selected).length > 0,
                 skype: this.options.skype.filter((item) => item.selected).length > 0
             };
         },
@@ -87,6 +86,7 @@ export default Vue.extend({
             this.$store.commit('navigate', 1);
         },
         submit() {
+            console.log(this.formData);
             this.$store.commit('hardwareForm', this.formData);
             this.$store.commit('navigate', 3);
         },
@@ -103,7 +103,7 @@ export default Vue.extend({
                     //if software, get from dropdown instead of selected items
                     if (key == "software") {
                         var softwareArr = [];
-                        this.options[key].forEach((item) => { softwareArr.push({ name: item.Title, price: item.Additional_x0020_Costs, sccInstall: item.Installed_x0020_by_x0020_SCC, requiresApproval: item.RequiresApproval }); });
+                        this.options[key].forEach((item) => { softwareArr.push({ name: item.Title, price: typeof item.Additional_x0020_Costs == "number" ? item.Additional_x0020_Costs : 0, sccInstall: item.Installed_x0020_by_x0020_SCC, requiresApproval: item.RequiresApproval }); });
                         map[key] = softwareArr;
                     }
                     else if (key == "connectors") {
@@ -134,15 +134,11 @@ export default Vue.extend({
         }, 
         getDeliveryAddress(){
             if(this.details.changeAddress)
-                return this.details.deliveryContact + "\n" + 
-                this.details.deliveryContactNumber + "\n" + 
-                this.details.deliveryAddress + "\n" + 
+                return this.details.deliveryAddress + "\n" + 
                 this.details.county + "\n" +
                 this.details.postCode;
             else{
-                return this.details.deliveryContact + "\n" + 
-                this.details.deliveryContactNumber + "\n" + 
-                this.$store.state.main.site.SiteAddress + "\n" + 
+                return this.$store.state.main.site.SiteAddress + "\n" + 
                 this.$store.state.main.site.SiteTownCity + "\n" + 
                 this.$store.state.main.site.SitePostcode;
             }
