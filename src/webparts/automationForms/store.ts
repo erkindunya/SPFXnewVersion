@@ -107,7 +107,9 @@ export default new Vuex.Store({
                 // hardware page
                 Mobile: hardware.products.mobile ? hardware.products.mobile.map((item) => { return `${item.name} £${item.price}`; }).join():"",
                 Manager_x0020_Employee_x0020_Num: hardware.mobileLineManager,
-                O2Division: hardware.O2Division,
+                O2Company: hardware.O2Division ? hardware.O2Division.Title : '',
+                O2Division: hardware.O2Division ? hardware.O2Division.snpa : '',
+                O2Account: hardware.O2Division ? hardware.O2Division.b1lt : '',
                 SCC_x0020_Engineer: hardware.sccengineer,
                 Bim_x0020_Build: hardware.bimbuild,
                 ComputerRecycled: hardware.isRecycled,

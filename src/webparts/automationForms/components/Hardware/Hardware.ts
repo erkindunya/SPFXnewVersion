@@ -62,7 +62,7 @@ export default Vue.extend({
                 sccengineer : this.details.sccengineer,
                 bimbuild: this.details.bimbuild,
                 isRecycled: this.details.isRecycled,
-                O2Division: this.details.O2Division.snpa
+                O2Division: this.details.O2Division
             };
         },
         allSections() {
