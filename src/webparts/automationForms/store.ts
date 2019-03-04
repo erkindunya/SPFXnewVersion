@@ -79,7 +79,7 @@ export default new Vuex.Store({
             const oracle: any = state.oracle;
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
-            console.log(access.mailboxes);
+            console.log(main);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 // main page
                 NSSFirstName: main.firstName,
@@ -97,7 +97,7 @@ export default new Vuex.Store({
                 NSSEndDate: main.endDate,
                 ManagerName: main.manager.DisplayText,
                 NSSManager: main.manager.Description,
-                NSSSite: main.SiteName,
+                NSSSiteName: main.SiteName,
                 SiteAddress: main.addressLine1,
                 SitePostcode: main.postCode,
                 SiteTownCity: main.townCity,

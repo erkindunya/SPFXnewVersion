@@ -152,13 +152,13 @@ export default Vue.extend({
             }
         },
         submit() {
-            console.log(this.formData);
             if(!this.formData.customAddress) {
                 this.formData.siteName = this.formData.site.Title;
                 this.formData.addressLine1 = this.formData.site.SiteAddress;
                 this.formData.townCity = this.formData.site.SiteTownCity;
                 this.formData.postCode = this.formData.site.SitePostcode;
             }
+            console.log(this.formData);
             this.$store.commit('mainForm', this.formData);
             this.$store.commit('navigate', 2);
         },
