@@ -67,8 +67,10 @@ export default Vue.extend({
                 const results = await Promise.all([standardSearch, rearrangedSearch]);
                 this.people = results[0].concat(results[1]);
             } else {
-                this.people = await standardSearch;
-            }
+                const searchResults = await standardSearch;
+                const validatedResults = searchResults.map((item) => { return (item.EntityData.PrincipalType !== "UNVALIDATED_EMAIL_ADDRESS") ? item: null;});
+                validatedResults.map((item) => { (item) ? this.people = searchResults: loading(false);});
+                }
             loading(false);
         }, 800)
     },
