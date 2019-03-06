@@ -164,8 +164,7 @@
             </div> 
             <div class="border">Hyperion and PBCS</div>
             <div>
-                <label style="margin-left: 10px;" class="form-check-label">Click the box(es) for the access needed then get approval from </label>
-                <a href="mailto:John.Hudson@kier.co.uk?Subject=Approval%20Request" target="_top">John.Hudson@kier.co.uk</a>
+                <label style="margin-left: 10px;" class="form-check-label">Click the box(es) for the access needed. Approval will be required from the Head of Group Finance and your Financial Director.</label>
             </div>
             
             <div v-for="(option, key) in formOptions.hyperion" :key="key">
