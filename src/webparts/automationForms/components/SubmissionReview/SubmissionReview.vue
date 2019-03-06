@@ -2,12 +2,15 @@
     <div>
         <h2>Summary</h2> 
         <h3>Hardware/Software</h3>
-        <div v-if="this.hardware.bimbuild">
-            <p>A BIM build is required</p>
-        </div>
         <div v-if="hasHardware">
             <div v-for="(items, key) in hardware.products" :key="key">
                 <h5>{{key | keyToTitle}}</h5>
+                <div v-if="key === 'computer' && hardware.bimbuild">
+                    <p>A BIM build is required</p>
+                </div>
+                <div v-if="key === 'computer' && hardware.isRecycled === true">
+                    <p>Recycled item is required</p>
+                </div>
                 <ul v-if="items.length > 0">
                     <li v-for="(item, itemKey) in items" :key="itemKey">{{item.name}} <span v-if="item.price > 0">- {{item.price}} GBP</span></li>
                 </ul>
