@@ -61,10 +61,10 @@
             <h3>Line Manager Employee ID</h3>
             <p>{{hardware.mobileLineManager}}</p>
         </div>
-
-        <h3>Delivery Address</h3>
-        <p v-html="printAddress"></p>        
-        
+        <div v-if="!hasHardware">
+            <h3>Delivery Address</h3>
+            <p v-html="printAddress"></p>   
+        </div>
         <div class="form-group">
             <div class="form-check form-check-inline">
                 <input type="checkbox" id="accept-terms" class="form-check-input" v-model="acceptTerms" :class="{ 'is-invalid': $v.acceptTerms.$invalid }">

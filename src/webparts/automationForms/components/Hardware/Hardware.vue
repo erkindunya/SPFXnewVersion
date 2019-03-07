@@ -189,10 +189,10 @@
                 <input type="text" maxlength="255"  class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }" @paste.prevent>
             </div>
             <p v-if="!(details.changeAddress)">
-                {{ $store.state.main.site.SiteAddress }}<br />
-                {{ $store.state.main.site.SiteTownCity }}<br />
-                {{ $store.state.main.site.SitePostcode }}<br />
-                {{ $store.state.main.site.SiteCounty }}
+                {{(this.$store.state.main.customAddress === false) ? $store.state.main.site.SiteAddress : $store.state.main.addressLine1  }}<br />
+                {{(this.$store.state.main.customAddress === false) ? $store.state.main.site.SiteTownCity : $store.state.main.townCity}}<br />
+                {{(this.$store.state.main.customAddress === false) ? $store.state.main.site.SitePostcode : $store.state.main.postCode}}<br />
+                {{(this.$store.state.main.customAddress === false) ? $store.state.main.site.SiteCounty : ""}}
             </p>
             <div class="form-group">
                 <label>Would you like to use a different delivery address?</label>

@@ -158,7 +158,6 @@ export default Vue.extend({
                 this.formData.townCity = this.formData.site.SiteTownCity;
                 this.formData.postCode = this.formData.site.SitePostcode;
             }
-            console.log(this.formData);
             this.$store.commit('mainForm', this.formData);
             this.$store.commit('navigate', 2);
         },

@@ -115,7 +115,7 @@ export default Vue.extend({
                     }
                     else if (key == "monitors") {
                         var monitorsArr = [];
-                        if(this.details.selectedMonitor){
+                        if(this.details.selectedMonitor && this.details.selectedMonitor.name !== ""){
                             monitorsArr.push({ name: this.details.selectedMonitor.name, price: this.details.selectedMonitor.price }); 
                         }
                         monitorsArr = monitorsArr[0].name === "" ? [] : monitorsArr;
@@ -141,9 +141,9 @@ export default Vue.extend({
                 this.details.county + "\n" +
                 this.details.postCode;
             else{
-                return this.$store.state.main.site.SiteAddress + "\n" + 
-                this.$store.state.main.site.SiteTownCity + "\n" + 
-                this.$store.state.main.site.SitePostcode;
+                return this.$store.state.main.addressLine1 + "\n" + 
+                this.$store.state.main.townCity + "\n" + 
+                this.$store.state.main.postCode;
             }
         },
         setSelectedBar(item){
