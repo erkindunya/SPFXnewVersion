@@ -118,6 +118,7 @@ export default Vue.extend({
                         if(this.details.selectedMonitor){
                             monitorsArr.push({ name: this.details.selectedMonitor.name, price: this.details.selectedMonitor.price }); 
                         }
+                        monitorsArr = monitorsArr[0].name === "" ? [] : monitorsArr;
                         map[key] = monitorsArr;
                     }
                     else if (key == "computer") {
