@@ -77,7 +77,7 @@ export default Vue.extend({
                 software: this.options.software.length > 0,
                 computer: this.options.computer.filter((item) => item.selected).length > 0,
                 peripherals: this.options.peripherals.filter((item) => item.selected).length > 0,
-                monitors: this.details.selectedMonitor ,
+                monitors: this.details.selectedMonitor.price > 0,
                 connectors: this.options.connectors.filter((item) => item.selected).length > 0,
                 skype: this.options.skype.filter((item) => item.selected).length > 0
             };
