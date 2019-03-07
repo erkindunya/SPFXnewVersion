@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Manager Employee No.</label>
-                                <input type="text" maxlength="255" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager">
+                                <input type="text" maxlength="255" class="form-control" :class="{ 'is-invalid': $v.details.mobileLineManager.$invalid }" v-model="details.mobileLineManager" @paste.prevent>
                             </div>
                             <div class="form-group">
                                 <label>Division</label>
@@ -123,7 +123,7 @@
                 <div v-if="showSections.software">
                     <div class="form-group">
                         <p>Select the software you require below. You may select more than one option.</p>
-                        <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true">
+                        <list-select v-model="options.software" placeholder="Select the software you require." listName="SoftwarePackages" multiple="true" @paste.prevent>
                             <template slot="option" slot-scope="option">
                                 <strong>{{ option.Title }}</strong>
                                 <div v-if="option.Additional_x0020_Costs">Costs: £{{ option.Additional_x0020_Costs }}</div>
@@ -182,11 +182,11 @@
             <h3>Delivery Address</h3>
             <div class="form-group">
                 <label>Delivery Contact</label>
-                <input type="text" maxlength="255" class="form-control" v-model="details.deliveryContact" :class="{ 'is-invalid': $v.details.deliveryContact.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.deliveryContact" :class="{ 'is-invalid': $v.details.deliveryContact.$invalid }" @paste.prevent>
             </div>
             <div  class="form-group">
                 <label>Delivery Contact Number</label>
-                <input type="text" maxlength="255"  class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }">
+                <input type="text" maxlength="255"  class="form-control" v-model="details.deliveryContactNumber" :class="{ 'is-invalid': $v.details.deliveryContactNumber.$invalid }" @paste.prevent>
             </div>
             <p v-if="!(details.changeAddress)">
                 {{ $store.state.main.site.SiteAddress }}<br />
@@ -207,15 +207,15 @@
             </div>
             <div v-if="details.changeAddress" class="form-group">
                 <label>Address line 1</label>
-                <textarea class="form-control" v-model="details.deliveryAddress" :class="{ 'is-invalid': $v.details.deliveryAddress.$invalid }"></textarea>
+                <textarea class="form-control" v-model="details.deliveryAddress" :class="{ 'is-invalid': $v.details.deliveryAddress.$invalid }" @paste.prevent></textarea>
             </div>
             <div v-if="details.changeAddress" class="form-group">
                 <label>County</label>
-                <input type="text" maxlength="255" class="form-control" v-model="details.county" :class="{ 'is-invalid': $v.details.county.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.county" :class="{ 'is-invalid': $v.details.county.$invalid }" @paste.prevent>
             </div>
             <div v-if="details.changeAddress" class="form-group">
                 <label>Post code</label>
-                <input type="text" maxlength="255" class="form-control" v-model="details.postCode" :class="{ 'is-invalid': $v.details.postCode.$invalid }">
+                <input type="text" maxlength="255" class="form-control" v-model="details.postCode" :class="{ 'is-invalid': $v.details.postCode.$invalid }" @paste.prevent>
             </div>
         </div>
         

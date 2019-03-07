@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-group">
                 <p>Search</p>
-                <list-select v-model="allOptions.drives" placeholder="Select the network drives you require." listName="NetworkDrives" multiple="true" :lazyLoad="true">
+                <list-select v-model="allOptions.drives" placeholder="Select the network drives you require." listName="NetworkDrives" multiple="true" :lazyLoad="true" @paste.prevent>
                     <template slot="option" slot-scope="option">
                         <strong>{{ option.Title }}</strong>
                     </template>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label>Other</label>
-                    <input type="text" class="form-control" v-model="custom.drive" :class="{ 'is-invalid': $v.custom.drive.$invalid }">
+                    <input type="text" class="form-control" v-model="custom.drive" :class="{ 'is-invalid': $v.custom.drive.$invalid }" @paste.prevent>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="card-body">
                  <div class="form-group">
                     <p>Search</p>
-                    <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :label='"mail"' :lazyLoad="true" >
+                    <graph-select v-model="allOptions.mailboxes" placeholder="Select the network drives you require." listName="SharedMailboxes" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"mail"' :label='"mail"' :lazyLoad="true" @paste.prevent>
                         <template slot="option" slot-scope="option">
                             <strong>{{ option.mail }}</strong>
                         </template>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label>Other</label>
-                    <input type="text" maxlength="255" class="form-control" v-model="custom.mailbox" :class="{ 'is-invalid': $v.custom.mailbox.$invalid }">
+                    <input type="text" maxlength="255" class="form-control" v-model="custom.mailbox" :class="{ 'is-invalid': $v.custom.mailbox.$invalid }" @paste.prevent>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 </div> -->
                 <div class="form-group">
                     <p>Search</p>
-                    <graph-select v-model="allOptions.distributions" placeholder="Select the distribution lists you require." listName="Distributions" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"displayName"' :label='"displayName"' :lazyLoad="true" >
+                    <graph-select v-model="allOptions.distributions" placeholder="Select the distribution lists you require." listName="Distributions" multiple="true" :query='"groups"' :filter='"mailEnabled eq true"' :select='"displayName"' :label='"displayName"' :lazyLoad="true" @paste.prevent>
                         <template slot="option" slot-scope="option">
                             <strong>{{ option.displayName }}</strong>
                         </template>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="form-group">
                     <label>Other</label>
-                    <input type="text" maxlength="255" class="form-control" v-model="custom.distribution" :class="{ 'is-invalid': $v.custom.distribution.$invalid }">
+                    <input type="text" maxlength="255" class="form-control" v-model="custom.distribution" :class="{ 'is-invalid': $v.custom.distribution.$invalid }" @paste.prevent>
                 </div>
             </div>
         </div>
