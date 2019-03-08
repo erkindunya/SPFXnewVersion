@@ -13,7 +13,7 @@
             </div>
         </template>
         <template slot="option" slot-scope="option">
-            {{ option.DisplayText }} ({{ option.EntityData.Email || "No Email" }})
+            {{ option.DisplayText }} ({{ option.EntityData.Email || "No Email" }}) {{ option.EntityData.Department}}
         </template>
     </vue-select>
 </div>
