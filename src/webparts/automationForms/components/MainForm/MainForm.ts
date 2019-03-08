@@ -25,7 +25,9 @@ export default Vue.extend({
             addressLine1: "",
             postCode: "",
             townCity: "",
-            domainSuffix: "@kier.co.uk",
+            domainSuffix: { 
+                "Title" : "@kier.co.uk" 
+            },
             employeeType: "Permanent",
             startDate: new Date(),
             endDate: new Date(),

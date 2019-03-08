@@ -85,7 +85,7 @@ export default new Vuex.Store({
                 NSSFirstName: main.firstName,
                 NSSSurname: main.surname,
                 NSSMiddleInitial: main.middleInitial,
-                NSSDomainSuffix: main.domainSuffix,
+                NSSDomainSuffix: main.domainSuffix.Title,
                 Username: main.username,
                 Duplicate: main.duplicate,
                 Reporting_x0020_Unit: main.reportingUnit.Title,

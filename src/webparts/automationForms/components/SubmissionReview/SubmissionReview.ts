@@ -20,7 +20,7 @@ export default Vue.extend({
         },        
         totalCost() {
             if(!this.hasHardware) {
-                return 0;
+                return (0.00).toFixed(2);
             }
             var hardwareObj = this.hardware.products;
             var totalCost =  (<any[]>Object.keys(hardwareObj).map(e => hardwareObj[e]).reduce((a: any[],b: any[]) => a.concat(b), [])).map(x => x.price).reduce((a,b) => a + b, 0);
@@ -47,7 +47,7 @@ export default Vue.extend({
             this.$store.commit('navigate', 5);
         },
         submit () {
-            this.$store.commit('setCost', this.totalCost);
+            this.$store.commit('setCost', this.totalCost.toString());
             this.$store.dispatch('submitForm');
         }
     },
