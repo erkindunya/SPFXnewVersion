@@ -162,6 +162,11 @@
                     <label class="form-check-label" :for="option.id" >{{option.name}}</label>
                 </div>
             </div> 
+            <div class="form-title">If requesting Timekeeper Group Maintenance, Super Timekeeper or Kier OTL Financial Controller access, please select all reporting unit codes for the timekeeping groups you require:</div>       
+            <div class="form-header">
+                <list-select v-model="formOptions.otlTimeKeepingReportingUnit" listName="OracleReportingUnits" label="Title"></list-select>
+            </div>
+
             <div class="border">Hyperion and PBCS</div>
             <div>
                 <label style="margin-left: 10px;" class="form-check-label">Click the box(es) for the access needed. Approval will be required from the Head of Group Finance and your Financial Director.</label>

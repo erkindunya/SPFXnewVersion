@@ -103,6 +103,7 @@ export default Vue.extend({
                     selected : false
                 }
             ],
+            otlTimeKeepingReportingUnit: "",
             hyperion : [
                 {
                     id : "HyperionFinancialManage",
@@ -138,13 +139,14 @@ export default Vue.extend({
                 kierPropertyOnly : this.getSelectedList(this.formOptions.kierPropertyOnly),
                 otlSelfService : this.getSelectedList(this.formOptions.otlSelfService),
                 otlTimeKeeping: this.getSelectedList(this.formOptions.otlTimeKeeping),
+                otlTimeKeepingReportingUnit: this.formOptions.otlTimeKeepingReportingUnit.Title,
                 hyperion : this.getSelectedList(this.formOptions.hyperion),
                 biReporting : this.formOptions.biReporting.selected ? this.formOptions.biReporting.name : '',
                 vcrLumpSumproject: this.formOptions.vcrLumpSumproject ? this.formOptions.vcrLumpSumproject : '',
                 vcrConversionProject: this.formOptions.vcrConversionProject ? this.formOptions.vcrConversionProject : '',
                 vcrRepairs: this.formOptions.vcrRepairs,
                 vcrSPM:this.formOptions.vcrSPM,
-                costCenter: this.formOptions.costCenter
+                costCenter: this.formOptions.costCenter           
             };
         }
     },

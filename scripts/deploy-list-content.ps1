@@ -1,8 +1,8 @@
-param([string]$filter='*.csv')
+param([string]$filter='OracleReportingUnits.csv')
 $listDirectory = Join-Path (Get-Location) '\lists\'
 
-Connect-PnPOnline -Url https://kier.sharepoint.com/sites/ITRequestsPortal -UseWebLogin
-# Connect-PnPOnline -Url https://devkier.sharepoint.com/sites/ITRequestsPorta/ -UseWebLogin
+# Connect-PnPOnline -Url https://kier.sharepoint.com/sites/ITRequestsPortal -UseWebLogin
+Connect-PnPOnline -Url https://devkier.sharepoint.com/sites/ITRequestsPorta/ -UseWebLogin
 
 Get-ChildItem $listDirectory -Filter $filter | Foreach-Object {
     # Prepare variables

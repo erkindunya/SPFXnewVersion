@@ -79,6 +79,7 @@ export default new Vuex.Store({
             const oracle: any = state.oracle;
             const access: any = state.access;
             const projectDetails: any = state.projectDetails;
+            console.log(oracle.otlTimeKeepingReportingUnit);
             console.log(main);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 // main page
@@ -133,6 +134,7 @@ export default new Vuex.Store({
                 KierPropertyOnly : oracle.kierPropertyOnly,
                 OTL_x0020_Self_x0020_Service : oracle.otlSelfService,
                 OTL_x0020_Timekeeping : oracle.otlTimeKeeping,
+                OTLTimekeepingReportingUnit: oracle.otlTimeKeepingReportingUnit,
                 Hyperion : oracle.hyperion,
                 BiReporting : oracle.biReporting,
                 VCR_x0020_Lump_x0020_Sum: oracle.vcrLumpSumproject,

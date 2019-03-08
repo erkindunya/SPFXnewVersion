@@ -61,7 +61,7 @@
             <h3>Line Manager Employee ID</h3>
             <p>{{hardware.mobileLineManager}}</p>
         </div>
-        <div v-if="!hasHardware">
+        <div v-if="hasHardware">
             <h3>Delivery Address</h3>
             <p v-html="printAddress"></p>   
         </div>
