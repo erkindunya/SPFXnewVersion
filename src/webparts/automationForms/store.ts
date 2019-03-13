@@ -114,7 +114,7 @@ export default new Vuex.Store({
                 SCC_x0020_Engineer: hardware.sccengineer,
                 Bim_x0020_Build: hardware.bimbuild,
                 ComputerRecycled: hardware.isRecycled,
-                Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} (${item.description}) £${item.price}`; }).join("\n"):"",
+                Computer_x0020_Package: hardware.products.computer ? hardware.products.computer.map((item) => { return `${item.name} £${item.price}`; }).join("\n"):"",
                 Monitors: hardware.products.monitors ? hardware.products.monitors.map((item) => { return `${item.name} £${item.price}`; }).join("\n"):"",
                 Connectors: hardware.products.connectors ? hardware.products.connectors.map((item) => { return `${item.name}`; }).join("\n"):"",
                 SoftwareSCC: hardware.products.software ? hardware.products.software.filter(item => item.sccInstall === true).map((item) => { return `${item.name} £${item.price}`;}).join('\n'):"",
