@@ -171,12 +171,12 @@ export default Vue.extend({
             }
         },
         filterNonStandardCharacters(event) {
-            if (!/[A-Za-z'-]/.test(event.key)) {
+            if (!/[A-Za-z'-]/.test(event.key) || event.keyCode === 32) {
                 event.preventDefault();
             }
         },
         filterMiddleInitialCharacters(event) {
-            if (!/[A-Za-z]/.test(event.key)) {
+            if (!/[A-Za-z]/.test(event.key) || event.keyCode === 32) {
                 event.preventDefault();
             }
         },
