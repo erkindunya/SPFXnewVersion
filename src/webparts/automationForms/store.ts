@@ -83,8 +83,8 @@ export default new Vuex.Store({
             console.log(main);
             sp.web.lists.getByTitle("NewStarterSubmissions").items.add({
                 // main page
-                NSSFirstName: main.firstName,
-                NSSSurname: main.surname,
+                NSSFirstName: main.firstName.trim(),
+                NSSSurname: main.surname.trim(),
                 NSSMiddleInitial: main.middleInitial,
                 NSSDomainSuffix: main.domainSuffix.Title,
                 Username: main.username,
