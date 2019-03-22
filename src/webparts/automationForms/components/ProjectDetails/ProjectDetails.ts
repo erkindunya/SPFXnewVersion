@@ -37,7 +37,7 @@ export default Vue.extend({
     },
     created() {
         var items = [];
-        sp.web.lists.getByTitle('FinancialDirectors').items.get().then((results: any[]) => {
+        sp.web.lists.getByTitle('FinancialDirectors').items.top(2000).get().then((results: any[]) => {
             
             results.forEach(result => {
                 if((result.Title) && !(items.indexOf(result.Title) !== -1))
