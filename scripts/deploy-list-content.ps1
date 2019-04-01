@@ -1,8 +1,7 @@
 param([string]$filter='OracleReportingUnits.csv')
 $listDirectory = Join-Path (Get-Location) '\lists\'
 
-# Connect-PnPOnline -Url https://kier.sharepoint.com/sites/ITRequestsPortal -UseWebLogin
-Connect-PnPOnline -Url https://devkier.sharepoint.com/sites/ITRequestsPorta/ -UseWebLogin
+Connect-PnPOnline -Url https://kier.sharepoint.com/sites/talentdev2/ -UseWebLogin
 
 Get-ChildItem $listDirectory -Filter $filter | Foreach-Object {
     # Prepare variables
@@ -10,7 +9,7 @@ Get-ChildItem $listDirectory -Filter $filter | Foreach-Object {
     $listName = $_.BaseName
     write-host $listName
     $listData = Import-Csv -Path $_.FullName
-    
+
     # Add rows to list
     $listData | Foreach-Object {
         # Convert row to hashtable

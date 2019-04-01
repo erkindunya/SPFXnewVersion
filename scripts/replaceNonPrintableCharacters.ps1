@@ -5,7 +5,7 @@
 #############################################################
 
 
-$siteURL = "https://kier.sharepoint.com/sites/ITRequestsPortal"
+$siteURL = "https://kier.sharepoint.com/sites/talentdev2"
 $listName = "SoftwarePackages"
 $fields = ("ID","Title","Additional_x0020_Costs")  ##ID is always needed
 
